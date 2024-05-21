@@ -310,7 +310,7 @@ export default function Home() {
 
       {/* Subscribe to our newsletter */}
       <section className="py-8 lg:mx-20 bg-gray-50">
-        <div className=" mx-auto px-4">
+        <div className=" mx-auto max-w-4xl px-4">
           <form className="flex items-center border  rounded-lg overflow-hidden">
             <input
               type="email"
@@ -327,7 +327,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* <Videopop /> */}
+     
 
       {/* footer */}
 
