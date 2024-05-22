@@ -11,7 +11,7 @@ export default function Navbar2() {
     };
 
     return (
-        <nav className="bg-white border-gray-200 dark:bg-gray-900 lg:px-20">
+        <nav className="bg-white min-w-full border-gray-200 dark:bg-gray-900 lg:px-20">
             <div className="max-w-screen flex flex-wrap items-center justify-between mx-auto p-4">
 
                 <img

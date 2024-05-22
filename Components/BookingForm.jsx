@@ -24,37 +24,38 @@ const BookingForm = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100">
-      <div className="bg-white p-8 shadow-lg rounded-lg max-w-lg w-full">
+   
+      <div className="bg-white p-10 shadow-lg rounded-lg max-w-screen-2xl w-full">
         <h2 className="text-2xl font-bold mb-6">Booking Information</h2>
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-8">
+           <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
           <div>
-            <label className="block text-sm font-medium text-gray-700">Check In Date</label>
+            <label className="block text-sm  font-semibold ">Check In Date</label>
             <input
               type="date"
               name="checkInDate"
               value={formData.checkInDate}
               onChange={handleChange}
-              className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-customBlue focus:border-customBlue sm:text-sm"
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700">Check Out Date</label>
+            <label className="block text-sm font-semibold ">Check Out Date</label>
             <input
               type="date"
               name="checkOutDate"
               value={formData.checkOutDate}
               onChange={handleChange}
-              className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-customBlue focus:border-customBlue sm:text-sm"
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700">Person</label>
+            <label className="block text-sm font-semibold ">Person</label>
             <select
               name="person"
               value={formData.person}
               onChange={handleChange}
-              className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-customBlue focus:border-customBlue sm:text-sm"
             >
               <option value="1">1 person</option>
               <option value="2">2 persons</option>
@@ -62,41 +63,42 @@ const BookingForm = () => {
               <option value="4">4 persons</option>
             </select>
           </div>
+          </div> 
           <div>
-            <label className="block text-sm font-medium text-gray-700">Full Name</label>
+            <label className="block text-sm font-semibold ">Full Name</label>
             <input
               type="text"
               name="fullName"
               value={formData.fullName}
               onChange={handleChange}
               placeholder="Enter your name here"
-              className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-customBlue focus:border-customBlue sm:text-sm"
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700">E-Mail</label>
+            <label className="block text-sm font-semibold ">E-Mail</label>
             <input
               type="email"
               name="email"
               value={formData.email}
               onChange={handleChange}
               placeholder="Enter your E-mail here"
-              className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-customBlue focus:border-customBlue sm:text-sm"
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700">Phone</label>
+            <label className="block text-sm font-semibold">Phone</label>
             <input
               type="text"
               name="phone"
               value={formData.phone}
               onChange={handleChange}
               placeholder="Enter your phone number here"
-              className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-customBlue focus:border-customBlue sm:text-sm"
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700">Room Preference</label>
+            <label className="block text-sm font-semibold">Room Preference</label>
             <div className="mt-1 flex space-x-4">
               <label className="flex items-center">
                 <input
@@ -127,7 +129,7 @@ const BookingForm = () => {
                   value="Standard"
                   checked={formData.roomPreference === 'Standard'}
                   onChange={handleChange}
-                  className="form-radio h-4 w-4 text-indigo-600"
+                  className="form-radio h-4 w-4 text-customBlue"
                 />
                 <span className="ml-2">Standard</span>
               </label>
@@ -136,14 +138,14 @@ const BookingForm = () => {
           <div>
             <button
               type="submit"
-              className="w-full bg-indigo-600 text-white py-2 px-4 rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              className="w-1/3 bg-customBlue text-white py-2 px-4 rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             >
               Submit Now
             </button>
           </div>
         </form>
       </div>
-    </div>
+   
   );
 };
 
