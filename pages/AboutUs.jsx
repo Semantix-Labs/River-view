@@ -10,7 +10,7 @@ export default function AboutUs() {
 
 
             {/* image Section */}
-            <section>
+            <section className='pt-20'>
                 <div>
                     <img className='w-full' src="/AboutUs.png" alt="" />
                 </div>

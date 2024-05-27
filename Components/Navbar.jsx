@@ -104,13 +104,13 @@ export default function Navbar() {
                 <Link href="/">
                   <span className="text-customGold  hover:border-b-2 hover:border-customGold ml-4  cursor-pointer hidden md:inline-block">Homepage</span>
                 </Link>
-                <Link href="/about">
+                <Link href="/AboutUs">
                   <span className="text-customGold  hover:border-b-2 hover:border-customGold ml-4  cursor-pointer hidden md:inline-block">About Us</span>
                 </Link>
-                <Link href="/Destinations">
+                <Link href="/Accomodation">
                   <span  className="text-customGold  hover:border-b-2 hover:border-customGold ml-4  cursor-pointer hidden md:inline-block">Accommodation</span>
                 </Link>
-                <Link href="/TourPackages">
+                <Link href="/Treatment">
                   <span  className="text-customGold  hover:border-b-2 hover:border-customGold ml-4  cursor-pointer hidden md:inline-block">Atyurvedic Treatments</span>
                 </Link>
                 <Link href="/GalleryPage">

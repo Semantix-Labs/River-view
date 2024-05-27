@@ -25,7 +25,7 @@ const BookingForm = () => {
 
   return (
    
-      <div className="bg-white p-10 shadow-lg rounded-lg max-w-screen-2xl w-full">
+      <div className="bg-white p-5  sm:p-10 shadow-lg rounded-lg max-w-screen-2xl w-full">
         <h2 className="text-2xl font-bold mb-6">Booking Information</h2>
         <form onSubmit={handleSubmit} className="space-y-8">
            <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>

@@ -1,8 +1,9 @@
 import React from 'react'
 import Navbar from '@/Components/Navbar2'
-import LuxryRooms from '@/Components/LuxryRooms';
+
 import BookingForm from '../components/BookingForm';
 import Footer from '@/Components/Footer';
+import LuxuryRooms from '@/Components/LuxryRooms';
 
 export default function Accomodation() {
     return (
@@ -10,7 +11,7 @@ export default function Accomodation() {
             <Navbar />
 
             {/* image Section */}
-            <section>
+            <section className='pt-20'>
                 <div className='w-full'>
                     <img className='w-full' src="/accomation.png" alt="" />
                 </div>
@@ -19,7 +20,13 @@ export default function Accomodation() {
 
             {/* Luxry Rooms */}
             <section>
-                <LuxryRooms />
+                <div>
+                    <h1 className="text-5xl font-bold text-center my-8">Our Luxury Rooms</h1>
+                    <p className="text-lg text-center max-w-xl mx-auto">
+                        Our rooms are designed with Ayurvedic principles in mind, featuring natural materials and calming colors. Enjoy amenities such as organic toiletries, yoga mats, and meditation areas.
+                    </p>
+                    <LuxuryRooms />
+                </div>
             </section>
 
             {/* Ayurvedic Amenities */}

@@ -72,10 +72,10 @@ export default function Home() {
           </div>
           <div className="text-center mb-8">
             <h1 className="text-4xl font-bold mb-4">Welcome to</h1>
-            <h2 className="text-5xl font-extrabold text-gray-800 mb-6">
+            <h2 className="text-5xl font-extrabold  mb-6">
               River View Villas
             </h2>
-            <p className="text-lg text-gray-600 max-w-xl mx-auto">
+            <p className="text-lg text-center  max-w-xl mx-auto">
               Welcome to River View Villas, where traditional Ayurvedic wellness
               meets luxurious accommodations. Nestled in the heart of Sri Lanka,
               our resort offers a harmonious blend of nature and holistic health

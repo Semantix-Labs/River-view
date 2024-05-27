@@ -1,44 +1,136 @@
 // components/LuxuryRooms.js
 
+import Image from 'next/image';
+
+const rooms = [
+    {
+        title: "Luxury Rooms",
+        description: "Elegantly designed with modern amenities and Ayurvedic principles.",
+        price: "$100 / Night",
+        image: "/path-to-luxury-room-image.jpg",
+        link: "/book-luxury-room"
+    },
+    {
+        title: "Suite Rooms",
+        description: "Spacious and luxurious, perfect for extended stays.",
+        price: "$200 / Night",
+        image: "/path-to-suite-room-image.jpg",
+        link: "/book-suite-room"
+    },
+    {
+        title: "Standard Rooms",
+        description: "Comfortable and affordable options with essential amenities.",
+        price: "$80 / Night",
+        image: "/path-to-standard-room-image.jpg",
+        link: "/book-standard-room"
+    },
+    {
+        title: "Standard Rooms",
+        description: "Comfortable and affordable options with essential amenities.",
+        price: "$80 / Night",
+        image: "/path-to-standard-room-image.jpg",
+        link: "/book-standard-room"
+    }
+];
+
 const LuxuryRooms = () => {
     return (
-        <div className="py-20 px-5 lg:px-20 bg-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <img className="mx-auto justify-center" src="/home3.png" alt="" />
-                <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900">Our Luxury Rooms</h2>
-                <p className="mt-4 max-w-xl mx-auto text-center leading-6  text-gray-500">
-                    Our rooms are designed with Ayurvedic principles in mind, featuring natural materials and calming colors. Enjoy amenities such as organic toiletries, yoga mats, and meditation areas.
-                </p>
-                <div className="mt-10 grid gap-10 grid-cols-1 lg:grid-cols-3">
-                    <div className="relative bg-white col-start-1 shadow-lg rounded-lg lg:mt-10">
-                        <img className="w-full object-cover" src='/Rooms/1.png' alt="Luxury Room 1" />
-                        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center  items-start p-10 opacity-0 hover:opacity-100 transition-opacity duration-300">
-                            <h3 className="text-lg font-semibold mt-44 text-white">LUXURY ROOMS</h3>
-                            <p className="mt-2 text-white">$200 / Night</p>
-                            <p className="mt-3 text-start flex justify-start text-white">Elegantly designed with modern amenities and Ayurvedic principles.</p>
-                            <a href="#" className="mt-4 inline-block text-white lg:text-3xl font-semibold">Book Now &rarr;</a>
-                        </div>
-                    </div>
-                    <div className="relative bg-white rounded-lg ">
-                        <img className="w-full object-cover" src='/Rooms/2.png' alt="Luxury Room 2" />
-                        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-start p-10 opacity-0 hover:opacity-100 transition-opacity duration-300 overflow-hidden">
-                            <h3 className="text-lg font-semibold  mt-44 text-white uppercase">Suite ROOMS</h3>
-                            <p className="mt-2 text-white">$200 / Night</p>
-                            <p className="mt-3 text-start  flex justify-start text-white">Spacious and luxurious, perfect for extended stays.</p>
-                            <a href="#" className="mt-4 inline-block text-white lg:text-3xl font-semibold">Book Now &rarr;</a>
-                        </div>
-                    </div>
-                    <div className="relative bg-white shadow-lg rounded-lg lg:mt-10">
-                        <img className="w-full object-cover" src='/Rooms/3.png' alt="Luxury Room 3" />
-                        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-start p-10 opacity-0 hover:opacity-100 transition-opacity duration-300">
-                            <h3 className="text-lg font-semibold  mt-44 text-white uppercase">Standard Rooms</h3>
-                            <p className="mt-2  text-white">$200 / Night</p>
-                            <p className="mt-3 text-start flex justify-start text-white">Elegantly designed with modern amenities and Ayurvedic principles.</p>
-                            <a href="#" className="mt-4 inline-block text-white lg:text-3xl font-semibold">Book Now &rarr;</a>
-                        </div>
-                    </div>
+        <div className="flex flex-wrap justify-center mt-5  space-x-4 space-y-4">
+
+            <div className="relative w-80 h-96 overflow-hidden mt-20  rounded-lg shadow-lg">
+                <Image
+
+                    src='/Rooms/1.png'
+                    layout="fill"
+                    objectFit="cover"
+                    className="transition-transform duration-500 ease-in-out transform hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
+                    <p className="text-lg text-[#FFFFFF] font-bold mt-4">$100 / Night</p>
+                    <h3 className="text-lg text-white font-semibold">Luxury Rooms</h3>
+                    <p className="text-sm text-white  mt-1">Elegantly designed with modern amenities and Ayurvedic principles.</p>
+
+                    <a href='#' className="mt-4 inline-block flex  text-start text-xl py-2 rounded-lg">
+                        Book Now <i className='pt-1 pl-2'><svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.49992 17.9166C13.8722 17.9166 17.4166 14.3722 17.4166 9.99998C17.4166 5.62773 13.8722 2.08331 9.49992 2.08331C5.12766 2.08331 1.58325 5.62773 1.58325 9.99998C1.58325 14.3722 5.12766 17.9166 9.49992 17.9166Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M9.5 13.1666L12.6667 9.99998L9.5 6.83331" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M6.33325 10H12.6666" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        </i>
+                    </a>
                 </div>
             </div>
+            <div className="relative w-80 h-96 overflow-hidden rounded-lg shadow-lg">
+                <Image
+
+                    src='/Rooms/2.png'
+                    layout="fill"
+                    objectFit="cover"
+                    className="transition-transform duration-500 ease-in-out transform hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
+                    <p className="text-lg text-[#FFFFFF] font-bold mt-4">$100 / Night</p>
+                    <h3 className="text-lg text-white font-semibold">Luxury Rooms</h3>
+                    <p className="text-sm text-white  mt-1">Elegantly designed with modern amenities and Ayurvedic principles.</p>
+
+                    <a href='#' className="mt-4 inline-block flex  text-start text-xl py-2 rounded-lg">
+                        Book Now <i className='pt-1 pl-2'><svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.49992 17.9166C13.8722 17.9166 17.4166 14.3722 17.4166 9.99998C17.4166 5.62773 13.8722 2.08331 9.49992 2.08331C5.12766 2.08331 1.58325 5.62773 1.58325 9.99998C1.58325 14.3722 5.12766 17.9166 9.49992 17.9166Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M9.5 13.1666L12.6667 9.99998L9.5 6.83331" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M6.33325 10H12.6666" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        </i>
+                    </a>
+                </div>
+            </div>
+            <div style={{marginTop:'5rem !important'}} className="relative w-80 h-96   rounded-lg shadow-lg">
+                <Image
+
+                    src='/Rooms/3.png'
+                    layout="fill"
+                    objectFit="cover"
+                    className="transition-transform  duration-500 ease-in-out transform hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
+                    <p className="text-lg text-[#FFFFFF] font-bold mt-4">$100 / Night</p>
+                    <h3 className="text-lg text-white font-semibold">Luxury Rooms</h3>
+                    <p className="text-sm text-white  mt-1">Elegantly designed with modern amenities and Ayurvedic principles.</p>
+
+                    <a href='#' className="mt-4 inline-block flex  text-start text-xl py-2 rounded-lg">
+                        Book Now <i className='pt-1 pl-2'><svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.49992 17.9166C13.8722 17.9166 17.4166 14.3722 17.4166 9.99998C17.4166 5.62773 13.8722 2.08331 9.49992 2.08331C5.12766 2.08331 1.58325 5.62773 1.58325 9.99998C1.58325 14.3722 5.12766 17.9166 9.49992 17.9166Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M9.5 13.1666L12.6667 9.99998L9.5 6.83331" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M6.33325 10H12.6666" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        </i>
+                    </a>
+                </div>
+            </div>
+            <div className="relative w-80 h-96 overflow-hidden rounded-lg shadow-lg">
+                <Image
+
+                    src='/Rooms/1.png'
+                    layout="fill"
+                    objectFit="cover"
+                    className="transition-transform duration-500 ease-in-out transform hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
+                    <p className="text-lg text-[#FFFFFF] font-bold mt-4">$100 / Night</p>
+                    <h3 className="text-lg text-white font-semibold">Luxury Rooms</h3>
+                    <p className="text-sm text-white  mt-1">Elegantly designed with modern amenities and Ayurvedic principles.</p>
+
+                    <a href='#' className="mt-4 inline-block flex  text-start text-xl py-2 rounded-lg">
+                        Book Now <i className='pt-1 pl-2'><svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.49992 17.9166C13.8722 17.9166 17.4166 14.3722 17.4166 9.99998C17.4166 5.62773 13.8722 2.08331 9.49992 2.08331C5.12766 2.08331 1.58325 5.62773 1.58325 9.99998C1.58325 14.3722 5.12766 17.9166 9.49992 17.9166Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M9.5 13.1666L12.6667 9.99998L9.5 6.83331" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M6.33325 10H12.6666" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        </i>
+                    </a>
+                </div>
+            </div>
+
+
         </div>
     );
 };
