@@ -55,7 +55,7 @@ const Carousel = () => {
     };
   
     return (
-      <div className="relative w-full mx-5  overflow-hidden">
+      <div className="relative w-full   overflow-hidden">
         <div className="overflow-hidden relative">
           <div
             className="flex transition-transform duration-500"

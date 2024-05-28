@@ -12,8 +12,12 @@ export default function Accomodation() {
 
             {/* image Section */}
             <section className='pt-20'>
-                <div className='w-full'>
-                    <img className='w-full' src="/accomation.png" alt="" />
+                <div className='relative w-full'>
+                    <img className='pb-5 w-screen' src="/Accom.png" alt="" />
+                    <div class="absolute inset-0  opacity-60 rounded-md"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <h2 className='text-3xl md:text-7xl lg:text-8xl font-bold justify-center text-center text-white'>Accommodation</h2>
+                    </div>
                 </div>
             </section>
 

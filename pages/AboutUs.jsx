@@ -11,10 +11,17 @@ export default function AboutUs() {
 
             {/* image Section */}
             <section className='pt-20'>
-                <div>
-                    <img className='w-full' src="/AboutUs.png" alt="" />
+                <div className='relative w-full'>
+                    <img className='pb-5 w-screen' src="/AboutUs.png" alt="" />
+                    <div class="absolute inset-0  opacity-60 rounded-md"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <h2 className='text-3xl md:text-7xl lg:text-8xl font-bold justify-center text-center text-white'>About Us
+
+                        </h2>
+                    </div>
                 </div>
             </section>
+
 
             {/* History and Origins */}
             <div className='mt-5 lg:mt-20 w-screen mx-auto  '>
