@@ -11,7 +11,7 @@ const CustomPrevArrow = ({ onClick }) => (
         onClick={onClick}
         className={`absolute top-1/2 transform -translate-y-1/2 left-0 z-10 ${styles.customArrow}`}
     >
-        <SlArrowLeft className='w-10  h-10 text-gray-600' />
+        <SlArrowLeft className='w-10 hidden md:inline  h-10 text-gray-600' />
     </button>
 );
 
@@ -21,13 +21,13 @@ const CustomNextArrow = ({ onClick }) => (
         onClick={onClick}
         className={`absolute top-1/2 transform -translate-y-1/2 right-0 z-10 ${styles.customArrow}`}
     >
-        <SlArrowRight className='w-10  h-10 text-gray-600' />
+        <SlArrowRight className='w-10 hidden md:inline   h-10 text-gray-600' />
     </button>
 );
 
 const TestimonialsCarousel = () => {
     return (
-        <div className="    lg:mx-20 py-8">
+        <div className="  mx-5  lg:mx-20 py-8">
             <h2 className="text-5xl font-semibold text-center mb-4">Clients words about us</h2>
             <Carousel
                 showArrows={true}
@@ -46,7 +46,7 @@ const TestimonialsCarousel = () => {
             >
                 {/* Testimonial slides */}
                 <div className="p-4">
-                    <p className="text-center mx-20 text-lg italic mb-4">
+                    <p className="text-center lg:mx-20 text-lg italic mb-4">
                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis"
                     </p>
                     <div className="flex justify-center items-center">
@@ -61,7 +61,7 @@ const TestimonialsCarousel = () => {
                     </div>
                 </div>
                 <div className="p-4">
-                    <p className="text-center mx-20 text-lg italic mb-4">
+                    <p className="text-center lg:mx-20 text-lg italic mb-4">
                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis"
                     </p>
                     <div className="flex justify-center items-center">

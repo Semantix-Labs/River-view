@@ -9,7 +9,7 @@ import { MdOutlineEmail } from "react-icons/md";
 const Footer = () => {
     return (
         <div className='bg-[#001F2B]'>
-            <footer className="bg-[#001F2B]  lg:mx-20 text-gray-400 py-16">
+            <footer className="bg-[#001F2B] mx-5 lg:mx-20 text-gray-400 pt-20">
                 <div className=" px-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
 
@@ -29,7 +29,7 @@ const Footer = () => {
 
                         <div className="mb-6 lg:mb-0 lg:col-span-1">
                             <h3 className="text-white text-lg font-bold mb-2">Page Links</h3>
-                            <ul>
+                            <ul className='grid grid-cols-2 lg:grid-cols-1'>
                                 <li><a href="#" className="text-gray-400 hover:text-white">About us</a></li>
                                 <li><a href="#" className="text-gray-400 hover:text-white">Accommodation</a></li>
                                 <li><a href="#" className="text-gray-400 hover:text-white">Ayurvedic Treatments</a></li>
@@ -41,7 +41,7 @@ const Footer = () => {
 
                         <div className="mb-6 lg:mb-0 lg:col-span-1">
                             <h3 className="text-white text-lg font-bold mb-2">Latest News</h3>
-                            <ul>
+                            <ul className='grid grid-cols-2 lg:grid-cols-1'>
                                 <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum</a></li>
                                 <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum dolor</a></li>
                                 <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum dolor sit</a></li>

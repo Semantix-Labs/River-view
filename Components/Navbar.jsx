@@ -138,7 +138,7 @@ export default function Navbar() {
                   <Link href="/">
                     <span className="text-customGold  ml-4 hover:text-white cursor-pointer">Home</span>
                   </Link>
-                  <Link href="/about">
+                  <Link href="/AboutUs">
                     <span className="text-customGold  ml-4 hover:text-white cursor-pointer">About Us</span>
                   </Link>
                   <Link href="/Destinations">

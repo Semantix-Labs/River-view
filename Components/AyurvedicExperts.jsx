@@ -28,7 +28,7 @@ const AyurvedicExperts = () => {
         <div className="py-16 px-5 lg:px-20 bg-white">
             <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h2 className=" text-3xl md:text-5xl  font-semibold text-gray-900 py-5 tracking-wide uppercase">Our Ayurvedic Experts</h2>
-                <p className=" mt-2 justify-center mx-auto  max-w-3xl ">Our team of specially trained Ayurvedic practitioners brings years of expertise and experience. Each professional is dedicated to providing personalized care and guidance on your wellness journey.</p>
+                <p className=" mt-2 justify-center mx-auto   max-w-3xl ">Our team of specially trained Ayurvedic practitioners brings years of expertise and experience. Each professional is dedicated to providing personalized care and guidance on your wellness journey.</p>
             </div>
 
             <div className="mt-10 max-w-[100rem] mx-auto px-4 sm:px-6 lg:px-8">

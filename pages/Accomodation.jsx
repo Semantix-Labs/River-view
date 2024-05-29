@@ -24,9 +24,9 @@ export default function Accomodation() {
 
             {/* Luxry Rooms */}
             <section>
-                <div>
+                <div className='mt-5 '>
                     <h1 className="text-5xl font-bold text-center my-8">Our Luxury Rooms</h1>
-                    <p className="text-lg text-center max-w-xl mx-auto">
+                    <p className="text-lg md:text-center text-justify max-w-xl mx-auto">
                         Our rooms are designed with Ayurvedic principles in mind, featuring natural materials and calming colors. Enjoy amenities such as organic toiletries, yoga mats, and meditation areas.
                     </p>
                     <LuxuryRooms />

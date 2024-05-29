@@ -213,7 +213,7 @@ function ContactUs() {
                                         name="fullName"
                                         value={formData.fullName}
                                         onChange={handleChange}
-                                        className="w-full px-3 py-2 border-none bg-[#B9B9B9] rounded-lg"
+                                        className="w-full px-3 py-2 border-none bg-[#F2F2F2] rounded-lg"
                                         placeholder="Enter your name here"
                                     />
                                 </div>
@@ -224,7 +224,7 @@ function ContactUs() {
                                         name="phone"
                                         value={formData.phone}
                                         onChange={handleChange}
-                                        className="w-full px-3 py-2 border-none bg-[#B9B9B9]  rounded-lg"
+                                        className="w-full px-3 py-2 border-none bg-[#F2F2F2]  rounded-lg"
                                         placeholder="Enter your phone number"
                                     />
                                 </div>
@@ -236,7 +236,7 @@ function ContactUs() {
                                     name="email"
                                     value={formData.email}
                                     onChange={handleChange}
-                                    className="w-full px-3 border-none bg-[#B9B9B9] rounded-lg"
+                                    className="w-full px-3 border-none bg-[#F2F2F2] rounded-lg"
                                     placeholder="Enter your e-mail here"
                                 />
                             </div>
@@ -246,7 +246,7 @@ function ContactUs() {
                                     name="message"
                                     value={formData.message}
                                     onChange={handleChange}
-                                    className="w-full px-3 py-2 border-none bg-[#B9B9B9] rounded-lg"
+                                    className="w-full px-3 py-2 border-none bg-[#F2F2F2] rounded-lg"
                                     placeholder="Type your message..."
                                     rows="4"
                                 ></textarea>

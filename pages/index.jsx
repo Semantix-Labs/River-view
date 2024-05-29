@@ -65,7 +65,7 @@ export default function Home() {
       </section>
 
       {/* welcome section */}
-      <section className="px-20">
+      <section className="px-5">
         <div className="mt-10 bg-white lg:px-20   flex flex-col items-center justify-center ">
           <div className="mb-2">
             <img src="/home3.png" alt="" />
@@ -75,7 +75,7 @@ export default function Home() {
             <h2 className="text-5xl font-extrabold  mb-6">
               River View Villas
             </h2>
-            <p className="text-lg text-center  max-w-xl mx-auto">
+            <p className="text-lg text-justify lg:text-center  max-w-xl mx-auto">
               Welcome to River View Villas, where traditional Ayurvedic wellness
               meets luxurious accommodations. Nestled in the heart of Sri Lanka,
               our resort offers a harmonious blend of nature and holistic health
@@ -137,7 +137,7 @@ export default function Home() {
 
       {/* services section */}
       <section >
-        <div className=" mt-5 lg:mt-20  lg:mx-20 px-4 py-16">
+        <div className=" mt-5 lg:mt-20 mx-5  lg:mx-20 px-4 py-16">
           <h2 className="text-5xl font-bold text-center mb-8">
             Major Ayurvedic Services
           </h2>
@@ -201,12 +201,12 @@ export default function Home() {
       </section>
 
       {/* Virtual Tour */}
-      <section className="flex flex-col md:flex-row items-center lg:mx-20 justify-between p-6 bg-white">
+      <section className="flex flex-col md:flex-row items-center lg:mx-20 justify-between p-5 bg-white">
         <div className="md:w-1/2 p-6">
           <h2 className="text-3xl font-semibold text-gray-800 mb-4">
             Lorem (Video Tour)
           </h2>
-          <p className="text-gray-600 mb-6">
+          <p className="text-gray-600 text-justify mb-6">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -223,7 +223,7 @@ export default function Home() {
               <button data-modal-target="default-modal"
                 data-modal-toggle="default-modal"
                 type="button"
-                onClick={toggleModal} className="bg-white p-2 rounded-full shadow-lg"></button>
+                onClick={toggleModal} className=" p-12 rounded-full shadow-lg"></button>
             </div>
           </div>
         </div>
@@ -315,11 +315,11 @@ export default function Home() {
             <input
               type="email"
               placeholder="E-mail"
-              className=" px-4 w-full mr-4 py-3 border-gray-600 border rounded-lg outline-none"
+              className=" px-4 w-2/3 md:w-full mr-4 py-1 md:py-3 border-gray-600 border rounded-lg outline-none"
             />
             <button
               type="submit"
-              className="bg-[#001F2B] w-5/12 text-white px-6 py-3 hover:bg-blue-900 rounded-lg"
+              className="bg-[#001F2B] text-[10px] md:text-[13px] lg:[16px] py-1  md:w-5/12 text-white md:px-6 md:py-3 hover:bg-blue-900 rounded-lg"
             >
               SUBSCRIBE OUR NEWSLETTER
             </button>
