@@ -7,7 +7,7 @@ import LuxuryRooms from '@/Components/LuxryRooms';
 
 export default function Accomodation() {
     return (
-        <div >
+        <div className=' bg-[#f5f5f5]' >
             <Navbar />
 
             {/* image Section */}
@@ -24,9 +24,9 @@ export default function Accomodation() {
 
             {/* Luxry Rooms */}
             <section>
-                <div className='mt-5 '>
-                    <h1 className="text-5xl font-bold text-center my-8">Our Luxury Rooms</h1>
-                    <p className="text-lg md:text-center text-justify max-w-xl mx-auto">
+                <div className='mt-5 winsize  '>
+                    <h1 className="text-5xl font-bold text-center mx-5 my-8">Our Luxury Rooms</h1>
+                    <p className="text-lg md:text-center mx-5 text-justify max-w-xl md:mx-auto">
                         Our rooms are designed with Ayurvedic principles in mind, featuring natural materials and calming colors. Enjoy amenities such as organic toiletries, yoga mats, and meditation areas.
                     </p>
                     <LuxuryRooms />
@@ -35,7 +35,7 @@ export default function Accomodation() {
 
             {/* Ayurvedic Amenities */}
             <section>
-                <div className='mt-5 lg:mt-20   lg:px-20  px-5  '>
+                <div className='mt-5 lg:mt-20 2xl:px-[20rem] lg:px-20  px-5  '>
                     <div className=' grid grid-cols-1 mx-auto md:grid-cols-2 gap-8 '>
                         <div className='cols-span-1 col-start-1 my-auto'>
 
@@ -43,7 +43,7 @@ export default function Accomodation() {
                             <p className="text-lg  max-w-xl flex "><span className='mr-2'><img src="/home4.png" alt="" /></span>Organic, chemical-free toiletries</p>
                             <p className="text-lg  max-w-xl flex "><span className='mr-2'><img src="/home4.png" alt="" /></span>Herbal teas and Ayurvedic beverages</p>
                             <p className="text-lg  max-w-xl flex "><span className='mr-2'><img src="/home4.png" alt="" /></span>Yoga mats and meditation spaces</p>
-                            <p className="text-lg  max-w-xl flex "><span className='mr-2'><img src="/home4.png" alt="" /></span>Rooms designed with natural light and color harmony based on Ayurvedic principles</p>
+                            <p className="text-lg  max-w-xl flex "><span className='mr-2 w-20'><img src="/home4.png" alt="" /></span>Rooms designed with natural light and color harmony based on Ayurvedic principles</p>
 
                         </div>
                         <div className='cols-span-1 flex justify-end '>
@@ -57,9 +57,9 @@ export default function Accomodation() {
 
             {/* Booking Form */}
             <section className='bgImage' style={{ backgroundImage: 'url("/bg3.png") ', backgroundSize: 'cover', }}>
-                <div className='mt-5  lg:mt-20 w-screen mx-auto grid grid-cols-1  px-5 lg:px-20 py-5 lg:py-20 lg:grid-cols-2 '>
+                <div className='mt-5  lg:mt-20 w-screen mx-auto grid grid-cols-1  lg:px-20 py-5 lg:py-20 lg:grid-cols-2 '>
 
-                    <div className='cols-span-1 mx-auto my-auto z-50  mb-5 lg:mb-24 justify-end'>
+                    <div className='cols-span-1 mx-5 my-auto   mb-5 lg:mb-24 justify-end'>
                         <div className='border border-white   text-white p-10 xl:ml-60'>
                             <p className='max-w-xl text-white '>Book your stay easily with our integrated online booking system. Check room availability, rates, and special promotions with just a few clicks.</p>
                             <p className='max-w-2xl text-white font-extrabold mt-5'>Address</p>
@@ -75,7 +75,7 @@ export default function Accomodation() {
                     </div>
 
 
-                    <div className='cols-span-1 mx-auto my-auto'>
+                    <div className='cols-span-1 mx-5 my-auto'>
                         <div className='xl:mr-48'>
                             <BookingForm />
                         </div>
@@ -88,12 +88,12 @@ export default function Accomodation() {
 
             {/* Carpe Diem */}
             <section>
-                <div className='mt-5 lg:mt-20  lg:px-20   px-5 '>
-                    <div className=' grid grid-cols-1 mx-auto  md:grid-cols-2 gap-4 '>
-                        <div className='cols-span-1 col-start-1 '>
+                <div className='mt-5 lg:mt-20 2xl:px-[20rem] lg:px-20   px-5 '>
+                    <div className=' grid grid-cols-1 mx-auto  lg:grid-cols-2 gap-8 '>
+                        <div className='cols-span-1 lg:col-start-1 '>
 
-                            <h2 className="text-3xl md:text-5xl font-extrabold text-gray-800 mb-6">Carpe Diem</h2>
-                            <p className="text-lg  max-w-xl flex ">Carpe Diem Villa is located amidst a beautiful tropical garden, featuring a year-round outdoor pool and an Ayurveda resort. The villa offers a stunning river view and includes 4 air-conditioned rooms with attached bathrooms, a hall, and a kitchen. Guests can enjoy various activities such as billiards and fishing, and free bicycle usage is available.</p>
+                            <h2 className="text-3xl md:text-5xl text-center lg:text-start font-extrabold text-gray-800 mb-6">Carpe Diem</h2>
+                            <p className="text-lg text-justify  flex ">Carpe Diem Villa is located amidst a beautiful tropical garden, featuring a year-round outdoor pool and an Ayurveda resort. The villa offers a stunning river view and includes 4 air-conditioned rooms with attached bathrooms, a hall, and a kitchen. Guests can enjoy various activities such as billiards and fishing, and free bicycle usage is available.</p>
                             <p className='text-lg max-w-xl pt-5 font-semibold'>Amenities</p>
                             <div className='grid grid-cols-3 mt-5 gap-4'>
                                 <div className='col-span-1 flex border-r-2 border-r-gray-700'>
@@ -188,7 +188,7 @@ export default function Accomodation() {
 
                             </div>
                         </div>
-                        <div className='cols-span-1 flex justify-end'>
+                        <div className='cols-span-1 flex justify-center lg:justify-end'>
                             <img className=' max-w-xl overflow-hidden' src="/Carpe.png" alt="" />
                         </div>
                     </div>
@@ -199,18 +199,18 @@ export default function Accomodation() {
             {/* vlla Araliya */}
             <section>
 
-                <div className='mt-5  lg:mt-20 w-screen  grid grid-cols-1  px-5 lg:px-20 py-5 lg:py-20 lg:grid-cols-4 '>
+                <div className='mt-5  lg:mt-20 2xl:px-[20rem]  grid grid-cols-1  gap-8 mx-5 lg:px-20 py-5 lg:py-20 md:grid-cols-4 '>
 
-                    <div className='col-span-1 col-start-1 lg:mt-40   '>
-                        <div className=''>
-                            <img src="/VillAraliya.png" alt="" />
+                    <div className='lg:col-span-1 md:col-span-2  md:col-start-1 lg:mt-72   '>
+                        <div className='my-auto'>
+                            <img className='w-full h-full ml-3' src="/VillAraliya.png" alt="" />
                         </div>
                     </div>
 
-                    <div className='col-span-2  my-auto'>
+                    <div className='col-span-2   my-auto'>
 
-                        <h2 className="text-3xl md:text-5xl font-extrabold text-gray-800 mb-6">Villa Araliya</h2>
-                        <p className="text-lg  max-w-xl flex ">Villa Araliya offers serene accommodations with a focus on Ayurvedic wellness. It features elegantly furnished rooms with modern amenities and beautiful views of the surrounding nature. Guests can enjoy personalized Ayurvedic treatments and therapies during their stay.</p>
+                        <h2 className="text-3xl md:text-5xl text-center font-extrabold text-gray-800 mb-6">Villa Araliya</h2>
+                        <p className="text-lg   text-justify flex ">Villa Araliya offers serene accommodations with a focus on Ayurvedic wellness. It features elegantly furnished rooms with modern amenities and beautiful views of the surrounding nature. Guests can enjoy personalized Ayurvedic treatments and therapies during their stay.</p>
                         <p className='text-lg max-w-xl pt-5 font-semibold'>Amenities</p>
                         <div className='grid grid-cols-2 mt-5 gap-4'>
                             <div className='col-span-1 flex border-r-2 border-r-gray-700'>
@@ -294,9 +294,9 @@ export default function Accomodation() {
 
                     </div>
 
-                    <div className='col-span-1 flex justify-end '>
+                    <div className='col-span-1 hidden lg:inline  justify-end '>
                         <div className=''>
-                            <img src="/VillAraliya.png" alt="" />
+                            <img className='w-full' src="/VillAraliya.png" alt="" />
                         </div>
                     </div>
                 </div>
@@ -307,12 +307,12 @@ export default function Accomodation() {
 
             {/* Villa Orchid */}
             <section>
-                <div className='mt-5 lg:mt-20  lg:px-20  px-5  '>
+                <div className='mt-5 md:my-20 2xl:px-[20rem]  lg:px-20  px-5  '>
                     <div className='grid grid-cols-1 mx-auto  md:grid-cols-2 gap-8 '>
                         <div className='cols-span-1 col-start-1'>
 
-                            <h2 className="text-3xl md:text-5xl font-extrabold text-gray-800 mb-6">Villa Orchid</h2>
-                            <p className="text-lg  max-w-xl flex ">Villa Orchid provides a tranquil escape with a strong emphasis on Ayurvedic healing. The villa includes spacious rooms, each designed to enhance relaxation and well-being. Guests can indulge in various Ayurvedic treatments and enjoy the peaceful environment.</p>
+                            <h2 className="text-3xl md:text-5xl  text-center md:text-start font-extrabold text-gray-800 mb-6">Villa Orchid</h2>
+                            <p className="text-lg text-justify max-w-xl flex ">Villa Orchid provides a tranquil escape with a strong emphasis on Ayurvedic healing. The villa includes spacious rooms, each designed to enhance relaxation and well-being. Guests can indulge in various Ayurvedic treatments and enjoy the peaceful environment.</p>
                             <p className='text-lg max-w-xl pt-5 font-semibold'>Amenities</p>
                             <div className='grid grid-cols-2 mt-5 gap-4'>
 
@@ -406,20 +406,20 @@ export default function Accomodation() {
             {/* Villa Lilly */}
             <section>
 
-                <div className='mt-5  lg:mt-20 w-screen  grid grid-cols-1  px-5 lg:px-20 py-5 lg:py-20 lg:grid-cols-4 '>
+                <div className='mt-5 2xl:px-[20rem] lg:mt-20 w-screen  grid grid-cols-1 gap-8  px-5 lg:px-20 py-5 md:py-20  md:grid-cols-4 '>
 
-                    <div className='col-span-1 col-start-1 lg:mt-40   '>
+                    <div className='lg:col-span-1 md:col-span-2 col-start-1 lg:mt-40   '>
                         <div className=''>
-                            <img src="/VillaLilly1.png" alt="" />
+                            <img className='w-full ' src="/VillaLilly1.png" alt="" />
                         </div>
                     </div>
 
-                    <div className=' grid  lg:col-span-2 col-start-1 mx-auto  my-auto'>
+                    <div className=' grid  md:col-span-2 col-start-1 mx-auto  my-auto'>
 
-                        <h2 className="text-3xl md:text-5xl font-extrabold text-gray-800 mb-6">Villa Lilly</h2>
-                        <p className="text-lg  max-w-xl flex ">Villa Lilly is designed for guests seeking a holistic Ayurvedic experience. The villa offers comfortable accommodations and a range of wellness services, including personalized dietary plans and therapeutic treatments.</p>
+                        <h2 className="text-3xl md:text-5xl text-center font-extrabold text-gray-800 mb-6">Villa Lilly</h2>
+                        <p className="text-lg text-justify flex ">Villa Lilly is designed for guests seeking a holistic Ayurvedic experience. The villa offers comfortable accommodations and a range of wellness services, including personalized dietary plans and therapeutic treatments.</p>
                         <p className='text-lg max-w-xl pt-5 font-semibold'>Amenities</p>
-                        <div className='grid grid-cols-2 mt-5 gap-4'>
+                        <div className='grid grid-cols-2 mt-5 text-[12px] sm:text-lg gap-4'>
                             <div className='col-span-1 flex border-r-2 border-r-gray-700'>
                                 <span className='mr-2'><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_298_1283)">
@@ -436,7 +436,7 @@ export default function Accomodation() {
                                     </defs>
                                 </svg>
 
-                                </span>Comfortable Accommodations
+                                </span> <span className=''>Comfortable Accommodations</span>
                             </div>
                             <div className='col-span-1 flex '>
                                 <span className='mr-2'><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -501,9 +501,9 @@ export default function Accomodation() {
 
                     </div>
 
-                    <div className='col-span-1  flex justify-end'>
+                    <div className='col-span-1  hidden lg:inline justify-end'>
                         <div className=''>
-                            <img className='justify-end ' src="/VillLilly2.png" alt="" />
+                            <img className='w-full ' src="/VillLilly2.png" alt="" />
                         </div>
                     </div>
                 </div>
@@ -513,12 +513,12 @@ export default function Accomodation() {
 
             {/* Lotus Mansion */}
             <section>
-                <div className='mt-5 lg:mt-20  lg:px-20  px-5  '>
+                <div className='mt-5 2xl:px-[20rem] lg:mt-20  lg:px-20  px-5  '>
                     <div className='grid grid-cols-1 mx-auto  md:grid-cols-2 gap-8 '>
                         <div className='cols-span-1 col-start-1'>
 
-                            <h2 className="text-3xl md:text-5xl font-extrabold text-gray-800 mb-6">Lotus Mansion</h2>
-                            <p className="text-lg  max-w-xl flex ">Lotus Mansion combines luxury with traditional Ayurvedic practices. The villa features beautifully appointed rooms, a private garden, and exclusive Ayurvedic services. Guests can experience comprehensive wellness programs tailored to their needs.</p>
+                            <h2 className="text-3xl md:text-5xl text-center md:text-start font-extrabold text-gray-800 mb-6">Lotus Mansion</h2>
+                            <p className="text-lg text-justify max-w-xl flex ">Lotus Mansion combines luxury with traditional Ayurvedic practices. The villa features beautifully appointed rooms, a private garden, and exclusive Ayurvedic services. Guests can experience comprehensive wellness programs tailored to their needs.</p>
                             <p className='text-lg max-w-xl pt-5 font-semibold'>Amenities</p>
                             <div className='grid grid-cols-2 mt-5 gap-4'>
 
@@ -611,17 +611,17 @@ export default function Accomodation() {
 
 
             {/* Subscribe to our newsletter */}
-            <section className="py-8 lg:mx-20 bg-gray-50">
+            <section className="py-20 lg:mx-20 bg-gray-50">
                 <div className=" mx-auto max-w-4xl px-4">
                     <form className="flex items-center border  rounded-lg overflow-hidden">
                         <input
                             type="email"
                             placeholder="E-mail"
-                            className=" px-4 w-full mr-4 py-3 border-gray-600 border rounded-lg outline-none"
+                            className=" px-4 w-2/3 md:w-full mr-4 py-1 md:py-3 border-gray-600 border rounded-lg outline-none"
                         />
                         <button
                             type="submit"
-                            className="bg-[#001F2B] w-5/12 text-white px-6 py-3 hover:bg-blue-900 rounded-lg"
+                            className="bg-[#001F2B] text-[10px] md:text-[13px] lg:[16px] py-1  md:w-5/12 text-white md:px-6 md:py-3 hover:bg-blue-900 rounded-lg"
                         >
                             SUBSCRIBE OUR NEWSLETTER
                         </button>

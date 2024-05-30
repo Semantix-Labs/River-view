@@ -40,17 +40,17 @@ export default function Treatment() {
 
 
             {/* Subscribe to our newsletter */}
-            <section className="py-8 lg:mx-20 bg-gray-50">
+            <section className="py-20 lg:mx-20 bg-gray-50">
                 <div className=" mx-auto max-w-4xl px-4">
                     <form className="flex items-center border  rounded-lg overflow-hidden">
                         <input
                             type="email"
                             placeholder="E-mail"
-                            className=" px-4 w-full mr-4 py-3 border-gray-600 border rounded-lg outline-none"
+                            className=" px-4 w-2/3 md:w-full mr-4 py-1 md:py-3 border-gray-600 border rounded-lg outline-none"
                         />
                         <button
                             type="submit"
-                            className="bg-[#001F2B] w-5/12 text-white px-6 py-3 hover:bg-blue-900 rounded-lg"
+                            className="bg-[#001F2B] text-[10px] md:text-[13px] lg:[16px] py-1  md:w-5/12 text-white md:px-6 md:py-3 hover:bg-blue-900 rounded-lg"
                         >
                             SUBSCRIBE OUR NEWSLETTER
                         </button>

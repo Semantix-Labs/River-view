@@ -1,6 +1,9 @@
+"use client";
+
 import Navbar2 from '@/Components/Navbar2'
+
 import React, { useState } from 'react';
-import Maps from '@/Components/maps'
+import Maps from '@/Components/Map'
 import Footer from '@/Components/Footer';
 
 
@@ -213,7 +216,7 @@ function ContactUs() {
                                         name="fullName"
                                         value={formData.fullName}
                                         onChange={handleChange}
-                                        className="w-full px-3 py-2 border-none bg-[#F2F2F2] rounded-lg"
+                                        className="w-full px-3 py-2 border-none bg-[#B9B9B9] rounded-lg"
                                         placeholder="Enter your name here"
                                     />
                                 </div>
@@ -224,7 +227,7 @@ function ContactUs() {
                                         name="phone"
                                         value={formData.phone}
                                         onChange={handleChange}
-                                        className="w-full px-3 py-2 border-none bg-[#F2F2F2]  rounded-lg"
+                                        className="w-full px-3 py-2 border-none bg-[#B9B9B9]  rounded-lg"
                                         placeholder="Enter your phone number"
                                     />
                                 </div>
@@ -236,7 +239,7 @@ function ContactUs() {
                                     name="email"
                                     value={formData.email}
                                     onChange={handleChange}
-                                    className="w-full px-3 border-none bg-[#F2F2F2] rounded-lg"
+                                    className="w-full px-3 border-none bg-[#B9B9B9] rounded-lg"
                                     placeholder="Enter your e-mail here"
                                 />
                             </div>
@@ -246,7 +249,7 @@ function ContactUs() {
                                     name="message"
                                     value={formData.message}
                                     onChange={handleChange}
-                                    className="w-full px-3 py-2 border-none bg-[#F2F2F2] rounded-lg"
+                                    className="w-full px-3 py-2 border-none bg-[#B9B9B9] rounded-lg"
                                     placeholder="Type your message..."
                                     rows="4"
                                 ></textarea>
@@ -267,21 +270,23 @@ function ContactUs() {
 
 
             <section>
+                <div style={{ height: '500px', width: '100%' }}>
                 <Maps />
+                </div>
             </section>
 
             {/* Subscribe to our newsletter */}
-            <section className="py-8 lg:mx-20 bg-gray-50">
+            <section className="py-20 lg:mx-20 bg-gray-50">
                 <div className=" mx-auto max-w-4xl px-4">
                     <form className="flex items-center border  rounded-lg overflow-hidden">
                         <input
                             type="email"
                             placeholder="E-mail"
-                            className=" px-4 w-full mr-4 py-3 border-gray-600 border rounded-lg outline-none"
+                            className=" px-4 w-2/3 md:w-full mr-4 py-1 md:py-3 border-gray-600 border rounded-lg outline-none"
                         />
                         <button
                             type="submit"
-                            className="bg-[#001F2B] w-5/12 text-white px-6 py-3 hover:bg-blue-900 rounded-lg"
+                            className="bg-[#001F2B] text-[10px] md:text-[13px] lg:[16px] py-1  md:w-5/12 text-white md:px-6 md:py-3 hover:bg-blue-900 rounded-lg"
                         >
                             SUBSCRIBE OUR NEWSLETTER
                         </button>

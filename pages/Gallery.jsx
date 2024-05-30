@@ -16,10 +16,20 @@ export default function Gallery() {
         <div className='min-h-screen '>
             <Navbar />
 
-            {/* image section */}
-            <section>
-                <img src="/gallery.png" className="w-full pt-20" alt="hero" />
+            
+            {/* image Section */}
+            <section className='pt-20'>
+                <div className='relative w-full'>
+                    <img className='pb-5 2xl:h-[700px] xl:h-[400px] lg:h-96 md:h-64 h-52 w-screen' src="/G.png" alt="" />
+                    <div class="absolute inset-0  opacity-60 rounded-md"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <h2 className='text-3xl md:text-7xl px-5 lg:text-8xl font-bold justify-center text-center text-white'>Experiences And Gallery
+
+                        </h2>
+                    </div>
+                </div>
             </section>
+
 
             {/* Gallery Activity */}
             <section>
@@ -148,19 +158,19 @@ export default function Gallery() {
             </section>
 
             {/* Ayurvedic treatments */}
-            <section className='mx-5 py-20 lg:px-32'>
+            <section className='mx-5 py-20 lg:px-20'>
                 <h2 className="text-3xl font-bold mb-8">Ayurvedic treatments</h2>
-                <div className='grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-12'>
+                <div className='grid gap-4 grid-cols-1 md:grid-cols-12'>
                     <div className='row grid-cols-1  col-span-3'>
-                        <img className='pb-8' src="/ayuGallery/1.png" alt="" />
-                        <img className='pb-8' src="/ayuGallery/2.png" alt="" />
-                        <img className='' src="/ayuGallery/3.png" alt="" />
+                        <img className='pb-8 w-full' src="/ayuGallery/1.png" alt="" />
+                        <img className='pb-8 w-full' src="/ayuGallery/2.png" alt="" />
+                        <img className=' w-full' src="/ayuGallery/3.png" alt="" />
                     </div>
-                    <div className='grid grid-cols-1   col-span-6'>
-                        <div className=' flex justify-between'>
-                            <img className='pb-5  ' src="/ayuGallery/4.png" alt="" />
-                            <img className='pb-5' src="/ayuGallery/6.png" alt="" />
-                            <img className='pb-5' src="/ayuGallery/7.png" alt="" />
+                    <div className='grid grid-cols-1 hidden md:block  col-span-6'>
+                        <div className=' flex lg:gap-4 justify-between'>
+                            <img className='pb-5 md:w-28 xl:w-full' src="/ayuGallery/4.png" alt="" />
+                            <img className='pb-5 md:w-28 xl:w-full ' src="/ayuGallery/6.png" alt="" />
+                            <img className='pb-5 md:w-28 xl:w-full' src="/ayuGallery/7.png" alt="" />
                         </div>
                         <div className='relative'>
                             <img className='pb-5 w-screen object-cover' src="/ayuGallery/5.png" alt="" />
@@ -169,33 +179,33 @@ export default function Gallery() {
                                 <img src="/play.png" alt="" />
                             </div>
                         </div>
-                        <div className=' flex justify-between'>
-                            <img className='pb-5 ' src="/ayuGallery/10.png" alt="" />
-                            <img className='pb-5' src="/ayuGallery/8.png" alt="" />
-                            <img className='pb-5' src="/ayuGallery/9.png" alt="" />
+                        <div className=' flex lg:gap-4 justify-between'>
+                            <img className='pb-5 md:w-28 xl:w-full' src="/ayuGallery/10.png" alt="" />
+                            <img className='pb-5 md:w-28 xl:w-full' src="/ayuGallery/8.png" alt="" />
+                            <img className='pb-5 md:w-28 xl:w-full' src="/ayuGallery/9.png" alt="" />
                         </div>
                     </div>
                     <div className='row grid-cols-1  col-span-3'>
-                        <img className='pb-8' src="/ayuGallery/11.png" alt="" />
-                        <img className='pb-8' src="/ayuGallery/12.png" alt="" />
-                        <img className='' src="/ayuGallery/13.png" alt="" />
+                        <img className='pb-8 w-full ' src="/ayuGallery/11.png" alt="" />
+                        <img className='pb-8 w-full' src="/ayuGallery/12.png" alt="" />
+                        <img className='w-full' src="/ayuGallery/13.png" alt="" />
                     </div>
                 </div>
             </section>
 
             {/* Natural Environment */}
-            <section className='mx-5 lg:px-32 py-20'>
+            <section className='mx-5 lg:px-20 py-20'>
                 <h2 className="text-3xl font-bold mb-8">Natural Environment</h2>
-                <div className='grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-12'>
+                <div className='grid gap-4 grid-cols-1 md:grid-cols-12'>
                     <div className='row grid-cols-1  col-span-5'>
-                        <img className='pb-8 ' src="/GalleryNatural/1.png" alt="" />
-                        <img className=' ' src="/GalleryNatural/2.png" alt="" />
+                        <img className='pb-8 w-full ' src="/GalleryNatural/1.png" alt="" />
+                        <img className='w-full ' src="/GalleryNatural/2.png" alt="" />
 
                     </div>
-                    <div className='grid grid-cols-1   col-span-7'>
+                    <div className='grid grid-cols-1 hidden md:inline  col-span-7'>
                         <div className='gap-4 flex flex-row justify-between'>
-                            <img className='pb-5 ' src="/GalleryNatural/3.png" alt="" />
-                            <img className='pb-5' src="/GalleryNatural/4.png" alt="" />
+                            <img className='pb-5 lg:w-56 md:w-48  xl:w-full' src="/GalleryNatural/3.png" alt="" />
+                            <img className='pb-5 lg:w-56 xl:w-full md:w-48' src="/GalleryNatural/4.png" alt="" />
                         </div>
                         <div className='relative col-span-1'>
                             <img className='pb-5 w-full' src="/GalleryNatural/5.png" alt="" />
@@ -217,17 +227,17 @@ export default function Gallery() {
             </section>
 
             {/* Subscribe to our newsletter */}
-            <section className="py-8 lg:mx-20 bg-gray-50">
+            <section className="py-20 lg:mx-20 bg-gray-50">
                 <div className=" mx-auto max-w-4xl px-4">
                     <form className="flex items-center border  rounded-lg overflow-hidden">
                         <input
                             type="email"
                             placeholder="E-mail"
-                            className=" px-4 w-full mr-4 py-3 border-gray-600 border rounded-lg outline-none"
+                            className=" px-4 w-2/3 md:w-full mr-4 py-1 md:py-3 border-gray-600 border rounded-lg outline-none"
                         />
                         <button
                             type="submit"
-                            className="bg-[#001F2B] w-5/12 text-white px-6 py-3 hover:bg-blue-900 rounded-lg"
+                            className="bg-[#001F2B] text-[10px] md:text-[13px] lg:[16px] py-1  md:w-5/12 text-white md:px-6 md:py-3 hover:bg-blue-900 rounded-lg"
                         >
                             SUBSCRIBE OUR NEWSLETTER
                         </button>

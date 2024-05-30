@@ -9,7 +9,7 @@ import { MdOutlineEmail } from "react-icons/md";
 const Footer = () => {
     return (
         <div className='bg-[#001F2B]'>
-            <footer className="bg-[#001F2B] mx-5 lg:mx-20 text-gray-400 pt-20">
+            <footer className="bg-[#001F2B] mx-5 2xl:px-[15rem] lg:mx-20 text-gray-400 pt-20">
                 <div className=" px-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
 
@@ -36,6 +36,14 @@ const Footer = () => {
                                 <li><a href="#" className="text-gray-400 hover:text-white">Gallery</a></li>
                                 <li><a href="#" className="text-gray-400 hover:text-white">News & Blogs</a></li>
                                 <li><a href="#" className="text-gray-400 hover:text-white">Contact us</a></li>
+                                <li> <div className="flex inline md:hidden space-x-4">
+                                    <a href="#" className="text-gray-400 hover:text-white">Terms of Use</a>
+
+                                </div></li>
+                                <li> <div className="flex inline md:hidden space-x-4">
+                                    <a href="#" className="text-gray-400 hover:text-white">Privacy Policy</a>
+
+                                </div></li>
                             </ul>
                         </div>
 
@@ -58,9 +66,9 @@ const Footer = () => {
                         </div>
 
                     </div>
-                    <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col lg:flex-row justify-between">
-                        <p className="text-gray-400">© 2023 Semantix labs - All Rights Reserved</p>
-                        <div className="flex space-x-4">
+                    <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between">
+                        <p className="text-gray-400 ">© 2024 Semantix labs - All Rights Reserved</p>
+                        <div className=" hidden md:inline-flex space-x-4">
                             <a href="#" className="text-gray-400 hover:text-white">Terms of Use</a>
                             <a href="#" className="text-gray-400 hover:text-white">Privacy Policy</a>
                         </div>

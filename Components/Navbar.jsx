@@ -49,7 +49,7 @@ export default function Navbar() {
 
 
 
- 
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -57,14 +57,14 @@ export default function Navbar() {
   };
   return (
     <div>
-        <div  className='section   '>
+      <div className='section   '>
 
         <div
           className="navbar md:pt-10 flex bg-none lg:pb-20 md:pb-10 text-black scroll-my-28:text-black z-50 fixed w-full lg:px-20"
           style={{
 
             backgroundColor: isScrolled ? 'white' : 'transparent',
-            color: isScrolled ? 'black' : 'white', 
+            color: isScrolled ? 'black' : 'white',
           }}
         >
 
@@ -108,35 +108,32 @@ export default function Navbar() {
                   <span className="text-customGold  hover:border-b-2 hover:border-customGold ml-4  cursor-pointer hidden md:inline-block">About Us</span>
                 </Link>
                 <Link href="/Accomodation">
-                  <span  className="text-customGold  hover:border-b-2 hover:border-customGold ml-4  cursor-pointer hidden md:inline-block">Accommodation</span>
+                  <span className="text-customGold  hover:border-b-2 hover:border-customGold ml-4  cursor-pointer hidden md:inline-block">Accommodation</span>
                 </Link>
                 <Link href="/Treatment">
-                  <span  className="text-customGold  hover:border-b-2 hover:border-customGold ml-4  cursor-pointer hidden md:inline-block">Atyurvedic Treatments</span>
+                  <span className="text-customGold  hover:border-b-2 hover:border-customGold ml-4  cursor-pointer hidden md:inline-block">Atyurvedic Treatments</span>
                 </Link>
                 <Link href="/GalleryPage">
-                  <span  className="text-customGold  hover:border-b-2 hover:border-customGold ml-4  cursor-pointer hidden md:inline-block">Gallery</span>
+                  <span className="text-customGold  hover:border-b-2 hover:border-customGold ml-4  cursor-pointer hidden md:inline-block">Gallery</span>
                 </Link>
                 <Link href="/ContactUs">
-                  <span  className="text-customGold hover:border-b-2 hover:border-customGold ml-4  cursor-pointer hidden md:inline-block">Blog</span>
+                  <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4  cursor-pointer hidden md:inline-block">Blog</span>
                 </Link>
                 <Link href="/ContactUs">
-                  <span  className="text-customGold  hover:border-b-2 hover:border-customGold ml-4  cursor-pointer hidden md:inline-block">Contact Us</span>
+                  <span className="text-customGold  hover:border-b-2 hover:border-customGold ml-4  cursor-pointer hidden md:inline-block">Contact Us</span>
                 </Link>
-              
+
               </div>
             </div>
             {/* Menu Details */}
             {isMenuOpen && (
-              <div className="md:hidden navbar-end">
+              <div className="md:hidden  flex flex-col text-start mt-[-2rem]  navbar-end">
                 <div style={{
-
-                  boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
-                  backdropFilter: 'blur(30.2px)',
-                  webkitBackdropFilter: 'blur(14.2px)',
+                  backgroundColor: 'white' ,
                   color: isScrolled ? 'black' : 'white', // Change text color based on scroll
-                }} className="flex flex-col mt-2  rounded-lg pt-2 ">
+                }} className="flex flex-col mt-2   rounded-lg pt-2 ">
                   <Link href="/">
-                    <span className="text-customGold  ml-4 hover:text-white cursor-pointer">Home</span>
+                    <span className="text-customGold   ml-4 hover:text-white cursor-pointer">Home</span>
                   </Link>
                   <Link href="/AboutUs">
                     <span className="text-customGold  ml-4 hover:text-white cursor-pointer">About Us</span>
@@ -156,14 +153,14 @@ export default function Navbar() {
                   <Link href="/ContactUs">
                     <span className="text-customGold  ml-4 hover:text-white cursor-pointer">Contact Us</span>
                   </Link>
-                 
+
                 </div>
               </div>
             )}
           </div>
         </nav>
-        </div>
-
       </div>
+
+    </div>
   )
 }

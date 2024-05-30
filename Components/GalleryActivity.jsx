@@ -38,29 +38,29 @@ function GalleryActivity() {
             </div>
 
             <div className="mt-10 max-w-[100rem] mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid gap-8 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1">
+                <div className="grid gap-8 md:grid-cols-4 sm:grid-cols-1">
 
                     <div className="text-center ">
                         <div className="relative mx-auto mt-10 rounded-lg ">
-                            <img className='' src="/Activity/1.png" alt="" layout="fill" objectFit="cover" />
+                            <img className='w-full' src="/Activity/1.png" alt="" layout="fill" objectFit="cover" />
                         </div>
                         <h3 className="mt-4 text-xl text-start pr-5 font-semibold ">Once-a-week boat safari dinner</h3>
                    </div>
                     <div className="text-center">
                         <div className="relative  mx-auto rounded-lg ">
-                            <img src="/Activity/2.png" alt="" layout="fill" objectFit="cover" />
+                            <img className='w-full' src="/Activity/2.png" alt="" layout="fill" objectFit="cover" />
                         </div>
                         <h3 className="mt-4 text-xl text-start pr-5 font-semibold ">Cooking demonstrations</h3>
                         </div>
                     <div className="text-center">
                         <div className="relative  mx-auto mt-10 rounded-lg ">
-                            <img src="/Activity/3.png" alt="" layout="fill" objectFit="cover" />
+                            <img className='w-full' src="/Activity/3.png" alt="" layout="fill" objectFit="cover" />
                         </div>
                         <h3 className="mt-4 text-xl text-start pr-5 font-semibold ">Manicure & Pedicure (additional charges apply)</h3>
                           </div>
                     <div className="text-center">
                         <div className="relative  mx-auto rounded-lg ">
-                            <img src="/Activity/4.png" alt="" layout="fill" objectFit="cover" />
+                            <img className='w-full' src="/Activity/4.png" alt="" layout="fill" objectFit="cover" />
                         </div>
                         <h3 className="mt-4 text-xl text-start pr-5 font-semibold ">Vegetables from our own plantation</h3>
                             </div>

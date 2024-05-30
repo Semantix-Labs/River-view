@@ -138,7 +138,7 @@ const BookingForm = () => {
           <div>
             <button
               type="submit"
-              className="w-1/3 bg-customBlue text-white py-2 px-4 rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              className="sm:w-1/3 bg-customBlue text-white md:py-2 md:px-4 px-2 py-1 rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             >
               Submit Now
             </button>

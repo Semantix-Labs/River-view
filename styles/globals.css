@@ -2,26 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* styles/globals.css */
 body {
-    font-family: 'Gentium Basic', serif;
-  }
+  font-family: "Gentium Basic", serif;
+}
 
-h2,h1{
-  color: #001F2B;
-}  
-h3{
-  color: #001F2B;
-}  
+h2,
+h1 {
+  color: #001f2b;
+}
+h3 {
+  color: #001f2b;
+}
 
-p{
-  color: #001F2B ;
-} 
+p {
+  color: #001f2b;
+}
 
-label{
-  color: #001F2B ;
-} 
+label {
+  color: #001f2b;
+}
 
 /* .glass{
  
@@ -33,3 +33,14 @@ backdrop-filter: blur(5px);
 border: 1px solid rgba(255, 255, 255, 0.3);
 } */
 
+@media screen and (min-width: 768px) {
+  .imgemg {
+    margin-top: 5rem !important;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+     .winsize {
+       padding: 0 20rem 0 20rem;
+     }
+}
