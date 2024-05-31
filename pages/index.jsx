@@ -92,7 +92,7 @@ export default function Home() {
         >
           <div className="md:navbar-center  md:flex navbar-start justify-start md:justify-center w-full">
             <div className="justify-start flex md:justify-center h-[70px] w-[80px] md:h-[80px] md:w-[80px] xl:w-[150px] xl:h-auto">
-              <img className="flex justify-center max-h-[50px]" src="./home2.png" alt="Home" />
+              <img className="flex justify-center " src="./home2.png" alt="Home" />
             </div>
           </div>
           {/* Responsive Menu */}
