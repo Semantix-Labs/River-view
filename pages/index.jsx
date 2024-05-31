@@ -287,7 +287,7 @@ export default function Home() {
         <div className=" mx-auto px-6">
           <h2 className="text-5xl font-semibold text-gray-800 text-center mb-4">Upcoming Events</h2>
           <p className="text-gray-600 text-center mb-12">
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis"
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {events.map((event, index) => (
