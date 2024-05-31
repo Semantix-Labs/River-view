@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '@/Components/Navbar2'
 
-import BookingForm from '../components/BookingForm';
+import BookingForm from '@/Components/BookingForm';
 import Footer from '@/Components/Footer';
 import LuxuryRooms from '@/Components/LuxryRooms';
 
