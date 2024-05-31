@@ -52,7 +52,7 @@ export default function Navbar() {
         >
           <div className="md:navbar-center md:justify-center md:flex navbar-start justify-start w-full">
             <div className="justify-start h-[70px] w-[80px] md:h-[80px] md:w-[80px] xl:w-[150px] xl:h-auto">
-              <img className="w-full" src="./home2.png" alt="Home" />
+              <img className="w-full max-h-36" src="./home2.png" alt="Home" />
             </div>
           </div>
           {/* Responsive Menu */}
