@@ -50,9 +50,9 @@ export default function Navbar() {
             color: isScrolled ? 'black' : 'white',
           }}
         >
-          <div className="md:navbar-center md:justify-center md:flex navbar-start justify-start w-full">
-            <div className="justify-start h-[70px] w-[80px] md:h-[80px] md:w-[80px] xl:w-[150px] xl:h-auto">
-              <img className="w-full max-h-36" src="./home2.png" alt="Home" />
+          <div className="md:navbar-center  md:flex navbar-start justify-start md:justify-center w-full">
+            <div className="justify-start flex md:justify-center h-[70px] w-[80px] md:h-[80px] md:w-[80px] xl:w-[150px] xl:h-auto">
+              <img className="flex justify-center max-h-[50px]" src="./home2.png" alt="Home" />
             </div>
           </div>
           {/* Responsive Menu */}
@@ -121,10 +121,10 @@ export default function Navbar() {
                   <Link href="/AboutUs">
                     <span className="text-customGold ml-4 hover:text-white cursor-pointer">About Us</span>
                   </Link>
-                  <Link href="/Destinations">
+                  <Link href="/Accomodation">
                     <span className="text-customGold ml-4 hover:text-white cursor-pointer">Accommodation</span>
                   </Link>
-                  <Link href="/TourPackages">
+                  <Link href="/Treatment">
                     <span className="text-customGold ml-4 hover:text-white cursor-pointer">Ayurvedic Treatments</span>
                   </Link>
                   <Link href="/GalleryPage">
