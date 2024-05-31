@@ -35,7 +35,7 @@ const rooms = [
 
 const LuxuryRooms = () => {
     return (
-        <div className="flex flex-wrap justify-center mx-5   md:space-x-4 space-y-4">
+        <div className="flex flex-wrap justify-center mx-5  gap-4 md:space-x-4 space-y-4">
 
             <div className="relative xl:w-72 xl:h-96 lg:w-56 lg:h-72 md:w-40 md:h-56 w-80 h-96 overflow-hidden mt-20  rounded-lg shadow-lg">
                 <Image
