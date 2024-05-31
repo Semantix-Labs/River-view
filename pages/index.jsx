@@ -1,8 +1,11 @@
+import Link from "next/link";
+import { Navbar } from "flowbite-react";
 import { Button, Modal } from "flowbite-react";
 import { useState } from "react";
-import Navbar from "../Components/Navbar";
+import NavbarHome from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import TestimonialsCarousel from "../Components/TestimonialsCarousel";
+import { Card } from "flowbite-react";
 
 export default function Home() {
   const [showModal, setShowModal] = useState(false);
@@ -42,12 +45,17 @@ export default function Home() {
   ];
   return (
     <main className="bg-white min-h-screen">
-      <Navbar />
+      <NavbarHome/>
+     
+
+
+      
 
       {/* image section */}
       <section>
         <img src="/home.jpg" className="w-full" alt="hero" />
       </section>
+      
 
       {/* booking section */}
       <section>
