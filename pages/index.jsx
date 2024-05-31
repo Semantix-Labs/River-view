@@ -270,12 +270,12 @@ export default function Home() {
                 <div className="p-6 space-y-6">
 
                   <video class="w-full h-auto max-w-full" controls>
-                    <source src="/docs/videos/flowbite.mp4" type="video/mp4"/>
-                      Your browser does not support the video tag.
+                    <source src="/docs/videos/flowbite.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
                   </video>
 
                 </div>
-              
+
               </div>
             </div>
           </div>
@@ -297,8 +297,13 @@ export default function Home() {
                   <p className="text-gray-500 mb-2">{event.date}</p>
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">{event.title}</h3>
                   <p className="text-gray-600 mb-4">{event.description}</p>
-                  <button className="text-gray-600 hover:text-custom ">
-                    Learn more &rarr;
+                  <button className="text-gray-600 flex hover:text-custom ">
+                    Learn more  <span><svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.5 17.9166C13.8723 17.9166 17.4167 14.3722 17.4167 9.99992C17.4167 5.62766 13.8723 2.08325 9.5 2.08325C5.12774 2.08325 1.58333 5.62766 1.58333 9.99992C1.58333 14.3722 5.12774 17.9166 9.5 17.9166Z" stroke="#001F2B" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M9.5 13.1666L12.6667 9.99992L9.5 6.83325" stroke="#001F2B" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M6.33333 10H12.6667" stroke="#001F2B" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -327,7 +332,7 @@ export default function Home() {
         </div>
       </section>
 
-     
+
 
       {/* footer */}
 
