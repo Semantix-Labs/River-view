@@ -1,9 +1,9 @@
 import React from 'react'
-import Navbar from '@/Components//Navbar2';
-import GalleryActivity from '@/Components/GalleryActivity';
-import RoomGallery from '@/Components/RoomGallery';
-import GalleryCarousel from '@/Components/GalleryCarousel';
-import Footer from '@/Components/Footer';
+import Navbar from '@/components/Navbar2';
+import GalleryActivity from '@/components/GalleryActivity';
+import RoomGallery from '@/components/RoomGallery';
+import GalleryCarousel from '@/components/GalleryCarousel';
+import Footer from '@/components/Footer';
 import Link from 'next/link';
 import { useState } from "react";
 import { CiLocationOn } from "react-icons/ci";

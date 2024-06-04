@@ -1,10 +1,10 @@
 "use client";
 
-import Navbar2 from '@/Components/Navbar2'
+import Navbar2 from '@/components/Navbar2'
 import Link from 'next/link';
 import React, { useState } from 'react';
-import Maps from '@/Components/Map'
-import Footer from '@/Components/Footer';
+import Maps from '@/components/Map'
+import Footer from '@/components/Footer';
 import { CiLocationOn } from "react-icons/ci";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import { FiPhone } from "react-icons/fi";

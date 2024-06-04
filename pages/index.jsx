@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { Navbar } from "flowbite-react";
 import { Button, Modal } from "flowbite-react";
-import NavbarHome from "../Components/Navbar";
-import Footer from "../Components/Footer";
-import TestimonialsCarousel from "../Components/TestimonialsCarousel";
+import NavbarHome from "../components/Navbar";
+import Footer from "../components/Footer";
+import TestimonialsCarousel from "../components/TestimonialsCarousel";
 import { Card } from "flowbite-react";
 import React, { useState, useEffect } from 'react';
 import { CiLocationOn } from "react-icons/ci";

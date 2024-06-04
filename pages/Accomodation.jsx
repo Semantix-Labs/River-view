@@ -1,10 +1,10 @@
 import React from 'react'
 import Link from 'next/link';
 import { useState } from "react";
-import Navbar from '@/Components/Navbar2'
-import BookingForm from '@/Components/BookingForm';
-import Footer from '@/Components/Footer';
-import LuxuryRooms from '@/Components/LuxryRooms';
+import Navbar from '@/components/Navbar2'
+import BookingForm from '@/components/BookingForm';
+import Footer from '@/components/Footer';
+import LuxuryRooms from '@/components/LuxryRooms';
 import { CiLocationOn } from "react-icons/ci";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import { FiPhone } from "react-icons/fi";

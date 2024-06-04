@@ -1,4 +1,4 @@
-import Navbar2 from '@/Components/Navbar2'
+import Navbar2 from '@/components/Navbar2'
 import React from 'react'
 import Link from 'next/link';
 

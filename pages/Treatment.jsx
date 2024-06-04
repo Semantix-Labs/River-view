@@ -1,7 +1,7 @@
 import React from 'react'
-import Navbar from '@/Components/Navbar2';
-import Index1 from '@/Components/index';
-import Footer from '@/Components/Footer';
+import Navbar from '@/components/Navbar2';
+import Index1 from '@/components/index';
+import Footer from '@/components/Footer';
 import Link from 'next/link';
 import { useState } from "react";
 import { CiLocationOn } from "react-icons/ci";
