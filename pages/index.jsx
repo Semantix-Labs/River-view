@@ -387,7 +387,7 @@ export default function Home() {
             {/* Testimonial slides */}
             <div className="p-4">
               <p className="text-center lg:mx-20 text-lg italic mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis
               </p>
               <div className="flex justify-center items-center">
                 <span className="text-center font-semibold">Name of the Client</span>
@@ -402,7 +402,7 @@ export default function Home() {
             </div>
             <div className="p-4">
               <p className="text-center lg:mx-20 text-lg italic mb-4">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis"
+                Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis
               </p>
               <div className="flex justify-center items-center">
                 <span className="text-center font-semibold">Name of the Client</span>
