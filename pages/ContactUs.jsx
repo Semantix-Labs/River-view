@@ -12,6 +12,10 @@ import { MdOutlineEmail } from "react-icons/md";
 
 
  function  ContactUs() {
+
+    const Map = dynamic(() => import('../components/MapComponent'), {
+        ssr: false, // This line is important to prevent server-side rendering
+      });
     const [isOpen, setIsOpen] = useState(false);
 
     const handleToggle = () => {
