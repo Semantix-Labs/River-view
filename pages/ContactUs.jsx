@@ -1,9 +1,9 @@
 "use client";
 
-
+import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import React, { useState } from 'react';
-import Maps from '../components/Map'
+import Maps from '../components/mapping';
 import { CiLocationOn } from "react-icons/ci";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import { FiPhone } from "react-icons/fi";
