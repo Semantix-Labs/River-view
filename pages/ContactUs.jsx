@@ -11,7 +11,7 @@ import { MdOutlineEmail } from "react-icons/md";
 
 
 
-function ContactUs() {
+ function  ContactUs() {
     const [isOpen, setIsOpen] = useState(false);
 
     const handleToggle = () => {

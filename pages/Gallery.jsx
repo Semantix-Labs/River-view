@@ -1,17 +1,67 @@
 import React from 'react'
 
-import GalleryActivity from '../components/GalleryActivity';
-import RoomGallery from '../components/RoomGallery';
-import GalleryCarousel from '../components/GalleryCarousel';
 import Link from 'next/link';
 import { useState } from "react";
 import { CiLocationOn } from "react-icons/ci";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import { FiPhone } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
+import Image from 'next/image';
+import { useEffect, useRef } from 'react';
+
+const images = [
+    "/room/1.png",
+    "/room/2.png",
+    "/room/3.png",
+    "/ayuGallery/1.png",
+    "/ayuGallery/2.png",
+    "/ayuGallery/3.png",
+    "/ayuGallery/4.png",
+    "/ayuGallery/5.png",
+    "/ayuGallery/6.png",
+    "/ayuGallery/7.png",
+    "/ayuGallery/8.png",
+    "/ayuGallery/9.png",
+    "/ayuGallery/10.png",
+    "/ayuGallery/11.png",
+
+];
 
 
 export default function Gallery() {
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const imagesPerSlide = 5;
+    const scrollAmount = 2;
+    const autoScrollDelay = 3000; // Time in milliseconds for auto-scroll
+    const requestRef = useRef();
+    const previousTimeRef = useRef();
+
+    const nextSlide = () => {
+        setCurrentIndex((prevIndex) => (prevIndex >= images.length - imagesPerSlide ? 0 : prevIndex + scrollAmount));
+    };
+
+    const animate = (time) => {
+        if (previousTimeRef.current != undefined) {
+            const deltaTime = time - previousTimeRef.current;
+            if (deltaTime >= autoScrollDelay) {
+                nextSlide();
+                previousTimeRef.current = time;
+            }
+        } else {
+            previousTimeRef.current = time;
+        }
+        requestRef.current = requestAnimationFrame(animate);
+    };
+
+    useEffect(() => {
+        requestRef.current = requestAnimationFrame(animate);
+        return () => cancelAnimationFrame(requestRef.current);
+    }, []);
+
+    const prevSlide = () => {
+        setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - imagesPerSlide : prevIndex - scrollAmount));
+    };
+
     const [isOpen, setIsOpen] = useState(false);
 
     const handleToggle = () => {
@@ -22,6 +72,30 @@ export default function Gallery() {
     const toggleModal = () => {
         setShowModal(!showModal);
     };
+
+    const experts = [
+        {
+            name: "Lorem Ipsum",
+            qualification: "Lorem ipsum dolor sit amet, itsdp consectetur adipiscing elit, sed do",
+            imageUrl: "/Expert/3.png",
+        },
+        {
+            name: "Lorem Ipsum",
+            qualification: "Lorem ipsum dolor sit amet, itsdp consectetur adipiscing elit, sed do",
+            imageUrl: "/Expert/7.png",
+        },
+        {
+            name: "Lorem Ipsum",
+            qualification: "Lorem ipsum dolor sit amet, itsdp consectetur adipiscing elit, sed do",
+            imageUrl: "/Expert/5.png",
+        },
+        {
+            name: "Lorem Ipsum",
+            qualification: "Lorem ipsum dolor sit amet, itsdp consectetur adipiscing elit, sed do",
+            imageUrl: "/Expert/6.png",
+        },
+    ];
+
     return (
         <div className='min-h-screen '>
             <nav className="bg-white fixed z-50 min-w-full border-gray-200 dark:bg-gray-900 lg:px-20">
@@ -120,7 +194,48 @@ export default function Gallery() {
 
             {/* Gallery Activity */}
             <section>
-                <GalleryActivity />
+                <div className="py-16 px-5 lg:px-20 bg-white">
+                    <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                        <div className="mt-10 bg-white lg:px-20   flex flex-col items-center justify-center ">
+                            <div className="mb-2">
+                                <img src="/home3.png" alt="" />
+                            </div>
+                        </div>
+                        <h2 className=" text-3xl md:text-5xl  font-semibold  py-5 tracking-wide uppercase">Explore our Activities</h2>
+                        <p className=" mt-2 justify-center mx-auto  max-w-3xl ">Enhance your stay with our unique experiences, including Ayurvedic cooking classes, herbal garden tours, and cultural excursions.</p>
+                    </div>
+
+                    <div className="mt-10 max-w-[100rem] mx-auto px-4 sm:px-6 lg:px-8">
+                        <div className="grid gap-8 md:grid-cols-4 sm:grid-cols-1">
+
+                            <div className="text-center ">
+                                <div className="relative mx-auto mt-10 rounded-lg ">
+                                    <img className='w-full' src="/Activity/1.png" alt="" layout="fill" objectFit="cover" />
+                                </div>
+                                <h3 className="mt-4 text-xl text-start pr-5 font-semibold ">Once-a-week boat safari dinner</h3>
+                            </div>
+                            <div className="text-center">
+                                <div className="relative  mx-auto rounded-lg ">
+                                    <img className='w-full' src="/Activity/2.png" alt="" layout="fill" objectFit="cover" />
+                                </div>
+                                <h3 className="mt-4 text-xl text-start pr-5 font-semibold ">Cooking demonstrations</h3>
+                            </div>
+                            <div className="text-center">
+                                <div className="relative  mx-auto mt-10 rounded-lg ">
+                                    <img className='w-full' src="/Activity/3.png" alt="" layout="fill" objectFit="cover" />
+                                </div>
+                                <h3 className="mt-4 text-xl text-start pr-5 font-semibold ">Manicure & Pedicure (additional charges apply)</h3>
+                            </div>
+                            <div className="text-center">
+                                <div className="relative  mx-auto rounded-lg ">
+                                    <img className='w-full' src="/Activity/4.png" alt="" layout="fill" objectFit="cover" />
+                                </div>
+                                <h3 className="mt-4 text-xl text-start pr-5 font-semibold ">Vegetables from our own plantation</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </section>
 
 
@@ -197,7 +312,68 @@ export default function Gallery() {
 
 
             <section>
-                <RoomGallery />
+                <div className="lg:px-32 px-5 py-20 ">
+                    <h2 className="text-3xl font-bold mb-8">Rooms</h2>
+                    <div className="grid  grid-cols-1 md:grid-cols-12 overflow-hidden  gap-6">
+
+                        <div className="relative grid-cols-1 md:grid-rows-4 col-span-6  md:col-span-7 group">
+                            <div className='relative'>
+                                <Image
+                                    src="/Room/1.png"
+                                    alt="Room 1"
+                                    layout="responsive"
+                                    width={100}
+                                    height={100}
+                                    className="rounded-lg mb-5 row-span-3 "
+                                />
+                                <div class="absolute inset-0  opacity-60 rounded-md"></div>
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <img src="/play.png" alt="" />
+                                </div>
+                            </div>
+                            <div className="grid grid-cols-2 row-span-1 gap-6">
+                                <Image
+                                    src="/Room/4.png"
+                                    alt="Room 4"
+                                    layout="responsive"
+                                    width={100}
+                                    height={100}
+                                    className="rounded-lg row-span-1"
+                                />
+                                <Image
+                                    src="/Room/4.png"
+                                    alt="Room 5"
+                                    layout="responsive"
+                                    width={100}
+                                    height={100}
+                                    className="rounded-lg "
+                                />
+                            </div>
+
+                        </div>
+
+                        <div className='grid row-auto col-span-6 md:col-span-5'>
+                            <Image
+                                src="/Room/2.png"
+                                alt="Room 2"
+                                layout="responsive"
+                                width={100}
+                                height={100}
+                                className="rounded-lg mb-10 w-full row-span-1"
+                            />
+                            <Image
+                                src="/Room/3.png"
+                                alt="Room 3"
+                                layout="responsive"
+                                width={500}
+                                height={500}
+                                className="rounded-lg  w-full row-span-1 "
+                            />
+
+                        </div>
+
+                    </div>
+                </div>
             </section>
 
 
@@ -310,7 +486,35 @@ export default function Gallery() {
 
             {/* GalleryCarousel */}
             <section className='py-20'>
-                <GalleryCarousel />
+                <div className="relative w-full   overflow-hidden">
+                    <div className="overflow-hidden relative">
+                        <div
+                            className="flex transition-transform duration-500"
+                            style={{ transform: `translateX(-${(currentIndex / images.length) * 100}%)` }}
+                        >
+                            {images.map((src, index) => (
+                                <img
+                                    key={index}
+                                    src={src}
+                                    alt={`Slide ${index + 1}`}
+                                    className="w-1/5 flex-shrink-0"
+                                />
+                            ))}
+                        </div>
+                    </div>
+                    <button
+                        className="absolute top-1/2 transform -translate-y-1/2 left-0 bg-white p-2 rounded-full shadow-md"
+                        onClick={prevSlide}
+                    >
+                        &#8592;
+                    </button>
+                    <button
+                        className="absolute top-1/2 transform -translate-y-1/2 right-0 bg-white p-2 rounded-full shadow-md"
+                        onClick={nextSlide}
+                    >
+                        &#8594;
+                    </button>
+                </div>
             </section>
 
             {/* Subscribe to our newsletter */}
