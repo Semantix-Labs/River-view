@@ -1,5 +1,5 @@
 import React from 'react'
-import Index1 from '@/components/index';
+import Index1 from '../components/index';
 import Link from 'next/link';
 import { useState } from "react";
 import { CiLocationOn } from "react-icons/ci";

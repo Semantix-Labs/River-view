@@ -1,5 +1,5 @@
 import React from 'react'
-import AyurvedicExperts from '@/components/AyurvedicExperts';
+import AyurvedicExperts from '../components/AyurvedicExperts';
 import Link from 'next/link';
 import { useState } from "react";
 import { CiLocationOn } from "react-icons/ci";

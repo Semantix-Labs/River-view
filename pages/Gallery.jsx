@@ -1,8 +1,8 @@
 import React from 'react'
 
-import GalleryActivity from '@/components/GalleryActivity';
-import RoomGallery from '@/components/RoomGallery';
-import GalleryCarousel from '@/components/GalleryCarousel';
+import GalleryActivity from '../components/GalleryActivity';
+import RoomGallery from '../components/RoomGallery';
+import GalleryCarousel from '../components/GalleryCarousel';
 import Link from 'next/link';
 import { useState } from "react";
 import { CiLocationOn } from "react-icons/ci";

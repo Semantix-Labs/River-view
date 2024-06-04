@@ -1,8 +1,8 @@
 import React from 'react'
 import Link from 'next/link';
 import { useState } from "react";
-import BookingForm from '@/components/BookingForm';
-import LuxuryRooms from '@/components/LuxryRooms';
+import BookingForm from '../components/BookingForm';
+import LuxuryRooms from '../components/LuxryRooms';
 import { CiLocationOn } from "react-icons/ci";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import { FiPhone } from "react-icons/fi";
