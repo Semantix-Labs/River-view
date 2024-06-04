@@ -1,20 +1,70 @@
 import React from 'react'
 import Link from 'next/link';
 import { useState } from "react";
-import BookingForm from '../components/BookingForm';
 import LuxuryRooms from '../components/LuxryRooms';
 import { CiLocationOn } from "react-icons/ci";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import { FiPhone } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
+import Image from 'next/image';
 
 
 export default function Accomodation() {
     const [isOpen, setIsOpen] = useState(false);
+    const [formData, setFormData] = useState({
+        checkInDate: '',
+        checkOutDate: '',
+        person: 1,
+        fullName: '',
+        email: '',
+        phone: '',
+        roomPreference: 'Standard',
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // Handle form submission
+        console.log(formData);
+    };
 
     const handleToggle = () => {
         setIsOpen(!isOpen);
     };
+    const rooms = [
+        {
+            title: "Luxury Rooms",
+            description: "Elegantly designed with modern amenities and Ayurvedic principles.",
+            price: "$100 / Night",
+            image: "/path-to-luxury-room-image.jpg",
+            link: "/book-luxury-room"
+        },
+        {
+            title: "Suite Rooms",
+            description: "Spacious and luxurious, perfect for extended stays.",
+            price: "$200 / Night",
+            image: "/path-to-suite-room-image.jpg",
+            link: "/book-suite-room"
+        },
+        {
+            title: "Standard Rooms",
+            description: "Comfortable and affordable options with essential amenities.",
+            price: "$80 / Night",
+            image: "/path-to-standard-room-image.jpg",
+            link: "/book-standard-room"
+        },
+        {
+            title: "Standard Rooms",
+            description: "Comfortable and affordable options with essential amenities.",
+            price: "$80 / Night",
+            image: "/path-to-standard-room-image.jpg",
+            link: "/book-standard-room"
+        }
+    ];
     return (
         <div className=' bg-[#f5f5f5]' >
             <nav className="bg-white fixed z-50 min-w-full border-gray-200 dark:bg-gray-900 lg:px-20">
@@ -115,7 +165,104 @@ export default function Accomodation() {
                     <p className="text-lg md:text-center mx-5 text-justify max-w-xl md:mx-auto">
                         Our rooms are designed with Ayurvedic principles in mind, featuring natural materials and calming colors. Enjoy amenities such as organic toiletries, yoga mats, and meditation areas.
                     </p>
-                    <LuxuryRooms />
+                    <div className="flex flex-wrap justify-center mx-5  gap-4 md:space-x-4 space-y-4">
+
+                        <div className="relative xl:w-72 xl:h-96 lg:w-56 lg:h-72 md:w-40 md:h-56 w-80 h-96 overflow-hidden mt-20  rounded-lg shadow-lg">
+                            <Image
+
+                                src='/Rooms/1.png'
+                                layout="fill"
+                                objectFit="cover"
+                                className="transition-transform duration-500 ease-in-out transform hover:scale-110"
+                            />
+                            <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
+                                <p className="text-lg text-[#FFFFFF] font-bold mt-4">$100 / Night</p>
+                                <h3 className="text-lg text-white font-semibold">Luxury Rooms</h3>
+                                <p className="text-sm text-white  mt-1">Elegantly designed with modern amenities and Ayurvedic principles.</p>
+
+                                <a href='#' className="mt-4 inline-block   text-start text-xl py-2 rounded-lg">
+                                    Book Now <i className='pt-1 pl-2'><svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.49992 17.9166C13.8722 17.9166 17.4166 14.3722 17.4166 9.99998C17.4166 5.62773 13.8722 2.08331 9.49992 2.08331C5.12766 2.08331 1.58325 5.62773 1.58325 9.99998C1.58325 14.3722 5.12766 17.9166 9.49992 17.9166Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.5 13.1666L12.6667 9.99998L9.5 6.83331" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6.33325 10H12.6666" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    </i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div className="relative xl:w-72 xl:h-96 lg:w-56 lg:h-72 md:w-40 md:h-56 w-80 h-96   overflow-hidden rounded-lg  shadow-lg">
+                            <Image
+
+                                src='/Rooms/2.png'
+                                layout="fill"
+                                objectFit="cover"
+                                className="transition-transform duration-500 ease-in-out transform hover:scale-110"
+                            />
+                            <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
+                                <p className="text-lg text-[#FFFFFF] font-bold mt-4">$100 / Night</p>
+                                <h3 className="text-lg text-white font-semibold">Luxury Rooms</h3>
+                                <p className="text-sm text-white  mt-1">Elegantly designed with modern amenities and Ayurvedic principles.</p>
+
+                                <a href='#' className="mt-4 inline-block  text-start text-xl py-2 rounded-lg">
+                                    Book Now <i className='pt-1 pl-2'><svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.49992 17.9166C13.8722 17.9166 17.4166 14.3722 17.4166 9.99998C17.4166 5.62773 13.8722 2.08331 9.49992 2.08331C5.12766 2.08331 1.58325 5.62773 1.58325 9.99998C1.58325 14.3722 5.12766 17.9166 9.49992 17.9166Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.5 13.1666L12.6667 9.99998L9.5 6.83331" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6.33325 10H12.6666" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    </i>
+                                </a>
+                            </div>
+                        </div>
+                        <div className="relative xl:w-72 xl:h-96 lg:w-56 lg:h-72 md:w-40 md:h-56 w-80 h-96  imgemg overflow-hidden  rounded-lg shadow-lg">
+                            <Image
+
+                                src='/Rooms/3.png'
+                                layout="fill"
+                                objectFit="cover"
+                                className="transition-transform  duration-500 ease-in-out transform hover:scale-110"
+                            />
+                            <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
+                                <p className="text-lg text-[#FFFFFF] font-bold mt-4">$100 / Night</p>
+                                <h3 className="text-lg text-white font-semibold">Luxury Rooms</h3>
+                                <p className="text-sm text-white  mt-1">Elegantly designed with modern amenities and Ayurvedic principles.</p>
+
+                                <a href='#' className="mt-4 inline   text-start text-xl py-2 rounded-lg">
+                                    Book Now <i className='pt-1 pl-2'><svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.49992 17.9166C13.8722 17.9166 17.4166 14.3722 17.4166 9.99998C17.4166 5.62773 13.8722 2.08331 9.49992 2.08331C5.12766 2.08331 1.58325 5.62773 1.58325 9.99998C1.58325 14.3722 5.12766 17.9166 9.49992 17.9166Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.5 13.1666L12.6667 9.99998L9.5 6.83331" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6.33325 10H12.6666" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    </i>
+                                </a>
+                            </div>
+                        </div>
+                        <div className="relative xl:w-72 xl:h-96 lg:w-56 lg:h-72 md:w-40 md:h-56 w-80 h-96  overflow-hidden rounded-lg shadow-lg">
+                            <Image
+
+                                src='/Rooms/1.png'
+                                layout="fill"
+                                objectFit="cover"
+                                className="transition-transform duration-500 ease-in-out transform hover:scale-110"
+                            />
+                            <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
+                                <p className="text-lg text-[#FFFFFF] font-bold mt-4">$100 / Night</p>
+                                <h3 className="text-lg text-white font-semibold">Luxury Rooms</h3>
+                                <p className="text-sm text-white  mt-1">Elegantly designed with modern amenities and Ayurvedic principles.</p>
+
+                                <a href='#' className="mt-4 inline-block   text-start text-xl py-2 rounded-lg">
+                                    Book Now <i className='pt-1 pl-2'><svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.49992 17.9166C13.8722 17.9166 17.4166 14.3722 17.4166 9.99998C17.4166 5.62773 13.8722 2.08331 9.49992 2.08331C5.12766 2.08331 1.58325 5.62773 1.58325 9.99998C1.58325 14.3722 5.12766 17.9166 9.49992 17.9166Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.5 13.1666L12.6667 9.99998L9.5 6.83331" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6.33325 10H12.6666" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    </i>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
                 </div>
             </section>
 
@@ -163,7 +310,126 @@ export default function Accomodation() {
 
                     <div className='cols-span-1 mx-5 my-auto'>
                         <div className='xl:mr-48'>
-                            <BookingForm />
+                            <div className="bg-white p-5  sm:p-10 shadow-lg rounded-lg max-w-screen-2xl w-full">
+                                <h2 className="text-2xl font-bold mb-6">Booking Information</h2>
+                                <form onSubmit={handleSubmit} className="space-y-8">
+                                    <div className='grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-4'>
+                                        <div>
+                                            <label className="block text-sm  font-semibold ">Check In Date</label>
+                                            <input
+                                                type="date"
+                                                name="checkInDate"
+                                                value={formData.checkInDate}
+                                                onChange={handleChange}
+                                                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-customBlue focus:border-customBlue sm:text-sm"
+                                            />
+                                        </div>
+                                        <div>
+                                            <label className="block text-sm font-semibold ">Check Out Date</label>
+                                            <input
+                                                type="date"
+                                                name="checkOutDate"
+                                                value={formData.checkOutDate}
+                                                onChange={handleChange}
+                                                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-customBlue focus:border-customBlue sm:text-sm"
+                                            />
+                                        </div>
+                                        <div>
+                                            <label className="block text-sm font-semibold ">Person</label>
+                                            <select
+                                                name="person"
+                                                value={formData.person}
+                                                onChange={handleChange}
+                                                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-customBlue focus:border-customBlue sm:text-sm"
+                                            >
+                                                <option value="1">1 person</option>
+                                                <option value="2">2 persons</option>
+                                                <option value="3">3 persons</option>
+                                                <option value="4">4 persons</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label className="block text-sm font-semibold ">Full Name</label>
+                                        <input
+                                            type="text"
+                                            name="fullName"
+                                            value={formData.fullName}
+                                            onChange={handleChange}
+                                            placeholder="Enter your name here"
+                                            className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-customBlue focus:border-customBlue sm:text-sm"
+                                        />
+                                    </div>
+                                    <div>
+                                        <label className="block text-sm font-semibold ">E-Mail</label>
+                                        <input
+                                            type="email"
+                                            name="email"
+                                            value={formData.email}
+                                            onChange={handleChange}
+                                            placeholder="Enter your E-mail here"
+                                            className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-customBlue focus:border-customBlue sm:text-sm"
+                                        />
+                                    </div>
+                                    <div>
+                                        <label className="block text-sm font-semibold">Phone</label>
+                                        <input
+                                            type="text"
+                                            name="phone"
+                                            value={formData.phone}
+                                            onChange={handleChange}
+                                            placeholder="Enter your phone number here"
+                                            className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-customBlue focus:border-customBlue sm:text-sm"
+                                        />
+                                    </div>
+                                    <div>
+                                        <label className="block text-sm font-semibold">Room Preference</label>
+                                        <div className="mt-1 flex space-x-4">
+                                            <label className="flex items-center">
+                                                <input
+                                                    type="radio"
+                                                    name="roomPreference"
+                                                    value="Luxury"
+                                                    checked={formData.roomPreference === 'Luxury'}
+                                                    onChange={handleChange}
+                                                    className="form-radio h-4 w-4 text-indigo-600"
+                                                />
+                                                <span className="ml-2">Luxury</span>
+                                            </label>
+                                            <label className="flex items-center">
+                                                <input
+                                                    type="radio"
+                                                    name="roomPreference"
+                                                    value="Suite"
+                                                    checked={formData.roomPreference === 'Suite'}
+                                                    onChange={handleChange}
+                                                    className="form-radio h-4 w-4 text-indigo-600"
+                                                />
+                                                <span className="ml-2">Suite</span>
+                                            </label>
+                                            <label className="flex items-center">
+                                                <input
+                                                    type="radio"
+                                                    name="roomPreference"
+                                                    value="Standard"
+                                                    checked={formData.roomPreference === 'Standard'}
+                                                    onChange={handleChange}
+                                                    className="form-radio h-4 w-4 text-customBlue"
+                                                />
+                                                <span className="ml-2">Standard</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button
+                                            type="submit"
+                                            className="w-1/3 md:w-full bg-customBlue text-white md:py-2 md:px-4 px-2 py-1 rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+
+                                            Submit Now
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
