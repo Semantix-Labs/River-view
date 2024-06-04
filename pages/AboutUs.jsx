@@ -1,7 +1,5 @@
 import React from 'react'
-import Navbar from '../components/Navbar2';
 import AyurvedicExperts from '@/components/AyurvedicExperts';
-import Footer from "../components/Footer";
 import Link from 'next/link';
 import { useState } from "react";
 import { CiLocationOn } from "react-icons/ci";

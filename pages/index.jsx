@@ -1,10 +1,6 @@
 import Link from "next/link";
-import { Navbar } from "flowbite-react";
-import { Button, Modal } from "flowbite-react";
-import NavbarHome from "../components/Navbar";
-import Footer from "../components/Footer";
+
 import TestimonialsCarousel from "../components/TestimonialsCarousel";
-import { Card } from "flowbite-react";
 import React, { useState, useEffect } from 'react';
 import { CiLocationOn } from "react-icons/ci";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
