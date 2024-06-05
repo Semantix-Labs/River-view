@@ -180,8 +180,8 @@ export default function Gallery() {
 
             {/* image Section */}GalleryHead.png
             <section className='pt-20'>
-                <div className='relative w-full'>
-                    <img className='pb-5 2xl:h-[700px] xl:h-[400px] lg:h-96 md:h-64 h-52 w-screen' src="/GalleryHead.png" alt="" />
+                <div className='relative w-full pb-5 2xl:h-[700px] xl:h-[400px] lg:h-96 md:h-64 h-52 overflow-hidden '>
+                    <img className='w-screen' src="/GalleryHead.png" alt="" />
                     <div class="absolute inset-0  opacity-60 rounded-md"></div>
                     <div class="absolute inset-0 flex items-center justify-center">
                         <h2 className='text-3xl md:text-7xl px-5 lg:text-8xl font-bold justify-center text-center text-white'>Experiences And Gallery
