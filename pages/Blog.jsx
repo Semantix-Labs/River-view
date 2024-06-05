@@ -10,6 +10,11 @@ const events = [
 ];
 
 function Blog() {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const handleToggle = () => {
+        setIsOpen(!isOpen);
+    };
     return (
         <div className='min-h-screen'>
 
