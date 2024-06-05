@@ -1,6 +1,8 @@
-
-import React from 'react'
+"use client";
+import { Button } from 'flowbite-react';
 import Link from 'next/link';
+import { useState } from "react";
+
 
 const events = [
     { id: 1, date: '15 June 2024 | 6:00 PM', title: 'Lorem Ipsum Event', description: 'Lorem ipsum dolor sit amet, ...' },
