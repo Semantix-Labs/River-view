@@ -8,9 +8,11 @@ import { FiPhone } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import styles from '../styles/TestimonialsCarousel.module.css'; 
+import styles from '../styles/TestimonialsCarousel.module.css';
 import { SlArrowRight } from "react-icons/sl";
 import { SlArrowLeft } from "react-icons/sl";
+
+
 
 const CustomPrevArrow = ({ onClick }) => (
   <button
@@ -109,14 +111,14 @@ export default function Home() {
   return (
     <main className="bg-white min-h-screen scroll-smooth">
       <div className="section w-full h-[300px] fixed bg-gradient-to-b from-black to-transparent scroll-smooth"
-      style={{background: isScrolled? 'bg-gradient-to-b from-black to-transparent' : 'bg-none'}}
+        style={{ height:isScrolled?"auto":"300px"}}
       >
         <div
           className="navbar md:pt-10 flex bg-none lg:pb-20 md:pb-10 text-black scroll-my-28:text-black z-50 fixed  w-full lg:px-20"
           style={{
             backgroundColor: isScrolled ? 'white' : 'transparent',
             color: isScrolled ? 'black' : 'white',
-            
+
           }}
         >
           <div className="md:navbar-center  md:flex navbar-start justify-start md:justify-center w-full">
@@ -255,7 +257,7 @@ export default function Home() {
               practices.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8">
+          <div className="  hidden md:inline-grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8">
             <div className="flex flex-col items-center">
               <div className="w-24 h-24 mb-4">
                 <img
@@ -304,6 +306,66 @@ export default function Home() {
                 Yoga and meditation
               </p>
             </div>
+          </div>
+          <div className="">
+            <Carousel
+              showArrows={false}
+              showThumbs={false}
+              showStatus={false}
+              autoPlay
+
+
+              className="md:hidden relative   justify-center mx-auto"
+            >
+              <div className="flex flex-col items-center">
+                <div className="w-18 h-18  mb-4">
+                  <img
+                    src="/icons/image5.png"
+                    alt="Health-conscious living options"
+                    className="w-full  h-full"
+                  />
+                </div>
+                <p className="text-lg font-medium pb-10 text-gray-700">
+                  Health-conscious living options
+                </p>
+              </div>
+              <div className="flex flex-col items-center">
+                <div className="w-18 h-18 mb-4">
+                  <img
+                    src="/icons/image6.png"
+                    alt="Personalized diets"
+                    className="w-full h-full"
+                  />
+                </div>
+                <p className="text-lg font-medium text-gray-700">
+                  Personalized diets
+                </p>
+              </div>
+              <div className="flex flex-col items-center">
+                <div className="w-18 h-18 mb-4">
+                  <img
+                    src="/icons/image3.png"
+                    alt="Detox programs"
+                    className="w-full h-full"
+                  />
+                </div>
+                <p className="text-lg font-medium text-gray-700">
+                  Detox programs
+                </p>
+              </div>
+              <div className="flex flex-col items-center">
+                <div className="w-18 h-18 mb-4">
+                  <img
+                    src="/icons/image4.png"
+                    alt="Yoga and meditation"
+                    className="w-full h-full"
+                  />
+                </div>
+                <p className="text-lg font-medium text-gray-700">
+                  Yoga and meditation
+                </p>
+              </div>
+            </Carousel>
           </div>
         </div>
       </section>
