@@ -114,7 +114,7 @@ export default function Home() {
         style={{ height:isScrolled?"auto":"300px"}}
       >
         <div
-          className="navbar md:pt-10 flex bg-none lg:pb-20 md:pb-10 text-black scroll-my-28:text-black z-50 fixed mx-5  w-full lg:px-20"
+          className="navbar md:pt-10 flex bg-none lg:pb-20 md:pb-10 text-black scroll-my-28:text-black z-50 fixed   w-full lg:px-20"
           style={{
             backgroundColor: isScrolled ? 'white' : 'transparent',
             color: isScrolled ? 'black' : 'white',
@@ -122,13 +122,13 @@ export default function Home() {
           }}
         >
           <div className="md:navbar-center  md:flex navbar-start justify-start md:justify-center w-full">
-            <div className="justify-start flex md:justify-center h-[70px] w-[80px] md:h-[80px] md:w-[80px] xl:w-[150px] xl:h-auto">
+            <div style={{marginLeft:'1rem'}} className="justify-start  flex md:justify-center h-[70px] w-[80px] md:h-[80px] md:w-[80px] xl:w-[150px] xl:h-auto">
               <img className="flex justify-center " src="./home2.png" alt="Home" />
             </div>
           </div>
           {/* Responsive Menu */}
-          <div className="md:hidden justify-end flex navbar-end">
-            <button className="text-customGold" onClick={toggleMenu}>
+          <div className="md:hidden justify-end  flex navbar-end">
+            <button style={{marginRight:'1rem'}} className="text-customGold " onClick={toggleMenu}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"
