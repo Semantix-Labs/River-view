@@ -53,7 +53,7 @@ export default function Home() {
       } else if (screenWidth < 1024) {
         scrollThreshold = 300;
       } else {
-        scrollThreshold = 700;
+        scrollThreshold = 620;
       }
 
       setIsScrolled(scrollPosition > scrollThreshold);
@@ -107,13 +107,16 @@ export default function Home() {
     },
   ];
   return (
-    <main className="bg-white min-h-screen">
-      <div className="section">
+    <main className="bg-white min-h-screen scroll-smooth">
+      <div className="section w-full h-[300px] fixed bg-gradient-to-b from-black to-transparent scroll-smooth"
+      style={{background: isScrolled? 'bg-gradient-to-b from-black to-transparent' : 'bg-none'}}
+      >
         <div
-          className="navbar md:pt-10 flex bg-none lg:pb-20 md:pb-10 text-black scroll-my-28:text-black z-50 fixed w-full lg:px-20"
+          className="navbar md:pt-10 flex bg-none lg:pb-20 md:pb-10 text-black scroll-my-28:text-black z-50 fixed  w-full lg:px-20"
           style={{
             backgroundColor: isScrolled ? 'white' : 'transparent',
             color: isScrolled ? 'black' : 'white',
+            
           }}
         >
           <div className="md:navbar-center  md:flex navbar-start justify-start md:justify-center w-full">
@@ -160,7 +163,7 @@ export default function Home() {
                 <Link href="/Treatment">
                   <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">Ayurvedic Treatments</span>
                 </Link>
-                <Link href="/GalleryPage">
+                <Link href="/Gallery">
                   <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">Gallery</span>
                 </Link>
                 <Link href="/ContactUs">
