@@ -312,7 +312,9 @@ export default function Home() {
               showArrows={false}
               showThumbs={false}
               showStatus={false}
+              showIndicators={false}
               autoPlay
+              
 
 
               className="md:hidden relative   justify-center mx-auto"
