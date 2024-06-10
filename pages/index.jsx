@@ -114,7 +114,7 @@ export default function Home() {
         style={{ height:isScrolled?"auto":"300px"}}
       >
         <div
-          className="navbar md:pt-10 flex bg-none lg:pb-20 md:pb-10 text-black scroll-my-28:text-black z-50 fixed  w-full lg:px-20"
+          className="navbar md:pt-10 flex bg-none lg:pb-20 md:pb-10 text-black scroll-my-28:text-black z-50 fixed mx-5  w-full lg:px-20"
           style={{
             backgroundColor: isScrolled ? 'white' : 'transparent',
             color: isScrolled ? 'black' : 'white',
