@@ -11,6 +11,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import styles from '../styles/TestimonialsCarousel.module.css';
 import { SlArrowRight } from "react-icons/sl";
 import { SlArrowLeft } from "react-icons/sl";
+import { FaTiktok } from "react-icons/fa";
 
 
 
@@ -110,7 +111,7 @@ export default function Home() {
   ];
   return (
     <main className="bg-white min-h-screen scroll-smooth">
-      <div className="section w-full h-[300px] fixed bg-gradient-to-b from-black to-transparent scroll-smooth"
+      <div className="section w-full h-[300px] fixed bg-gradient-to-b from-black to-transparent z-50 scroll-smooth"
         style={{ height:isScrolled?"auto":"300px"}}
       >
         <div
@@ -240,8 +241,8 @@ export default function Home() {
       </section>
 
       {/* welcome section */}
-      <section className="px-5">
-        <div className="mt-10 bg-white lg:px-20   flex flex-col items-center justify-center ">
+      <section className="bg-[#FFFFFF]">
+        <div className="mt-10 bg-[#FFFFFF] lg:px-20 mx-5  flex flex-col items-center justify-center ">
           <div className="mb-2">
             <img src="/home3.png" alt="" />
           </div>
@@ -320,7 +321,7 @@ export default function Home() {
               className="md:hidden relative   justify-center mx-auto"
             >
               <div className="flex flex-col items-center">
-                <div className="w-18 h-18  mb-4">
+              <div className="w-20 h-20 xs:w-24 xs:h-24 xxm:w-28 xxm:h-28 mb-4">
                   <img
                     src="/icons/image5.png"
                     alt="Health-conscious living options"
@@ -332,7 +333,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col items-center">
-                <div className="w-18 h-18 mb-4">
+              <div className="w-20 h-20 xs:w-24 xs:h-24 xxm:w-28 xxm:h-28 mb-4">
                   <img
                     src="/icons/image6.png"
                     alt="Personalized diets"
@@ -344,7 +345,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col items-center">
-                <div className="w-18 h-18 mb-4">
+              <div className="w-20 h-20 xs:w-24 xs:h-24 xxm:w-28 xxm:h-28 mb-4">
                   <img
                     src="/icons/image3.png"
                     alt="Detox programs"
@@ -356,7 +357,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col items-center">
-                <div className="w-18 h-18 mb-4">
+              <div className="w-20 h-20 xs:w-24 xs:h-24 xxm:w-28 xxm:h-28 mb-4">
                   <img
                     src="/icons/image4.png"
                     alt="Yoga and meditation"
@@ -373,8 +374,8 @@ export default function Home() {
       </section>
 
       {/* services section */}
-      <section >
-        <div className=" mt-5 lg:mt-20 mx-5  lg:mx-20 px-4 py-16">
+      <section className="  bg-[#F9F9F9]" >
+        <div className=" mt-5 lg:mt-20 mx-5 bg-[#F9F9F9] lg:mx-20 px-4 py-16">
           <h2 className="text-5xl font-bold text-center mb-8">
             Major Ayurvedic Services
           </h2>
@@ -389,7 +390,8 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold">Massage Therapy</h3>
               <p className="mt-2 text-gray-600">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit
+              Revitalize and relax with our expertly delivered massage therapy.
+
               </p>
             </div>
             <div className="text-center">
@@ -402,7 +404,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold">Herbal Treatments</h3>
               <p className="mt-2 text-gray-600">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit
+              Experience nature's healing with our tailored herbal treatments.
               </p>
             </div>
             <div className="text-center">
@@ -411,7 +413,8 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold">Yoga</h3>
               <p className="mt-2 text-gray-600">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit
+              Enhance balance and strength through our yoga sessions.
+
               </p>
             </div>
             <div className="text-center">
@@ -420,7 +423,8 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold">Meditation</h3>
               <p className="mt-2 text-gray-600">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit
+              Achieve peace and clarity with our guided meditation techniques.
+
               </p>
             </div>
           </div>
@@ -433,13 +437,14 @@ export default function Home() {
       </section>
 
       {/* TestimonialsCarousel.js */}
-      <section>
-        <div className="  mx-5  lg:mx-20 py-8">
+      <section className="   bg-[#FFFFFF]">
+        <div className="  mx-5 bg-[#FFFFFF]  lg:mx-20 py-8">
           <h2 className="text-5xl font-semibold text-center mb-4">Clients words about us</h2>
           <Carousel
             showArrows={true}
             showThumbs={true}
             showStatus={false}
+            showIndicators={false}
             infiniteLoop
             autoPlay
             interval={5000}
@@ -488,7 +493,8 @@ export default function Home() {
       </section>
 
       {/* Virtual Tour */}
-      <section className="flex flex-col md:flex-row items-center lg:mx-20 justify-between p-5 bg-white">
+      <div className='bg-[#F9F9F9]'>
+      <section className="flex flex-col md:flex-row items-center lg:mx-20 justify-between p-5 bg-[#F9F9F9]">
         <div className="md:w-1/2 p-6">
           <h2 className="text-3xl font-semibold text-gray-800 mb-4">
             Lorem (Video Tour)
@@ -567,10 +573,10 @@ export default function Home() {
             </div>
           </div>
         )}
-      </section>
+      </section></div>
 
       {/* Upcoming Events */}
-      <section className="py-12 lg:mx-20 bg-white">
+      <section className="py-12 lg:mx-20 bg-[#FFFFFF]">
         <div className=" mx-auto px-6">
           <h2 className="text-5xl font-semibold text-gray-800 text-center mb-4">Upcoming Events</h2>
           <p className="text-gray-600 text-center mb-12">
@@ -635,11 +641,10 @@ export default function Home() {
                 <h2 className="text-white text-xl  font-bold mb-2">River View Villas</h2>
                 <p className="text-gray-400 mb-4">A Short Description about the Villa lorem ipsum Lorem ipsum dolor sit amet, lit sed do consectetur adipicsing</p>
                 <div className="flex  space-x-4">
-                  <a href="#" className="text-gray-400 hover:text-white"><FaFacebookF /></a>
-                  <a href="#" className="text-gray-400 hover:text-white"><FaInstagram /></a>
-                  <a href="#" className="text-gray-400 hover:text-white"><FaLinkedinIn /></a>
-                  <a href="#" className="text-gray-400 hover:text-white"><FaTwitter /></a>
-                </div>
+                  <a href="https://web.facebook.com/riverviewvillas/?_rdc=1&_rdr " className="text-gray-400 hover:text-white"><FaFacebookF /></a>
+                  <a href="https://www.instagram.com/river_view_villas/?hl=en " className="text-gray-400 hover:text-white"><FaInstagram /></a>
+                  <a href="https://www.tiktok.com/@river.view.villas?_t=8n6DFJerj6X&_r=1" className="text-gray-400 hover:text-white"><FaTiktok /></a>
+                                </div>
               </div>
 
               <div className="mb-6 lg:mb-0 lg:col-span-1">

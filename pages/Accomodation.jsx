@@ -5,6 +5,7 @@ import { CiLocationOn } from "react-icons/ci";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import { FiPhone } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
+import { FaTiktok } from "react-icons/fa";
 import Image from 'next/image';
 
 
@@ -65,7 +66,7 @@ export default function Accomodation() {
         }
     ];
     return (
-        <div className=' bg-[#f5f5f5]' >
+        <div className=' ' >
             <nav className="bg-white fixed z-50 min-w-full border-gray-200 dark:bg-gray-900 lg:px-20">
                 <div className="max-w-screen flex flex-wrap items-center justify-between mx-auto p-4">
 
@@ -158,7 +159,7 @@ export default function Accomodation() {
 
 
             {/* Luxry Rooms */}
-            <section>
+            <section className='bg-[#FFFFFF]'>
                 <div className='mt-5 winsize  '>
                     <h1 className="text-5xl font-bold text-center mx-5 my-8">Our Luxury Rooms</h1>
                     <p className="text-lg md:text-center mx-5 text-justify max-w-xl md:mx-auto">
@@ -266,7 +267,7 @@ export default function Accomodation() {
             </section>
 
             {/* Ayurvedic Amenities */}
-            <section>
+            <section className='bg-[#F9F9F9]'>
                 <div className='mt-5 lg:mt-20 2xl:px-[20rem] lg:px-20  px-5  '>
                     <div className=' grid grid-cols-1 mx-auto md:grid-cols-2 gap-8 '>
                         <div className='cols-span-1 col-start-1 my-auto'>
@@ -275,7 +276,7 @@ export default function Accomodation() {
                             <p className="text-lg  max-w-xl flex "><span className='mr-2'><img src="/home4.png" alt="" /></span>Organic, chemical-free toiletries</p>
                             <p className="text-lg  max-w-xl flex "><span className='mr-2'><img src="/home4.png" alt="" /></span>Herbal teas and Ayurvedic beverages</p>
                             <p className="text-lg  max-w-xl flex "><span className='mr-2'><img src="/home4.png" alt="" /></span>Yoga mats and meditation spaces</p>
-                            <p className="text-lg  max-w-xl flex "><span className='mr-2 w-20'><img src="/home4.png" alt="" /></span>Rooms designed with natural light and color harmony based on Ayurvedic principles</p>
+                            <p className="text-lg  max-w-xl flex "><span className='mr-2 '><img src="/home4.png" alt="" /></span>Rooms designed with natural light and color harmony based on Ayurvedic principles</p>
 
                         </div>
                         <div className='cols-span-1 flex justify-end '>
@@ -438,7 +439,7 @@ export default function Accomodation() {
 
 
             {/* Carpe Diem */}
-            <section>
+            <section className='bg-[#FFFFFF]'>
                 <div className='mt-5 lg:mt-20 2xl:px-[20rem] lg:px-20   px-5 '>
                     <div className=' grid grid-cols-1 mx-auto  lg:grid-cols-2 gap-8 '>
                         <div className='cols-span-1 lg:col-start-1 '>
@@ -548,7 +549,7 @@ export default function Accomodation() {
 
 
             {/* vlla Araliya */}
-            <section>
+            <section className='bg-[#F9F9F9]'>
 
                 <div className='mt-5  lg:mt-20 2xl:px-[20rem]  grid grid-cols-1  gap-8 mx-5 lg:px-20 py-5 lg:py-20 md:grid-cols-4 '>
 
@@ -657,7 +658,7 @@ export default function Accomodation() {
 
 
             {/* Villa Orchid */}
-            <section>
+            <section className='bg-[#FFFFFF]'>
                 <div className='mt-5 md:my-20 2xl:px-[20rem]  lg:px-20  px-5  '>
                     <div className='grid grid-cols-1 mx-auto  md:grid-cols-2 gap-8 '>
                         <div className='cols-span-1 col-start-1'>
@@ -755,7 +756,7 @@ export default function Accomodation() {
 
 
             {/* Villa Lilly */}
-            <section>
+            <section className='bg-[#F9F9F9]'>
 
                 <div className='mt-5 2xl:px-[20rem] lg:mt-20 w-screen  grid grid-cols-1 gap-8  px-5 lg:px-20 py-5 md:py-20  md:grid-cols-4 '>
 
@@ -863,7 +864,7 @@ export default function Accomodation() {
 
 
             {/* Lotus Mansion */}
-            <section>
+            <section className='bg-[#FFFFFF]'>
                 <div className='mt-5 2xl:px-[20rem] lg:mt-20  lg:px-20  px-5  '>
                     <div className='grid grid-cols-1 mx-auto  md:grid-cols-2 gap-8 '>
                         <div className='cols-span-1 col-start-1'>
@@ -962,7 +963,8 @@ export default function Accomodation() {
 
 
             {/* Subscribe to our newsletter */}
-            <section className="py-20 lg:mx-20 bg-gray-50">
+            <div className='bg-[#F9F9F9]'>
+            <section className="py-20 lg:mx-20 ">
                 <div className=" mx-auto max-w-4xl px-4">
                     <form className="flex items-center border  rounded-lg overflow-hidden">
                         <input
@@ -979,6 +981,7 @@ export default function Accomodation() {
                     </form>
                 </div>
             </section>
+            </div>
 
 
             <div className='bg-[#001F2B]'>
@@ -993,10 +996,9 @@ export default function Accomodation() {
                                 <h2 className="text-white text-xl  font-bold mb-2">River View Villas</h2>
                                 <p className="text-gray-400 mb-4">A Short Description about the Villa lorem ipsum Lorem ipsum dolor sit amet, lit sed do consectetur adipicsing</p>
                                 <div className="flex  space-x-4">
-                                    <a href="#" className="text-gray-400 hover:text-white"><FaFacebookF /></a>
-                                    <a href="#" className="text-gray-400 hover:text-white"><FaInstagram /></a>
-                                    <a href="#" className="text-gray-400 hover:text-white"><FaLinkedinIn /></a>
-                                    <a href="#" className="text-gray-400 hover:text-white"><FaTwitter /></a>
+                                    <a href="https://web.facebook.com/riverviewvillas/?_rdc=1&_rdr " className="text-gray-400 hover:text-white"><FaFacebookF /></a>
+                                    <a href="https://www.instagram.com/river_view_villas/?hl=en " className="text-gray-400 hover:text-white"><FaInstagram /></a>
+                                    <a href="https://www.tiktok.com/@river.view.villas?_t=8n6DFJerj6X&_r=1" className="text-gray-400 hover:text-white"><FaTiktok /></a>
                                 </div>
                             </div>
 

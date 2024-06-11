@@ -8,6 +8,7 @@ import { FiPhone } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
 import Image from 'next/image';
 import { useEffect, useRef } from 'react';
+import { FaTiktok } from "react-icons/fa";
 
 const images = [
     "/room/1.png",
@@ -193,8 +194,8 @@ export default function Gallery() {
 
 
             {/* Gallery Activity */}
-            <section>
-                <div className="py-16 px-5 lg:px-20 bg-white">
+            <section className='bg-[#FFFFFF]'>
+                <div className="py-16 px-5 lg:px-20 ">
                     <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                         <div className="mt-10 bg-white lg:px-20   flex flex-col items-center justify-center ">
                             <div className="mb-2">
@@ -240,78 +241,80 @@ export default function Gallery() {
 
 
             {/* Virtual Tour */}
-            <section className="flex flex-col md:flex-row items-center lg:mx-20 justify-between p-6 bg-white">
+            <div className='bg-[#F9F9F9]'>
+                <section className="flex flex-col md:flex-row items-center lg:mx-20 justify-between p-6 ">
 
-                <div className="w-full p-6 flex justify-center">
+                    <div className="w-full p-6 flex justify-center">
 
-                    <div className="relative">
-                        <h2 className="text-4xl py-5 font-bold">Our Story  </h2>
-                        <img src="/Frame2.png" alt="Virtual Tour" className="w-screen" />
-                        <div className="absolute inset-0 flex items-center justify-center">
-                            <button data-modal-target="default-modal"
-                                data-modal-toggle="default-modal"
-                                type="button"
-                                onClick={toggleModal} className="w-52 h-52 mt-10  p-2 rounded-full shadow-lg"> </button>
-                        </div>
-                    </div>
-                </div>
-                {/* Main modal */}
-                {showModal && (
-                    <div
-                        id="default-modal"
-                        tabIndex="-1"
-                        aria-hidden="true"
-                        className="fixed top-0 left-0 right-0 z-50 w-full h-screen bg-black bg-opacity-50 flex justify-center items-center"
-                    >
-                        <div className="relative w-full max-w-xl lg:max-w-5xl bg-white rounded-lg shadow dark:bg-gray-700">
-                            {/* Modal content */}
-                            <div className="relative">
-                                {/* Modal header */}
-                                <div className="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
-                                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                                        Lets Go To Virtual Tour
-                                    </h3>
-                                    <button
-                                        type="button"
-                                        className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
-                                        onClick={toggleModal}
-                                    >
-                                        <svg
-                                            className="w-3 h-3"
-                                            aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            fill="none"
-                                            viewBox="0 0 14 14"
-                                        >
-                                            <path
-                                                stroke="currentColor"
-                                                strokeLinecap="round"
-                                                strokeLinejoin="round"
-                                                strokeWidth="2"
-                                                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
-                                            />
-                                        </svg>
-                                        <span className="sr-only">Close modal</span>
-                                    </button>
-                                </div>
-                                {/* Modal body */}
-                                <div className="p-6 space-y-6">
-
-                                    <video class="w-screen h-auto max-w-full" controls>
-                                        <source src="/docs/videos/flowbite.mp4" type="video/mp4" />
-                                        Your browser does not support the video tag.
-                                    </video>
-
-                                </div>
-
+                        <div className="relative">
+                            <h2 className="text-4xl py-5 font-bold">Our Story  </h2>
+                            <img src="/Frame2.png" alt="Virtual Tour" className="w-screen" />
+                            <div className="absolute inset-0 flex items-center justify-center">
+                                <button data-modal-target="default-modal"
+                                    data-modal-toggle="default-modal"
+                                    type="button"
+                                    onClick={toggleModal} className="w-52 h-52 mt-10  p-2 rounded-full shadow-lg"> </button>
                             </div>
                         </div>
                     </div>
-                )}
-            </section>
+                    {/* Main modal */}
+                    {showModal && (
+                        <div
+                            id="default-modal"
+                            tabIndex="-1"
+                            aria-hidden="true"
+                            className="fixed top-0 left-0 right-0 z-50 w-full h-screen bg-black bg-opacity-50 flex justify-center items-center"
+                        >
+                            <div className="relative w-full max-w-xl lg:max-w-5xl bg-white rounded-lg shadow dark:bg-gray-700">
+                                {/* Modal content */}
+                                <div className="relative">
+                                    {/* Modal header */}
+                                    <div className="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                                        <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                                            Lets Go To Virtual Tour
+                                        </h3>
+                                        <button
+                                            type="button"
+                                            className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                                            onClick={toggleModal}
+                                        >
+                                            <svg
+                                                className="w-3 h-3"
+                                                aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                fill="none"
+                                                viewBox="0 0 14 14"
+                                            >
+                                                <path
+                                                    stroke="currentColor"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                    strokeWidth="2"
+                                                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+                                                />
+                                            </svg>
+                                            <span className="sr-only">Close modal</span>
+                                        </button>
+                                    </div>
+                                    {/* Modal body */}
+                                    <div className="p-6 space-y-6">
+
+                                        <video class="w-screen h-auto max-w-full" controls>
+                                            <source src="/docs/videos/flowbite.mp4" type="video/mp4" />
+                                            Your browser does not support the video tag.
+                                        </video>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    )}
+                </section>
+            </div>
 
 
-            <section>
+            <section className='bg-[#FFFFFF]'>
                 <div className="lg:px-32 px-5 py-20 ">
                     <h2 className="text-3xl font-bold mb-8">Rooms</h2>
                     <div className="grid  grid-cols-1 md:grid-cols-12 overflow-hidden  gap-6">
@@ -377,50 +380,52 @@ export default function Gallery() {
             </section>
 
 
+            <div className='bg-[#F9F9F9]'>
+                <section className='grid gap-4 py-20 px-5'>
+                    <div className="grid grid-cols-5 gap-4">
+                        <div>
+                            <img
+                                className="h-auto max-w-full rounded-lg"
+                                src="/Room/img/2.png"
+                                alt=""
+                            />
 
-            <section className='grid gap-4 py-20 px-5'>
-                <div className="grid grid-cols-5 gap-4">
-                    <div>
-                        <img
-                            className="h-auto max-w-full rounded-lg"
-                            src="/Room/img/2.png"
-                            alt=""
-                        />
+                        </div>
+                        <div>
+                            <img
+                                className="h-auto max-w-full rounded-lg"
+                                src="/Room/img/3.png"
+                                alt=""
+                            />
+                        </div>
+                        <div>
+                            <img
+                                className="h-auto max-w-full rounded-lg"
+                                src="/Room/img/4.png"
+                                alt=""
+                            />
+                        </div>
+                        <div>
+                            <img
+                                className="h-auto max-w-full rounded-lg"
+                                src="/Room/img/5.png"
+                                alt=""
+                            />
+                        </div>
+                        <div>
+                            <img
+                                className="h-auto max-w-full rounded-lg"
+                                src="/Room/img/6.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
 
-                    </div>
-                    <div>
-                        <img
-                            className="h-auto max-w-full rounded-lg"
-                            src="/Room/img/3.png"
-                            alt=""
-                        />
-                    </div>
-                    <div>
-                        <img
-                            className="h-auto max-w-full rounded-lg"
-                            src="/Room/img/4.png"
-                            alt=""
-                        />
-                    </div>
-                    <div>
-                        <img
-                            className="h-auto max-w-full rounded-lg"
-                            src="/Room/img/5.png"
-                            alt=""
-                        />
-                    </div>
-                    <div>
-                        <img
-                            className="h-auto max-w-full rounded-lg"
-                            src="/Room/img/6.png"
-                            alt=""
-                        />
-                    </div>
-                </div>
-
-            </section>
+                </section>
+            </div>
 
             {/* Ayurvedic treatments */}
+            <div className='bg-[#FFFFFF]'>
             <section className='mx-5 py-20 lg:px-20'>
                 <h2 className="text-3xl font-bold mb-8">Ayurvedic treatments</h2>
                 <div className='grid gap-4 grid-cols-1 md:grid-cols-12'>
@@ -455,8 +460,10 @@ export default function Gallery() {
                     </div>
                 </div>
             </section>
+            </div>
 
             {/* Natural Environment */}
+            <div className='bg-[#F9F9F9]'>
             <section className='mx-5 lg:px-20 py-20'>
                 <h2 className="text-3xl font-bold mb-8">Natural Environment</h2>
                 <div className='grid gap-4 grid-cols-1 md:grid-cols-12'>
@@ -482,10 +489,11 @@ export default function Gallery() {
 
                 </div>
             </section>
+            </div>
 
 
             {/* GalleryCarousel */}
-            <section className='py-20'>
+            <section className='py-20 bg-[#FFFFFF]'>
                 <div className="relative w-full   overflow-hidden">
                     <div className="overflow-hidden relative">
                         <div
@@ -518,7 +526,8 @@ export default function Gallery() {
             </section>
 
             {/* Subscribe to our newsletter */}
-            <section className="py-20 lg:mx-20 bg-gray-50">
+            <div className='bg-[#F9F9F9]'>
+            <section className="py-20 lg:mx-20 ">
                 <div className=" mx-auto max-w-4xl px-4">
                     <form className="flex items-center border  rounded-lg overflow-hidden">
                         <input
@@ -535,6 +544,7 @@ export default function Gallery() {
                     </form>
                 </div>
             </section>
+            </div>
 
 
 
@@ -552,10 +562,9 @@ export default function Gallery() {
                                 <h2 className="text-white text-xl  font-bold mb-2">River View Villas</h2>
                                 <p className="text-gray-400 mb-4">A Short Description about the Villa lorem ipsum Lorem ipsum dolor sit amet, lit sed do consectetur adipicsing</p>
                                 <div className="flex  space-x-4">
-                                    <a href="#" className="text-gray-400 hover:text-white"><FaFacebookF /></a>
-                                    <a href="#" className="text-gray-400 hover:text-white"><FaInstagram /></a>
-                                    <a href="#" className="text-gray-400 hover:text-white"><FaLinkedinIn /></a>
-                                    <a href="#" className="text-gray-400 hover:text-white"><FaTwitter /></a>
+                                    <a href="https://web.facebook.com/riverviewvillas/?_rdc=1&_rdr " className="text-gray-400 hover:text-white"><FaFacebookF /></a>
+                                    <a href="https://www.instagram.com/river_view_villas/?hl=en " className="text-gray-400 hover:text-white"><FaInstagram /></a>
+                                    <a href="https://www.tiktok.com/@river.view.villas?_t=8n6DFJerj6X&_r=1" className="text-gray-400 hover:text-white"><FaTiktok /></a>
                                 </div>
                             </div>
 

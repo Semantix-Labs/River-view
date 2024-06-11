@@ -20,7 +20,13 @@ module.exports = {
         customBlue: '#001F2B',
        
       },
+      screens: {
+     
+        'xs': '375px',
+        'xxm': '425px',
     },
+    },
+  
   },
   plugins: [ require('flowbite/plugin'), flowbite.plugin(),],
 };

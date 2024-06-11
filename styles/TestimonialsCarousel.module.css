@@ -2,9 +2,12 @@
   border: 2px solid #fff; /* Add border to the image for indicator effect */
   width: 60px !important;
   height: 60px;
+
 }
 
 .customCarousel .control-dots {
   display: none; /* Hide the default carousel dots */
 }
+
+
 

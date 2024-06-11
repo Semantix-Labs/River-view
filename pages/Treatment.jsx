@@ -5,31 +5,34 @@ import { CiLocationOn } from "react-icons/ci";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import { FiPhone } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
+import { FaTiktok } from "react-icons/fa";
 import { useState } from 'react';
 
 const massageTypes = [
-    { id: 1, title: 'Face Massage', image: '/TreatmentMenu/1.png', description: 'Facial massage is a very popular Western beauty treatment to slow down the aging process and achieve younger looking and healthier skin. It is also used to relieve stress, migraine headache, premenstrual syndrome (PMS) and sinus congestion. Simple massage can also be done at home', tretModel: '/tretModel/1.png',caption:' Enhances beauty, reduces stress and sinus congestion.' },
-    { id: 2, title: 'Foot Massage', image: '/TreatmentMenu/2.png', description: 'Foot massage in Ayurveda involves applying pressure to specific points on the feet to promote relaxation and healing. It is commonly used to relieve pain, reduce stress, and enhance overall circulation. This treatment can also aid in better sleep and relieve symptoms of anxiety.' , tretModel: '/tretModel/1.png',caption:'Promotes relaxation, relieves pain, boosts circulation.'},
-    { id: 3, title: 'Head Massage', image: '/TreatmentMenu/3.png', description: 'Head massage is a therapeutic technique that promotes relaxation and well-being by stimulating the scalp and hair follicles. It helps to relieve headaches, improve concentration, and boost hair growth. Regular sessions can also reduce stress and promote a sense of tranquility. ', tretModel: '/tretModel/1.png',caption:' Eases headaches, stimulates scalp, fosters hair growth.' },
-    { id: 4, title: 'Intensive Massage', image: '/TreatmentMenu/4.png', description: 'Intensive massage is designed to relieve severe tension in the muscle and the connective tissue or fascia. This type of massage is recommended for individuals who experience consistent pain, are involved in heavy physical activity, or have sustained physical injury.    ', tretModel: '/tretModel/1.png',caption:' Relieves deep tissue tension, aids physical recovery.' },
-    { id: 5, title: 'Powder Massage', image: '/TreatmentMenu/5.png', description: 'Powder massage uses herbal powders to exfoliate and stimulate the skin, promoting better circulation and cleansing. This treatment is perfect for reducing fat, improving skin texture, and enhancing the skins overall glow. It is also known for its rejuvenating properties.' , tretModel: '/tretModel/1.png',caption:'Stimulates skin, reduces fat, improves texture.'},
-    { id: 6, title: 'Thermo Massage', image: '/TreatmentMenu/6.png', description: 'Thermo massage involves the use of heated stones or other tools to provide deep warmth and relaxation to the muscles. This technique helps to ease muscle stiffness, enhance circulation, and reduce stress levels. It is particularly effective for chronic muscle pain.    ' , tretModel: '/tretModel/1.png',caption:'Uses heat to soothe and relax muscles'},
-    { id: 7, title: 'Shirodhara', image: '/TreatmentMenu/7.png', description: 'Shirodhara involves gently pouring liquids over the forehead and is commonly used to treat stress, sleep problems, and neurological disorders. This soothing treatment profoundly relaxes the mind and body, helping to alleviate mental fatigue and improve emotional stability.' , tretModel: '/tretModel/1.png',caption:'Calms mind, alleviates stress and sleep issues.'},
-    { id: 8, title: 'Panchakarma', image: '/TreatmentMenu/8.png', description: 'Panchakarma is a series of detoxifying treatments that cleanse the body and restore its innate healing abilities. It involves five procedures that help remove deep-rooted stress and illness-causing toxins. The process rejuvenates the body and enhances vitality and well-being' , tretModel: '/tretModel/1.png',caption:'Detoxifies body, enhances vitality and well-being.'},
-    { id: 9, title: 'Acupuncture', image: '/TreatmentMenu/9.png', description: 'Acupuncture is a traditional Chinese medicine technique that involves inserting needles into specific points on the body to balance energy flow. It is used to treat various physical, emotional, and mental conditions, including pain relief, stress management, and overall wellness.' , tretModel: '/tretModel/1.png',caption:` Balances body’s energy, treats various conditions.`},
-    { id: 10, title: 'Shirovasti', image: '/TreatmentMenu/10.png', description: 'Shirovasti is an Ayurvedic treatment where a leather cap is placed on the head, and warm medicinal oils are poured into it. This treatment is highly effective in treating nervous system disorders, insomnia, and headaches. It also helps improve mental clarity and focus.    ' , tretModel: '/tretModel/1.png',caption:'Treats neural ailments, enhances mental clarity.'},
-    { id: 11, title: 'Herbal Inhalation', image: '/TreatmentMenu/11.png', description: 'Herbal inhalation involves breathing in medicinal vapors to treat respiratory conditions such as asthma, sinusitis, and allergies. It is also used to enhance mental alertness and cognitive performance, as well as to reduce stress and promote relaxation' , tretModel: '/tretModel/1.png',caption:'Treats respiratory conditions, boosts mental alertness.'},
-    { id: 12, title: 'Meditation', image: '/TreatmentMenu/12.png', description: 'Meditation is a practice where an individual uses a technique to focus their mind on a particular object, thought, or activity to achieve a mentally clear and emotionally calm state. Regular practice improves stress management, emotional health, and overall well-being.    ' , tretModel: '/tretModel/1.png',caption:'Achieves clarity, calms emotions, enhances well-being.'},
-    { id: 13, title: 'Yoga', image: '/TreatmentMenu/13.png', description: 'Yoga involves physical postures, breathing exercises, and meditation to improve overall health. Regular practice enhances flexibility, strength, balance, and stamina. It also helps reduce stress, anxiety, and depression, promoting a more peaceful and balanced life.    ' , tretModel: '/tretModel/1.png',caption:' Improves health, enhances flexibility and mental peace.'},
-    { id: 14, title: 'Monk Horoscope', image: '/TreatmentMenu/14.png', description: `Monk horoscope involves astrology readings by a monk to predict and guide an individuals future. It helps in understanding life's challenges and opportunities, influencing decisions related to career, relationships, and personal growth based on celestial alignments.` , tretModel: '/tretModel/1.png',caption:'Guides life decisions via astrological readings.'},
-    { id: 15, title: 'Steam Bath', image: '/TreatmentMenu/15.png', description: `Steam bath involves sitting in a steam room, where hot vapor cleanses the skin, relieves muscle tension, and promotes relaxation. The heat helps to open up the pores, detoxify the body, and reduce symptoms of respiratory issues. It also boosts circulation and hydrates the skin.    `, tretModel: '/tretModel/1.png',caption:'Cleanses skin, relaxes muscles, detoxifies body.' },
-    { id: 16, title: 'Sincone Massage', image: '/TreatmentMenu/16.png', description: `Sincone massage is a traditional Ayurvedic treatment using rhythmic strokes and herbal oils to rejuvenate the body and stimulate blood circulation. This form of massage is deeply relaxing and can help in detoxifying the body and enhancing emotional well-being.    ` , tretModel: '/tretModel/1.png',caption:'Rejuvenates body, stimulates circulation, detoxifies.'},
-    { id: 17, title: 'Sharwanga Dhara', image: '/TreatmentMenu/17.png', description: `Sharwanga Dhara is a comprehensive Ayurvedic therapy involving the pouring of warm herbal oils over the body, which helps to soothe and invigorate the tissues. This treatment is excellent for
-    relieving joint pain, reducing stress, and promoting a deep sense of relaxation.` ,caption:'Relieves joint pain, reduces stress, rejuvenates.'},
-    { id: 18, title: 'Special Herbals', image: '/TreatmentMenu/18.png', description: `Special Herbal Treatments involve the use of customized herbal preparations to treat specific health issues. These treatments are tailored to individual needs to maximize health benefits, including enhancing immunity, treating chronic ailments, and promoting longevity.    `, tretModel: '/tretModel/1.png',caption:'Tailored herbal remedies for health and longevity' },
-    { id: 19, title: 'Herbal Bath', image: '/TreatmentMenu/19.png', description: `Herbal bath uses a blend of medicinal herbs in bath water to cleanse, soothe, and rejuvenate the body. This treatment helps to relieve stress, improve circulation, and enhance skin health. It's also known for its therapeutic effects on the mind and body. `, tretModel: '/tretModel/1.png',caption:'Cleanses body, relieves stress, enhances skin health.'},
-    { id: 20, title: 'Flower Bath', image: '/TreatmentMenu/20.png', description: `Flower bath involves immersing oneself in a bath infused with fresh aromatic flowers. This luxurious treatment helps to uplift spirits, calm the mind, and beautify the skin. It’s also used for relaxation and to enhance emotional balance and harmony.    ` , tretModel: '/tretModel/1.png',caption:'Uplifts spirits, beautifies skin, promotes relaxation.'},
-    { id: 21, title: 'Body Scrub', image: '/TreatmentMenu/21.png', description: `Body scrub involves using a blend of exfoliating ingredients to remove dead skin cells and promote skin renewal. This treatment leaves the skin feeling soft and smooth, improves circulation, and helps in rejuvenating the skin’s appearance. It’s ideal for enhancing skin health and glow.`, tretModel: '/tretModel/1.png',caption:'Exfoliates, rejuvenates skin, improves circulation.' },
+    { id: 1, title: 'Face Massage', image: '/TreatmentMenu/1.png', description: 'Facial massage is a very popular Western beauty treatment to slow down the aging process and achieve younger looking and healthier skin. It is also used to relieve stress, migraine headache, premenstrual syndrome (PMS) and sinus congestion. Simple massage can also be done at home', tretModel: '/tretModel/1.png', caption: ' Enhances beauty, reduces stress and sinus congestion.' },
+    { id: 2, title: 'Foot Massage', image: '/TreatmentMenu/2.png', description: 'Foot massage in Ayurveda involves applying pressure to specific points on the feet to promote relaxation and healing. It is commonly used to relieve pain, reduce stress, and enhance overall circulation. This treatment can also aid in better sleep and relieve symptoms of anxiety.', tretModel: '/tretModel/1.png', caption: 'Promotes relaxation, relieves pain, boosts circulation.' },
+    { id: 3, title: 'Head Massage', image: '/TreatmentMenu/3.png', description: 'Head massage is a therapeutic technique that promotes relaxation and well-being by stimulating the scalp and hair follicles. It helps to relieve headaches, improve concentration, and boost hair growth. Regular sessions can also reduce stress and promote a sense of tranquility. ', tretModel: '/tretModel/1.png', caption: ' Eases headaches, stimulates scalp, fosters hair growth.' },
+    { id: 4, title: 'Intensive Massage', image: '/TreatmentMenu/4.png', description: 'Intensive massage is designed to relieve severe tension in the muscle and the connective tissue or fascia. This type of massage is recommended for individuals who experience consistent pain, are involved in heavy physical activity, or have sustained physical injury.    ', tretModel: '/tretModel/1.png', caption: ' Relieves deep tissue tension, aids physical recovery.' },
+    { id: 5, title: 'Powder Massage', image: '/TreatmentMenu/5.png', description: 'Powder massage uses herbal powders to exfoliate and stimulate the skin, promoting better circulation and cleansing. This treatment is perfect for reducing fat, improving skin texture, and enhancing the skins overall glow. It is also known for its rejuvenating properties.', tretModel: '/tretModel/1.png', caption: 'Stimulates skin, reduces fat, improves texture.' },
+    { id: 6, title: 'Thermo Massage', image: '/TreatmentMenu/6.png', description: 'Thermo massage involves the use of heated stones or other tools to provide deep warmth and relaxation to the muscles. This technique helps to ease muscle stiffness, enhance circulation, and reduce stress levels. It is particularly effective for chronic muscle pain.    ', tretModel: '/tretModel/1.png', caption: 'Uses heat to soothe and relax muscles' },
+    { id: 7, title: 'Shirodhara', image: '/TreatmentMenu/7.png', description: 'Shirodhara involves gently pouring liquids over the forehead and is commonly used to treat stress, sleep problems, and neurological disorders. This soothing treatment profoundly relaxes the mind and body, helping to alleviate mental fatigue and improve emotional stability.', tretModel: '/tretModel/1.png', caption: 'Calms mind, alleviates stress and sleep issues.' },
+    { id: 8, title: 'Panchakarma', image: '/TreatmentMenu/8.png', description: 'Panchakarma is a series of detoxifying treatments that cleanse the body and restore its innate healing abilities. It involves five procedures that help remove deep-rooted stress and illness-causing toxins. The process rejuvenates the body and enhances vitality and well-being', tretModel: '/tretModel/1.png', caption: 'Detoxifies body, enhances vitality and well-being.' },
+    { id: 9, title: 'Acupuncture', image: '/TreatmentMenu/9.png', description: 'Acupuncture is a traditional Chinese medicine technique that involves inserting needles into specific points on the body to balance energy flow. It is used to treat various physical, emotional, and mental conditions, including pain relief, stress management, and overall wellness.', tretModel: '/tretModel/1.png', caption: ` Balances body’s energy, treats various conditions.` },
+    { id: 10, title: 'Shirovasti', image: '/TreatmentMenu/10.png', description: 'Shirovasti is an Ayurvedic treatment where a leather cap is placed on the head, and warm medicinal oils are poured into it. This treatment is highly effective in treating nervous system disorders, insomnia, and headaches. It also helps improve mental clarity and focus.    ', tretModel: '/tretModel/1.png', caption: 'Treats neural ailments, enhances mental clarity.' },
+    { id: 11, title: 'Herbal Inhalation', image: '/TreatmentMenu/11.png', description: 'Herbal inhalation involves breathing in medicinal vapors to treat respiratory conditions such as asthma, sinusitis, and allergies. It is also used to enhance mental alertness and cognitive performance, as well as to reduce stress and promote relaxation', tretModel: '/tretModel/1.png', caption: 'Treats respiratory conditions, boosts mental alertness.' },
+    { id: 12, title: 'Meditation', image: '/TreatmentMenu/12.png', description: 'Meditation is a practice where an individual uses a technique to focus their mind on a particular object, thought, or activity to achieve a mentally clear and emotionally calm state. Regular practice improves stress management, emotional health, and overall well-being.    ', tretModel: '/tretModel/1.png', caption: 'Achieves clarity, calms emotions, enhances well-being.' },
+    { id: 13, title: 'Yoga', image: '/TreatmentMenu/13.png', description: 'Yoga involves physical postures, breathing exercises, and meditation to improve overall health. Regular practice enhances flexibility, strength, balance, and stamina. It also helps reduce stress, anxiety, and depression, promoting a more peaceful and balanced life.    ', tretModel: '/tretModel/1.png', caption: ' Improves health, enhances flexibility and mental peace.' },
+    { id: 14, title: 'Monk Horoscope', image: '/TreatmentMenu/14.png', description: `Monk horoscope involves astrology readings by a monk to predict and guide an individuals future. It helps in understanding life's challenges and opportunities, influencing decisions related to career, relationships, and personal growth based on celestial alignments.`, tretModel: '/tretModel/1.png', caption: 'Guides life decisions via astrological readings.' },
+    { id: 15, title: 'Steam Bath', image: '/TreatmentMenu/15.png', description: `Steam bath involves sitting in a steam room, where hot vapor cleanses the skin, relieves muscle tension, and promotes relaxation. The heat helps to open up the pores, detoxify the body, and reduce symptoms of respiratory issues. It also boosts circulation and hydrates the skin.    `, tretModel: '/tretModel/1.png', caption: 'Cleanses skin, relaxes muscles, detoxifies body.' },
+    { id: 16, title: 'Sincone Massage', image: '/TreatmentMenu/16.png', description: `Sincone massage is a traditional Ayurvedic treatment using rhythmic strokes and herbal oils to rejuvenate the body and stimulate blood circulation. This form of massage is deeply relaxing and can help in detoxifying the body and enhancing emotional well-being.    `, tretModel: '/tretModel/1.png', caption: 'Rejuvenates body, stimulates circulation, detoxifies.' },
+    {
+        id: 17, title: 'Sharwanga Dhara', image: '/TreatmentMenu/17.png', description: `Sharwanga Dhara is a comprehensive Ayurvedic therapy involving the pouring of warm herbal oils over the body, which helps to soothe and invigorate the tissues. This treatment is excellent for
+    relieving joint pain, reducing stress, and promoting a deep sense of relaxation.` , caption: 'Relieves joint pain, reduces stress, rejuvenates.'
+    },
+    { id: 18, title: 'Special Herbals', image: '/TreatmentMenu/18.png', description: `Special Herbal Treatments involve the use of customized herbal preparations to treat specific health issues. These treatments are tailored to individual needs to maximize health benefits, including enhancing immunity, treating chronic ailments, and promoting longevity.    `, tretModel: '/tretModel/1.png', caption: 'Tailored herbal remedies for health and longevity' },
+    { id: 19, title: 'Herbal Bath', image: '/TreatmentMenu/19.png', description: `Herbal bath uses a blend of medicinal herbs in bath water to cleanse, soothe, and rejuvenate the body. This treatment helps to relieve stress, improve circulation, and enhance skin health. It's also known for its therapeutic effects on the mind and body. `, tretModel: '/tretModel/1.png', caption: 'Cleanses body, relieves stress, enhances skin health.' },
+    { id: 20, title: 'Flower Bath', image: '/TreatmentMenu/20.png', description: `Flower bath involves immersing oneself in a bath infused with fresh aromatic flowers. This luxurious treatment helps to uplift spirits, calm the mind, and beautify the skin. It’s also used for relaxation and to enhance emotional balance and harmony.    `, tretModel: '/tretModel/1.png', caption: 'Uplifts spirits, beautifies skin, promotes relaxation.' },
+    { id: 21, title: 'Body Scrub', image: '/TreatmentMenu/21.png', description: `Body scrub involves using a blend of exfoliating ingredients to remove dead skin cells and promote skin renewal. This treatment leaves the skin feeling soft and smooth, improves circulation, and helps in rejuvenating the skin’s appearance. It’s ideal for enhancing skin health and glow.`, tretModel: '/tretModel/1.png', caption: 'Exfoliates, rejuvenates skin, improves circulation.' },
 ];
 
 
@@ -226,7 +229,7 @@ export default function Treatment() {
 
 
 
-            <section>
+            <section className='bg-[#FFFFFF]'>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <img className="mx-auto justify-center" src="/home3.png" alt="" />
                     <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900">Treatment Menu</h2>
@@ -238,8 +241,8 @@ export default function Treatment() {
 
 
             {/* Treatment Menu */}
-            <section>
-                <div className="min-h-screen px-5 lg:px-20 bg-gray-100 p-6">
+            <section className='bg-[#F9F9F9]'>
+                <div className="min-h-screen px-5 lg:px-20  p-6">
                     <div className="max-w-7xl mx-auto">
                         <div className="max-w-7xl mt-10 mb-20  justify-center px-4 sm:px-6 lg:px-8 text-center">
                             <form className="max-w-xl mx-auto">
@@ -283,18 +286,21 @@ export default function Treatment() {
                         </div>
                         <div className="grid mx-auto grid-cols-1 md:grid-cols-2 gap-4 lg:grid-cols-4">
                             {filteredMassages.map((massage) => (
-                                <div key={massage.id} className="relative  hover:brightness-50 group">
-
+                                <div key={massage.id}  className="relative gap-12  group">
+                                <div className='relative ove'>
                                     <img
                                         src={massage.image}
                                         alt={massage.title}
-                                        className=" mx-auto object-cover rounded-lg"
+                                        className='w-[240px] flex justify-center mx-auto h-[304px] object-cover '
+                                        style={{borderTopLeftRadius:'200px',borderTopRightRadius:'200px'}}
                                     />
-                                    <div className="absolute inset-0 translate-y-12  transform scale-0 group-hover:scale-100   bg-opacity-75 flex items-center justify-center rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300">
-                                        <button onClick={() => handleShowMore(massage)} className="text-white ">
-                                            <span style={{ color: 'white !important' }} className='underline text-white mt-10'>  Read more</span>
+                                    <div className="absolute inset-0   transform scale-0 group-hover:scale-100   flex items-end  justify-center rounded-lg   duration-300">
+                                        <button onClick={() => handleShowMore(massage)} className="text-white w-[240px] pt-48 pb-5 bg-gradient-to-t from-black to-transparent ">
+                                            <p className='text-[#FFFFFF]  mx-auto object-cover  underline text-center   '>Read more</p>
                                         </button>
                                     </div>
+                                    </div>
+                                    
                                     <div className="mt-2 text-center">
                                         <h3 className="text-lg font-medium">{massage.title}</h3>
                                         <p className="max-w-xl mx-10 text-gray-600">{massage.caption}</p>
@@ -355,24 +361,25 @@ export default function Treatment() {
 
 
             {/* Subscribe to our newsletter */}
-            <section className="py-20 lg:mx-20 bg-gray-50">
-                <div className=" mx-auto max-w-4xl px-4">
-                    <form className="flex items-center border  rounded-lg overflow-hidden">
-                        <input
-                            type="email"
-                            placeholder="E-mail"
-                            className=" px-4 w-2/3 md:w-full mr-4 py-1 md:py-3 border-gray-600 border rounded-lg outline-none"
-                        />
-                        <button
-                            type="submit"
-                            className="bg-[#001F2B] text-[10px] md:text-[13px] lg:[16px] py-1  md:w-5/12 text-white md:px-6 md:py-3 hover:bg-blue-900 rounded-lg"
-                        >
-                            SUBSCRIBE OUR NEWSLETTER
-                        </button>
-                    </form>
-                </div>
-            </section>
-
+            <div className='bg-[#FFFFFF]'>
+                <section className="py-20 lg:mx-20 ">
+                    <div className=" mx-auto max-w-4xl px-4">
+                        <form className="flex items-center border  rounded-lg overflow-hidden">
+                            <input
+                                type="email"
+                                placeholder="E-mail"
+                                className=" px-4 w-2/3 md:w-full mr-4 py-1 md:py-3 border-gray-600 border rounded-lg outline-none"
+                            />
+                            <button
+                                type="submit"
+                                className="bg-[#001F2B] text-[10px] md:text-[13px] lg:[16px] py-1  md:w-5/12 text-white md:px-6 md:py-3 hover:bg-blue-900 rounded-lg"
+                            >
+                                SUBSCRIBE OUR NEWSLETTER
+                            </button>
+                        </form>
+                    </div>
+                </section>
+            </div>
 
 
             {/* footer */}
@@ -389,10 +396,9 @@ export default function Treatment() {
                                 <h2 className="text-white text-xl  font-bold mb-2">River View Villas</h2>
                                 <p className="text-gray-400 mb-4">A Short Description about the Villa lorem ipsum Lorem ipsum dolor sit amet, lit sed do consectetur adipicsing</p>
                                 <div className="flex  space-x-4">
-                                    <a href="#" className="text-gray-400 hover:text-white"><FaFacebookF /></a>
-                                    <a href="#" className="text-gray-400 hover:text-white"><FaInstagram /></a>
-                                    <a href="#" className="text-gray-400 hover:text-white"><FaLinkedinIn /></a>
-                                    <a href="#" className="text-gray-400 hover:text-white"><FaTwitter /></a>
+                                    <a href="https://web.facebook.com/riverviewvillas/?_rdc=1&_rdr " className="text-gray-400 hover:text-white"><FaFacebookF /></a>
+                                    <a href="https://www.instagram.com/river_view_villas/?hl=en " className="text-gray-400 hover:text-white"><FaInstagram /></a>
+                                    <a href="https://www.tiktok.com/@river.view.villas?_t=8n6DFJerj6X&_r=1" className="text-gray-400 hover:text-white"><FaTiktok /></a>
                                 </div>
                             </div>
 

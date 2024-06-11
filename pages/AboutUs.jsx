@@ -5,6 +5,7 @@ import { CiLocationOn } from "react-icons/ci";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import { FiPhone } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
+import { FaTiktok } from "react-icons/fa";
 
 
 export default function AboutUs() {
@@ -132,6 +133,7 @@ export default function AboutUs() {
 
 
             {/* History and Origins */}
+            <section className='bg-[#FFFFFF]'>
             <div className='mt-5 px-5 lg:mt-20   '>
                 <div className='lg:px-20 2xl:px-72 grid grid-cols-1 mx-auto md:grid-cols-2 gap-8 '>
                     <div className='cols-span-1 mx-auto   my-auto'>
@@ -147,10 +149,11 @@ export default function AboutUs() {
                     </div>
                 </div>
             </div>
+            </section>
 
 
             {/* The Wisdom of Ayurveda */}
-            <section className='mt-5  lg:mt-20'>
+            <section className='mt-5 bg-[#F9F9F9]  lg:mt-20'>
                 <div className='lg:px-20  px-5 2xl:px-72 grid grid-cols-1  w-screen md:grid-cols-2 gap-8 '>
                     <div className='cols-span-1 mx-auto'>
                         <img src="/Ab2.png" alt="" />
@@ -168,43 +171,43 @@ export default function AboutUs() {
 
 
             {/* Ayurvedic Experts */}
-            <section>
-                <div className="py-16 px-5 lg:px-20 bg-white">
+            <section className='bg-[#FFFFFF]'>
+                <div className="py-16 px-5 lg:px-20 ">
                     <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                         <h2 className=" text-3xl md:text-5xl  font-semibold text-gray-900 py-5 tracking-wide uppercase">Our Ayurvedic Experts</h2>
                         <p className=" mt-2 justify-center mx-auto   max-w-3xl ">Our team of specially trained Ayurvedic practitioners brings years of expertise and experience. Each professional is dedicated to providing personalized care and guidance on your wellness journey.</p>
                     </div>
 
                     <div className="mt-10 max-w-[100rem] mx-auto px-4 sm:px-6 lg:px-8">
-                        <div className="grid gap-8 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1">
+                        <div className="grid gap-8 lg:grid-cols-4 md:grid-cols-2 justify-center sm:grid-cols-1">
 
-                            <div className="text-center ">
-                                <div className="relative mx-auto mt-10 rounded-lg ">
+                            <div className="text-justify px-5 2xl:px-20 mx-auto ">
+                                <div className="relative mx-auto flex justify-center mt-10 rounded-lg ">
                                     <img className='rounded-lg' src="/Expert/3.png" alt="" layout="fill" objectFit="cover" />
                                 </div>
                                 <h3 className="mt-4 text-xl font-semibold text-gray-900">Dr.Nalaka Samadhi</h3>
-                                <p className="mt-2 text-base ">D.A MGAS (Hons) ,D AC MAFC, Yoga (Dip University of Kelaniya ) ,Ayurvedic Panchakarma (Dip India Kerala) ,Specialist of Pulse Diagnosis (Diagnosis by Traditional Pulse Testing)</p>
+                                <p className="mt-2 text-base text-justify ">Pulse diagnosis specialist, Panchakarma, yoga, and Ayurvedic expert.</p>
                             </div>
-                            <div className="text-center">
-                                <div className="relative  mx-auto rounded-lg ">
+                            <div className="text-justify px-5 2xl:px-20 mx-auto ">
+                                <div className="relative flex justify-center  mx-auto rounded-lg ">
                                     <img className='rounded-lg' src="/Expert/7.png" alt="" layout="fill" objectFit="cover" />
                                 </div>
                                 <h3 className="mt-4 text-xl font-semibold text-gray-900">Dr.Miss Kumudinee Liyanaarachchi</h3>
-                                <p className="mt-2  text-base ">Dr.Miss Kumudinee Liyanaarachchi,    D.A(Srilanka) SLAMC/10250,Trained Lecture in department of Ayurveda,Post Graduate Diploma in Buddhist Ayurvedic Counselling University of Sri lanka Kelaniya 2015,Master Diploma in Buddhist Ayurveda Counselling University of Srilanka Kelaniya 2019,MA in Buddhist Ayurvedic Counselling ,MA in Astrology /Acharya</p>
+                                <p className="mt-2  text-base ">Ayurvedic counselor with postgraduate diplomas and MA in Buddhist Ayurvedic counseling.</p>
                             </div>
-                            <div className="text-center">
-                                <div className="relative  mx-auto mt-10 rounded-lg ">
+                            <div className="text-justify px-5 2xl:px-20 mx-auto ">
+                                <div className="relative flex justify-center  mx-auto mt-10 rounded-lg ">
                                     <img className='rounded-lg' src="/Expert/4.png" alt="" layout="fill" objectFit="cover" />
                                 </div>
                                 <h3 className="mt-4 text-xl font-semibold text-gray-900">A D Dilki Shanika</h3>
-                                <p className="mt-2 text-base ">Panchakarma & Practical Including Massage Therapy With Therory & Practical Including Basic Principles of Ayurveda ,Ayurveda Abhyanga Therapy ,Spa Therapy ., Aromatherapy Massage Manipulations  & Foot Reflexology , (10 years Experience)</p>
+                                <p className="mt-2 text-base ">Expert in Ayurveda, massage therapy, spa, and aromatherapy with 10 years experience.</p>
                             </div>
-                            <div className="text-center">
-                                <div className="relative rounded-lg  mx-auto  ">
+                            <div className="text-justify px-5 2xl:px-20 mx-auto ">
+                                <div className="relative flex justify-center rounded-lg  mx-auto  ">
                                     <img className='rounded-lg' src="/Expert/6.png" alt="" layout="fill" objectFit="cover" />
                                 </div>
                                 <h3 className="mt-4 text-xl font-semibold text-gray-900">N D Malith Dhilshan</h3>
-                                <p className="mt-2 text-base ">Panchakarma & Practical Including Massage Therapy With Therory & Practical Including Basic Principles of Ayurveda ,Ayurveda Abhyanga Therapy ,Spa Therapy . Aromatherapy Massage Manipulations  & Foot Reflexology (10 years Experience)</p>
+                                <p className="mt-2 text-base ">Specialist in Panchakarma, massage therapy, spa, and aromatherapy with 10 years experience.</p>
                             </div>
 
                         </div>
@@ -215,8 +218,8 @@ export default function AboutUs() {
 
 
             {/* Commitment to Sustainability */}
-            <section>
-                <div className="px-5 py-20 lg:px-20 bg-white">
+            <section className='bg-[#F9F9F9]'>
+                <div className="px-5 py-20 lg:px-20">
                     <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                         <h2 className=" text-3xl md:text-5xl mx-auto font-semibold text-gray-900 py-5 tracking-wide uppercase">Commitment to Sustainability</h2>
                         <p className=" mt-2 justify-center mx-auto text-gray-600 max-w-3xl ">We are committed to conserving the environment and maintaining ecological balance. Our practices include the use of locally sourced organic materials, energy-saving programs, and support for the local community. Our efforts have been recognized with various sustainability awards.</p>            </div>
@@ -266,10 +269,9 @@ export default function AboutUs() {
                                 <h2 className="text-white text-xl  font-bold mb-2">River View Villas</h2>
                                 <p className="text-gray-400 mb-4">A Short Description about the Villa lorem ipsum Lorem ipsum dolor sit amet, lit sed do consectetur adipicsing</p>
                                 <div className="flex  space-x-4">
-                                    <a href="#" className="text-gray-400 hover:text-white"><FaFacebookF /></a>
-                                    <a href="#" className="text-gray-400 hover:text-white"><FaInstagram /></a>
-                                    <a href="#" className="text-gray-400 hover:text-white"><FaLinkedinIn /></a>
-                                    <a href="#" className="text-gray-400 hover:text-white"><FaTwitter /></a>
+                                    <a href="https://web.facebook.com/riverviewvillas/?_rdc=1&_rdr " className="text-gray-400 hover:text-white"><FaFacebookF /></a>
+                                    <a href="https://www.instagram.com/river_view_villas/?hl=en " className="text-gray-400 hover:text-white"><FaInstagram /></a>
+                                    <a href="https://www.tiktok.com/@river.view.villas?_t=8n6DFJerj6X&_r=1" className="text-gray-400 hover:text-white"><FaTiktok /></a>
                                 </div>
                             </div>
 
