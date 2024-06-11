@@ -38,7 +38,7 @@ export default function AboutUs() {
     };
     return (
         <div>
-            <nav className="bg-white fixed z-50 min-w-full border-gray-200 dark:bg-gray-900 lg:px-20">
+               <nav className="bg-white fixed z-50 min-w-full border-gray-200 dark:bg-gray-900 lg:px-20">
                 <div className="max-w-screen flex flex-wrap items-center justify-between mx-auto p-4">
 
                     <img
@@ -73,45 +73,43 @@ export default function AboutUs() {
                         </svg>
                     </button>
                     <div className={`${isOpen ? "block" : "hidden"} w-full lg:block lg:w-auto`} id="navbar-default">
-                        <ul className="font-medium flex flex-col p-4  md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:flex-row xl:space-x-8 rtl:space-x-reverse lg:mt-0 lg:border-0 lg:bg-white dark:bg-gray-800 lg:dark:bg-gray-900 dark:border-gray-700">
-                            <li>
+                        <ul className="font-medium flex flex-col p-auto md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:flex-row xl:space-x-8 rtl:space-x-reverse lg:mt-0 lg:border-0 lg:bg-white dark:bg-gray-800 lg:dark:bg-gray-900 dark:border-gray-700">
+                            <li className='my-auto'>
                                 <Link href="/">
-                                    <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Homepage</span>
+                                    <span className=" text-[#001F2B8F]  hover:border-b-2  hover:border-customGold ml-4 cursor-pointer">Homepage</span>
                                 </Link>
                             </li>
-                            <li>
+                            <li className='my-auto'>
                                 <Link href="/AboutUs">
-                                    <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">About Us</span>
+                                    <span className="text-[#001F2B8F] border-b-2 border-[#001F2B8F]   hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">About Us</span>
                                 </Link>
                             </li>
-                            <li>
+                            <li className='my-auto'>
                                 <Link href="/Accomodation">
-                                    <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Accommodation</span>
+                                    <span className="text-[#001F2B8F]   hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Accommodation</span>
                                 </Link>
                             </li>
-                            <li>
+                            <li className='my-auto'>
                                 <Link href="/Treatment">
-                                    <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Atyurvedic Treatments</span>
+                                    <span className="text-[#001F2B8F]  hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Atyurvedic Treatments</span>
                                 </Link>
                             </li>
-                            <li>
+                            <li className='my-auto'>
                                 <Link href="/Gallery">
-                                    <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Gallery</span>
+                                    <span className="text-[#001F2B8F]  hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Gallery</span>
                                 </Link>
                             </li>
-                            <li>
+                            <li className='my-auto'>
                                 <Link href="/ContactUs">
-                                    <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Blog</span>
+                                    <span className="text-[#001F2B8F]  hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Blog</span>
                                 </Link>
                             </li>
-                            <li>
+                            <li className='my-auto'>
                                 <Link href="/ContactUs">
-                                    <button className="text-customGold hover:border-b-2 hover:border-customGold ml-4 bg-[#001F2B] py-1 px-2 rounded-lg cursor-pointer">Contact Us</button>
+                                    <button className="text-white   hover:border-b-2 hover:border-customGold ml-4 bg-[#001F2B] px-[17px]  py-[9px] rounded-lg cursor-pointer">Contact Us</button>
                                 </Link>
                             </li>
-                            <li>
-
-                            </li>
+                            
                         </ul>
                     </div>
                 </div>
@@ -225,12 +223,10 @@ export default function AboutUs() {
                         <p className=" mt-2 justify-center mx-auto text-gray-600 max-w-3xl ">We are committed to conserving the environment and maintaining ecological balance. Our practices include the use of locally sourced organic materials, energy-saving programs, and support for the local community. Our efforts have been recognized with various sustainability awards.</p>            </div>
                 </div>
                 <div className='md:flex grid grid-cols-2 justify-center px-5 lg:px-20 gap-4 lg:gap-16'>
-                    <img className='max-w-2xl' src="/commitIcons/12.png" alt="" />
-                    <img className='max-w-2xl' src="/commitIcons/13.png" alt="" />
-                    <img className='max-w-2xl' src="/commitIcons/17.png" alt="" />
-                    <img className='max-w-2xl' src="/commitIcons/14.png" alt="" />
-                    <img className='max-w-2xl' src="/commitIcons/15.png" alt="" />
-                    <img className='md:max-w-2xl mx-w-sm' src="/commitIcons/16.png" alt="" />
+                    <img className='max-w-2xl w-[97px] h-[97px]' src="/commitIcons/1.png" alt="" />
+                    <img className='max-w-2xl w-[97px] h-[84px]' src="/commitIcons/2.png" alt="" />
+                    
+                    
                 </div>
             </section>
 

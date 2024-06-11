@@ -109,10 +109,39 @@ export default function Home() {
       image: "/UpEvent/6.png",
     },
   ];
+
+  const testimonials = [
+    {
+      text: `"Amazing place with a most peaceful view very friendly staff and nice food really amazed by the lake view and good value for the money. unfortunately we stayed only one night but definitely we will come again thank you for the owner and his team"`,
+      clientName: "Sightsee336020",
+      imageSrc: "./Frame.png",
+    },
+    {
+      text: `"On local recommendation, I came here for Ayurvedic treatment while staying at a different hotel. I can't comment on the accommodation or food, but it is a beautiful place on the river bank, with immaculately-kept gardens. There are surprises at every turn, like the doctor's office built to look like the roots of a bo tree. They also offer yoga."`,
+      clientName: "Margaret F",
+      imageSrc: "./Frame.png",
+    },
+    {
+      text: `"I stayed at the River View Villas last two weeks and had a great experience! It was my first time there but definitely not the last time. Docter Nalaka and the therapists are highly professional. The treatments are really good and it really helps! Champika and Gayan were my therapists and they really know what they are doing. I feel reborn and fresh for a new start at home! I also thank Mr. Illyas for all the good care and arrangments for our excursions! Thank you all and see you soon !"`,
+      clientName: "Reshma D ",
+      imageSrc: "./Frame.png",
+    },
+    {
+      text: `"The doctor and therapists at this beautiful spa made our visit for the intensive spa treatment a most memorable one. We loved the serenity and caring nature too. Easy to reach from bentota hotels and there's accommodation and food prescribed in the Ayurvedic way if you get the chance to stay."`,
+      clientName: "Judy M  ",
+      imageSrc: "./Frame.png",
+    },
+    {
+      text: `"My friend & I were recommended to this ayurevedic spa but sadly in our last day in Bentota. When you arrive, you enter an oasis, calm & beautiful, set in the river. The owner/doctor showed us one of the villas you can stay in & it was impressive! The treatment rooms were clean & the massage sublime! Thanks to our lovely masseurs!! Would highly recommend!!"`,
+      clientName: "RobynK309 ",
+      imageSrc: "./Frame.png",
+    },
+    // Add more testimonials as needed
+  ];
   return (
     <main className="bg-white min-h-screen scroll-smooth">
       <div className="section w-full h-[300px] fixed bg-gradient-to-b from-black to-transparent z-50 scroll-smooth"
-        style={{ height:isScrolled?"auto":"300px"}}
+        style={{ height: isScrolled ? "auto" : "300px" }}
       >
         <div
           className="navbar md:pt-10 flex bg-none lg:pb-20 md:pb-10 text-black scroll-my-28:text-black z-50 fixed   w-full lg:px-20"
@@ -123,13 +152,13 @@ export default function Home() {
           }}
         >
           <div className="md:navbar-center  md:flex navbar-start justify-start md:justify-center w-full">
-            <div style={{marginLeft:'1rem'}} className="justify-start  flex md:justify-center h-[70px] w-[80px] md:h-[80px] md:w-[80px] xl:w-[150px] xl:h-auto">
+            <div style={{ marginLeft: '1rem' }} className="justify-start  flex md:justify-center h-[70px] w-[80px] md:h-[80px] md:w-[80px] xl:w-[150px] xl:h-auto">
               <img className="flex justify-center " src="./home2.png" alt="Home" />
             </div>
           </div>
           {/* Responsive Menu */}
           <div className="md:hidden justify-end  flex navbar-end">
-            <button style={{marginRight:'1rem'}} className="text-customGold " onClick={toggleMenu}>
+            <button style={{ marginRight: '1rem' }} className="text-customGold " onClick={toggleMenu}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"
@@ -153,7 +182,7 @@ export default function Home() {
         >
           <div className="max-w-7xl mx-auto px-4 py-2 gap-4">
             <div className="flex items-center justify-between">
-              <div className="flex items-center xl:gap-16 xl:mt-5 gap-8">
+              <div className="flex items-center xl:gap-16 xl:mt-5 gap-8" style={{ fontFamily: 'Gentium Basic' }}>
                 <Link href="/">
                   <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">Homepage</span>
                 </Link>
@@ -227,7 +256,7 @@ export default function Home() {
 
       {/* booking section */}
       <section>
-        <div className="flex justify-center mt-[-2rem] md:mt-[-4rem] lg:mt-[-3rem]">
+        <div style={{fontFamily:'Gentium Basic'}} className="flex justify-center mt-[-2rem] md:mt-[-4rem] lg:mt-[-3rem]">
           <button className="bg-white lg:text-xl text-black shadow-xl box-border border-2 font-bold md:py-8 md:px-24 rounded">
             Book Now
           </button>
@@ -315,13 +344,13 @@ export default function Home() {
               showStatus={false}
               showIndicators={false}
               autoPlay
-              
+
 
 
               className="md:hidden relative   justify-center mx-auto"
             >
               <div className="flex flex-col items-center">
-              <div className="w-20 h-20 xs:w-24 xs:h-24 xxm:w-28 xxm:h-28 mb-4">
+                <div className="w-20 h-20 xs:w-24 xs:h-24 xxm:w-28 xxm:h-28 mb-4">
                   <img
                     src="/icons/image5.png"
                     alt="Health-conscious living options"
@@ -333,7 +362,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col items-center">
-              <div className="w-20 h-20 xs:w-24 xs:h-24 xxm:w-28 xxm:h-28 mb-4">
+                <div className="w-20 h-20 xs:w-24 xs:h-24 xxm:w-28 xxm:h-28 mb-4">
                   <img
                     src="/icons/image6.png"
                     alt="Personalized diets"
@@ -345,7 +374,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col items-center">
-              <div className="w-20 h-20 xs:w-24 xs:h-24 xxm:w-28 xxm:h-28 mb-4">
+                <div className="w-20 h-20 xs:w-24 xs:h-24 xxm:w-28 xxm:h-28 mb-4">
                   <img
                     src="/icons/image3.png"
                     alt="Detox programs"
@@ -357,7 +386,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col items-center">
-              <div className="w-20 h-20 xs:w-24 xs:h-24 xxm:w-28 xxm:h-28 mb-4">
+                <div className="w-20 h-20 xs:w-24 xs:h-24 xxm:w-28 xxm:h-28 mb-4">
                   <img
                     src="/icons/image4.png"
                     alt="Yoga and meditation"
@@ -390,7 +419,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold">Massage Therapy</h3>
               <p className="mt-2 text-gray-600">
-              Revitalize and relax with our expertly delivered massage therapy.
+                Revitalize and relax with our expertly delivered massage therapy.
 
               </p>
             </div>
@@ -404,7 +433,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold">Herbal Treatments</h3>
               <p className="mt-2 text-gray-600">
-              Experience nature's healing with our tailored herbal treatments.
+                Experience nature's healing with our tailored herbal treatments.
               </p>
             </div>
             <div className="text-center">
@@ -413,7 +442,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold">Yoga</h3>
               <p className="mt-2 text-gray-600">
-              Enhance balance and strength through our yoga sessions.
+                Enhance balance and strength through our yoga sessions.
 
               </p>
             </div>
@@ -423,7 +452,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold">Meditation</h3>
               <p className="mt-2 text-gray-600">
-              Achieve peace and clarity with our guided meditation techniques.
+                Achieve peace and clarity with our guided meditation techniques.
 
               </p>
             </div>
@@ -437,8 +466,8 @@ export default function Home() {
       </section>
 
       {/* TestimonialsCarousel.js */}
-      <section className="   bg-[#FFFFFF]">
-        <div className="  mx-5 bg-[#FFFFFF]  lg:mx-20 py-8">
+      <section className="bg-[#FFFFFF]">
+        <div className="mx-5 bg-[#FFFFFF] lg:mx-20 py-8">
           <h2 className="text-5xl font-semibold text-center mb-4">Clients words about us</h2>
           <Carousel
             showArrows={true}
@@ -456,124 +485,109 @@ export default function Home() {
               hasNext && <CustomNextArrow onClick={onClickHandler} />
             }
           >
-            {/* Testimonial slides */}
-            <div className="p-4">
-              <p className="text-center lg:mx-20 text-lg italic mb-4">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis
-              </p>
-              <div className="flex justify-center items-center">
-                <span className="text-center font-semibold">Name of the Client</span>
-              </div>
-              <div className="flex justify-center mb-10 items-center">
+            {testimonials.map((testimonial, index) => (
+              <div className="p-4" key={index}>
+                <p className="text-center lg:mx-20 text-lg italic mb-4">
+                  {testimonial.text}
+                </p>
+                <div className="flex justify-center items-center">
+                  <span className="text-center font-semibold">{testimonial.clientName}</span>
+                </div>
+                {/* <div className="flex justify-center mb-10 items-center">
                 <img
-                  src="./Frame.png"
-                  alt="Client 1"
-                  className={`w-5 h-5 rounded-full mx-2 ${styles.customIndicator}`} // Use CSS module class
+                  src={testimonial.imageSrc}
+                  alt={`Client ${index + 1}`}
+                  className={`w-16 h-16 rounded-full mx-2 ${styles.customIndicator}`}
                 />
+              </div> */}
               </div>
-            </div>
-            <div className="p-4">
-              <p className="text-center lg:mx-20 text-lg italic mb-4">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis
-              </p>
-              <div className="flex justify-center items-center">
-                <span className="text-center font-semibold">Name of the Client</span>
-              </div>
-              <div className="flex justify-center mb-10 items-center">
-                <img
-                  src="./Frame.png"
-                  alt="Client 1"
-                  className={`w-16 h-16 rounded-full mx-2 ${styles.customIndicator}`} // Use CSS module class
-                />
-              </div>
-            </div>
-            {/* Add more testimonial slides as needed */}
+            ))}
           </Carousel>
         </div>
       </section>
 
       {/* Virtual Tour */}
       <div className='bg-[#F9F9F9]'>
-      <section className="flex flex-col md:flex-row items-center lg:mx-20 justify-between p-5 bg-[#F9F9F9]">
-        <div className="md:w-1/2 p-6">
-          <h2 className="text-3xl font-semibold text-gray-800 mb-4">
-            Lorem (Video Tour)
-          </h2>
-          <p className="text-gray-600 text-justify mb-6">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat incididunt ut labore et dolore.
-          </p>
-          <button className="px-4 py-1 bg-white text-black border border-slate-700  rounded hover:bg-black hover:text-white">
-            Explore our gallery
-          </button>
-        </div>
-        <div className="md:w-1/2 p-6 flex justify-center">
-          <div className="relative">
-            <img src="/Frame2.png" alt="Virtual Tour" className="w-full" />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <button data-modal-target="default-modal"
-                data-modal-toggle="default-modal"
-                type="button"
-                onClick={toggleModal} className=" p-12 rounded-full shadow-lg"></button>
-            </div>
+        <section className="flex flex-col md:flex-row items-center lg:mx-20 justify-between p-5 bg-[#F9F9F9]">
+          <div className="md:w-1/2 p-6">
+            <h2 className="text-3xl font-semibold text-gray-800 mb-4">
+              Lorem (Video Tour)
+            </h2>
+            <p className="text-gray-600 text-justify mb-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat incididunt ut labore et dolore.
+            </p>
+            <button className="px-4 py-1 bg-white text-black border border-slate-700  rounded hover:bg-black hover:text-white">
+              Explore our gallery
+            </button>
           </div>
-        </div>
-        {/* Main modal */}
-        {showModal && (
-          <div
-            id="default-modal"
-            tabIndex="-1"
-            aria-hidden="true"
-            className="fixed top-0 left-0 right-0 z-50 w-full h-screen bg-black bg-opacity-50 flex justify-center items-center"
-          >
-            <div className="relative w-full max-w-2xl bg-white rounded-lg shadow dark:bg-gray-700">
-              {/* Modal content */}
-              <div className="relative">
-                {/* Modal header */}
-                <div className="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                    Lets Go To Virtual Tour
-                  </h3>
-                  <button
-                    type="button"
-                    className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
-                    onClick={toggleModal}
-                  >
-                    <svg
-                      className="w-3 h-3"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 14 14"
-                    >
-                      <path
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
-                      />
-                    </svg>
-                    <span className="sr-only">Close modal</span>
-                  </button>
-                </div>
-                {/* Modal body */}
-                <div className="p-6 space-y-6">
-
-                  <video class="w-full h-auto max-w-full" controls>
-                    <source src="/docs/videos/flowbite.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-
-                </div>
-
+          <div className="md:w-1/2 p-6 flex justify-center">
+            <div className="relative">
+              <img src="/Frame2.png" alt="Virtual Tour" className="w-full" />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <button data-modal-target="default-modal"
+                  data-modal-toggle="default-modal"
+                  type="button"
+                  onClick={toggleModal} className=" p-12 rounded-full shadow-lg"></button>
               </div>
             </div>
           </div>
-        )}
-      </section></div>
+          {/* Main modal */}
+          {showModal && (
+            <div
+              id="default-modal"
+              tabIndex="-1"
+              aria-hidden="true"
+              className="fixed top-0 left-0 right-0 z-50 w-full h-screen bg-black bg-opacity-50 flex justify-center items-center"
+            >
+              <div className="relative w-full max-w-2xl bg-white rounded-lg shadow dark:bg-gray-700">
+                {/* Modal content */}
+                <div className="relative">
+                  {/* Modal header */}
+                  <div className="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                      Lets Go To Virtual Tour
+                    </h3>
+                    <button
+                      type="button"
+                      className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                      onClick={toggleModal}
+                    >
+                      <svg
+                        className="w-3 h-3"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 14 14"
+                      >
+                        <path
+                          stroke="currentColor"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+                        />
+                      </svg>
+                      <span className="sr-only">Close modal</span>
+                    </button>
+                  </div>
+                  {/* Modal body */}
+                  <div className="p-6 space-y-6">
+
+                    <video class="w-full h-auto max-w-full" controls>
+                      <source src="/docs/videos/flowbite.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          )}
+        </section></div>
 
       {/* Upcoming Events */}
       <section className="py-12 lg:mx-20 bg-[#FFFFFF]">
@@ -644,7 +658,7 @@ export default function Home() {
                   <a href="https://web.facebook.com/riverviewvillas/?_rdc=1&_rdr " className="text-gray-400 hover:text-white"><FaFacebookF /></a>
                   <a href="https://www.instagram.com/river_view_villas/?hl=en " className="text-gray-400 hover:text-white"><FaInstagram /></a>
                   <a href="https://www.tiktok.com/@river.view.villas?_t=8n6DFJerj6X&_r=1" className="text-gray-400 hover:text-white"><FaTiktok /></a>
-                                </div>
+                </div>
               </div>
 
               <div className="mb-6 lg:mb-0 lg:col-span-1">

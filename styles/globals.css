@@ -4,24 +4,34 @@
 
 /* styles/globals.css */
 body {
-  font-family: "Gentium Basic", serif;
+ 
 }
 
 h2,
 h1 {
   color: #001f2b;
+  font-family: "Gentium Basic", serif;
 }
 h3 {
   color: #001f2b;
+  font-family: 'Montserrat', sans-serif;
 }
 
 p {
   color: #001f2b;
+  font-family: 'Montserrat', sans-serif;
+
 }
 
 label {
   color: #001f2b;
+  font-family: 'Montserrat', sans-serif;
 }
+.button {
+  color: #001f2b;
+  font-family: 'Montserrat', sans-serif;
+}
+
 
 /* .glass{
  
