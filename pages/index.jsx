@@ -469,7 +469,7 @@ export default function Home() {
 
       {/* TestimonialsCarousel.js */}
       <section className="bg-[#FFFFFF]">
-        <div className="mx-5 bg-[#FFFFFF] lg:mx-20 py-8">
+        <div className="mx-5 bg-[#FFFFFF] lg:mx-20  py-0 md:py-8">
           <h2 className="text-5xl font-semibold text-center mb-4">Clients words about us</h2>
           <Carousel
             showArrows={true}
@@ -489,7 +489,7 @@ export default function Home() {
           >
             {testimonials.map((testimonial, index) => (
               <div className="p-4" key={index}>
-                <p className="text-center lg:mx-20 text-lg italic mb-4">
+                <p className="text-justify md:text-center md:px-5 lg:mx-20 text-sm md:text-lg italic mb-4">
                   {testimonial.text}
                 </p>
                 <div className="flex justify-center items-center">
