@@ -151,14 +151,14 @@ export default function Home() {
 
           }}
         >
-          <div className="md:navbar-center  md:flex navbar-start justify-start md:justify-center w-full">
-            <div style={{ marginLeft: '1rem' }} className="justify-start  flex md:justify-center h-[70px] w-[80px] md:h-[80px] md:w-[80px] xl:w-[150px] xl:h-auto">
-              <img className="flex justify-center " src="./home2.png" alt="Home" />
+          <div className="md:navbar-center   flex navbar-center justify-center md:justify-center w-full">
+            <div style={{ marginLeft: '1rem' }} className="justify-center  flex md:justify-center h-[70px] w-[80px] md:h-[80px] md:w-[80px] xl:w-[150px] xl:h-auto">
+              <img className="flex mx-auto justify-center " src="./home2.png" alt="Home" />
             </div>
           </div>
           {/* Responsive Menu */}
           <div className="md:hidden justify-end  flex navbar-end">
-            <button style={{ marginRight: '1rem' }} className="text-customGold " onClick={toggleMenu}>
+            <button style={{ marginRight: '0rem' }} className="text-customGold " onClick={toggleMenu}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"
@@ -208,7 +208,7 @@ export default function Home() {
             </div>
             {/* Menu Details */}
             {isMenuOpen && (
-              <div className="md:hidden flex flex-col text-start mt-[-2rem] navbar-end">
+              <div className="md:hidden w-screen ml-[-1rem] flex flex-col text-start mt-[-2rem] navbar-end">
                 <div
                   style={{
                     backgroundColor: 'white',
@@ -256,14 +256,15 @@ export default function Home() {
 
       {/* booking section */}
       <section>
-        <div style={{fontFamily:'Gentium Basic'}} className="flex justify-center mt-[-2rem] md:mt-[-4rem] lg:mt-[-3rem]">
-          <button className="bg-white lg:text-xl text-black shadow-xl box-border border-2 font-bold md:py-8 md:px-24 rounded">
+        <div style={{fontFamily:'Gentium Basic'}} className=" grid grid-cols-2 md:flex justify-center mx-10 md:mx-5 mt-[-2rem] md:mt-[-4rem] lg:mt-[-3rem]">
+          
+          <button className="bg-white lg:text-xl text-black shadow-xl box-border border-2 font-bold py-4 md:py-8 md:px-24 rounded">
             Book Now
           </button>
-          <button className="bg-white lg:text-xl text-black shadow-xl box-border border-2 font-bold md:py-8 md:px-24 rounded">
+          <button className="bg-white lg:text-xl text-black shadow-xl box-border border-2 font-bold py-4 md:py-8 md:px-24 rounded">
             View Rooms
           </button>
-          <button className="bg-white lg:text-xl text-black shadow-xl box-border border-2 font-bold md:py-8 md:px-24 rounded">
+          <button className="bg-white lg:text-xl col-span-2 text-black shadow-xl box-border py-4 border-2 font-bold md:py-8 md:px-24 rounded">
             Explore Ayurveda
           </button>
         </div>
@@ -337,7 +338,9 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="">
+          
+        </div>
+        <div className="mx-5">
             <Carousel
               showArrows={false}
               showThumbs={false}
@@ -347,14 +350,14 @@ export default function Home() {
 
 
 
-              className="md:hidden relative   justify-center mx-auto"
+              className="md:hidden    justify-center  flex flex-col items-center"
             >
               <div className="flex flex-col items-center">
-                <div className="w-20 h-20 xs:w-24 xs:h-24 xxm:w-28 xxm:h-28 mb-4">
+                <div className="w-16 h-16 xs:w-24 xs:h-24 xxm:w-28 xxm:h-28 mb-4">
                   <img
                     src="/icons/image5.png"
                     alt="Health-conscious living options"
-                    className="w-full  h-full"
+                    className=""
                   />
                 </div>
                 <p className="text-lg font-medium pb-10 text-gray-700">
@@ -362,11 +365,11 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col items-center">
-                <div className="w-20 h-20 xs:w-24 xs:h-24 xxm:w-28 xxm:h-28 mb-4">
+                <div className="w-16 h-16 xs:w-24 xs:h-24 xxm:w-28 xxm:h-28 mb-4">
                   <img
                     src="/icons/image6.png"
                     alt="Personalized diets"
-                    className="w-full h-full"
+                    className=""
                   />
                 </div>
                 <p className="text-lg font-medium text-gray-700">
@@ -374,11 +377,11 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col items-center">
-                <div className="w-20 h-20 xs:w-24 xs:h-24 xxm:w-28 xxm:h-28 mb-4">
+                <div className="w-16 h-16 xs:w-24 xs:h-24 xxm:w-28 xxm:h-28 mb-4">
                   <img
                     src="/icons/image3.png"
                     alt="Detox programs"
-                    className="w-full h-full"
+                    className=""
                   />
                 </div>
                 <p className="text-lg font-medium text-gray-700">
@@ -386,11 +389,11 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col items-center">
-                <div className="w-20 h-20 xs:w-24 xs:h-24 xxm:w-28 xxm:h-28 mb-4">
+                <div className="w-16 h-16 xs:w-24 xs:h-24 xxm:w-28 xxm:h-28 mb-4">
                   <img
                     src="/icons/image4.png"
                     alt="Yoga and meditation"
-                    className="w-full h-full"
+                    className=""
                   />
                 </div>
                 <p className="text-lg font-medium text-gray-700">
@@ -399,7 +402,6 @@ export default function Home() {
               </div>
             </Carousel>
           </div>
-        </div>
       </section>
 
       {/* services section */}
