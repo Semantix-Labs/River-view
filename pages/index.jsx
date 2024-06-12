@@ -435,7 +435,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold">Herbal Treatments</h3>
               <p className="mt-2 text-gray-600">
-                Experience nature's healing with our tailored herbal treatments.
+                 Experience natures healing with our tailored herbal treatments.
               </p>
             </div>
             <div className="text-center">
