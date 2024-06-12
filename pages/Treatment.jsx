@@ -233,7 +233,7 @@ export default function Treatment() {
 
                     {selectedMassage && (
                         <div className="fixed  inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                            <div className="bg-white rounded-lg p-6 mt-20 max-w-4xl relative">
+                            <div className="bg-white rounded-lg p-1 md:p-6 mt-10 max-w-4xl md:mt-20 mx-5 h-96 relative">
                                 <button
                                     onClick={handleClose}
                                     className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
@@ -259,18 +259,18 @@ export default function Treatment() {
                                             <img src="/home3.png" alt="" />
                                         </div>
                                         <h2 className="text-2xl font-semibold mb-2">{selectedMassage.title}</h2>
-                                        <p className="text-gray-700">{selectedMassage.description}</p>
+                                        <p className="text-[8px] md:text-[15px] lg:text-[18px] text-gray-700">{selectedMassage.description}</p>
                                     </div>
-                                    <div className='md:flex '>
+                                    <div className='flex my-auto justify-between '>
                                         <img
                                             src={selectedMassage.image}
                                             alt={selectedMassage.title}
-                                            className=" rounded-lg mr-4"
+                                            className="w-24 h-24 flex xs:w-40 xs:h-40 md:w-48 md:h-48 lg:w-1/2 lg:h-auto rounded-lg mr-4"
                                         />
                                         <img
                                             src={selectedMassage.tretModel}
                                             alt={selectedMassage.title}
-                                            className="w-48 h-48 rounded-lg mt-28 hidden md:inline mr-4"
+                                            className="w-24 h-24 flex  xs:w-40 xs:h-40 rounded-lg md:w-48 md:h-48 lg:w-1/2 lg:h-auto  mr-4"
                                         />
                                     </div>
                                 </div>
