@@ -238,7 +238,7 @@ export default function Home() {
           </div>
           {/* Menu Details */}
           <div
-            className={`md:hidden fixed top-0 left-0 w-full h-screen bg-white flex flex-col text-start z-50 transition-all duration-700 ease-in-out ${
+            className={`md:hidden fixed top-0 left-0 w-full h-screen bg-white flex flex-col text-start z-50 transition-all space-y-3 duration-700 ease-in-out ${
               isMenuOpen ? 'translate-y-0' : '-translate-y-full'
             }`}
             style={{ color: isScrolled ? 'black' : 'white' }}
@@ -262,37 +262,37 @@ export default function Home() {
               </button>
             </div>
             <Link href="/">
-              <span className="text-customGold ml-4 hover:text-white cursor-pointer py-2">
+              <span className="text-customGold ml-4 hover:text-white text-2xl cursor-pointer py-2">
                 Home
               </span>
             </Link>
             <Link href="/AboutUs">
-              <span className="text-customGold ml-4 hover:text-white cursor-pointer py-2">
+              <span className="text-customGold ml-4 hover:text-white  text-2xl cursor-pointer py-2">
                 About Us
               </span>
             </Link>
             <Link href="/Accomodation">
-              <span className="text-customGold ml-4 hover:text-white cursor-pointer py-2">
+              <span className="text-customGold ml-4 hover:text-white  text-2xl cursor-pointer py-2">
                 Accommodation
               </span>
             </Link>
             <Link href="/Treatment">
-              <span className="text-customGold ml-4 hover:text-white cursor-pointer py-2">
+              <span className="text-customGold ml-4 hover:text-white  text-2xl cursor-pointer py-2">
                 Ayurvedic Treatments
               </span>
             </Link>
             <Link href="/GalleryPage">
-              <span className="text-customGold ml-4 hover:text-white cursor-pointer py-2">
+              <span className="text-customGold ml-4 hover:text-white  text-2xl cursor-pointer py-2">
                 Gallery
               </span>
             </Link>
             <Link href="/ContactUs">
-              <span className="text-customGold ml-4 hover:text-white cursor-pointer py-2">
+              <span className="text-customGold ml-4 hover:text-white  text-2xl cursor-pointer py-2">
                 Blog
               </span>
             </Link>
             <Link href="/ContactUs">
-              <span className="text-customGold ml-4 hover:text-white cursor-pointer py-2">
+              <span className="text-customGold ml-4 hover:text-white  text-2xl cursor-pointer py-2">
                 Contact Us
               </span>
             </Link>
