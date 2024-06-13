@@ -12,6 +12,8 @@ L.Icon.Default.mergeOptions({
 });
 
 const MapComponent = () => {
+  const googleMapsUrl = "https://www.google.com/maps/search/?api=1&query=6.440077120706916,80.00915394785021";
+
   return (
     <div style={{ width: '100%', height: '500px' }}>
       <MapContainer center={[6.440077120706916, 80.00915394785021]} zoom={13} style={{ width: '100%', height: '100%' }}>
@@ -22,6 +24,8 @@ const MapComponent = () => {
         <Marker position={[6.440077120706916, 80.00915394785021]}>
           <Popup>
             Our Location
+            <br />
+            <a href={googleMapsUrl} target="_blank" rel="noopener noreferrer">Open in Google Maps</a>
           </Popup>
         </Marker>
       </MapContainer>

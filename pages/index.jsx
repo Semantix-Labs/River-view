@@ -140,110 +140,166 @@ export default function Home() {
   ];
   return (
     <main className="bg-white min-h-screen scroll-smooth">
-      <div className="section w-full h-[300px] fixed bg-gradient-to-b from-black to-transparent z-50 scroll-smooth"
-        style={{ height: isScrolled ? "auto" : "300px" }}
-      >
-        <div
-          className="navbar md:pt-10 flex bg-none lg:pb-20 md:pb-10 text-black scroll-my-28:text-black z-50 fixed   w-full lg:px-20"
-          style={{
-            backgroundColor: isScrolled ? 'white' : 'transparent',
-            color: isScrolled ? 'black' : 'white',
 
-          }}
-        >
-          <div className="md:navbar-center   flex navbar-center justify-center md:justify-center w-full">
-            <div style={{ marginLeft: '1rem' }} className="justify-center  flex md:justify-center h-[70px] w-[80px] md:h-[80px] md:w-[80px] xl:w-[150px] xl:h-auto">
-              <img className="flex mx-auto justify-center " src="./home2.png" alt="Home" />
-            </div>
-          </div>
-          {/* Responsive Menu */}
-          <div className="md:hidden justify-end  flex navbar-end">
-            <button style={{ marginRight: '0rem' }} className="text-customGold " onClick={toggleMenu}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
-                />
-              </svg>
-            </button>
+
+<div
+      className="section w-full h-[300px] fixed bg-gradient-to-b from-black to-transparent z-50 scroll-smooth"
+      style={{ height: isScrolled ? 'auto' : '300px' }}
+    >
+      <div
+        className="navbar md:pt-10 flex bg-none lg:pb-20 md:pb-10 text-black scroll-my-28:text-black z-50 fixed w-full lg:px-20"
+        style={{
+          backgroundColor: isScrolled ? 'white' : 'transparent',
+          color: isScrolled ? 'black' : 'white',
+        }}
+      >
+        <div className="md:navbar-center flex navbar-center justify-center md:justify-center w-full">
+          <div
+            style={{ marginLeft: '1rem' }}
+            className="justify-center flex md:justify-center h-[70px] w-[80px] md:h-[80px] md:w-[80px] xl:w-[150px] xl:h-auto"
+          >
+            <img
+              className="flex mx-auto justify-center"
+              src="./home2.png"
+              alt="Home"
+            />
           </div>
         </div>
-        <nav
-          style={{ color: isScrolled ? 'black' : 'white' }}
-          className="bg-none fixed w-full z-50 mt-20 xl:mt-24 lg:mt-20 md:pt-10 md:mt-16 md:flex justify-center text-center lg:px-20"
-        >
-          <div className="max-w-7xl mx-auto px-4 py-2 gap-4">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center xl:gap-16 xl:mt-5 gap-8" style={{ fontFamily: 'Gentium Basic' }}>
-                <Link href="/">
-                  <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">Homepage</span>
-                </Link>
-                <Link href="/AboutUs">
-                  <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">About Us</span>
-                </Link>
-                <Link href="/Accomodation">
-                  <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">Accommodation</span>
-                </Link>
-                <Link href="/Treatment">
-                  <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">Ayurvedic Treatments</span>
-                </Link>
-                <Link href="/Gallery">
-                  <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">Gallery</span>
-                </Link>
-                <Link href="/ContactUs">
-                  <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">Blog</span>
-                </Link>
-                <Link href="/ContactUs">
-                  <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">Contact Us</span>
-                </Link>
-              </div>
-            </div>
-            {/* Menu Details */}
-            {isMenuOpen && (
-              <div className="md:hidden w-screen ml-[-1rem] flex flex-col text-start mt-[-2rem] navbar-end">
-                <div
-                  style={{
-                    backgroundColor: 'white',
-                    color: isScrolled ? 'black' : 'white',
-                  }}
-                  className="flex flex-col mt-2 rounded-lg pt-2"
-                >
-                  <Link href="/">
-                    <span className="text-customGold ml-4 hover:text-white cursor-pointer">Home</span>
-                  </Link>
-                  <Link href="/AboutUs">
-                    <span className="text-customGold ml-4 hover:text-white cursor-pointer">About Us</span>
-                  </Link>
-                  <Link href="/Accomodation">
-                    <span className="text-customGold ml-4 hover:text-white cursor-pointer">Accommodation</span>
-                  </Link>
-                  <Link href="/Treatment">
-                    <span className="text-customGold ml-4 hover:text-white cursor-pointer">Ayurvedic Treatments</span>
-                  </Link>
-                  <Link href="/GalleryPage">
-                    <span className="text-customGold ml-4 hover:text-white cursor-pointer">Gallery</span>
-                  </Link>
-                  <Link href="/ContactUs">
-                    <span className="text-customGold ml-4 hover:text-white cursor-pointer">Blog</span>
-                  </Link>
-                  <Link href="/ContactUs">
-                    <span className="text-customGold ml-4 hover:text-white cursor-pointer">Contact Us</span>
-                  </Link>
-                </div>
-              </div>
-            )}
-          </div>
-        </nav>
+        {/* Responsive Menu Button */}
+        <div className="md:hidden justify-end flex navbar-end">
+          <button
+            style={{ marginRight: '0rem' }}
+            className="text-customGold"
+            onClick={toggleMenu}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="#001F2B"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d={isMenuOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'}
+              />
+            </svg>
+          </button>
+        </div>
       </div>
-
+      <nav
+        style={{ color: isScrolled ? 'black' : 'white' }}
+        className="bg-none fixed w-full z-50 mt-20 xl:mt-24 lg:mt-20 md:pt-10 md:mt-16 md:flex justify-center text-center lg:px-20"
+      >
+        <div className="max-w-7xl mx-auto px-4 py-2 gap-4">
+          <div className="flex items-center justify-between">
+            <div
+              className="flex items-center xl:gap-16 xl:mt-5 gap-8"
+              style={{ fontFamily: 'Gentium Basic' }}
+            >
+              <Link href="/">
+                <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
+                  Homepage
+                </span>
+              </Link>
+              <Link href="/AboutUs">
+                <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
+                  About Us
+                </span>
+              </Link>
+              <Link href="/Accomodation">
+                <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
+                  Accommodation
+                </span>
+              </Link>
+              <Link href="/Treatment">
+                <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
+                  Ayurvedic Treatments
+                </span>
+              </Link>
+              <Link href="/Gallery">
+                <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
+                  Gallery
+                </span>
+              </Link>
+              <Link href="/ContactUs">
+                <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
+                  Blog
+                </span>
+              </Link>
+              <Link href="/ContactUs">
+                <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
+                  Contact Us
+                </span>
+              </Link>
+            </div>
+          </div>
+          {/* Menu Details */}
+          <div
+            className={`md:hidden fixed top-0 left-0 w-full h-screen bg-white flex flex-col text-start z-50 transition-all duration-700 ease-in-out ${
+              isMenuOpen ? 'translate-y-0' : '-translate-y-full'
+            }`}
+            style={{ color: isScrolled ? 'black' : 'white' }}
+          >
+            <div className="flex justify-end pr-4 pt-4">
+              <button onClick={toggleMenu} className="text-customGold">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="#001F2B"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+            <Link href="/">
+              <span className="text-customGold ml-4 hover:text-white cursor-pointer py-2">
+                Home
+              </span>
+            </Link>
+            <Link href="/AboutUs">
+              <span className="text-customGold ml-4 hover:text-white cursor-pointer py-2">
+                About Us
+              </span>
+            </Link>
+            <Link href="/Accomodation">
+              <span className="text-customGold ml-4 hover:text-white cursor-pointer py-2">
+                Accommodation
+              </span>
+            </Link>
+            <Link href="/Treatment">
+              <span className="text-customGold ml-4 hover:text-white cursor-pointer py-2">
+                Ayurvedic Treatments
+              </span>
+            </Link>
+            <Link href="/GalleryPage">
+              <span className="text-customGold ml-4 hover:text-white cursor-pointer py-2">
+                Gallery
+              </span>
+            </Link>
+            <Link href="/ContactUs">
+              <span className="text-customGold ml-4 hover:text-white cursor-pointer py-2">
+                Blog
+              </span>
+            </Link>
+            <Link href="/ContactUs">
+              <span className="text-customGold ml-4 hover:text-white cursor-pointer py-2">
+                Contact Us
+              </span>
+            </Link>
+          </div>
+        </div>
+      </nav>
+    </div>
 
 
 
