@@ -159,7 +159,7 @@ export default function Home() {
             className="justify-center flex md:justify-center h-[70px] w-[80px] md:h-[80px] md:w-[80px] xl:w-[150px] xl:h-auto"
           >
             <img
-              className="flex mx-auto justify-center"
+              className="flex mx-auto  justify-center"
               src="./home2.png"
               alt="Home"
             />

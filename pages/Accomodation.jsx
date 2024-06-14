@@ -70,10 +70,10 @@ export default function Accomodation() {
             <nav className="bg-white fixed z-50 min-w-full border-gray-200 dark:bg-gray-900 lg:px-20">
                 <div className="max-w-screen flex flex-wrap items-center justify-between mx-auto p-4">
 
-                    <img
-                        src="/home2.png"
+                <img
+                        src="/Rlogo.png"
                         className="h-16 w-16 xl:w-28 xl:h-28"
-                        alt="Flowbite Logo"
+                        
                     />
 
 

@@ -75,10 +75,11 @@ function ContactUs() {
             <nav className="bg-white fixed z-50 min-w-full border-gray-200 dark:bg-gray-900 lg:px-20">
                 <div className="max-w-screen flex flex-wrap items-center justify-between mx-auto p-4">
 
+
                     <img
-                        src="/home2.png"
+                        src="/Rlogo.png"
                         className="h-16 w-16 xl:w-28 xl:h-28"
-                        alt="Flowbite Logo"
+
                     />
 
 
@@ -183,7 +184,7 @@ function ContactUs() {
                                     </defs>
                                 </svg>
                                 </span>
-                                <div className='grid'> 
+                                <div className='grid'>
                                     <p className="font-semibold">Address</p>
                                     <p>No 102/7C, Mathugama Road, Dharga Town, Sri Lanka</p>
                                 </div>

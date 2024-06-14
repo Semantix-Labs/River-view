@@ -42,9 +42,9 @@ export default function AboutUs() {
                 <div className="max-w-screen flex flex-wrap items-center justify-between mx-auto p-4">
 
                     <img
-                        src="/home2.png"
+                        src="/Rlogo.png"
                         className="h-16 w-16 xl:w-28 xl:h-28"
-                        alt="Flowbite Logo"
+                        
                     />
 
 
