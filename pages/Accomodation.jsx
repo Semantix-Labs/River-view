@@ -439,7 +439,7 @@ export default function Accomodation() {
             {/* Carpe Diem */}
             <section className='bg-[#FFFFFF]'>
                 <div className='mt-5 lg:mt-20 2xl:px-[20rem] lg:px-20   px-5 '>
-                    <div className=' grid grid-cols-1 mx-auto  lg:grid-cols-2 gap-8 '>
+                    <div className=' grid grid-cols-1 mx-auto  md:grid-cols-2 gap-8 '>
                         <div className='cols-span-1 lg:col-start-1 '>
 
                             <h2 className="text-3xl md:text-5xl text-center lg:text-start font-extrabold text-gray-800 mb-6">Carpe Diem</h2>
@@ -539,9 +539,9 @@ export default function Accomodation() {
                             </div>
                         </div>
                         <div className='cols-span-1 flex justify-center lg:justify-end'>
-                        <div className='md:flex '>
-                                <img className='w-[406px] h-[368px]' src="/CarpeDiem/vill1.png" alt="" />
-                                <img className='w-[314px] h-[279px] mt-[169px] ml-[-203px]' src="/CarpeDiem/vill2.png"  alt="" />
+                        <div className='md:flex w-[406px] h-[368px] overflow-hidden '>
+                                <img className='w-[300px] h-[300px]' src="/CarpeDiem/vill1.png" alt="" />
+                                <img className='w-[314px] h-[279px] mt-[150px] ml-[-150px]' src="/CarpeDiem/vill2.png"  alt="" />
                             </div>
                         </div>
                     </div>
@@ -555,8 +555,8 @@ export default function Accomodation() {
                 <div className='mt-5  lg:mt-20 2xl:px-[20rem]  grid grid-cols-1  gap-8 mx-5 lg:px-20 py-5 lg:py-20 md:grid-cols-4 '>
 
                     <div className='lg:col-span-1 md:col-span-2  md:col-start-1 lg:mt-72   '>
-                        <div className='my-auto'>
-                            <img className='w-[232px] h-[278px] object-cover relative ml-3' src="/VillaAraliya/vill1.png" alt="" />
+                        <div className='my-auto  w-[232px] h-[278px]'>
+                            <img className='w-[232px] h-[278px] object-cover relative ml-3' src="/VillaAraliya/vill1.jpg" alt="" />
                         </div>
                     </div>
 
@@ -649,7 +649,7 @@ export default function Accomodation() {
 
                     <div className='col-span-1 hidden lg:inline  justify-end '>
                     <div className='my-auto'>
-                            <img className='w-[232px] h-[278px] object-cover relative ml-3' src="/VillaAraliya/vill2.png" alt="" />
+                            <img className='w-[232px] h-[278px] overflow-hidden object-cover relative ml-3' src="/VillaAraliya/vill2.png" alt="" />
                         </div>
                     </div>
                 </div>
@@ -748,9 +748,9 @@ export default function Accomodation() {
                             </div>
                         </div>
                         <div className='cols-span-1 flex justify-end'>
-                            <div className='md:flex '>
-                                <img className='w-[406px] h-[368px]' src="/VillaOrchid/vill1.png" alt="" />
-                                <img className='w-[314px] h-[279px] mt-[169px] ml-[-203px]' src="/VillaOrchid/vill2.png"  alt="" />
+                        <div className='md:flex w-[406px] h-[368px] overflow-hidden '>
+                                <img className='w-[300px] h-[300px]' src="/VillaOrchid/vill1.png" alt="" />
+                                <img className='w-[314px] h-[279px] mt-[150px] ml-[-150px]' src="/VillaOrchid/vill2.png"  alt="" />
                             </div>
                         </div>
                     </div>
@@ -870,7 +870,7 @@ export default function Accomodation() {
             {/* Lotus Mansion */}
             <section className='bg-[#FFFFFF]'>
                 <div className='mt-5 2xl:px-[20rem] lg:mt-20  lg:px-20  px-5  '>
-                    <div className='grid grid-cols-1 mx-auto  md:grid-cols-2 gap-8 '>
+                    <div className='relative grid grid-cols-1 mx-auto  md:grid-cols-2 gap-8 '>
                         <div className='cols-span-1 col-start-1'>
 
                             <h2 className="text-3xl md:text-5xl text-center md:text-start font-extrabold text-gray-800 mb-6">Lotus Mansion</h2>
@@ -957,9 +957,9 @@ export default function Accomodation() {
                             </div>
                         </div>
                         <div className='cols-span-1 flex justify-end'>
-                        <div className='md:flex '>
-                                <img className='w-[406px] h-[368px]' src="/Lotus/vill1.png" alt="" />
-                                <img className='w-[314px] h-[279px] mt-[169px] ml-[-203px]' src="/Lotus/vill2.png"  alt="" />
+                        <div className='relative md:flex w-[406px] h-[368px] overflow-hidden '>
+                                <img className='w-[300px] h-[300px]' src="/Lotus/vill1.png" alt="" />
+                                <img className='w-[314px] h-[279px] mt-[150px] ml-[-150px]' src="/Lotus/vill2.png"  alt="" />
                             </div>
                         </div>
                     </div>

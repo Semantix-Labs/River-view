@@ -209,7 +209,7 @@ export default function Treatment() {
                         <div className="grid mx-auto grid-cols-1 md:grid-cols-2 gap-4 lg:grid-cols-4">
                             {filteredMassages.map((massage) => (
                                 <div key={massage.id}  className="relative gap-12  group">
-                                <div className='relative ove'>
+                                <div className='relative '>
                                     <img
                                         src={massage.image}
                                         alt={massage.title}

@@ -99,14 +99,14 @@ export default function Gallery() {
 
     return (
         <div className='min-h-screen '>
-               <nav className="bg-white fixed z-50 min-w-full border-gray-200 dark:bg-gray-900 lg:px-20">
+            <nav className="bg-white fixed z-50 min-w-full border-gray-200 dark:bg-gray-900 lg:px-20">
                 <div className="max-w-screen flex flex-wrap items-center justify-between mx-auto p-4">
 
-                   
-                <img
+
+                    <img
                         src="/Rlogo.png"
                         className="h-16 w-16 xl:w-28 xl:h-28"
-                        
+
                     />
 
 
@@ -171,7 +171,7 @@ export default function Gallery() {
                                     <button className="text-white  hover:border-b-2 hover:border-customGold ml-4 bg-[#001F2B] px-[17px]  py-[9px] rounded-lg cursor-pointer">Contact Us</button>
                                 </Link>
                             </li>
-                            
+
                         </ul>
                     </div>
                 </div>
@@ -321,12 +321,12 @@ export default function Gallery() {
                         <div className="relative grid-cols-1 md:grid-rows-4 col-span-6  md:col-span-7 group">
                             <div className='relative'>
                                 <Image
-                                    src="/Room/1.png"
+                                    src="/Room/1.jpg"
                                     alt="Room 1"
                                     layout="responsive"
-                                    width={100}
-                                    height={100}
-                                    className="rounded-lg mb-5 row-span-3 "
+                                    width={612}
+                                    height={408}
+                                    className="rounded-lg mb-5 w-[612px] h-[412px] row-span-3 "
                                 />
                                 <div class="absolute inset-0  opacity-60 rounded-md"></div>
                                 <div class="absolute inset-0 flex items-center justify-center">
@@ -335,20 +335,20 @@ export default function Gallery() {
                             </div>
                             <div className="grid grid-cols-2 row-span-1 gap-6">
                                 <Image
-                                    src="/Room/4.png"
+                                    src="/Room/2.jpg"
                                     alt="Room 4"
                                     layout="responsive"
-                                    width={100}
-                                    height={100}
-                                    className="rounded-lg row-span-1"
+                                    width={444}
+                                    height={274}
+                                    className="rounded-lg w-[444px] h-[274px] row-span-1"
                                 />
                                 <Image
-                                    src="/Room/4.png"
+                                    src="/Room/3.jpg"
                                     alt="Room 5"
                                     layout="responsive"
-                                    width={100}
-                                    height={100}
-                                    className="rounded-lg "
+                                    width={444}
+                                    height={274}
+                                    className="rounded-lg w-[444px] h-[274px] "
                                 />
                             </div>
 
@@ -356,20 +356,21 @@ export default function Gallery() {
 
                         <div className='grid row-auto col-span-6 md:col-span-5'>
                             <Image
-                                src="/Room/2.png"
+                                src="/Room/5.jpg"
                                 alt="Room 2"
                                 layout="responsive"
-                                width={100}
-                                height={100}
-                                className="rounded-lg mb-10 w-full row-span-1"
+                                width={444}
+                                height={332}
+                                className="rounded-lg mb-16 w-[444px] h-[350px] row-span-1"
+
                             />
                             <Image
-                                src="/Room/3.png"
+                                src="/Room/4.jpg"
                                 alt="Room 3"
                                 layout="responsive"
-                                width={500}
-                                height={500}
-                                className="rounded-lg  w-full row-span-1 "
+                                width={444}
+                                height={332}
+                                className="rounded-lg  w-[444px] h-[332px] row-span-1 "
                             />
 
                         </div>
@@ -381,40 +382,40 @@ export default function Gallery() {
 
             <div className='bg-[#F9F9F9]'>
                 <section className='grid gap-4 py-20 px-5'>
-                    <div className="grid grid-cols-5 gap-4">
+                    <div className="grid grid-cols-2 md:grid-cols-5 xl:h-[178px] 2xl:h-auto overflow-hidden gap-4">
                         <div>
                             <img
-                                className="h-auto max-w-full rounded-lg"
-                                src="/Room/img/2.png"
+                                className="xl:h-[178px] 2xl:h-auto max-w-full rounded-lg"
+                                src="/Room/img/r1.jpg"
                                 alt=""
                             />
 
                         </div>
                         <div>
                             <img
-                                className="h-auto max-w-full rounded-lg"
-                                src="/Room/img/3.png"
+                                className="xl:h-[178px] 2xl:h-auto max-w-full rounded-lg"
+                                src="/Room/img/r2.jpg"
                                 alt=""
                             />
                         </div>
                         <div>
                             <img
-                                className="h-auto max-w-full rounded-lg"
-                                src="/Room/img/4.png"
+                                className="xl:h-[178px] 2xl:h-auto max-w-full rounded-lg"
+                                src="/Room/img/r3.jpg"
                                 alt=""
                             />
                         </div>
                         <div>
                             <img
-                                className="h-auto max-w-full rounded-lg"
-                                src="/Room/img/5.png"
+                                className="xl:h-[178px] 2xl:h-auto max-w-full rounded-lg"
+                                src="/Room/img/r4.jpg"
                                 alt=""
                             />
                         </div>
-                        <div>
+                        <div className="col-span-1 ">
                             <img
-                                className="h-auto max-w-full rounded-lg"
-                                src="/Room/img/6.png"
+                                className="xl:h-[178px] 2xl:h-auto max-w-full rounded-lg"
+                                src="/Room/img/r7.jpg"
                                 alt=""
                             />
                         </div>
@@ -425,69 +426,71 @@ export default function Gallery() {
 
             {/* Ayurvedic treatments */}
             <div className='bg-[#FFFFFF]'>
-            <section className='mx-5 py-20 lg:px-20'>
-                <h2 className="text-3xl font-bold mb-8">Ayurvedic treatments</h2>
-                <div className='grid gap-4 grid-cols-1 md:grid-cols-12'>
-                    <div className='row grid-cols-1  col-span-3'>
-                        <img className='pb-8 w-full' src="/ayuGallery/1.png" alt="" />
-                        <img className='pb-8 w-full' src="/ayuGallery/2.png" alt="" />
-                        <img className=' w-full' src="/ayuGallery/3.png" alt="" />
-                    </div>
-                    <div className='grid grid-cols-1 hidden md:block  col-span-6'>
-                        <div className=' flex lg:gap-4 justify-between'>
-                            <img className='pb-5 md:w-28 xl:w-full' src="/ayuGallery/4.png" alt="" />
-                            <img className='pb-5 md:w-28 xl:w-full ' src="/ayuGallery/6.png" alt="" />
-                            <img className='pb-5 md:w-28 xl:w-full' src="/ayuGallery/7.png" alt="" />
+                <section className='mx-5 py-20 lg:px-20'>
+                    <h2 className="text-3xl font-bold mb-8">Ayurvedic treatments</h2>
+                    <div className='grid gap-4 space-y-2 grid-cols-1 md:grid-cols-12 overflow-hidden'>
+                        <div className='row grid-cols-1 mt-1 space-y-8 xl:space-y-10 rounded-lg  col-span-3'>
+                            <img className='w-full rounded-lg' src="/GalleryTreat/g7.png" alt="" />
+                            <img className=' w-full rounded-lg' src="GalleryTreat/g7.png" alt="" />
+                            <img className=' w-full rounded-lg' src="/GalleryTreat/g7.png" alt="" />
                         </div>
-                        <div className='relative'>
-                            <img className='pb-5 w-screen object-cover' src="/ayuGallery/5.png" alt="" />
-                            <div class="absolute inset-0  opacity-60 rounded-md"></div>
-                            <div class="absolute inset-0 flex items-center justify-center">
-                                <img src="/play.png" alt="" />
+                        <div className='grid grid-cols-1 hidden space-y-2 md:block rounded-lg  col-span-6'>
+                            <div className=' grid grid-cols-3 lg:gap-4 relative    justify-between'>
+                                <img className=' col-span-1 object-cover rounded-lg' src="/GalleryTreat/g1.png" alt="" />
+                                <img className=' col-span-1 object-cover rounded-lg' src="/GalleryTreat/g4.png" alt="" />
+                                <img className=' col-span-1 object-cover  rounded-lg' src="/GalleryTreat/g3.png" alt="" />
+                              
+                            </div>
+                            <div className='relative'>
+                                <img className=' w-screen rounded-xl object-cover' src="/GalleryTreat/g5.png" alt="" />
+                                <div class="absolute inset-0  opacity-60 rounded-lg"></div>
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <img src="/play.png" alt="" />
+                                </div>
+                            </div>
+                            <div className=' grid grid-cols-3 lg:gap-4 relative    justify-between'>
+                                <img className=' col-span-1 object-cover rounded-lg' src="/GalleryTreat/g1.png" alt="" />
+                                <img className=' col-span-1 object-cover rounded-lg' src="/GalleryTreat/g4.png" alt="" />
+                                <img className=' col-span-1 object-cover  rounded-lg' src="/GalleryTreat/g3.png" alt="" />
+                              
                             </div>
                         </div>
-                        <div className=' flex lg:gap-4 justify-between'>
-                            <img className='pb-5 md:w-28 xl:w-full' src="/ayuGallery/10.png" alt="" />
-                            <img className='pb-5 md:w-28 xl:w-full' src="/ayuGallery/8.png" alt="" />
-                            <img className='pb-5 md:w-28 xl:w-full' src="/ayuGallery/9.png" alt="" />
+                        <div className='row grid-cols-1 rounded-lg relative  mt-1 space-y-8  xl:space-y-10 justify-between col-span-3'>
+                            <img className=' w-full rounded-lg' src="GalleryTreat/g7.png" alt="" />
+                            <img className=' w-full rounded-lg' src="/GalleryTreat/g7.png" alt="" />
+                            <img className='w-full rounded-lg' src="/GalleryTreat/g7.png" alt="" />
                         </div>
                     </div>
-                    <div className='row grid-cols-1  col-span-3'>
-                        <img className='pb-8 w-full ' src="/ayuGallery/11.png" alt="" />
-                        <img className='pb-8 w-full' src="/ayuGallery/12.png" alt="" />
-                        <img className='w-full' src="/ayuGallery/13.png" alt="" />
-                    </div>
-                </div>
-            </section>
+                </section>
             </div>
 
             {/* Natural Environment */}
             <div className='bg-[#F9F9F9]'>
-            <section className='mx-5 lg:px-20 py-20'>
-                <h2 className="text-3xl font-bold mb-8">Natural Environment</h2>
-                <div className='grid gap-4 grid-cols-1 md:grid-cols-12'>
-                    <div className='row grid-cols-1  col-span-5'>
-                        <img className='pb-8 w-full ' src="/GalleryNatural/1.png" alt="" />
-                        <img className='w-full ' src="/GalleryNatural/2.png" alt="" />
+                <section className='mx-5 lg:px-20 py-20'>
+                    <h2 className="text-3xl font-bold mb-8">Natural Environment</h2>
+                    <div className='grid gap-4 grid-cols-1 space-y-6 md:grid-cols-12'>
+                        <div className='row grid-cols-1  col-span-5'>
+                            <img className='pb-8 w-full ' src="/GalleryNaturals/n1.jpg" alt="" />
+                            <img className='w-full ' src="/GalleryNaturals/n2.jpg" alt="" />
 
-                    </div>
-                    <div className='grid grid-cols-1 hidden md:inline  col-span-7'>
-                        <div className='gap-4 flex flex-row justify-between'>
-                            <img className='pb-5 lg:w-56 md:w-48  xl:w-full' src="/GalleryNatural/3.png" alt="" />
-                            <img className='pb-5 lg:w-56 xl:w-full md:w-48' src="/GalleryNatural/4.png" alt="" />
                         </div>
-                        <div className='relative col-span-1'>
-                            <img className='pb-5 w-full' src="/GalleryNatural/5.png" alt="" />
-                            <div class="absolute inset-0  opacity-60 rounded-md"></div>
-                            <div class="absolute inset-0 flex items-center justify-center">
-                                <img src="/play.png" alt="" />
+                        <div className='grid grid-cols-1 hidden md:inline  col-span-7'>
+                            <div className='gap-4  grid grid-cols-2 h-[198px] overflow-hidden  justify-between'>
+                                <img className='' src="/GalleryNaturals/n3.jpg" alt="" />
+                                <img className='' src="/GalleryNaturals/n4.jpg" alt="" />
                             </div>
+                            <div className='relative col-span-1'>
+                                <img className=' w-screen mt-5 object-cover' src="/GalleryNaturals/n5.jpg" alt="" />
+                                <div class="absolute inset-0  opacity-60 rounded-md"></div>
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <img src="/play.png" alt="" />
+                                </div>
+                            </div>
+
                         </div>
 
                     </div>
-
-                </div>
-            </section>
+                </section>
             </div>
 
 
@@ -526,23 +529,23 @@ export default function Gallery() {
 
             {/* Subscribe to our newsletter */}
             <div className='bg-[#F9F9F9]'>
-            <section className="py-20 lg:mx-20 ">
-                <div className=" mx-auto max-w-4xl px-4">
-                    <form className="flex items-center border  rounded-lg overflow-hidden">
-                        <input
-                            type="email"
-                            placeholder="E-mail"
-                            className=" px-4 w-2/3 md:w-full mr-4 py-1 md:py-3 border-gray-600 border rounded-lg outline-none"
-                        />
-                        <button
-                            type="submit"
-                            className="bg-[#001F2B] text-[10px] md:text-[13px] lg:[16px] py-1  md:w-5/12 text-white md:px-6 md:py-3 hover:bg-blue-900 rounded-lg"
-                        >
-                            SUBSCRIBE OUR NEWSLETTER
-                        </button>
-                    </form>
-                </div>
-            </section>
+                <section className="py-20 lg:mx-20 ">
+                    <div className=" mx-auto max-w-4xl px-4">
+                        <form className="flex items-center border  rounded-lg overflow-hidden">
+                            <input
+                                type="email"
+                                placeholder="E-mail"
+                                className=" px-4 w-2/3 md:w-full mr-4 py-1 md:py-3 border-gray-600 border rounded-lg outline-none"
+                            />
+                            <button
+                                type="submit"
+                                className="bg-[#001F2B] text-[10px] md:text-[13px] lg:[16px] py-1  md:w-5/12 text-white md:px-6 md:py-3 hover:bg-blue-900 rounded-lg"
+                            >
+                                SUBSCRIBE OUR NEWSLETTER
+                            </button>
+                        </form>
+                    </div>
+                </section>
             </div>
 
 
