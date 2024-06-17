@@ -120,7 +120,7 @@ export default function Accomodation() {
                             </li>
                             <li className='my-auto'>
                                 <Link href="/Treatment">
-                                    <span className="text-[#001F2B8F]  hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Atyurvedic Treatments</span>
+                                    <span className="text-[#001F2B8F]  hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Ayurvedic Treatments</span>
                                 </Link>
                             </li>
                             <li className='my-auto'>
@@ -539,7 +539,10 @@ export default function Accomodation() {
                             </div>
                         </div>
                         <div className='cols-span-1 flex justify-center lg:justify-end'>
-                            <img className=' max-w-xl overflow-hidden' src="/Carpe.png" alt="" />
+                        <div className='md:flex '>
+                                <img className='w-[406px] h-[368px]' src="/CarpeDiem/vill1.png" alt="" />
+                                <img className='w-[314px] h-[279px] mt-[169px] ml-[-203px]' src="/CarpeDiem/vill2.png"  alt="" />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -553,7 +556,7 @@ export default function Accomodation() {
 
                     <div className='lg:col-span-1 md:col-span-2  md:col-start-1 lg:mt-72   '>
                         <div className='my-auto'>
-                            <img className='w-full h-full ml-3' src="/VillAraliya.png" alt="" />
+                            <img className='w-[232px] h-[278px] object-cover relative ml-3' src="/VillaAraliya/vill1.png" alt="" />
                         </div>
                     </div>
 
@@ -645,8 +648,8 @@ export default function Accomodation() {
                     </div>
 
                     <div className='col-span-1 hidden lg:inline  justify-end '>
-                        <div className=''>
-                            <img className='w-full' src="/VillAraliya.png" alt="" />
+                    <div className='my-auto'>
+                            <img className='w-[232px] h-[278px] object-cover relative ml-3' src="/VillaAraliya/vill2.png" alt="" />
                         </div>
                     </div>
                 </div>
@@ -745,7 +748,10 @@ export default function Accomodation() {
                             </div>
                         </div>
                         <div className='cols-span-1 flex justify-end'>
-                            <img src="/Carpe.png" alt="" />
+                            <div className='md:flex '>
+                                <img className='w-[406px] h-[368px]' src="/VillaOrchid/vill1.png" alt="" />
+                                <img className='w-[314px] h-[279px] mt-[169px] ml-[-203px]' src="/VillaOrchid/vill2.png"  alt="" />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -760,7 +766,7 @@ export default function Accomodation() {
 
                     <div className='lg:col-span-1 md:col-span-2 col-start-1 lg:mt-40   '>
                         <div className=''>
-                            <img className='w-full ' src="/VillaLilly1.png" alt="" />
+                            <img className='w-[232px] h-[278px] object-cover relative ml-3' src="/VillaLilly/vill1.png" alt="" />
                         </div>
                     </div>
 
@@ -853,7 +859,7 @@ export default function Accomodation() {
 
                     <div className='col-span-1  hidden lg:inline justify-end'>
                         <div className=''>
-                            <img className='w-full ' src="/VillLilly2.png" alt="" />
+                        <img className='w-[232px] h-[278px] object-cover relative ml-3' src="/VillaLilly/vill2.png" alt="" />
                         </div>
                     </div>
                 </div>
@@ -951,7 +957,10 @@ export default function Accomodation() {
                             </div>
                         </div>
                         <div className='cols-span-1 flex justify-end'>
-                            <img src="/LotusMansion.png" alt="" />
+                        <div className='md:flex '>
+                                <img className='w-[406px] h-[368px]' src="/Lotus/vill1.png" alt="" />
+                                <img className='w-[314px] h-[279px] mt-[169px] ml-[-203px]' src="/Lotus/vill2.png"  alt="" />
+                            </div>
                         </div>
                     </div>
                 </div>

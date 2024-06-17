@@ -91,7 +91,7 @@ export default function AboutUs() {
                             </li>
                             <li className='my-auto'>
                                 <Link href="/Treatment">
-                                    <span className="text-[#001F2B8F]  hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Atyurvedic Treatments</span>
+                                    <span className="text-[#001F2B8F]  hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Ayurvedic Treatments</span>
                                 </Link>
                             </li>
                             <li className='my-auto'>
