@@ -168,10 +168,10 @@ export default function Accomodation() {
                         <div className="relative xl:w-72 xl:h-96 lg:w-56 lg:h-72 md:w-40 md:h-56 w-80 h-96 overflow-hidden mt-20  rounded-lg shadow-lg">
                             <Image
 
-                                src='/Room/img/2.png'
+                                src='/Room/img/2.jpg'
                                 layout="fill"
                                 objectFit="cover"
-                                className="transition-transform duration-500 ease-in-out transform hover:scale-110"
+                                className="transition-transform duration-500 ease-in-out transform brightness-50 hover:scale-110"
                             />
                             <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
                                 <p className="text-lg text-[#FFFFFF] font-bold mt-4">$100 / Night</p>
@@ -195,7 +195,7 @@ export default function Accomodation() {
                                 src='/Room/img/1.jpg'
                                 layout="fill"
                                 objectFit="cover"
-                                className="transition-transform duration-500 ease-in-out transform hover:scale-110"
+                                className="transition-transform duration-500 ease-in-out brightness-50  transform hover:scale-110"
                             />
                             <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
                                 <p className="text-lg text-[#FFFFFF] font-bold mt-4">$100 / Night</p>
@@ -218,7 +218,7 @@ export default function Accomodation() {
                                 src='/Room/img/3.jpg'
                                 layout="fill"
                                 objectFit="cover"
-                                className="transition-transform w-full h-full object-cover  duration-500 ease-in-out transform hover:scale-110"
+                                className="transition-transform w-full h-full brightness-50  object-cover  duration-500 ease-in-out transform hover:scale-110"
                             />
                             <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
                                 <p className="text-lg text-[#FFFFFF] font-bold mt-4">$100 / Night</p>
@@ -241,7 +241,7 @@ export default function Accomodation() {
                                 src='/Room/img/r2.jpg'
                                 layout="fill"
                                 objectFit="cover"
-                                className="transition-transform duration-500 ease-in-out transform hover:scale-110"
+                                className="transition-transform duration-500 brightness-50  ease-in-out transform hover:scale-110"
                             />
                             <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
                                 <p className="text-lg text-[#FFFFFF] font-bold mt-4">$100 / Night</p>
