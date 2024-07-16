@@ -128,11 +128,11 @@ export default function Accomodation() {
                                     <span className="text-[#001F2B8F]  hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Gallery</span>
                                 </Link>
                             </li>
-                            <li className='my-auto'>
+                            {/* <li className='my-auto'>
                                 <Link href="/ContactUs">
                                     <span className="text-[#001F2B8F]  hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Blog</span>
                                 </Link>
-                            </li>
+                            </li> */}
                             <li className='my-auto'>
                                 <Link href="/ContactUs">
                                     <button className="text-white   hover:border-b-2 hover:border-customGold ml-4 bg-[#001F2B] px-[17px]  py-[9px] rounded-lg cursor-pointer">Contact Us</button>

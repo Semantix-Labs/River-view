@@ -99,11 +99,11 @@ export default function AboutUs() {
                                     <span className="text-[#001F2B8F]  hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Gallery</span>
                                 </Link>
                             </li>
-                            <li className='my-auto'>
+                            {/* <li className='my-auto'>
                                 <Link href="/ContactUs">
                                     <span className="text-[#001F2B8F]  hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Blog</span>
                                 </Link>
-                            </li>
+                            </li> */}
                             <li className='my-auto'>
                                 <Link href="/ContactUs">
                                     <button className="text-white   hover:border-b-2 hover:border-customGold ml-4 bg-[#001F2B] px-[17px]  py-[9px] rounded-lg cursor-pointer">Contact Us</button>
@@ -142,8 +142,13 @@ export default function AboutUs() {
                         <p className="text-lg text-gray-600 text-justify md:text-start max-w-xl ">Since 2005, River View Villas has been dedicated to promoting Ayurvedic wellness. Our history is deeply rooted in the traditions of Ayurveda, aiming to spread inner peace and balance through our holistic practices.</p>
 
                     </div>
-                    <div className='cols-span-1  '>
-                        <img src="/AbHistory.png" alt="" />
+                    <div className=' grid grid-cols-1 md:grid-cols-2 gap-4 '>
+                       <div className='cols-span-1 rounded-t-full overflow-hidden h-[431px]'>
+                       <img className='w-full h-full object-cover' src="/changes2.jpg" alt="" />
+                       </div>
+                       <div className='cols-span-1 rounded-tr-full relative md:mt-[168px] h-[263px] overflow-hidden'>
+                       <img className='w-full h-full object-cover  ' src="/changes3.jpg" alt="" />
+                       </div>
                     </div>
                 </div>
             </div>
@@ -154,7 +159,9 @@ export default function AboutUs() {
             <section className='mt-5 bg-[#F9F9F9]  lg:mt-20'>
                 <div className='lg:px-20  px-5 2xl:px-72 grid grid-cols-1  w-screen md:grid-cols-2 gap-8 '>
                     <div className='cols-span-1 mx-auto'>
-                        <img src="/Ab2.png" alt="" />
+                       <div className='overflow-hidden rounded-tr-[100px] rounded-bl-[80px]'>
+                       <img className='w-full h-full' src="/changes1.jpg" alt="" />
+                       </div>
                     </div>
                     <div className='cols-span-1 mx-auto my-auto'>
                         <div className='mb-4 md:justify-start  flex justify-center'>

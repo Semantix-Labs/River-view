@@ -11,27 +11,35 @@ import { useEffect, useRef } from 'react';
 import { FaTiktok } from "react-icons/fa";
 
 const images = [
-    "/room/1.png",
-    "/room/2.png",
-    "/room/3.png",
-    "/ayuGallery/1.png",
-    "/ayuGallery/2.png",
-    "/ayuGallery/3.png",
-    "/ayuGallery/4.png",
-    "/ayuGallery/5.png",
-    "/ayuGallery/6.png",
-    "/ayuGallery/7.png",
-    "/ayuGallery/8.png",
-    "/ayuGallery/9.png",
-    "/ayuGallery/10.png",
-    "/ayuGallery/11.png",
+  "/GalleryTreat/g1.png",
+  "/GalleryTreat/g2.png",
+  "/GalleryTreat/g3.png",
+  "/GalleryTreat/g4.png",
+  "/GalleryTreat/g5.png",
+  "/GalleryTreat/g6.png",
+  "/GalleryTreat/g7.png",
+  "/GalleryTreat/g8.png",
+  "/GalleryTreat/g9.png",
+  "/GalleryNaturals/n1.jpg",
+  "/GalleryNaturals/n2.jpg",
+  "/GalleryNaturals/n3.jpg",
+  "/GalleryNaturals/n4.jpg",
+  "/GalleryNaturals/n5.jpg",
+  "/GalleryNaturals/n6.jpg",
+  "/Room/img/r1.jpg",
+  "/Room/img/r2.jpg",
+  "/Room/img/r3.jpg",
+  "/Room/img/r4.jpg",
+  "/Room/img/r5.jpg",
+  "/Room/img/r6.jpg",
+  
 
 ];
 
 
 export default function Gallery() {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const imagesPerSlide = 5;
+    const imagesPerSlide = 1;
     const scrollAmount = 2;
     const autoScrollDelay = 3000; // Time in milliseconds for auto-scroll
     const requestRef = useRef();
@@ -161,11 +169,11 @@ export default function Gallery() {
                                     <span className="text-[#001F2B8F] border-b-2 border-[#001F2B8F]   hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Gallery</span>
                                 </Link>
                             </li>
-                            <li className='my-auto'>
+                            {/* <li className='my-auto'>
                                 <Link href="/ContactUs">
                                     <span className="text-[#001F2B8F]  hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Blog</span>
                                 </Link>
-                            </li>
+                            </li> */}
                             <li className='my-auto'>
                                 <Link href="/ContactUs">
                                     <button className="text-white  hover:border-b-2 hover:border-customGold ml-4 bg-[#001F2B] px-[17px]  py-[9px] rounded-lg cursor-pointer">Contact Us</button>
@@ -430,13 +438,13 @@ export default function Gallery() {
                     <h2 className="text-3xl font-bold mb-8">Ayurvedic treatments</h2>
                     <div className='grid gap-4 space-y-2 grid-cols-1 md:grid-cols-12 overflow-hidden'>
                         <div className='row grid-cols-1 mt-1 space-y-8 xl:space-y-10 rounded-lg  col-span-3'>
-                            <img className='w-full rounded-lg' src="/GalleryTreat/g7.png" alt="" />
-                            <img className=' w-full rounded-lg' src="GalleryTreat/g7.png" alt="" />
+                            <img className='w-full rounded-lg' src="/GalleryTreat/g4.png" alt="" />
+                            <img className=' w-full rounded-lg' src="GalleryTreat/g8.jpg" alt="" />
                             <img className=' w-full rounded-lg' src="/GalleryTreat/g7.png" alt="" />
                         </div>
                         <div className='grid grid-cols-1 hidden space-y-2 md:block rounded-lg  col-span-6'>
                             <div className=' grid grid-cols-3 lg:gap-4 relative    justify-between'>
-                                <img className=' col-span-1 object-cover rounded-lg' src="/GalleryTreat/g1.png" alt="" />
+                                <img className=' col-span-1 object-cover rounded-lg' src="/GalleryTreat/g4.png" alt="" />
                                 <img className=' col-span-1 object-cover rounded-lg' src="/GalleryTreat/g4.png" alt="" />
                                 <img className=' col-span-1 object-cover  rounded-lg' src="/GalleryTreat/g3.png" alt="" />
                               
@@ -456,9 +464,9 @@ export default function Gallery() {
                             </div>
                         </div>
                         <div className='row grid-cols-1 rounded-lg relative  mt-1 space-y-8  xl:space-y-10 justify-between col-span-3'>
-                            <img className=' w-full rounded-lg' src="GalleryTreat/g7.png" alt="" />
+                            <img className=' w-full rounded-lg' src="GalleryTreat/g9.jpg" alt="" />
                             <img className=' w-full rounded-lg' src="/GalleryTreat/g7.png" alt="" />
-                            <img className='w-full rounded-lg' src="/GalleryTreat/g7.png" alt="" />
+                            <img className='w-full rounded-lg' src="/GalleryTreat/g8.jpg" alt="" />
                         </div>
                     </div>
                 </section>
@@ -468,19 +476,19 @@ export default function Gallery() {
             <div className='bg-[#F9F9F9]'>
                 <section className='mx-5 lg:px-20 py-20'>
                     <h2 className="text-3xl font-bold mb-8">Natural Environment</h2>
-                    <div className='grid gap-4 grid-cols-1 space-y-6 md:grid-cols-12'>
-                        <div className='row grid-cols-1  col-span-5'>
-                            <img className='pb-8 w-full ' src="/GalleryNaturals/n1.jpg" alt="" />
-                            <img className='w-full ' src="/GalleryNaturals/n2.jpg" alt="" />
+                    <div className='grid gap-4 grid-cols-1  max-h-[1280px] overflow-hidden md:grid-cols-12'>
+                        <div className='row grid-cols-1 col-span-5'>
+                            <img className='mb-4 xl:mb-8  w-full rounded-lg' src="/GalleryNaturals/n1.jpg" alt="" />
+                            <img className='w-full rounded-lg ' src="/GalleryNaturals/n2.jpg" alt="" />
 
                         </div>
-                        <div className='grid grid-cols-1 hidden md:inline  col-span-7'>
-                            <div className='gap-4  grid grid-cols-2 h-[198px] overflow-hidden  justify-between'>
-                                <img className='' src="/GalleryNaturals/n3.jpg" alt="" />
-                                <img className='' src="/GalleryNaturals/n4.jpg" alt="" />
+                        <div className=' grid-cols-1 hidden md:inline  overflow-hidden col-span-7'>
+                            <div className='gap-4  grid grid-cols-2  md:h-[135px]   xl:h-[198px] 2xl:h-[457px] overflow-hidden rounded-lg  justify-between'>
+                                <img className='rounded-lg   object-cover ' src="/GalleryNaturals/n3.jpg" alt="" />
+                                <img className='rounded-lg object-cover  ' src="/GalleryNaturals/n4.jpg" alt="" />
                             </div>
                             <div className='relative col-span-1'>
-                                <img className=' w-screen mt-5 object-cover' src="/GalleryNaturals/n5.jpg" alt="" />
+                                <img className=' w-full mt-4 xl:mt-8  rounded-lg object-cover' src="/GalleryNaturals/n5.jpg" alt="" />
                                 <div class="absolute inset-0  opacity-60 rounded-md"></div>
                                 <div class="absolute inset-0 flex items-center justify-center">
                                     <img src="/play.png" alt="" />
@@ -499,7 +507,7 @@ export default function Gallery() {
                 <div className="relative w-full   overflow-hidden">
                     <div className="overflow-hidden relative">
                         <div
-                            className="flex transition-transform duration-500"
+                            className="flex transition-transform duration-300 ease-in-out w-full h-100"
                             style={{ transform: `translateX(-${(currentIndex / images.length) * 100}%)` }}
                         >
                             {images.map((src, index) => (
@@ -507,7 +515,7 @@ export default function Gallery() {
                                     key={index}
                                     src={src}
                                     alt={`Slide ${index + 1}`}
-                                    className="w-1/5 flex-shrink-0"
+                                    className="w-[258px] h-[206px] overflow-hidden flex-shrink-0"
                                 />
                             ))}
                         </div>

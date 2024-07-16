@@ -224,11 +224,11 @@ export default function Home() {
                   Gallery
                 </span>
               </Link>
-              <Link href="/ContactUs">
+              {/* <Link href="/ContactUs">
                 <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
                   Blog
                 </span>
-              </Link>
+              </Link> */}
               <Link href="/ContactUs">
                 <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
                   Contact Us
