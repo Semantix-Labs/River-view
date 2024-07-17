@@ -240,7 +240,7 @@ export default function Accomodation() {
 
                                 src='/Room/img/r2.jpg'
                                 layout="fill"
-                                objectFit="cover"
+                                objectFit=""
                                 className="transition-transform duration-500 brightness-50  ease-in-out transform hover:scale-110"
                             />
                             <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
