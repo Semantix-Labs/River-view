@@ -7,6 +7,7 @@ import { FiPhone } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaTiktok } from "react-icons/fa";
 import Image from 'next/image';
+import Booking from '@/components/Booking';
 
 
 export default function Accomodation() {
@@ -306,11 +307,11 @@ export default function Accomodation() {
                     </div>
 
 
-                    <div className='cols-span-1 mx-5 my-auto'>
+                    <div className='cols-span-1 mx-5 '>
                         <div className='xl:mr-48'>
                             <div className="bg-white p-5  sm:p-10 shadow-lg rounded-lg max-w-screen-2xl w-full">
                                 <h2 className="text-2xl font-bold mb-6">Booking Information</h2>
-                                <form onSubmit={handleSubmit} className="space-y-8">
+                                {/* <form onSubmit={handleSubmit} className="space-y-8">
                                     <div className='grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-4'>
                                         <div>
                                             <label className="block text-sm  font-semibold ">Check In Date</label>
@@ -426,7 +427,8 @@ export default function Accomodation() {
                                             Submit Now
                                         </button>
                                     </div>
-                                </form>
+                                </form> */}
+                                <Booking/>
                             </div>
                         </div>
                     </div>

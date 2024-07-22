@@ -11,28 +11,28 @@ import { useEffect, useRef } from 'react';
 import { FaTiktok } from "react-icons/fa";
 
 const images = [
-  "/GalleryTreat/g1.png",
-  "/GalleryTreat/g2.png",
-  "/GalleryTreat/g3.png",
-  "/GalleryTreat/g4.png",
-  "/GalleryTreat/g5.png",
-  "/GalleryTreat/g6.png",
-  "/GalleryTreat/g7.png",
-  "/GalleryTreat/g8.png",
-  "/GalleryTreat/g9.png",
-  "/GalleryNaturals/n1.jpg",
-  "/GalleryNaturals/n2.jpg",
-  "/GalleryNaturals/n3.jpg",
-  "/GalleryNaturals/n4.jpg",
-  "/GalleryNaturals/n5.jpg",
-  "/GalleryNaturals/n6.jpg",
-  "/Room/img/r1.jpg",
-  "/Room/img/r2.jpg",
-  "/Room/img/r3.jpg",
-  "/Room/img/r4.jpg",
-  "/Room/img/r5.jpg",
-  "/Room/img/r6.jpg",
-  
+    "/GalleryTreat/g1.png",
+    "/GalleryTreat/g2.png",
+    "/GalleryTreat/g3.png",
+    "/GalleryTreat/g4.png",
+    "/GalleryTreat/g5.png",
+    "/GalleryTreat/g6.png",
+    "/GalleryTreat/g7.png",
+    "/GalleryTreat/g8.png",
+    "/GalleryTreat/g9.png",
+    "/GalleryNaturals/n1.jpg",
+    "/GalleryNaturals/n2.jpg",
+    "/GalleryNaturals/n3.jpg",
+    "/GalleryNaturals/n4.jpg",
+    "/GalleryNaturals/n5.jpg",
+    "/GalleryNaturals/n6.jpg",
+    "/Room/img/r1.jpg",
+    "/Room/img/r2.jpg",
+    "/Room/img/r3.jpg",
+    "/Room/img/r4.jpg",
+    "/Room/img/r5.jpg",
+    "/Room/img/r6.jpg",
+
 
 ];
 
@@ -186,7 +186,7 @@ export default function Gallery() {
             </nav>
 
 
-            {/* image Section */}GalleryHead.png
+            {/* image Section */}
             <section className='pt-20'>
                 <div className='relative w-full pb-5 2xl:h-[700px] xl:h-[400px] lg:h-96 md:h-64 h-52 overflow-hidden '>
                     <img className='w-screen' src="/GalleryHead.png" alt="" />
@@ -217,26 +217,26 @@ export default function Gallery() {
                         <div className="grid gap-8 md:grid-cols-4 sm:grid-cols-1">
 
                             <div className="text-center ">
-                                <div className="relative mx-auto mt-10 rounded-lg ">
-                                    <img className='w-full' src="/Activity/1.png" alt="" layout="fill" objectFit="cover" />
+                                <div className="relative mx-auto mt-10 md:h-[150px] lg:h-[190px] xl:h-[300px] 2xl:h-[390px]  overflow-hidden rounded-lg ">
+                                    <img className='w-full h-full object-cover' src="/Activity/5.jpg" alt="" layout="fill" objectFit="cover" />
                                 </div>
                                 <h3 className="mt-4 text-xl text-start pr-5 font-semibold ">Once-a-week boat safari dinner</h3>
                             </div>
                             <div className="text-center">
-                                <div className="relative  mx-auto rounded-lg ">
-                                    <img className='w-full' src="/Activity/2.png" alt="" layout="fill" objectFit="cover" />
+                                <div className="relative  mx-auto md:h-[150px] lg:h-[190px] xl:h-[300px] 2xl:h-[390px]  overflow-hidden rounded-lg ">
+                                    <img className='w-full h-full object-cover' src="/Activity/2.png" alt="" layout="fill" objectFit="cover" />
                                 </div>
                                 <h3 className="mt-4 text-xl text-start pr-5 font-semibold ">Cooking demonstrations</h3>
                             </div>
                             <div className="text-center">
-                                <div className="relative  mx-auto mt-10 rounded-lg ">
-                                    <img className='w-full' src="/Activity/3.png" alt="" layout="fill" objectFit="cover" />
+                                <div className="relative  mx-auto mt-10 md:h-[150px] lg:h-[190px] xl:h-[300px] 2xl:h-[390px]  overflow-hidden rounded-lg ">
+                                    <img className='w-full h-full object-cover' src="/Activity/3.png" alt="" layout="fill" objectFit="cover" />
                                 </div>
                                 <h3 className="mt-4 text-xl text-start pr-5 font-semibold ">Manicure & Pedicure (additional charges apply)</h3>
                             </div>
                             <div className="text-center">
-                                <div className="relative  mx-auto rounded-lg ">
-                                    <img className='w-full' src="/Activity/4.png" alt="" layout="fill" objectFit="cover" />
+                                <div className="relative  mx-auto md:h-[150px] lg:h-[190px] xl:h-[300px] 2xl:h-[390px]  overflow-hidden rounded-lg ">
+                                    <img className='w-full h-full object-cover' src="/Activity/4.png" alt="" layout="fill" objectFit="cover" />
                                 </div>
                                 <h3 className="mt-4 text-xl text-start pr-5 font-semibold ">Vegetables from our own plantation</h3>
                             </div>
@@ -255,7 +255,20 @@ export default function Gallery() {
 
                         <div className="relative">
                             <h2 className="text-4xl py-5 font-bold">Our Story  </h2>
-                            <img src="/Frame2.png" alt="Virtual Tour" className="w-screen" />
+                            <div className='relative xl:h-[600px] overflow-hidden  md:rounded-tr-[150px] lg:rounded-tr-[200px] lg:rounded-bl-[200px] md:rounded-bl-[150px]  row-span-3'>
+                                <Image
+                                    src="/Room/img/1.jpg"
+                                    alt="Room 1"
+                                    layout="responsive"
+                                    width={100}
+                                    height={100}
+                                    className="md:rounded-tr-[150px] lg:rounded-tr-[200px] lg:rounded-bl-[200px] md:rounded-bl-[150px] row-span-3 "
+                                />
+                                <div class="absolute inset-0  opacity-60 rounded-md"></div>
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <img src="/play.png" alt="" />
+                                </div>
+                            </div>
                             <div className="absolute inset-0 flex items-center justify-center">
                                 <button data-modal-target="default-modal"
                                     data-modal-toggle="default-modal"
@@ -324,17 +337,17 @@ export default function Gallery() {
             <section className='bg-[#FFFFFF]'>
                 <div className="lg:px-32 px-5 py-20 ">
                     <h2 className="text-3xl font-bold mb-8">Rooms</h2>
-                    <div className="grid  grid-cols-1 md:grid-cols-12 overflow-hidden  gap-6">
+                    <div className="grid  grid-cols-1 md:grid-cols-12 overflow-hidden   gap-6">
 
-                        <div className="relative grid-cols-1 md:grid-rows-4 col-span-6  md:col-span-7 group">
-                            <div className='relative'>
+                        <div className="relative grid-cols-1 md:grid-rows-4 col-span-6 space-y-4 md:col-span-7 group">
+                            <div className='relative row-span-3'>
                                 <Image
-                                    src="/Room/1.jpg"
+                                    src="/Room/img/1.jpg"
                                     alt="Room 1"
                                     layout="responsive"
                                     width={612}
                                     height={408}
-                                    className="rounded-lg mb-5 w-[612px] h-[412px] row-span-3 "
+                                    className="rounded-lg  w-[612px] h-[412px] row-span-3 "
                                 />
                                 <div class="absolute inset-0  opacity-60 rounded-md"></div>
                                 <div class="absolute inset-0 flex items-center justify-center">
@@ -343,7 +356,7 @@ export default function Gallery() {
                             </div>
                             <div className="grid grid-cols-2 row-span-1 gap-6">
                                 <Image
-                                    src="/Room/2.jpg"
+                                    src="/Room/img/2.png"
                                     alt="Room 4"
                                     layout="responsive"
                                     width={444}
@@ -351,7 +364,7 @@ export default function Gallery() {
                                     className="rounded-lg w-[444px] h-[274px] row-span-1"
                                 />
                                 <Image
-                                    src="/Room/3.jpg"
+                                    src="/Room/img/3.png"
                                     alt="Room 5"
                                     layout="responsive"
                                     width={444}
@@ -362,23 +375,23 @@ export default function Gallery() {
 
                         </div>
 
-                        <div className='grid row-auto col-span-6 md:col-span-5'>
+                        <div className='grid  md:grid-rows-4 col-span-6 space-y-6 md:col-span-5'>
                             <Image
-                                src="/Room/5.jpg"
+                                src="/Room/img/5.png"
                                 alt="Room 2"
                                 layout="responsive"
                                 width={444}
                                 height={332}
-                                className="rounded-lg mb-16 w-[444px] h-[350px] row-span-1"
+                                className="rounded-lg  w-[444px] h-[350px] object-cover row-span-2"
 
                             />
                             <Image
-                                src="/Room/4.jpg"
+                                src="/Room/4.png"
                                 alt="Room 3"
                                 layout="responsive"
                                 width={444}
                                 height={332}
-                                className="rounded-lg  w-[444px] h-[332px] row-span-1 "
+                                className="rounded-lg  object-cover row-span-2 "
                             />
 
                         </div>
@@ -437,17 +450,29 @@ export default function Gallery() {
                 <section className='mx-5 py-20 lg:px-20'>
                     <h2 className="text-3xl font-bold mb-8">Ayurvedic treatments</h2>
                     <div className='grid gap-4 space-y-2 grid-cols-1 md:grid-cols-12 overflow-hidden'>
-                        <div className='row grid-cols-1 mt-1 space-y-8 xl:space-y-10 rounded-lg  col-span-3'>
-                            <img className='w-full rounded-lg' src="/GalleryTreat/g4.png" alt="" />
-                            <img className=' w-full rounded-lg' src="GalleryTreat/g8.jpg" alt="" />
-                            <img className=' w-full rounded-lg' src="/GalleryTreat/g7.png" alt="" />
+                        <div className='md:grid-rows-12 grid-cols-1 mt-2 space-y-8 xl:space-y-10 rounded-lg  col-span-3'>
+                            <div className='row-span-4 h- w-full overflow-hidden object-cover '>
+                            <img className='w-full h-full object-cover rounded-lg' src="/GalleryTreat/g4.png" alt="" />
+                            </div>
+                            <div className='row-span-4'>
+                            <img className=' w-full h--full object-cover rounded-lg' src="GalleryTreat/g8.jpg" alt="" />
+                            </div>
+                            <div className='row-span-4'>
+                            <img className=' w-full h-full object-cover rounded-lg' src="/GalleryTreat/g7.png" alt="" />
+                            </div>
                         </div>
-                        <div className='grid grid-cols-1 hidden space-y-2 md:block rounded-lg  col-span-6'>
+                        <div className='grid grid-cols-1 hidden space-y-2 md:block  rounded-lg  col-span-6'>
                             <div className=' grid grid-cols-3 lg:gap-4 relative    justify-between'>
-                                <img className=' col-span-1 object-cover rounded-lg' src="/GalleryTreat/g4.png" alt="" />
-                                <img className=' col-span-1 object-cover rounded-lg' src="/GalleryTreat/g4.png" alt="" />
-                                <img className=' col-span-1 object-cover  rounded-lg' src="/GalleryTreat/g3.png" alt="" />
-                              
+                                <div className='md:h-[66px] lg:h-[70px] xl:h-[110px] 2xl:h-[154px] overflow-hidden  md:gap-1 rounded-lg'>
+                                    <img className=' col-span-1 object-cover rounded-lg' src="/GalleryTreat/g11.jpg" alt="" />
+                                </div>
+                                <div className='md:h-[66px] overflow-hidden lg:h-[70px] xl:h-[110px] 2xl:h-[154px]   md:gap-1 rounded-lg'>
+                                    <img className=' col-span-1 object-cover rounded-lg' src="/GalleryTreat/g5.png" alt="" />
+                                </div>
+                                <div className='md:h-[66px] overflow-hidden lg:h-[70px] xl:h-[110px] 2xl:h-[154px]   md:gap-1 rounded-lg'>
+                                    <img className=' object-cover   rounded-lg' src="/GalleryTreat/g3.png" alt="" />
+                                </div>
+
                             </div>
                             <div className='relative'>
                                 <img className=' w-screen rounded-xl object-cover' src="/GalleryTreat/g5.png" alt="" />
@@ -457,16 +482,30 @@ export default function Gallery() {
                                 </div>
                             </div>
                             <div className=' grid grid-cols-3 lg:gap-4 relative    justify-between'>
-                                <img className=' col-span-1 object-cover rounded-lg' src="/GalleryTreat/g1.png" alt="" />
-                                <img className=' col-span-1 object-cover rounded-lg' src="/GalleryTreat/g4.png" alt="" />
-                                <img className=' col-span-1 object-cover  rounded-lg' src="/GalleryTreat/g3.png" alt="" />
-                              
+                               
+                                    <div className='md:h-[66px] lg:h-[70px] xl:h-[110px] 2xl:h-[154px] overflow-hidden  md:gap-1 rounded-lg'>
+                                        <img className=' col-span-1 object-cover rounded-lg' src="/GalleryTreat/g1.png" alt="" />
+                                    </div>
+                                    <div className='md:h-[66px] overflow-hidden lg:h-[70px] xl:h-[110px] 2xl:h-[154px]   md:gap-1 rounded-lg'>
+                                        <img className=' col-span-1 object-cover rounded-lg' src="/GalleryTreat/g4.png" alt="" />
+                                    </div>
+                                    <div className='md:h-[66px] overflow-hidden lg:h-[70px] xl:h-[110px] 2xl:h-[154px]   md:gap-1 rounded-lg'>
+                                        <img className=' object-cover   rounded-lg' src="/GalleryTreat/g3.png" alt="" />
+                                    </div>
+
+                               
                             </div>
                         </div>
-                        <div className='row grid-cols-1 rounded-lg relative  mt-1 space-y-8  xl:space-y-10 justify-between col-span-3'>
-                            <img className=' w-full rounded-lg' src="GalleryTreat/g9.jpg" alt="" />
-                            <img className=' w-full rounded-lg' src="/GalleryTreat/g7.png" alt="" />
-                            <img className='w-full rounded-lg' src="/GalleryTreat/g8.jpg" alt="" />
+                        <div className='md:grid-rows-12 grid-cols-1 mt-2 space-y-8 xl:space-y-10 rounded-lg  col-span-3'>
+                            <div className='row-span-4 object-cover overflow-hidden'>
+                            <img className='w-full h-full object-cover rounded-lg' src="/GalleryTreat/g9.jpg" alt="" />
+                            </div>
+                            <div className='row-span-4'>
+                            <img className=' w-full h--full object-cover overflow-hidden rounded-lg' src="GalleryTreat/g8.jpg" alt="" />
+                            </div>
+                            <div className='row-span-4'>
+                            <img className=' w-full h-full object-cover overflow-hidden rounded-lg' src="/GalleryTreat/g7.png" alt="" />
+                            </div>
                         </div>
                     </div>
                 </section>
