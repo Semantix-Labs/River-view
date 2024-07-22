@@ -451,7 +451,7 @@ export default function Gallery() {
                     <h2 className="text-3xl font-bold mb-8">Ayurvedic treatments</h2>
                     <div className='grid gap-4 space-y-2 grid-cols-1 md:grid-cols-12 overflow-hidden'>
                         <div className='md:grid-rows-12 grid-cols-1 mt-2 space-y-8 xl:space-y-10 rounded-lg  col-span-3'>
-                            <div className='row-span-4'>
+                            <div className='row-span-4 h- w-full overflow-hidden object-cover '>
                             <img className='w-full h-full object-cover rounded-lg' src="/GalleryTreat/g4.png" alt="" />
                             </div>
                             <div className='row-span-4'>
@@ -467,7 +467,7 @@ export default function Gallery() {
                                     <img className=' col-span-1 object-cover rounded-lg' src="/GalleryTreat/g11.jpg" alt="" />
                                 </div>
                                 <div className='md:h-[66px] overflow-hidden lg:h-[70px] xl:h-[110px] 2xl:h-[154px]   md:gap-1 rounded-lg'>
-                                    <img className=' col-span-1 object-cover rounded-lg' src="/GalleryTreat/g4.png" alt="" />
+                                    <img className=' col-span-1 object-cover rounded-lg' src="/GalleryTreat/g5.png" alt="" />
                                 </div>
                                 <div className='md:h-[66px] overflow-hidden lg:h-[70px] xl:h-[110px] 2xl:h-[154px]   md:gap-1 rounded-lg'>
                                     <img className=' object-cover   rounded-lg' src="/GalleryTreat/g3.png" alt="" />
