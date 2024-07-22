@@ -699,7 +699,7 @@ export default function Home() {
 
 
 
-      {/* footer */}
+     
 
       <div className='bg-[#001F2B]'>
         <footer className="bg-[#001F2B] mx-5 2xl:px-[15rem] lg:mx-20 text-gray-400 pt-20">
