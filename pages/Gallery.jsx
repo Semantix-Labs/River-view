@@ -334,7 +334,7 @@ export default function Gallery() {
             </div>
 
 
-            <section className='bg-[#FFFFFF]'>
+            <section id='rooms' className='bg-[#FFFFFF]'>
                 <div className="lg:px-32 px-5 py-20 ">
                     <h2 className="text-3xl font-bold mb-8">Rooms</h2>
                     <div className="grid  grid-cols-1 md:grid-cols-12 overflow-hidden   gap-6">

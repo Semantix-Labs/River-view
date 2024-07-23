@@ -163,7 +163,7 @@ export default function Treatment() {
 
 
             {/* Treatment Menu */}
-            <section className='bg-[#F9F9F9]'>
+            <section id='treat' className='bg-[#F9F9F9]'>
                 <div className="min-h-screen px-5 lg:px-20  p-6">
                     <div className="max-w-7xl mx-auto">
                         <div className="max-w-7xl mt-10 mb-20  justify-center px-4 sm:px-6 lg:px-8 text-center">
