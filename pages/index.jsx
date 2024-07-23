@@ -142,164 +142,163 @@ export default function Home() {
     <main className="bg-white min-h-screen scroll-smooth">
 
 
-<div
-      className="section w-full h-[300px] fixed bg-gradient-to-b from-black to-transparent z-50 scroll-smooth"
-      style={{ height: isScrolled ? 'auto' : '300px' }}
-    >
       <div
-        className="navbar md:pt-10 flex bg-none lg:pb-20 md:pb-10 text-black scroll-my-28:text-black z-50 fixed w-full lg:px-20"
-        style={{
-          backgroundColor: isScrolled ? 'white' : 'transparent',
-          color: isScrolled ? 'black' : 'white',
-        }}
+        className="section w-full h-[300px] fixed bg-gradient-to-b from-black to-transparent z-50 scroll-smooth"
+        style={{ height: isScrolled ? 'auto' : '300px' }}
       >
-        <div className="md:navbar-center flex navbar-center justify-center md:justify-center w-full">
-          <div
-            style={{ marginLeft: '1rem' }}
-            className="justify-center flex md:justify-center h-[70px] w-[80px] md:h-[80px] md:w-[80px] xl:w-[150px] xl:h-auto"
-          >
-            <img
-              className="flex mx-auto  justify-center"
-              src="./home2.png"
-              alt="Home"
-            />
+        <div
+          className="navbar md:pt-10 flex bg-none lg:pb-20 md:pb-10 text-black scroll-my-28:text-black z-50 fixed w-full lg:px-20"
+          style={{
+            backgroundColor: isScrolled ? 'white' : 'transparent',
+            color: isScrolled ? 'black' : 'white',
+          }}
+        >
+          <div className="md:navbar-center flex navbar-center justify-center md:justify-center w-full">
+            <div
+              style={{ marginLeft: '1rem' }}
+              className="justify-center flex md:justify-center h-[70px] w-[80px] md:h-[80px] md:w-[80px] xl:w-[150px] xl:h-auto"
+            >
+              <img
+                className="flex mx-auto  justify-center"
+                src="./home2.png"
+                alt="Home"
+              />
+            </div>
+          </div>
+          {/* Responsive Menu Button */}
+          <div className="md:hidden justify-end flex navbar-end">
+            <button
+              style={{ marginRight: '0rem' }}
+              className="text-customGold"
+              onClick={toggleMenu}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="#001F2B"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d={isMenuOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'}
+                />
+              </svg>
+            </button>
           </div>
         </div>
-        {/* Responsive Menu Button */}
-        <div className="md:hidden justify-end flex navbar-end">
-          <button
-            style={{ marginRight: '0rem' }}
-            className="text-customGold"
-            onClick={toggleMenu}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="#001F2B"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d={isMenuOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'}
-              />
-            </svg>
-          </button>
-        </div>
-      </div>
-      <nav
-        style={{ color: isScrolled ? 'black' : 'white' }}
-        className="bg-none fixed w-full z-50 mt-20 xl:mt-24 lg:mt-20 md:pt-10 md:mt-16 md:flex justify-center text-center lg:px-20"
-      >
-        <div className="max-w-7xl mx-auto px-4 py-2 gap-4">
-          <div className="flex items-center justify-between">
-            <div
-              className="flex items-center xl:gap-16 xl:mt-5 gap-8"
-              style={{ fontFamily: 'Gentium Basic' }}
-            >
-              <Link href="/">
-                <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
-                  Homepage
-                </span>
-              </Link>
-              <Link href="/AboutUs">
-                <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
-                  About Us
-                </span>
-              </Link>
-              <Link href="/Accomodation">
-                <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
-                  Accommodation
-                </span>
-              </Link>
-              <Link href="/Treatment">
-                <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
-                  Ayurvedic Treatments
-                </span>
-              </Link>
-              <Link href="/Gallery">
-                <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
-                  Gallery
-                </span>
-              </Link>
-              {/* <Link href="/ContactUs">
+        <nav
+          style={{ color: isScrolled ? 'black' : 'white' }}
+          className="bg-none fixed w-full z-50 mt-20 xl:mt-24 lg:mt-20 md:pt-10 md:mt-16 md:flex justify-center text-center lg:px-20"
+        >
+          <div className="max-w-7xl mx-auto px-4 py-2 gap-4">
+            <div className="flex items-center justify-between">
+              <div
+                className="flex items-center xl:gap-16 xl:mt-5 gap-8"
+                style={{ fontFamily: 'Gentium Basic' }}
+              >
+                <Link href="/">
+                  <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
+                    Homepage
+                  </span>
+                </Link>
+                <Link href="/AboutUs">
+                  <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
+                    About Us
+                  </span>
+                </Link>
+                <Link href="/Accomodation">
+                  <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
+                    Accommodation
+                  </span>
+                </Link>
+                <Link href="/Treatment">
+                  <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
+                    Ayurvedic Treatments
+                  </span>
+                </Link>
+                <Link href="/Gallery">
+                  <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
+                    Gallery
+                  </span>
+                </Link>
+                {/* <Link href="/ContactUs">
                 <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
                   Blog
                 </span>
               </Link> */}
+                <Link href="/ContactUs">
+                  <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
+                    Contact Us
+                  </span>
+                </Link>
+              </div>
+            </div>
+            {/* Menu Details */}
+            <div
+              className={`md:hidden fixed top-0 left-0 w-full h-screen bg-white flex flex-col text-start z-50 transition-all space-y-3 duration-700 ease-in-out ${isMenuOpen ? 'translate-y-0' : '-translate-y-full'
+                }`}
+              style={{ color: isScrolled ? 'black' : 'white' }}
+            >
+              <div className="flex justify-end pr-4 pt-4">
+                <button onClick={toggleMenu} className="text-customGold">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6"
+                    fill="#001F2B"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <Link href="/">
+                <span className="text-customGold ml-4 hover:text-white text-2xl cursor-pointer py-2">
+                  Home
+                </span>
+              </Link>
+              <Link href="/AboutUs">
+                <span className="text-customGold ml-4 hover:text-white  text-2xl cursor-pointer py-2">
+                  About Us
+                </span>
+              </Link>
+              <Link href="/Accomodation">
+                <span className="text-customGold ml-4 hover:text-white  text-2xl cursor-pointer py-2">
+                  Accommodation
+                </span>
+              </Link>
+              <Link href="/Treatment">
+                <span className="text-customGold ml-4 hover:text-white  text-2xl cursor-pointer py-2">
+                  Ayurvedic Treatments
+                </span>
+              </Link>
+              <Link href="/GalleryPage">
+                <span className="text-customGold ml-4 hover:text-white  text-2xl cursor-pointer py-2">
+                  Gallery
+                </span>
+              </Link>
               <Link href="/ContactUs">
-                <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
+                <span className="text-customGold ml-4 hover:text-white  text-2xl cursor-pointer py-2">
+                  Blog
+                </span>
+              </Link>
+              <Link href="/ContactUs">
+                <span className="text-customGold ml-4 hover:text-white  text-2xl cursor-pointer py-2">
                   Contact Us
                 </span>
               </Link>
             </div>
           </div>
-          {/* Menu Details */}
-          <div
-            className={`md:hidden fixed top-0 left-0 w-full h-screen bg-white flex flex-col text-start z-50 transition-all space-y-3 duration-700 ease-in-out ${
-              isMenuOpen ? 'translate-y-0' : '-translate-y-full'
-            }`}
-            style={{ color: isScrolled ? 'black' : 'white' }}
-          >
-            <div className="flex justify-end pr-4 pt-4">
-              <button onClick={toggleMenu} className="text-customGold">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
-                  fill="#001F2B"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </button>
-            </div>
-            <Link href="/">
-              <span className="text-customGold ml-4 hover:text-white text-2xl cursor-pointer py-2">
-                Home
-              </span>
-            </Link>
-            <Link href="/AboutUs">
-              <span className="text-customGold ml-4 hover:text-white  text-2xl cursor-pointer py-2">
-                About Us
-              </span>
-            </Link>
-            <Link href="/Accomodation">
-              <span className="text-customGold ml-4 hover:text-white  text-2xl cursor-pointer py-2">
-                Accommodation
-              </span>
-            </Link>
-            <Link href="/Treatment">
-              <span className="text-customGold ml-4 hover:text-white  text-2xl cursor-pointer py-2">
-                Ayurvedic Treatments
-              </span>
-            </Link>
-            <Link href="/GalleryPage">
-              <span className="text-customGold ml-4 hover:text-white  text-2xl cursor-pointer py-2">
-                Gallery
-              </span>
-            </Link>
-            <Link href="/ContactUs">
-              <span className="text-customGold ml-4 hover:text-white  text-2xl cursor-pointer py-2">
-                Blog
-              </span>
-            </Link>
-            <Link href="/ContactUs">
-              <span className="text-customGold ml-4 hover:text-white  text-2xl cursor-pointer py-2">
-                Contact Us
-              </span>
-            </Link>
-          </div>
-        </div>
-      </nav>
-    </div>
+        </nav>
+      </div>
 
 
 
@@ -312,17 +311,24 @@ export default function Home() {
 
       {/* booking section */}
       <section>
-        <div style={{fontFamily:'Gentium Basic'}} className=" grid grid-cols-2 md:flex justify-center mx-10 md:mx-5 mt-[-2rem] md:mt-[-4rem] lg:mt-[-3rem]">
-          
-          <button className="bg-white lg:text-xl text-black shadow-xl box-border border-2 font-bold py-4 md:py-8 md:px-24 rounded">
-            Book Now
-          </button>
-          <button className="bg-white lg:text-xl text-black shadow-xl box-border border-2 font-bold py-4 md:py-8 md:px-24 rounded">
-            View Rooms
-          </button>
-          <button className="bg-white lg:text-xl col-span-2 text-black shadow-xl box-border py-4 border-2 font-bold md:py-8 md:px-24 rounded">
-            Explore Ayurveda
-          </button>
+        <div style={{ fontFamily: 'Gentium Basic' }} className=" grid grid-cols-2 md:flex justify-center mx-10 md:mx-5 mt-[-2rem] md:mt-[-4rem] lg:mt-[-3rem]">
+
+          <Link href="/Accomodation#hh">
+            <button className="bg-white lg:text-xl text-black shadow-xl box-border border-2 font-bold py-4 md:py-8 md:px-24 rounded">
+              Book Now
+            </button>
+          </Link>
+          <Link href="/Gallery#rooms">
+            <button className="bg-white lg:text-xl text-black shadow-xl box-border border-2 font-bold py-4 md:py-8 md:px-24 rounded">
+              View Rooms
+            </button>
+          </Link>
+
+          <Link href="/Treatment#treat">
+            <button className="bg-white lg:text-xl col-span-2 text-black shadow-xl box-border py-4 border-2 font-bold md:py-8 md:px-24 rounded">
+              Explore Ayurveda
+            </button>
+          </Link>
         </div>
       </section>
 
@@ -394,70 +400,70 @@ export default function Home() {
               </p>
             </div>
           </div>
-          
+
         </div>
         <div className="mx-5">
-            <Carousel
-              showArrows={false}
-              showThumbs={false}
-              showStatus={false}
-              showIndicators={false}
-              autoPlay
+          <Carousel
+            showArrows={false}
+            showThumbs={false}
+            showStatus={false}
+            showIndicators={false}
+            autoPlay
 
 
 
-              className="md:hidden    justify-center  flex flex-col items-center"
-            >
-              <div className="flex flex-col items-center">
-                <div className="w-16 h-16 xs:w-24 xs:h-24 xxm:w-28 xxm:h-28 mb-4">
-                  <img
-                    src="/icons/image5.png"
-                    alt="Health-conscious living options"
-                    className=""
-                  />
-                </div>
-                <p className="text-lg font-medium pb-10 text-gray-700">
-                  Health-conscious living options
-                </p>
+            className="md:hidden    justify-center  flex flex-col items-center"
+          >
+            <div className="flex flex-col items-center">
+              <div className="w-16 h-16 xs:w-24 xs:h-24 xxm:w-28 xxm:h-28 mb-4">
+                <img
+                  src="/icons/image5.png"
+                  alt="Health-conscious living options"
+                  className=""
+                />
               </div>
-              <div className="flex flex-col items-center">
-                <div className="w-16 h-16 xs:w-24 xs:h-24 xxm:w-28 xxm:h-28 mb-4">
-                  <img
-                    src="/icons/image6.png"
-                    alt="Personalized diets"
-                    className=""
-                  />
-                </div>
-                <p className="text-lg font-medium text-gray-700">
-                  Personalized diets
-                </p>
+              <p className="text-lg font-medium pb-10 text-gray-700">
+                Health-conscious living options
+              </p>
+            </div>
+            <div className="flex flex-col items-center">
+              <div className="w-16 h-16 xs:w-24 xs:h-24 xxm:w-28 xxm:h-28 mb-4">
+                <img
+                  src="/icons/image6.png"
+                  alt="Personalized diets"
+                  className=""
+                />
               </div>
-              <div className="flex flex-col items-center">
-                <div className="w-16 h-16 xs:w-24 xs:h-24 xxm:w-28 xxm:h-28 mb-4">
-                  <img
-                    src="/icons/image3.png"
-                    alt="Detox programs"
-                    className=""
-                  />
-                </div>
-                <p className="text-lg font-medium text-gray-700">
-                  Detox programs
-                </p>
+              <p className="text-lg font-medium text-gray-700">
+                Personalized diets
+              </p>
+            </div>
+            <div className="flex flex-col items-center">
+              <div className="w-16 h-16 xs:w-24 xs:h-24 xxm:w-28 xxm:h-28 mb-4">
+                <img
+                  src="/icons/image3.png"
+                  alt="Detox programs"
+                  className=""
+                />
               </div>
-              <div className="flex flex-col items-center">
-                <div className="w-16 h-16 xs:w-24 xs:h-24 xxm:w-28 xxm:h-28 mb-4">
-                  <img
-                    src="/icons/image4.png"
-                    alt="Yoga and meditation"
-                    className=""
-                  />
-                </div>
-                <p className="text-lg font-medium text-gray-700">
-                  Yoga and meditation
-                </p>
+              <p className="text-lg font-medium text-gray-700">
+                Detox programs
+              </p>
+            </div>
+            <div className="flex flex-col items-center">
+              <div className="w-16 h-16 xs:w-24 xs:h-24 xxm:w-28 xxm:h-28 mb-4">
+                <img
+                  src="/icons/image4.png"
+                  alt="Yoga and meditation"
+                  className=""
+                />
               </div>
-            </Carousel>
-          </div>
+              <p className="text-lg font-medium text-gray-700">
+                Yoga and meditation
+              </p>
+            </div>
+          </Carousel>
+        </div>
       </section>
 
       {/* services section */}
@@ -491,7 +497,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold">Herbal Treatments</h3>
               <p className="mt-2 text-gray-600">
-                 Experience natures healing with our tailored herbal treatments.
+                Experience natures healing with our tailored herbal treatments.
               </p>
             </div>
             <div className="text-center">
@@ -516,9 +522,11 @@ export default function Home() {
             </div>
           </div>
           <div className="text-center mt-8">
-            <button className="px-6 py-2 bg-white text-gray-600 border border-gray-600 font-semibold rounded-md">
-              Learn more
-            </button>
+            <Link href="/Treatment#treat">
+              <button className="px-6 py-2 bg-white text-gray-600 border border-gray-600 font-semibold rounded-md">
+                Learn more
+              </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -577,9 +585,11 @@ export default function Home() {
               ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
               aliquip ex ea commodo consequat incididunt ut labore et dolore.
             </p>
+            <Link href="Gallery">
             <button className="px-4 py-1 bg-white text-black border border-slate-700  rounded hover:bg-black hover:text-white">
               Explore our gallery
             </button>
+            </Link>
           </div>
           <div className="md:w-1/2 p-6 flex justify-center">
             <div className="relative">
@@ -645,7 +655,8 @@ export default function Home() {
               </div>
             </div>
           )}
-        </section></div>
+        </section>
+        </div>
 
       {/* Upcoming Events */}
       <section className="py-12 lg:mx-20 bg-[#FFFFFF]">
@@ -699,7 +710,7 @@ export default function Home() {
 
 
 
-     
+
 
       <div className='bg-[#001F2B]'>
         <footer className="bg-[#001F2B] mx-5 2xl:px-[15rem] lg:mx-20 text-gray-400 pt-20">
