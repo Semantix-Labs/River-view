@@ -179,7 +179,7 @@ export default function Accomodation() {
                                 <h3 className="text-lg text-white font-semibold">Luxury Rooms</h3>
                                 <p className="text-sm text-white  mt-1">Elegantly designed with modern amenities and Ayurvedic principles.</p>
 
-                                <a href='#' className="mt-4 inline-block   text-start text-xl py-2 rounded-lg">
+                                <a href='#hh' className="mt-4 inline-block   text-start text-xl py-2 rounded-lg">
                                     Book Now <i className='pt-1 pl-2'><svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M9.49992 17.9166C13.8722 17.9166 17.4166 14.3722 17.4166 9.99998C17.4166 5.62773 13.8722 2.08331 9.49992 2.08331C5.12766 2.08331 1.58325 5.62773 1.58325 9.99998C1.58325 14.3722 5.12766 17.9166 9.49992 17.9166Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
                                         <path d="M9.5 13.1666L12.6667 9.99998L9.5 6.83331" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
@@ -203,7 +203,7 @@ export default function Accomodation() {
                                 <h3 className="text-lg text-white font-semibold">Luxury Rooms</h3>
                                 <p className="text-sm text-white  mt-1">Elegantly designed with modern amenities and Ayurvedic principles.</p>
 
-                                <a href='#' className="mt-4 inline-block  text-start text-xl py-2 rounded-lg">
+                                <a href='#hh' className="mt-4 inline-block  text-start text-xl py-2 rounded-lg">
                                     Book Now <i className='pt-1 pl-2'><svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M9.49992 17.9166C13.8722 17.9166 17.4166 14.3722 17.4166 9.99998C17.4166 5.62773 13.8722 2.08331 9.49992 2.08331C5.12766 2.08331 1.58325 5.62773 1.58325 9.99998C1.58325 14.3722 5.12766 17.9166 9.49992 17.9166Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
                                         <path d="M9.5 13.1666L12.6667 9.99998L9.5 6.83331" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
@@ -226,7 +226,7 @@ export default function Accomodation() {
                                 <h3 className="text-lg text-white font-semibold">Luxury Rooms</h3>
                                 <p className="text-sm text-white  mt-1">Elegantly designed with modern amenities and Ayurvedic principles.</p>
 
-                                <a href='#' className="mt-4 inline   text-start text-xl py-2 rounded-lg">
+                                <a href='#hh' className="mt-4 inline   text-start text-xl py-2 rounded-lg">
                                     Book Now <i className='pt-1 pl-2'><svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M9.49992 17.9166C13.8722 17.9166 17.4166 14.3722 17.4166 9.99998C17.4166 5.62773 13.8722 2.08331 9.49992 2.08331C5.12766 2.08331 1.58325 5.62773 1.58325 9.99998C1.58325 14.3722 5.12766 17.9166 9.49992 17.9166Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
                                         <path d="M9.5 13.1666L12.6667 9.99998L9.5 6.83331" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
@@ -249,7 +249,7 @@ export default function Accomodation() {
                                 <h3 className="text-lg text-white font-semibold">Luxury Rooms</h3>
                                 <p className="text-sm text-white  mt-1">Elegantly designed with modern amenities and Ayurvedic principles.</p>
 
-                                <a href='#' className="mt-4 inline-block   text-start text-xl py-2 rounded-lg">
+                                <a href='#hh' className="mt-4 inline-block   text-start text-xl py-2 rounded-lg">
                                     Book Now <i className='pt-1 pl-2'><svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M9.49992 17.9166C13.8722 17.9166 17.4166 14.3722 17.4166 9.99998C17.4166 5.62773 13.8722 2.08331 9.49992 2.08331C5.12766 2.08331 1.58325 5.62773 1.58325 9.99998C1.58325 14.3722 5.12766 17.9166 9.49992 17.9166Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
                                         <path d="M9.5 13.1666L12.6667 9.99998L9.5 6.83331" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
@@ -288,7 +288,7 @@ export default function Accomodation() {
 
 
             {/* Booking Form */}
-            <section className='bgImage' style={{ backgroundImage: 'url("/bg3.png") ', backgroundSize: 'cover', }}>
+            <section id='hh' className='bgImage hh' style={{ backgroundImage: 'url("/bg3.png") ', backgroundSize: 'cover', }}>
                 <div className='mt-5  lg:mt-20 w-screen mx-auto grid grid-cols-1  lg:px-20 py-5 lg:py-20 lg:grid-cols-2 '>
 
                     <div className='cols-span-1 mx-5 my-auto   mb-5 lg:mb-24 justify-end'>
