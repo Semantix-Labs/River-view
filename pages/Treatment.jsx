@@ -59,14 +59,14 @@ export default function Treatment() {
     };
     return (
         <div>
-             <nav className="bg-white fixed z-50 min-w-full border-gray-200 dark:bg-gray-900 lg:px-20">
+            <nav className="bg-white fixed z-50 min-w-full border-gray-200 dark:bg-gray-900 lg:px-20">
                 <div className="max-w-screen flex flex-wrap items-center justify-between mx-auto p-4">
 
-                   
-                <img
+
+                    <img
                         src="/Rlogo.png"
                         className="h-16 w-16 xl:w-28 xl:h-28"
-                        
+
                     />
 
 
@@ -131,7 +131,7 @@ export default function Treatment() {
                                     <button className="text-white   hover:border-b-2 hover:border-customGold ml-4 bg-[#001F2B] px-[17px]  py-[9px] rounded-lg cursor-pointer">Contact Us</button>
                                 </Link>
                             </li>
-                            
+
                         </ul>
                     </div>
                 </div>
@@ -208,21 +208,21 @@ export default function Treatment() {
                         </div>
                         <div className="grid mx-auto grid-cols-1 md:grid-cols-2 gap-4 lg:grid-cols-4">
                             {filteredMassages.map((massage) => (
-                                <div key={massage.id}  className="relative gap-12  group">
-                                <div className='relative '>
-                                    <img
-                                        src={massage.image}
-                                        alt={massage.title}
-                                        className='w-[240px] flex justify-center mx-auto h-[304px] object-cover '
-                                        style={{borderTopLeftRadius:'200px',borderTopRightRadius:'200px'}}
-                                    />
-                                    <div className="absolute inset-0   transform scale-0 group-hover:scale-100   flex items-end  justify-center rounded-lg   duration-300">
-                                        <button onClick={() => handleShowMore(massage)} className="text-white w-[240px] pt-48 pb-5 bg-gradient-to-t from-black to-transparent ">
-                                            <p className='text-[#FFFFFF]  mx-auto object-cover  underline text-center   '>Read more</p>
-                                        </button>
+                                <div key={massage.id} className="relative gap-12  group">
+                                    <div className='relative '>
+                                        <img
+                                            src={massage.image}
+                                            alt={massage.title}
+                                            className='w-[240px] flex justify-center mx-auto h-[304px] object-cover '
+                                            style={{ borderTopLeftRadius: '200px', borderTopRightRadius: '200px' }}
+                                        />
+                                        <div className="absolute inset-0   transform scale-0 group-hover:scale-100   flex items-end  justify-center rounded-lg   duration-300">
+                                            <button onClick={() => handleShowMore(massage)} className="text-white w-[240px] pt-48 pb-5 bg-gradient-to-t from-black to-transparent ">
+                                                <p className='text-[#FFFFFF]  mx-auto object-cover  underline text-center   '>Read more</p>
+                                            </button>
+                                        </div>
                                     </div>
-                                    </div>
-                                    
+
                                     <div className="mt-2 text-center">
                                         <h3 className="text-lg font-medium">{massage.title}</h3>
                                         <p className="max-w-xl mx-10 text-gray-600">{massage.caption}</p>
@@ -323,6 +323,9 @@ export default function Treatment() {
                                     <a href="https://www.tiktok.com/@river.view.villas?_t=8n6DFJerj6X&_r=1" className="text-gray-400 hover:text-white"><FaTiktok /></a>
                                 </div>
                             </div>
+                            <div className="mb-6 lg:mb-0 lg:col-span-1">
+
+                            </div>
 
                             <div className="mb-6 lg:mb-0 lg:col-span-1">
                                 <h3 className="text-white text-lg font-bold mb-2">Page Links</h3>
@@ -344,16 +347,16 @@ export default function Treatment() {
                                 </ul>
                             </div>
 
-                            <div className="mb-6 lg:mb-0 lg:col-span-1">
-                                <h3 className="text-white text-lg font-bold mb-2">Latest News</h3>
-                                <ul className='grid grid-cols-2 lg:grid-cols-1'>
-                                    <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum</a></li>
-                                    <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum dolor</a></li>
-                                    <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum dolor sit</a></li>
-                                    <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum do</a></li>
-                                    <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum dolor</a></li>
-                                </ul>
-                            </div>
+                            {/* <div className="mb-6 lg:mb-0 lg:col-span-1">
+                <h3 className="text-white text-lg font-bold mb-2">Latest News</h3>
+                <ul className='grid grid-cols-2 lg:grid-cols-1'>
+                  <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum</a></li>
+                  <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum dolor</a></li>
+                  <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum dolor sit</a></li>
+                  <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum do</a></li>
+                  <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum dolor</a></li>
+                </ul>
+              </div> */}
 
                             <div className="lg:col-span-2">
                                 <h3 className="text-white text-lg font-bold mb-2">Information</h3>
