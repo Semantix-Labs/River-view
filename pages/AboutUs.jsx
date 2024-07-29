@@ -6,6 +6,7 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/f
 import { FiPhone } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaTiktok } from "react-icons/fa";
+import Image from 'next/image';
 
 
 export default function AboutUs() {
@@ -38,13 +39,13 @@ export default function AboutUs() {
     };
     return (
         <div>
-               <nav className="bg-white fixed z-50 min-w-full border-gray-200 dark:bg-gray-900 lg:px-20">
+            <nav className="bg-white fixed z-50 min-w-full border-gray-200 dark:bg-gray-900 lg:px-20">
                 <div className="max-w-screen flex flex-wrap items-center justify-between mx-auto p-4">
 
                     <img
                         src="/Rlogo.png"
                         className="h-16 w-16 xl:w-28 xl:h-28"
-                        
+
                     />
 
 
@@ -109,7 +110,7 @@ export default function AboutUs() {
                                     <button className="text-white   hover:border-b-2 hover:border-customGold ml-4 bg-[#001F2B] px-[17px]  py-[9px] rounded-lg cursor-pointer">Contact Us</button>
                                 </Link>
                             </li>
-                            
+
                         </ul>
                     </div>
                 </div>
@@ -119,7 +120,7 @@ export default function AboutUs() {
             {/* image Section */}
             <section className='pt-20'>
                 <div className='relative w-full'>
-                    <img className='pb-5 w-screen' src="/AboutUs.png" alt="" />
+                    <Image width={2560} height={1080} className='pb-5 w-screen' src="/AboutUs.png" alt="" />
                     <div class="absolute inset-0  opacity-60 rounded-md"></div>
                     <div class="absolute inset-0 flex items-center justify-center">
                         <h2 className='text-3xl md:text-7xl lg:text-8xl font-bold justify-center text-center text-white'>About Us
@@ -132,26 +133,26 @@ export default function AboutUs() {
 
             {/* History and Origins */}
             <section className='bg-[#FFFFFF]'>
-            <div className='mt-5 px-5 lg:mt-20   '>
-                <div className='lg:px-20 2xl:px-72 grid grid-cols-1 mx-auto md:grid-cols-2 gap-8 '>
-                    <div className='cols-span-1 mx-auto   my-auto'>
-                        <div className='mb-4  md:justify-start  flex justify-center'>
-                            <img className='text-center items-cente flex justify-center' src="/home3.png" alt="" />
-                        </div>
-                        <h2 className="text-3xl md:text-5xl text-center md:text-start font-extrabold text-gray-800 mb-6">History and Origins</h2>
-                        <p className="text-lg text-gray-600 text-justify md:text-start max-w-xl ">Since 2005, River View Villas has been dedicated to promoting Ayurvedic wellness. Our history is deeply rooted in the traditions of Ayurveda, aiming to spread inner peace and balance through our holistic practices.</p>
+                <div className='mt-5 px-5 lg:mt-20   '>
+                    <div className='lg:px-20 2xl:px-72 grid grid-cols-1 mx-auto md:grid-cols-2 gap-8 '>
+                        <div className='cols-span-1 mx-auto   my-auto'>
+                            <div className='mb-4  md:justify-start  flex justify-center'>
+                                <Image width={100} height={100} className='text-center items-cente flex justify-center' src="/home3.png" alt="" />
+                            </div>
+                            <h2 className="text-3xl md:text-5xl text-center md:text-start font-extrabold text-gray-800 mb-6">History and Origins</h2>
+                            <p className="text-lg text-gray-600 text-justify md:text-start max-w-xl ">Since 2005, River View Villas has been dedicated to promoting Ayurvedic wellness. Our history is deeply rooted in the traditions of Ayurveda, aiming to spread inner peace and balance through our holistic practices.</p>
 
-                    </div>
-                    <div className=' grid grid-cols-1 md:grid-cols-2 gap-4 '>
-                       <div className='cols-span-1 rounded-t-full overflow-hidden h-[431px]'>
-                       <img className='w-full h-full object-cover' src="/changes2.jpg" alt="" />
-                       </div>
-                       <div className='cols-span-1 rounded-tr-full relative md:mt-[168px] h-[263px] overflow-hidden'>
-                       <img className='w-full h-full object-cover  ' src="/changes3.jpg" alt="" />
-                       </div>
+                        </div>
+                        <div className=' grid grid-cols-1 md:grid-cols-2 gap-4 '>
+                            <div className='cols-span-1 rounded-t-full relative overflow-hidden h-[431px]'>
+                                <Image layout='fill' objectFit='cover' className='w-full h-full object-cover' src="/changes2.jpg" alt="" />
+                            </div>
+                            <div className='cols-span-1 md:rounded-tr-full relative md:mt-[168px] h-[263px] overflow-hidden'>
+                                <Image layout='fill' objectFit='cover' className='w-full h-full object-cover  ' src="/changes3.jpg" alt="" />
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
             </section>
 
 
@@ -159,9 +160,9 @@ export default function AboutUs() {
             <section className='mt-5 bg-[#F9F9F9]  lg:mt-20'>
                 <div className='lg:px-20  px-5 2xl:px-72 grid grid-cols-1  w-screen md:grid-cols-2 gap-8 '>
                     <div className='cols-span-1 mx-auto'>
-                       <div className='overflow-hidden rounded-tr-[100px] rounded-bl-[80px]'>
-                       <img className='w-full h-full' src="/changes1.jpg" alt="" />
-                       </div>
+                        <div className='overflow-hidden relative rounded-tr-[100px] rounded-bl-[80px]'>
+                            <Image width={500} height={500} className='w-full h-full object-cover' src="/changes1.jpg" alt="" />
+                        </div>
                     </div>
                     <div className='cols-span-1 mx-auto my-auto'>
                         <div className='mb-4 md:justify-start  flex justify-center'>
@@ -188,28 +189,28 @@ export default function AboutUs() {
 
                             <div className="text-justify px-5 2xl:px-20 mx-auto ">
                                 <div className="relative mx-auto flex justify-center mt-10 rounded-lg ">
-                                    <img className='rounded-lg' src="/Expert/3.png" alt="" layout="fill" objectFit="cover" />
+                                    <Image width={500} height={500} className='rounded-lg' src="/Expert/3.png" alt="" />
                                 </div>
                                 <h3 className="mt-4 text-xl font-semibold text-gray-900">Dr.Nalaka Samadhi</h3>
                                 <p className="mt-2 text-base text-justify ">Pulse diagnosis specialist, Panchakarma, yoga, and Ayurvedic expert.</p>
                             </div>
                             <div className="text-justify px-5 2xl:px-20 mx-auto ">
                                 <div className="relative flex justify-center  mx-auto rounded-lg ">
-                                    <img className='rounded-lg' src="/Expert/7.png" alt="" layout="fill" objectFit="cover" />
+                                    <Image width={500} height={500} className='rounded-lg' src="/Expert/7.png" alt="" />
                                 </div>
                                 <h3 className="mt-4 text-xl font-semibold text-gray-900">Dr.Miss Kumudinee Liyanaarachchi</h3>
                                 <p className="mt-2  text-base ">Ayurvedic counselor with postgraduate diplomas and MA in Buddhist Ayurvedic counseling.</p>
                             </div>
                             <div className="text-justify px-5 2xl:px-20 mx-auto ">
                                 <div className="relative flex justify-center  mx-auto mt-10 rounded-lg ">
-                                    <img className='rounded-lg' src="/Expert/4.png" alt="" layout="fill" objectFit="cover" />
+                                    <Image width={500} height={500} className='rounded-lg' src="/Expert/4.png" alt="" />
                                 </div>
                                 <h3 className="mt-4 text-xl font-semibold text-gray-900">A D Dilki Shanika</h3>
                                 <p className="mt-2 text-base ">Expert in Ayurveda, massage therapy, spa, and aromatherapy with 10 years experience.</p>
                             </div>
                             <div className="text-justify px-5 2xl:px-20 mx-auto ">
                                 <div className="relative flex justify-center rounded-lg  mx-auto  ">
-                                    <img className='rounded-lg' src="/Expert/6.png" alt="" layout="fill" objectFit="cover" />
+                                    <Image width={500} height={500} className='rounded-lg' src="/Expert/6.png" alt="" />
                                 </div>
                                 <h3 className="mt-4 text-xl font-semibold text-gray-900">N D Malith Dhilshan</h3>
                                 <p className="mt-2 text-base ">Specialist in Panchakarma, massage therapy, spa, and aromatherapy with 10 years experience.</p>
@@ -230,10 +231,10 @@ export default function AboutUs() {
                         <p className=" mt-2 justify-center mx-auto text-gray-600 max-w-3xl ">We are committed to conserving the environment and maintaining ecological balance. Our practices include the use of locally sourced organic materials, energy-saving programs, and support for the local community. Our efforts have been recognized with various sustainability awards.</p>            </div>
                 </div>
                 <div className='md:flex grid grid-cols-2 justify-center px-5 lg:px-20 gap-4 lg:gap-16'>
-                    <img className='max-w-2xl w-[97px] h-[97px]' src="/commitIcons/1.png" alt="" />
-                    <img className='max-w-2xl w-[97px] h-[84px]' src="/commitIcons/2.png" alt="" />
-                    
-                    
+                    <Image width={500} height={500} className='max-w-2xl w-[97px] h-[97px]' src="/commitIcons/1.png" alt="" />
+                    <Image width={500} height={500} className='max-w-2xl w-[97px] h-[84px]' src="/commitIcons/2.png" alt="" />
+
+
                 </div>
             </section>
 
@@ -277,6 +278,9 @@ export default function AboutUs() {
                                     <a href="https://www.tiktok.com/@river.view.villas?_t=8n6DFJerj6X&_r=1" className="text-gray-400 hover:text-white"><FaTiktok /></a>
                                 </div>
                             </div>
+                            <div className="mb-6 lg:mb-0 lg:col-span-1">
+
+                            </div>
 
                             <div className="mb-6 lg:mb-0 lg:col-span-1">
                                 <h3 className="text-white text-lg font-bold mb-2">Page Links</h3>
@@ -298,16 +302,16 @@ export default function AboutUs() {
                                 </ul>
                             </div>
 
-                            <div className="mb-6 lg:mb-0 lg:col-span-1">
-                                <h3 className="text-white text-lg font-bold mb-2">Latest News</h3>
-                                <ul className='grid grid-cols-2 lg:grid-cols-1'>
-                                    <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum</a></li>
-                                    <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum dolor</a></li>
-                                    <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum dolor sit</a></li>
-                                    <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum do</a></li>
-                                    <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum dolor</a></li>
-                                </ul>
-                            </div>
+                            {/* <div className="mb-6 lg:mb-0 lg:col-span-1">
+                <h3 className="text-white text-lg font-bold mb-2">Latest News</h3>
+                <ul className='grid grid-cols-2 lg:grid-cols-1'>
+                  <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum</a></li>
+                  <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum dolor</a></li>
+                  <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum dolor sit</a></li>
+                  <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum do</a></li>
+                  <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum dolor</a></li>
+                </ul>
+              </div> */}
 
                             <div className="lg:col-span-2">
                                 <h3 className="text-white text-lg font-bold mb-2">Information</h3>
@@ -327,7 +331,6 @@ export default function AboutUs() {
                     </div>
                 </footer>
             </div>
-
         </div>
     )
 }

@@ -452,13 +452,13 @@ export default function Gallery() {
                     <div className='grid gap-4 space-y-2 grid-cols-1 md:grid-cols-12 overflow-hidden'>
                         <div className='md:grid-rows-12 grid-cols-1 mt-2 space-y-8 xl:space-y-10 rounded-lg  col-span-3'>
                             <div className='row-span-4 h- w-full overflow-hidden object-cover '>
-                            <img className='w-full h-full object-cover rounded-lg' src="/GalleryTreat/g4.png" alt="" />
+                                <img className='w-full h-full object-cover rounded-lg' src="/GalleryTreat/g4.png" alt="" />
                             </div>
                             <div className='row-span-4'>
-                            <img className=' w-full h--full object-cover rounded-lg' src="GalleryTreat/g8.jpg" alt="" />
+                                <img className=' w-full h--full object-cover rounded-lg' src="GalleryTreat/g8.jpg" alt="" />
                             </div>
                             <div className='row-span-4'>
-                            <img className=' w-full h-full object-cover rounded-lg' src="/GalleryTreat/g7.png" alt="" />
+                                <img className=' w-full h-full object-cover rounded-lg' src="/GalleryTreat/g7.png" alt="" />
                             </div>
                         </div>
                         <div className='grid grid-cols-1 hidden space-y-2 md:block  rounded-lg  col-span-6'>
@@ -482,29 +482,29 @@ export default function Gallery() {
                                 </div>
                             </div>
                             <div className=' grid grid-cols-3 lg:gap-4 relative    justify-between'>
-                               
-                                    <div className='md:h-[66px] lg:h-[70px] xl:h-[110px] 2xl:h-[154px] overflow-hidden  md:gap-1 rounded-lg'>
-                                        <img className=' col-span-1 object-cover rounded-lg' src="/GalleryTreat/g1.png" alt="" />
-                                    </div>
-                                    <div className='md:h-[66px] overflow-hidden lg:h-[70px] xl:h-[110px] 2xl:h-[154px]   md:gap-1 rounded-lg'>
-                                        <img className=' col-span-1 object-cover rounded-lg' src="/GalleryTreat/g4.png" alt="" />
-                                    </div>
-                                    <div className='md:h-[66px] overflow-hidden lg:h-[70px] xl:h-[110px] 2xl:h-[154px]   md:gap-1 rounded-lg'>
-                                        <img className=' object-cover   rounded-lg' src="/GalleryTreat/g3.png" alt="" />
-                                    </div>
 
-                               
+                                <div className='md:h-[66px] lg:h-[70px] xl:h-[110px] 2xl:h-[154px] overflow-hidden  md:gap-1 rounded-lg'>
+                                    <img className=' col-span-1 object-cover rounded-lg' src="/GalleryTreat/g1.png" alt="" />
+                                </div>
+                                <div className='md:h-[66px] overflow-hidden lg:h-[70px] xl:h-[110px] 2xl:h-[154px]   md:gap-1 rounded-lg'>
+                                    <img className=' col-span-1 object-cover rounded-lg' src="/GalleryTreat/g4.png" alt="" />
+                                </div>
+                                <div className='md:h-[66px] overflow-hidden lg:h-[70px] xl:h-[110px] 2xl:h-[154px]   md:gap-1 rounded-lg'>
+                                    <img className=' object-cover   rounded-lg' src="/GalleryTreat/g3.png" alt="" />
+                                </div>
+
+
                             </div>
                         </div>
                         <div className='md:grid-rows-12 grid-cols-1 mt-2 space-y-8 xl:space-y-10 rounded-lg  col-span-3'>
                             <div className='row-span-4 object-cover overflow-hidden'>
-                            <img className='w-full h-full object-cover rounded-lg' src="/GalleryTreat/g9.jpg" alt="" />
+                                <img className='w-full h-full object-cover rounded-lg' src="/GalleryTreat/g9.jpg" alt="" />
                             </div>
                             <div className='row-span-4'>
-                            <img className=' w-full h--full object-cover overflow-hidden rounded-lg' src="GalleryTreat/g8.jpg" alt="" />
+                                <img className=' w-full h--full object-cover overflow-hidden rounded-lg' src="GalleryTreat/g8.jpg" alt="" />
                             </div>
                             <div className='row-span-4'>
-                            <img className=' w-full h-full object-cover overflow-hidden rounded-lg' src="/GalleryTreat/g7.png" alt="" />
+                                <img className=' w-full h-full object-cover overflow-hidden rounded-lg' src="/GalleryTreat/g7.png" alt="" />
                             </div>
                         </div>
                     </div>
@@ -616,6 +616,9 @@ export default function Gallery() {
                                     <a href="https://www.tiktok.com/@river.view.villas?_t=8n6DFJerj6X&_r=1" className="text-gray-400 hover:text-white"><FaTiktok /></a>
                                 </div>
                             </div>
+                            <div className="mb-6 lg:mb-0 lg:col-span-1">
+
+                            </div>
 
                             <div className="mb-6 lg:mb-0 lg:col-span-1">
                                 <h3 className="text-white text-lg font-bold mb-2">Page Links</h3>
@@ -637,16 +640,16 @@ export default function Gallery() {
                                 </ul>
                             </div>
 
-                            <div className="mb-6 lg:mb-0 lg:col-span-1">
-                                <h3 className="text-white text-lg font-bold mb-2">Latest News</h3>
-                                <ul className='grid grid-cols-2 lg:grid-cols-1'>
-                                    <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum</a></li>
-                                    <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum dolor</a></li>
-                                    <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum dolor sit</a></li>
-                                    <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum do</a></li>
-                                    <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum dolor</a></li>
-                                </ul>
-                            </div>
+                            {/* <div className="mb-6 lg:mb-0 lg:col-span-1">
+                <h3 className="text-white text-lg font-bold mb-2">Latest News</h3>
+                <ul className='grid grid-cols-2 lg:grid-cols-1'>
+                  <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum</a></li>
+                  <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum dolor</a></li>
+                  <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum dolor sit</a></li>
+                  <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum do</a></li>
+                  <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum dolor</a></li>
+                </ul>
+              </div> */}
 
                             <div className="lg:col-span-2">
                                 <h3 className="text-white text-lg font-bold mb-2">Information</h3>
