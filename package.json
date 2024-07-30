@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+     "generate-sitemap": "node generate-sitemap.js"
   },
   "dependencies": {
     "flowbite": "^2.3.0",
@@ -20,6 +21,7 @@
     "react-icons": "^5.2.1",
     "react-leaflet": "^4.2.1",
     "react-responsive-carousel": "^3.2.23",
+    "sitemap": "^8.0.0",
     "swiper": "^11.1.4"
   },
   "devDependencies": {
