@@ -7,6 +7,7 @@ import { FiPhone } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaTiktok } from "react-icons/fa";
 import { useState } from 'react';
+import Image from 'next/image';
 
 const massageTypes = [
     { id: 1, title: 'Face Massage', image: '/TreatmentMenu/1.png', description: 'Facial massage is a very popular Western beauty treatment to slow down the aging process and achieve younger looking and healthier skin. It is also used to relieve stress, migraine headache, premenstrual syndrome (PMS) and sinus congestion. Simple massage can also be done at home', tretModel: '/1.png', caption: ' Enhances beauty, reduces stress and sinus congestion.' },
@@ -27,12 +28,12 @@ const massageTypes = [
     { id: 16, title: 'Sincone Massage', image: '/TreatmentMenu/16.png', description: `Sincone massage is a traditional Ayurvedic treatment using rhythmic strokes and herbal oils to rejuvenate the body and stimulate blood circulation. This form of massage is deeply relaxing and can help in detoxifying the body and enhancing emotional well-being.    `, tretModel: '/1.png', caption: 'Rejuvenates body, stimulates circulation, detoxifies.' },
     {
         id: 17, title: 'Sharwanga Dhara', image: '/TreatmentMenu/17.png', description: `Sharwanga Dhara is a comprehensive Ayurvedic therapy involving the pouring of warm herbal oils over the body, which helps to soothe and invigorate the tissues. This treatment is excellent for
-    relieving joint pain, reducing stress, and promoting a deep sense of relaxation.` , caption: 'Relieves joint pain, reduces stress, rejuvenates.'
+    relieving joint pain, reducing stress, and promoting a deep sense of relaxation.` , tretModel: '/1.png', caption: 'Relieves joint pain, reduces stress, rejuvenates.'
     },
-    { id: 18, title: 'Special Herbals', image: '/TreatmentMenu/18.png', description: `Special Herbal Treatments involve the use of customized herbal preparations to treat specific health issues. These treatments are tailored to individual needs to maximize health benefits, including enhancing immunity, treating chronic ailments, and promoting longevity.    `, tretModel: '/tretModel/1.png', caption: 'Tailored herbal remedies for health and longevity' },
-    { id: 19, title: 'Herbal Bath', image: '/TreatmentMenu/19.png', description: `Herbal bath uses a blend of medicinal herbs in bath water to cleanse, soothe, and rejuvenate the body. This treatment helps to relieve stress, improve circulation, and enhance skin health. It's also known for its therapeutic effects on the mind and body. `, tretModel: '/tretModel/1.png', caption: 'Cleanses body, relieves stress, enhances skin health.' },
-    { id: 20, title: 'Flower Bath', image: '/TreatmentMenu/20.png', description: `Flower bath involves immersing oneself in a bath infused with fresh aromatic flowers. This luxurious treatment helps to uplift spirits, calm the mind, and beautify the skin. It’s also used for relaxation and to enhance emotional balance and harmony.    `, tretModel: '/tretModel/1.png', caption: 'Uplifts spirits, beautifies skin, promotes relaxation.' },
-    { id: 21, title: 'Body Scrub', image: '/TreatmentMenu/21.png', description: `Body scrub involves using a blend of exfoliating ingredients to remove dead skin cells and promote skin renewal. This treatment leaves the skin feeling soft and smooth, improves circulation, and helps in rejuvenating the skin’s appearance. It’s ideal for enhancing skin health and glow.`, tretModel: '/tretModel/1.png', caption: 'Exfoliates, rejuvenates skin, improves circulation.' },
+    { id: 18, title: 'Special Herbals', image: '/TreatmentMenu/18.png', description: `Special Herbal Treatments involve the use of customized herbal preparations to treat specific health issues. These treatments are tailored to individual needs to maximize health benefits, including enhancing immunity, treating chronic ailments, and promoting longevity.    `, tretModel: '/1.png', caption: 'Tailored herbal remedies for health and longevity' },
+    { id: 19, title: 'Herbal Bath', image: '/TreatmentMenu/19.png', description: `Herbal bath uses a blend of medicinal herbs in bath water to cleanse, soothe, and rejuvenate the body. This treatment helps to relieve stress, improve circulation, and enhance skin health. It's also known for its therapeutic effects on the mind and body. `, tretModel: '/1.png', caption: 'Cleanses body, relieves stress, enhances skin health.' },
+    { id: 20, title: 'Flower Bath', image: '/TreatmentMenu/20.png', description: `Flower bath involves immersing oneself in a bath infused with fresh aromatic flowers. This luxurious treatment helps to uplift spirits, calm the mind, and beautify the skin. It’s also used for relaxation and to enhance emotional balance and harmony.    `, tretModel: '/1.png', caption: 'Uplifts spirits, beautifies skin, promotes relaxation.' },
+    { id: 21, title: 'Body Scrub', image: '/TreatmentMenu/21.png', description: `Body scrub involves using a blend of exfoliating ingredients to remove dead skin cells and promote skin renewal. This treatment leaves the skin feeling soft and smooth, improves circulation, and helps in rejuvenating the skin’s appearance. It’s ideal for enhancing skin health and glow.`, tretModel: '/1.png', caption: 'Exfoliates, rejuvenates skin, improves circulation.' },
 ];
 
 
@@ -140,7 +141,7 @@ export default function Treatment() {
             {/* image Section */}
             <section className='pt-20'>
                 <div className='relative w-full'>
-                    <img className='pb-5 w-screen' src="/Tret.png" alt="" />
+                    <Image width={500} height={500} className='pb-5 w-screen' src="/Tret.png" alt="" />
                     <div class="absolute inset-0  opacity-60 rounded-md"></div>
                     <div class="absolute inset-0 flex items-center justify-center">
                         <h2 className='text-3xl md:text-7xl lg:text-8xl font-bold justify-center text-center text-white'>Explore our Treatments</h2>
@@ -263,12 +264,16 @@ export default function Treatment() {
                                         <p className="text-[8px] md:text-[15px] lg:text-[18px] text-gray-700">{selectedMassage.description}</p>
                                     </div>
                                     <div className='flex my-auto justify-between '>
-                                        <img
+                                        <Image
+                                            width={300}
+                                            height={300}
                                             src={selectedMassage.image}
                                             alt={selectedMassage.title}
                                             className="w-24 h-24 flex xs:w-40 xs:h-40 md:w-48 md:h-48 lg:w-1/2 lg:h-auto rounded-lg mr-4"
                                         />
-                                        <img
+                                        <Image
+                                            width={300}
+                                            height={300}
                                             src={selectedMassage.tretModel}
                                             alt={selectedMassage.title}
                                             className="w-24 h-24 flex  xs:w-40 xs:h-40 rounded-lg md:w-48 md:h-48 lg:w-1/2 lg:h-auto  mr-4"
@@ -334,7 +339,7 @@ export default function Treatment() {
                                     <li><a href="#" className="text-gray-400 hover:text-white">Accommodation</a></li>
                                     <li><a href="#" className="text-gray-400 hover:text-white">Ayurvedic Treatments</a></li>
                                     <li><a href="#" className="text-gray-400 hover:text-white">Gallery</a></li>
-                                    <li><a href="#" className="text-gray-400 hover:text-white">News & Blogs</a></li>
+                                    {/* <li><a href="#" className="text-gray-400 hover:text-white">News & Blogs</a></li> */}
                                     <li><a href="#" className="text-gray-400 hover:text-white">Contact us</a></li>
                                     <li> <div className="flex inline md:hidden space-x-4">
                                         <a href="#" className="text-gray-400 hover:text-white">Terms of Use</a>

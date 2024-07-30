@@ -289,7 +289,7 @@ export default function AboutUs() {
                                     <li><a href="#" className="text-gray-400 hover:text-white">Accommodation</a></li>
                                     <li><a href="#" className="text-gray-400 hover:text-white">Ayurvedic Treatments</a></li>
                                     <li><a href="#" className="text-gray-400 hover:text-white">Gallery</a></li>
-                                    <li><a href="#" className="text-gray-400 hover:text-white">News & Blogs</a></li>
+                                    {/* <li><a href="#" className="text-gray-400 hover:text-white">News & Blogs</a></li> */}
                                     <li><a href="#" className="text-gray-400 hover:text-white">Contact us</a></li>
                                     <li> <div className="flex inline md:hidden space-x-4">
                                         <a href="#" className="text-gray-400 hover:text-white">Terms of Use</a>

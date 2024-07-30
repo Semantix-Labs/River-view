@@ -682,7 +682,7 @@ export default function Home() {
       </div>
 
       {/* Upcoming Events */}
-      <section className="py-12 lg:mx-20 bg-[#FFFFFF]">
+      {/* <section className="py-12 lg:mx-20 bg-[#FFFFFF]">
         <div className=" mx-auto px-6">
           <h2 className="text-5xl font-semibold text-gray-800 text-center mb-4">Upcoming Events</h2>
           <p className="text-gray-600 text-center mb-12">
@@ -709,7 +709,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
 
       {/* Subscribe to our newsletter */}
@@ -763,7 +763,7 @@ export default function Home() {
                   <li><a href="#" className="text-gray-400 hover:text-white">Accommodation</a></li>
                   <li><a href="#" className="text-gray-400 hover:text-white">Ayurvedic Treatments</a></li>
                   <li><a href="#" className="text-gray-400 hover:text-white">Gallery</a></li>
-                  <li><a href="#" className="text-gray-400 hover:text-white">News & Blogs</a></li>
+                  {/* <li><a href="#" className="text-gray-400 hover:text-white">News & Blogs</a></li> */}
                   <li><a href="#" className="text-gray-400 hover:text-white">Contact us</a></li>
                   <li> <div className="flex inline md:hidden space-x-4">
                     <a href="#" className="text-gray-400 hover:text-white">Terms of Use</a>
