@@ -616,7 +616,7 @@ export default function Home() {
           </div>
           <div className="md:w-1/2 p-6 flex justify-center">
             <div className="relative">
-              <Image width={500} height={500} src="/Frame2.png" alt="Virtual Tour" className="w-full" />
+              <Image width={1024} height={1024} src="/Frame2.png" alt="Virtual Tour" className="w-full h-full object-cover" />
               <div className="absolute inset-0 flex items-center justify-center">
                 <button data-modal-target="default-modal"
                   data-modal-toggle="default-modal"
