@@ -600,13 +600,10 @@ export default function Home() {
         <section className="flex flex-col md:flex-row items-center lg:mx-20 justify-between p-5 bg-[#F9F9F9]">
           <div className="md:w-1/2 p-6">
             <h2 className="text-3xl font-semibold text-gray-800 mb-4">
-              Lorem (Video Tour)
+            Explore Riverview Villas Video Tour
             </h2>
             <p className="text-gray-600 text-justify mb-6">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat incididunt ut labore et dolore.
+            Experience the charm and tranquility of Riverview Villas. Click play to embark on a visual journey through our exquisite accommodations, stunning landscapes, and unparalleled amenities.
             </p>
             <Link href="Gallery">
               <button className="px-4 py-1 bg-white text-black border border-slate-700  rounded hover:bg-black hover:text-white">
@@ -639,7 +636,7 @@ export default function Home() {
                   {/* Modal header */}
                   <div className="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
                     <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                      Lets Go To Virtual Tour
+                    Explore Riverview
                     </h3>
                     <button
                       type="button"
@@ -667,8 +664,8 @@ export default function Home() {
                   {/* Modal body */}
                   <div className="p-6 space-y-6">
 
-                    <video class="w-full h-auto max-w-full" controls>
-                      <source src="/docs/videos/flowbite.mp4" type="video/mp4" />
+                    <video class="w-full max-h-96 max-w-full" controls>
+                      <source src="/vtour.MOV" type="video/mp4" />
                       Your browser does not support the video tag.
                     </video>
 
