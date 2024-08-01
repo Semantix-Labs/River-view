@@ -205,7 +205,7 @@ function ContactUs() {
                                 </span>
                                 <div className='grid'>
                                     <p className="font-semibold">Phone</p>
-                                    <p>0777217829 / 0777417737</p>
+                                    <p>+94777217829 / +94777417737</p>
                                 </div>
                             </div>
 
@@ -335,7 +335,9 @@ function ContactUs() {
 
 
 
-            <div className='bg-[#001F2B]'>
+         {/* footer */}
+
+         <div className='bg-[#001F2B]'>
                 <footer className="bg-[#001F2B] mx-5 2xl:px-[15rem] lg:mx-20 text-gray-400 pt-20">
                     <div className=" px-4">
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
@@ -390,7 +392,7 @@ function ContactUs() {
                             <div className="lg:col-span-2">
                                 <h3 className="text-white text-lg font-bold mb-2">Information</h3>
                                 <p className="text-gray-400 mb-2 flex"><span className='mr-2'><CiLocationOn color='#B6A176' /></span>No 102/7C, Mathugama Road, Dharga Town, Sri Lanka</p>
-                                <p className="text-gray-400 mb-2 flex"><span className='mr-2'><FiPhone color='#B6A176' /></span>0777217829 / 0777417737</p>
+                                <p className="text-gray-400 mb-2 flex"><span className='mr-2'><FiPhone color='#B6A176' /></span>+94777217829 / +94777417737</p>
                                 <p className="text-gray-400 mb-2 flex"><span className='mr-2'><MdOutlineEmail color='#B6A176' /></span>Riverviewvillas23@Gmail.Com</p>
                             </div>
 
@@ -405,6 +407,7 @@ function ContactUs() {
                     </div>
                 </footer>
             </div>
+
         </div>
     );
 }
