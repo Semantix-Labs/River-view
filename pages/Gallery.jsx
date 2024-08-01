@@ -348,14 +348,12 @@ export default function Gallery() {
                                     height={408}
                                     className="rounded-lg  w-[612px] h-[412px] row-span-3 "
                                 />
-                                <div class="absolute inset-0  opacity-60 rounded-md"></div>
-                                <div class="absolute inset-0 flex items-center justify-center">
-                                    <img src="/play.png" alt="" />
-                                </div>
+                               
+                             
                             </div>
                             <div className="grid grid-cols-2 row-span-1 gap-6">
                                 <Image
-                                    src="/Room/img/2.png"
+                                    src="/Room/img/r3.jpg"
                                     alt="Room 4"
                                     layout="responsive"
                                     width={444}
@@ -363,7 +361,7 @@ export default function Gallery() {
                                     className="rounded-lg w-[444px] h-[274px] row-span-1"
                                 />
                                 <Image
-                                    src="/Room/img/3.png"
+                                    src="/Room/img/3.jpg"
                                     alt="Room 5"
                                     layout="responsive"
                                     width={444}
@@ -376,7 +374,7 @@ export default function Gallery() {
 
                         <div className='grid  md:grid-rows-4 col-span-6 space-y-6 md:col-span-5'>
                             <Image
-                                src="/Room/img/5.png"
+                                src="/Room/img/r2.jpg"
                                 alt="Room 2"
                                 layout="responsive"
                                 width={444}
@@ -385,7 +383,7 @@ export default function Gallery() {
 
                             />
                             <Image
-                                src="/Room/4.png"
+                                src="/Room/4.jpg"
                                 alt="Room 3"
                                 layout="responsive"
                                 width={444}
@@ -655,7 +653,7 @@ export default function Gallery() {
                             <div className="lg:col-span-2">
                                 <h3 className="text-white text-lg font-bold mb-2">Information</h3>
                                 <p className="text-gray-400 mb-2 flex"><span className='mr-2'><CiLocationOn color='#B6A176' /></span>No 102/7C, Mathugama Road, Dharga Town, Sri Lanka</p>
-                                <p className="text-gray-400 mb-2 flex"><span className='mr-2'><FiPhone color='#B6A176' /></span>0777217829 / 0777417737</p>
+                                <p className="text-gray-400 mb-2 flex"><span className='mr-2'><FiPhone color='#B6A176' /></span>+94777217829 / +94777417737</p>
                                 <p className="text-gray-400 mb-2 flex"><span className='mr-2'><MdOutlineEmail color='#B6A176' /></span>Riverviewvillas23@Gmail.Com</p>
                             </div>
 
