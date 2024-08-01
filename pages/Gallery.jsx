@@ -263,10 +263,7 @@ export default function Gallery() {
                                     height={100}
                                     className="md:rounded-tr-[150px] lg:rounded-tr-[200px] lg:rounded-bl-[200px] md:rounded-bl-[150px] row-span-3 "
                                 />
-                                <div class="absolute inset-0  opacity-60 rounded-md"></div>
-                                <div class="absolute inset-0 flex items-center justify-center">
-                                    <img src="/play.png" alt="" />
-                                </div>
+                              
                             </div>
                             <div className="absolute inset-0 flex items-center justify-center">
                                 <button data-modal-target="default-modal"
