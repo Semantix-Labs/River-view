@@ -473,10 +473,7 @@ export default function Gallery() {
                             </div>
                             <div className='relative'>
                             <Image width={500} height={500} className=' w-screen rounded-xl object-cover' src="/GalleryTreat/g5.png" alt="" />
-                                <div class="absolute inset-0  opacity-60 rounded-lg"></div>
-                                <div class="absolute inset-0 flex items-center justify-center">
-                                <Image width={100} height={100} src="/play.png" alt="" />
-                                </div>
+                              
                             </div>
                             <div className=' grid grid-cols-3 lg:gap-4 relative 2xl:mt-10   justify-between'>
 
@@ -525,10 +522,7 @@ export default function Gallery() {
                             </div>
                             <div className='relative col-span-1'>
                             <Image width={500} height={500} className=' w-full mt-4 xl:mt-8  rounded-lg object-cover' src="/GalleryNaturals/n5.jpg" alt="" />
-                                <div class="absolute inset-0  opacity-60 rounded-md"></div>
-                                <div class="absolute inset-0 flex items-center justify-center">
-                                <Image width={100} height={100} src="/play.png" alt="" />
-                                </div>
+                                
                             </div>
 
                         </div>
