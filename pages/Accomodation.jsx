@@ -71,10 +71,10 @@ export default function Accomodation() {
             <nav className="bg-white fixed z-50 min-w-full border-gray-200 dark:bg-gray-900 lg:px-20">
                 <div className="max-w-screen flex flex-wrap items-center justify-between mx-auto p-4">
 
-                <img
+                    <img
                         src="/Rlogo.png"
                         className="h-16 w-16 xl:w-28 xl:h-28"
-                        
+
                     />
 
 
@@ -139,7 +139,7 @@ export default function Accomodation() {
                                     <button className="text-white   hover:border-b-2 hover:border-customGold ml-4 bg-[#001F2B] px-[17px]  py-[9px] rounded-lg cursor-pointer">Contact Us</button>
                                 </Link>
                             </li>
-                            
+
                         </ul>
                     </div>
                 </div>
@@ -148,7 +148,7 @@ export default function Accomodation() {
             {/* image Section */}
             <section className='pt-20'>
                 <div className='relative w-full'>
-                    <img className='pb-5 w-screen' src="/Accom.png" alt="" />
+                    <Image width={2560} height={1080} className='pb-5 w-screen' src="/Accom.png" alt="" />
                     <div class="absolute inset-0  opacity-60 rounded-md"></div>
                     <div class="absolute inset-0 flex items-center justify-center">
                         <h2 className='text-3xl md:text-7xl lg:text-8xl font-bold justify-center text-center text-white'>Accommodation</h2>
@@ -428,7 +428,7 @@ export default function Accomodation() {
                                         </button>
                                     </div>
                                 </form> */}
-                                <Booking/>
+                                <Booking />
                             </div>
                         </div>
                     </div>
@@ -541,9 +541,9 @@ export default function Accomodation() {
                             </div>
                         </div>
                         <div className='cols-span-1 flex justify-center lg:justify-end'>
-                        <div className='md:flex w-[406px] h-[368px] overflow-hidden '>
+                            <div className='md:flex w-[406px] h-[368px] overflow-hidden '>
                                 <img className='w-[300px] h-[300px]' src="/CarpeDiem/vill1.png" alt="" />
-                                <img className='w-[314px] h-[279px] mt-[150px] ml-[-150px]' src="/CarpeDiem/vill2.png"  alt="" />
+                                <img className='w-[314px] h-[279px] mt-[150px] ml-[-150px]' src="/CarpeDiem/vill2.png" alt="" />
                             </div>
                         </div>
                     </div>
@@ -650,7 +650,7 @@ export default function Accomodation() {
                     </div>
 
                     <div className='col-span-1 hidden lg:inline  justify-end '>
-                    <div className='my-auto'>
+                        <div className='my-auto'>
                             <img className='w-[232px] h-[278px] overflow-hidden object-cover relative ml-3' src="/VillaAraliya/vill2.png" alt="" />
                         </div>
                     </div>
@@ -750,9 +750,9 @@ export default function Accomodation() {
                             </div>
                         </div>
                         <div className='cols-span-1 flex justify-end'>
-                        <div className='md:flex w-[406px] h-[368px] overflow-hidden '>
+                            <div className='md:flex w-[406px] h-[368px] overflow-hidden '>
                                 <img className='w-[300px] h-[300px]' src="/VillaOrchid/vill1.png" alt="" />
-                                <img className='w-[314px] h-[279px] mt-[150px] ml-[-150px]' src="/VillaOrchid/vill2.png"  alt="" />
+                                <img className='w-[314px] h-[279px] mt-[150px] ml-[-150px]' src="/VillaOrchid/vill2.png" alt="" />
                             </div>
                         </div>
                     </div>
@@ -861,7 +861,7 @@ export default function Accomodation() {
 
                     <div className='col-span-1  hidden lg:inline justify-end'>
                         <div className=''>
-                        <img className='w-[232px] h-[278px] object-cover relative ml-3' src="/VillaLilly/vill2.png" alt="" />
+                            <img className='w-[232px] h-[278px] object-cover relative ml-3' src="/VillaLilly/vill2.png" alt="" />
                         </div>
                     </div>
                 </div>
@@ -959,9 +959,9 @@ export default function Accomodation() {
                             </div>
                         </div>
                         <div className='cols-span-1 flex justify-end'>
-                        <div className='relative md:flex w-[406px] h-[368px] overflow-hidden '>
+                            <div className='relative md:flex w-[406px] h-[368px] overflow-hidden '>
                                 <img className='w-[300px] h-[300px]' src="/Lotus/vill1.png" alt="" />
-                                <img className='w-[314px] h-[279px] mt-[150px] ml-[-150px]' src="/Lotus/vill2.png"  alt="" />
+                                <img className='w-[314px] h-[279px] mt-[150px] ml-[-150px]' src="/Lotus/vill2.png" alt="" />
                             </div>
                         </div>
                     </div>
@@ -973,23 +973,23 @@ export default function Accomodation() {
 
             {/* Subscribe to our newsletter */}
             <div className='bg-[#F9F9F9]'>
-            <section className="py-20 lg:mx-20 ">
-                <div className=" mx-auto max-w-4xl px-4">
-                    <form className="flex items-center border  rounded-lg overflow-hidden">
-                        <input
-                            type="email"
-                            placeholder="E-mail"
-                            className=" px-4 w-2/3 md:w-full mr-4 py-1 md:py-3 border-gray-600 border rounded-lg outline-none"
-                        />
-                        <button
-                            type="submit"
-                            className="bg-[#001F2B] text-[10px] md:text-[13px] lg:[16px] py-1  md:w-5/12 text-white md:px-6 md:py-3 hover:bg-blue-900 rounded-lg"
-                        >
-                            SUBSCRIBE OUR NEWSLETTER
-                        </button>
-                    </form>
-                </div>
-            </section>
+                <section className="py-20 lg:mx-20 ">
+                    <div className=" mx-auto max-w-4xl px-4">
+                        <form className="flex items-center border  rounded-lg overflow-hidden">
+                            <input
+                                type="email"
+                                placeholder="E-mail"
+                                className=" px-4 w-2/3 md:w-full mr-4 py-1 md:py-3 border-gray-600 border rounded-lg outline-none"
+                            />
+                            <button
+                                type="submit"
+                                className="bg-[#001F2B] text-[10px] md:text-[13px] lg:[16px] py-1  md:w-5/12 text-white md:px-6 md:py-3 hover:bg-blue-900 rounded-lg"
+                            >
+                                SUBSCRIBE OUR NEWSLETTER
+                            </button>
+                        </form>
+                    </div>
+                </section>
             </div>
 
 
@@ -1010,6 +1010,9 @@ export default function Accomodation() {
                                     <a href="https://www.tiktok.com/@river.view.villas?_t=8n6DFJerj6X&_r=1" className="text-gray-400 hover:text-white"><FaTiktok /></a>
                                 </div>
                             </div>
+                            <div className="mb-6 lg:mb-0 lg:col-span-1">
+
+                            </div>
 
                             <div className="mb-6 lg:mb-0 lg:col-span-1">
                                 <h3 className="text-white text-lg font-bold mb-2">Page Links</h3>
@@ -1018,7 +1021,7 @@ export default function Accomodation() {
                                     <li><a href="#" className="text-gray-400 hover:text-white">Accommodation</a></li>
                                     <li><a href="#" className="text-gray-400 hover:text-white">Ayurvedic Treatments</a></li>
                                     <li><a href="#" className="text-gray-400 hover:text-white">Gallery</a></li>
-                                    <li><a href="#" className="text-gray-400 hover:text-white">News & Blogs</a></li>
+                                    {/* <li><a href="#" className="text-gray-400 hover:text-white">News & Blogs</a></li> */}
                                     <li><a href="#" className="text-gray-400 hover:text-white">Contact us</a></li>
                                     <li> <div className="flex inline md:hidden space-x-4">
                                         <a href="#" className="text-gray-400 hover:text-white">Terms of Use</a>
@@ -1031,16 +1034,16 @@ export default function Accomodation() {
                                 </ul>
                             </div>
 
-                            <div className="mb-6 lg:mb-0 lg:col-span-1">
-                                <h3 className="text-white text-lg font-bold mb-2">Latest News</h3>
-                                <ul className='grid grid-cols-2 lg:grid-cols-1'>
-                                    <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum</a></li>
-                                    <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum dolor</a></li>
-                                    <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum dolor sit</a></li>
-                                    <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum do</a></li>
-                                    <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum dolor</a></li>
-                                </ul>
-                            </div>
+                            {/* <div className="mb-6 lg:mb-0 lg:col-span-1">
+                <h3 className="text-white text-lg font-bold mb-2">Latest News</h3>
+                <ul className='grid grid-cols-2 lg:grid-cols-1'>
+                  <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum</a></li>
+                  <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum dolor</a></li>
+                  <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum dolor sit</a></li>
+                  <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum do</a></li>
+                  <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum dolor</a></li>
+                </ul>
+              </div> */}
 
                             <div className="lg:col-span-2">
                                 <h3 className="text-white text-lg font-bold mb-2">Information</h3>
@@ -1060,7 +1063,6 @@ export default function Accomodation() {
                     </div>
                 </footer>
             </div>
-
 
         </div>
     )

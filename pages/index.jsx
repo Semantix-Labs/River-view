@@ -12,6 +12,7 @@ import styles from '../styles/TestimonialsCarousel.module.css';
 import { SlArrowRight } from "react-icons/sl";
 import { SlArrowLeft } from "react-icons/sl";
 import { FaTiktok } from "react-icons/fa";
+import Image from "next/image";
 
 
 
@@ -305,7 +306,7 @@ export default function Home() {
 
       {/* image section */}
       <section>
-        <img src="/home.jpg" className="w-full" alt="hero" />
+        <Image width={2560} height={1080} src="/home.jpg" className="w-full" alt="hero" />
       </section>
 
 
@@ -314,18 +315,18 @@ export default function Home() {
         <div style={{ fontFamily: 'Gentium Basic' }} className=" grid grid-cols-2 md:flex justify-center mx-10 md:mx-5 mt-[-2rem] md:mt-[-4rem] lg:mt-[-3rem]">
 
           <Link href="/Accomodation#hh">
-            <button className="bg-white lg:text-xl text-black shadow-xl box-border border-2 font-bold py-4 md:py-8 md:px-24 rounded">
+            <button className="bg-white lg:text-xl text-black shadow-xl col-span-1 box-border border-2 w-full font-bold py-4 md:py-8 md:px-24 rounded">
               Book Now
             </button>
           </Link>
           <Link href="/Gallery#rooms">
-            <button className="bg-white lg:text-xl text-black shadow-xl box-border border-2 font-bold py-4 md:py-8 md:px-24 rounded">
+            <button className="bg-white lg:text-xl text-black shadow-xl col-span-1 box-border w-full border-2 font-bold py-4 md:py-8 md:px-24 rounded">
               View Rooms
             </button>
           </Link>
 
-          <Link href="/Treatment#treat">
-            <button className="bg-white lg:text-xl col-span-2 text-black shadow-xl box-border py-4 border-2 font-bold md:py-8 md:px-24 rounded">
+          <Link className="col-span-2" href="/Treatment#treat">
+            <button className="bg-white lg:text-xl col-span-2 text-black shadow-xl box-border w-full py-4 border-2 font-bold md:py-8 md:px-24 rounded">
               Explore Ayurveda
             </button>
           </Link>
@@ -336,7 +337,7 @@ export default function Home() {
       <section className="bg-[#FFFFFF]">
         <div className="mt-10 bg-[#FFFFFF] lg:px-20 mx-5  flex flex-col items-center justify-center ">
           <div className="mb-2">
-            <img src="/home3.png" alt="" />
+            <Image width={100} height={100} src="/home3.png" alt="" />
           </div>
           <div className="text-center mb-8">
             <h1 className="text-4xl font-bold mb-4">Welcome to</h1>
@@ -352,50 +353,58 @@ export default function Home() {
           </div>
           <div className="  hidden md:inline-grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8">
             <div className="flex flex-col items-center">
-              <div className="w-24 h-24 mb-4">
-                <img
+              <div className="w-24 h-24 mb-4 relative">
+                <Image
                   src="/icons/image5.png"
                   alt="Health-conscious living options"
                   className="w-full  h-full"
+                  objectFit="cover"
+                  layout="fill"
                 />
               </div>
-              <p className="text-lg font-medium text-gray-700">
+              <p className="text-lg font-medium text-center text-gray-700">
                 Health-conscious living options
               </p>
             </div>
             <div className="flex flex-col items-center">
-              <div className="w-24 h-24 mb-4">
-                <img
+              <div className="w-24 h-24 mb-4 relative">
+                <Image
                   src="/icons/image6.png"
                   alt="Personalized diets"
                   className="w-full h-full"
+                  objectFit="cover"
+                  layout="fill"
                 />
               </div>
-              <p className="text-lg font-medium text-gray-700">
+              <p className="text-lg font-medium text-center text-gray-700">
                 Personalized diets
               </p>
             </div>
             <div className="flex flex-col items-center">
-              <div className="w-24 h-24 mb-4">
-                <img
+              <div className="w-24 h-24 mb-4 relative">
+                <Image
                   src="/icons/image3.png"
                   alt="Detox programs"
                   className="w-full h-full"
+                  objectFit="cover"
+                  layout="fill"
                 />
               </div>
-              <p className="text-lg font-medium text-gray-700">
+              <p className="text-lg font-medium text-center text-gray-700">
                 Detox programs
               </p>
             </div>
             <div className="flex flex-col items-center">
-              <div className="w-24 h-24 mb-4">
-                <img
+              <div className="w-24 h-24 mb-4 relative">
+                <Image
                   src="/icons/image4.png"
                   alt="Yoga and meditation"
                   className="w-full h-full"
+                  objectFit="cover"
+                  layout="fill"
                 />
               </div>
-              <p className="text-lg font-medium text-gray-700">
+              <p className="text-lg font-medium text-center text-gray-700">
                 Yoga and meditation
               </p>
             </div>
@@ -467,31 +476,34 @@ export default function Home() {
       </section>
 
       {/* services section */}
-      <section className="  bg-[#F9F9F9]" >
-        <div className=" mt-5 lg:mt-20 mx-5 bg-[#F9F9F9] lg:mx-20 px-4 py-16">
+      <section className="bg-[#F9F9F9]">
+        <div className="mt-5 lg:mt-20 mx-5 bg-[#F9F9F9] lg:mx-20 px-4 py-16">
           <h2 className="text-5xl font-bold text-center mb-8">
             Major Ayurvedic Services
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className=" mb-4">
-                <img
+              <div className="mb-4">
+                <Image
                   src="/images/3.png"
                   alt="Massage Therapy"
-                  className="w-full h-full "
+                  width={500}
+                  height={500}
+                  className="w-full h-full"
                 />
               </div>
               <h3 className="text-xl font-semibold">Massage Therapy</h3>
               <p className="mt-2 text-gray-600">
                 Revitalize and relax with our expertly delivered massage therapy.
-
               </p>
             </div>
             <div className="text-center">
               <div className="mb-4">
-                <img
+                <Image
                   src="/images/4.png"
                   alt="Herbal Treatments"
+                  width={500}
+                  height={500}
                   className="w-full h-full"
                 />
               </div>
@@ -501,36 +513,47 @@ export default function Home() {
               </p>
             </div>
             <div className="text-center">
-              <div className=" mb-4">
-                <img src="/images/5.png" alt="Yoga" className="w-full " />
+              <div className="mb-4">
+                <Image
+                  src="/images/5.png"
+                  alt="Yoga"
+                  width={500}
+                  height={500}
+                  className="w-full"
+                />
               </div>
               <h3 className="text-xl font-semibold">Yoga</h3>
               <p className="mt-2 text-gray-600">
                 Enhance balance and strength through our yoga sessions.
-
               </p>
             </div>
             <div className="text-center">
-              <div className=" mb-4">
-                <img src="/images/6.png" alt="Meditation" className="w-full " />
+              <div className="mb-4">
+                <Image
+                  src="/images/6.png"
+                  alt="Meditation"
+                  width={500}
+                  height={500}
+                  className="w-full"
+                />
               </div>
               <h3 className="text-xl font-semibold">Meditation</h3>
               <p className="mt-2 text-gray-600">
                 Achieve peace and clarity with our guided meditation techniques.
-
               </p>
             </div>
           </div>
           <div className="text-center mt-8">
             <Link href="/Treatment#treat">
+
               <button className="px-6 py-2 bg-white text-gray-600 border border-gray-600 font-semibold rounded-md">
                 Learn more
               </button>
+
             </Link>
           </div>
         </div>
       </section>
-
       {/* TestimonialsCarousel.js */}
       <section className="bg-[#FFFFFF]">
         <div className="mx-5 bg-[#FFFFFF] lg:mx-20  py-0 md:py-8">
@@ -586,14 +609,14 @@ export default function Home() {
               aliquip ex ea commodo consequat incididunt ut labore et dolore.
             </p>
             <Link href="Gallery">
-            <button className="px-4 py-1 bg-white text-black border border-slate-700  rounded hover:bg-black hover:text-white">
-              Explore our gallery
-            </button>
+              <button className="px-4 py-1 bg-white text-black border border-slate-700  rounded hover:bg-black hover:text-white">
+                Explore our gallery
+              </button>
             </Link>
           </div>
           <div className="md:w-1/2 p-6 flex justify-center">
             <div className="relative">
-              <img src="/Frame2.png" alt="Virtual Tour" className="w-full" />
+              <Image width={1024} height={1024} src="/Frame2.png" alt="Virtual Tour" className="w-full h-full object-cover" />
               <div className="absolute inset-0 flex items-center justify-center">
                 <button data-modal-target="default-modal"
                   data-modal-toggle="default-modal"
@@ -656,10 +679,10 @@ export default function Home() {
             </div>
           )}
         </section>
-        </div>
+      </div>
 
       {/* Upcoming Events */}
-      <section className="py-12 lg:mx-20 bg-[#FFFFFF]">
+      {/* <section className="py-12 lg:mx-20 bg-[#FFFFFF]">
         <div className=" mx-auto px-6">
           <h2 className="text-5xl font-semibold text-gray-800 text-center mb-4">Upcoming Events</h2>
           <p className="text-gray-600 text-center mb-12">
@@ -668,7 +691,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {events.map((event, index) => (
               <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
-                <img src={event.image} alt={event.title} className="w-full h-48 object-cover" />
+                <Image width={500} height={500} src={event.image} alt={event.title} className="w-full h-48 object-cover" />
                 <div className="p-6">
                   <p className="text-gray-500 mb-2">{event.date}</p>
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">{event.title}</h3>
@@ -686,7 +709,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
 
       {/* Subscribe to our newsletter */}
@@ -729,6 +752,9 @@ export default function Home() {
                   <a href="https://www.tiktok.com/@river.view.villas?_t=8n6DFJerj6X&_r=1" className="text-gray-400 hover:text-white"><FaTiktok /></a>
                 </div>
               </div>
+              <div className="mb-6 lg:mb-0 lg:col-span-1">
+
+              </div>
 
               <div className="mb-6 lg:mb-0 lg:col-span-1">
                 <h3 className="text-white text-lg font-bold mb-2">Page Links</h3>
@@ -737,7 +763,7 @@ export default function Home() {
                   <li><a href="#" className="text-gray-400 hover:text-white">Accommodation</a></li>
                   <li><a href="#" className="text-gray-400 hover:text-white">Ayurvedic Treatments</a></li>
                   <li><a href="#" className="text-gray-400 hover:text-white">Gallery</a></li>
-                  <li><a href="#" className="text-gray-400 hover:text-white">News & Blogs</a></li>
+                  {/* <li><a href="#" className="text-gray-400 hover:text-white">News & Blogs</a></li> */}
                   <li><a href="#" className="text-gray-400 hover:text-white">Contact us</a></li>
                   <li> <div className="flex inline md:hidden space-x-4">
                     <a href="#" className="text-gray-400 hover:text-white">Terms of Use</a>
@@ -750,7 +776,7 @@ export default function Home() {
                 </ul>
               </div>
 
-              <div className="mb-6 lg:mb-0 lg:col-span-1">
+              {/* <div className="mb-6 lg:mb-0 lg:col-span-1">
                 <h3 className="text-white text-lg font-bold mb-2">Latest News</h3>
                 <ul className='grid grid-cols-2 lg:grid-cols-1'>
                   <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum</a></li>
@@ -759,7 +785,7 @@ export default function Home() {
                   <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum do</a></li>
                   <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum dolor</a></li>
                 </ul>
-              </div>
+              </div> */}
 
               <div className="lg:col-span-2">
                 <h3 className="text-white text-lg font-bold mb-2">Information</h3>
