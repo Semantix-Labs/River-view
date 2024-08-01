@@ -247,7 +247,7 @@ export default function Gallery() {
 
 
             {/* Virtual Tour */}
-            <div className='bg-[#F9F9F9]'>
+            {/* <div className='bg-[#F9F9F9]'>
                 <section className="flex flex-col md:flex-row items-center lg:mx-20 justify-between p-6 ">
 
                     <div className="w-full p-6 flex justify-center">
@@ -271,7 +271,7 @@ export default function Gallery() {
                   
                 </section>
             </div>
-
+ */}
 
             <section id='rooms' className='bg-[#FFFFFF]'>
                 <div className="lg:px-32 px-5 py-20 ">
