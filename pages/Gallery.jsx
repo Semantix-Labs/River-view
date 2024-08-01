@@ -348,10 +348,8 @@ export default function Gallery() {
                                     height={408}
                                     className="rounded-lg  w-[612px] h-[412px] row-span-3 "
                                 />
-                                <div class="absolute inset-0  opacity-60 rounded-md"></div>
-                                <div class="absolute inset-0 flex items-center justify-center">
-                                    <img src="/play.png" alt="" />
-                                </div>
+                               
+                             
                             </div>
                             <div className="grid grid-cols-2 row-span-1 gap-6">
                                 <Image
