@@ -235,38 +235,10 @@ function ContactUs() {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex space-x-4 mt-4">
-                            <a href="#" className="text-gray-500 hover:text-gray-900"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="17" cy="17" r="16.5" stroke="black" stroke-opacity="0.13" />
-                                <path d="M20.9993 10.3333H18.9993C18.1153 10.3333 17.2674 10.6845 16.6423 11.3097C16.0172 11.9348 15.666 12.7826 15.666 13.6667V15.6667H13.666V18.3333H15.666V23.6667H18.3327V18.3333H20.3327L20.9993 15.6667H18.3327V13.6667C18.3327 13.4899 18.4029 13.3203 18.5279 13.1953C18.653 13.0702 18.8225 13 18.9993 13H20.9993V10.3333Z" stroke="#646464" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                            </a>
-                            <a href="#" className="text-gray-500 hover:text-gray-900"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="17" cy="17" r="16.5" stroke="black" stroke-opacity="0.13" />
-                                <g clip-path="url(#clip0_389_4321)">
-                                    <path d="M20.334 10.3333H13.6673C11.8264 10.3333 10.334 11.8257 10.334 13.6667V20.3333C10.334 22.1743 11.8264 23.6667 13.6673 23.6667H20.334C22.1749 23.6667 23.6673 22.1743 23.6673 20.3333V13.6667C23.6673 11.8257 22.1749 10.3333 20.334 10.3333Z" stroke="#646464" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M19.6658 16.58C19.7481 17.1348 19.6533 17.7015 19.395 18.1993C19.1367 18.6972 18.7279 19.1009 18.2269 19.3531C17.7259 19.6053 17.1581 19.6931 16.6043 19.6039C16.0506 19.5148 15.539 19.2534 15.1424 18.8568C14.7458 18.4601 14.4843 17.9486 14.3952 17.3948C14.3061 16.841 14.3939 16.2733 14.646 15.7722C14.8982 15.2712 15.3019 14.8625 15.7998 14.6041C16.2977 14.3458 16.8643 14.251 17.4192 14.3333C17.9851 14.4172 18.5091 14.681 18.9136 15.0855C19.3182 15.4901 19.5819 16.014 19.6658 16.58Z" stroke="#646464" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M20.666 13.3333H20.674" stroke="#646464" stroke-linecap="round" stroke-linejoin="round" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_389_4321">
-                                        <rect width="16" height="16" fill="white" transform="translate(9 9)" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            </a>
-                            <a href="#" className="text-gray-500 hover:text-gray-900"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="17" cy="17" r="16.5" stroke="black" stroke-opacity="0.13" />
-                                <path d="M19.666 14.3333C20.7269 14.3333 21.7443 14.7548 22.4944 15.5049C23.2446 16.2551 23.666 17.2725 23.666 18.3333V23H20.9993V18.3333C20.9993 17.9797 20.8589 17.6406 20.6088 17.3905C20.3588 17.1405 20.0196 17 19.666 17C19.3124 17 18.9733 17.1405 18.7232 17.3905C18.4732 17.6406 18.3327 17.9797 18.3327 18.3333V23H15.666V18.3333C15.666 17.2725 16.0874 16.2551 16.8376 15.5049C17.5877 14.7548 18.6051 14.3333 19.666 14.3333Z" stroke="#646464" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M13.0007 15H10.334V23H13.0007V15Z" stroke="#646464" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M11.6673 13C12.4037 13 13.0007 12.4031 13.0007 11.6667C13.0007 10.9303 12.4037 10.3333 11.6673 10.3333C10.9309 10.3333 10.334 10.9303 10.334 11.6667C10.334 12.4031 10.9309 13 11.6673 13Z" stroke="#646464" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                            </a>
-                            <a href="#" className="text-gray-500 hover:text-gray-900"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="16" cy="16" r="15.5" stroke="black" stroke-opacity="0.13" />
-                                <path d="M23.3327 9.99999C22.6943 10.4503 21.9874 10.7947 21.2393 11.02C20.8378 10.5583 20.3042 10.2311 19.7107 10.0826C19.1172 9.9341 18.4923 9.97145 17.9207 10.1896C17.3491 10.4078 16.8583 10.7963 16.5147 11.3025C16.171 11.8087 15.9911 12.4082 15.9993 13.02V13.6867C14.8278 13.717 13.6669 13.4572 12.62 12.9303C11.5732 12.4034 10.6729 11.6257 9.99935 10.6667C9.99935 10.6667 7.33268 16.6667 13.3327 19.3333C11.9597 20.2653 10.3241 20.7326 8.66602 20.6667C14.666 24 21.9993 20.6667 21.9993 13C21.9987 12.8143 21.9809 12.6291 21.946 12.4467C22.6264 11.7757 23.1066 10.9285 23.3327 9.99999Z" stroke="#646464" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                            </a>
+                        <div className="flex  space-x-4">
+                            <Link href="https://web.facebook.com/riverviewvillas/?_rdc=1&_rdr " className="text-gray-400 hover:text-customGold"><FaFacebookF /></Link>
+                            <Link href="https://www.instagram.com/river_view_villas/?hl=en " className="text-gray-400 hover:text-customGold"><FaInstagram /></Link>
+                            <Link href="https://www.tiktok.com/@river.view.villas?_t=8n6DFJerj6X&_r=1" className="text-gray-400 hover:text-customGold"><FaTiktok /></Link>
                         </div>
                     </div>
                     <div className="w-full md:w-1/2 p-4">
@@ -335,9 +307,9 @@ function ContactUs() {
 
 
 
-         {/* footer */}
+            {/* footer */}
 
-         <div className='bg-[#001F2B]'>
+            <div className='bg-[#001F2B]'>
                 <footer className="bg-[#001F2B] mx-5 2xl:px-[15rem] lg:mx-20 text-gray-400 pt-20">
                     <div className=" px-4">
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
