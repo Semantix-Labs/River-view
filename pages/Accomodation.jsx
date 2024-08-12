@@ -68,14 +68,15 @@ export default function Accomodation() {
     ];
     return (
         <div className=' ' >
-            <nav className="bg-white fixed z-50 min-w-full border-gray-200 dark:bg-gray-900 lg:px-20">
+              <nav className="bg-white fixed z-50 min-w-full border-gray-200 dark:bg-gray-900 lg:px-20">
                 <div className="max-w-screen flex flex-wrap items-center justify-between mx-auto p-4">
+                    <Link href="/">
+                        <img
+                            src="/Rlogo.png"
+                            className="h-16 w-16 xl:w-28 xl:h-28"
 
-                    <img
-                        src="/Rlogo.png"
-                        className="h-16 w-16 xl:w-28 xl:h-28"
-
-                    />
+                        />
+                    </Link>
 
 
                     <button
@@ -104,11 +105,11 @@ export default function Accomodation() {
                     </button>
                     <div className={`${isOpen ? "block" : "hidden"} w-full lg:block lg:w-auto`} id="navbar-default">
                         <ul className="font-medium flex flex-col p-auto md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:flex-row xl:space-x-8 rtl:space-x-reverse lg:mt-0 lg:border-0 lg:bg-white dark:bg-gray-800 lg:dark:bg-gray-900 dark:border-gray-700">
-                            <li className='my-auto'>
+                            {/* <li className='my-auto'>
                                 <Link href="/">
                                     <span className=" text-[#001F2B8F]  hover:border-b-2  hover:border-customGold ml-4 cursor-pointer">Homepage</span>
                                 </Link>
-                            </li>
+                            </li> */}
                             <li className='my-auto'>
                                 <Link href="/AboutUs">
                                     <span className="text-[#001F2B8F]   hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">About Us</span>
@@ -116,7 +117,7 @@ export default function Accomodation() {
                             </li>
                             <li className='my-auto'>
                                 <Link href="/Accomodation">
-                                    <span className="text-[#001F2B8F]  border-b-2 border-[#001F2B8F]  hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Accommodation</span>
+                                    <span className="text-[#001F2B8F]  border-b-2 border-[#001F2B8F]   hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Accommodation</span>
                                 </Link>
                             </li>
                             <li className='my-auto'>
@@ -129,14 +130,14 @@ export default function Accomodation() {
                                     <span className="text-[#001F2B8F]  hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Gallery</span>
                                 </Link>
                             </li>
-                            {/* <li className='my-auto'>
-                                <Link href="/ContactUs">
-                                    <span className="text-[#001F2B8F]  hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Blog</span>
-                                </Link>
-                            </li> */}
                             <li className='my-auto'>
                                 <Link href="/ContactUs">
-                                    <button className="text-white   hover:border-b-2 hover:border-customGold ml-4 bg-[#001F2B] px-[17px]  py-[9px] rounded-lg cursor-pointer">Contact Us</button>
+                                    <span className="text-[#001F2B8F]  hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Contact Us</span>
+                                </Link>
+                            </li>
+                            <li className='my-auto'>
+                                <Link href="/Accomodation#hh">
+                                    <button className="text-white   hover:border-b-2 hover:border-customGold ml-4 bg-[#001F2B] px-[17px]  py-[9px] rounded-lg cursor-pointer">Book Now</button>
                                 </Link>
                             </li>
 
@@ -144,6 +145,7 @@ export default function Accomodation() {
                     </div>
                 </div>
             </nav>
+
 
             {/* image Section */}
             <section className='pt-20'>
@@ -298,7 +300,7 @@ export default function Accomodation() {
                             <p className='max-w-xl text-white '>No 102/7C, Mathugama Road, Dharga Town, Sri Lanka</p>
 
                             <p className='max-w-2xl font-extrabold text-white mt-5'>Phone</p>
-                            <p className='max-w-xl  text-white'>0777217829 / 0777417737</p>
+                            <p className='max-w-xl  text-white'>+94777217829 / +94777417737</p>
 
                             <p className='max-w-2xl text-white font-extrabold mt-5'>E-Mail</p>
                             <p className='max-w-xl text-white '>riverviewvillas23@gmail.com</p>
@@ -308,7 +310,7 @@ export default function Accomodation() {
 
 
                     <div className='cols-span-1 mx-5 '>
-                        <div className='xl:mr-48'>
+                        <div className='2xl:mr-48'>
                             <div className="bg-white p-5  sm:p-10 shadow-lg rounded-lg max-w-screen-2xl w-full">
                                 <h2 className="text-2xl font-bold mb-6">Booking Information</h2>
                                 {/* <form onSubmit={handleSubmit} className="space-y-8">

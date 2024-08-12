@@ -41,12 +41,13 @@ export default function AboutUs() {
         <div>
             <nav className="bg-white fixed z-50 min-w-full border-gray-200 dark:bg-gray-900 lg:px-20">
                 <div className="max-w-screen flex flex-wrap items-center justify-between mx-auto p-4">
+                    <Link href="/">
+                        <img
+                            src="/Rlogo.png"
+                            className="h-16 w-16 xl:w-28 xl:h-28"
 
-                    <img
-                        src="/Rlogo.png"
-                        className="h-16 w-16 xl:w-28 xl:h-28"
-
-                    />
+                        />
+                    </Link>
 
 
                     <button
@@ -75,11 +76,11 @@ export default function AboutUs() {
                     </button>
                     <div className={`${isOpen ? "block" : "hidden"} w-full lg:block lg:w-auto`} id="navbar-default">
                         <ul className="font-medium flex flex-col p-auto md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:flex-row xl:space-x-8 rtl:space-x-reverse lg:mt-0 lg:border-0 lg:bg-white dark:bg-gray-800 lg:dark:bg-gray-900 dark:border-gray-700">
-                            <li className='my-auto'>
+                            {/* <li className='my-auto'>
                                 <Link href="/">
                                     <span className=" text-[#001F2B8F]  hover:border-b-2  hover:border-customGold ml-4 cursor-pointer">Homepage</span>
                                 </Link>
-                            </li>
+                            </li> */}
                             <li className='my-auto'>
                                 <Link href="/AboutUs">
                                     <span className="text-[#001F2B8F] border-b-2 border-[#001F2B8F]   hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">About Us</span>
@@ -100,14 +101,14 @@ export default function AboutUs() {
                                     <span className="text-[#001F2B8F]  hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Gallery</span>
                                 </Link>
                             </li>
-                            {/* <li className='my-auto'>
-                                <Link href="/ContactUs">
-                                    <span className="text-[#001F2B8F]  hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Blog</span>
-                                </Link>
-                            </li> */}
                             <li className='my-auto'>
                                 <Link href="/ContactUs">
-                                    <button className="text-white   hover:border-b-2 hover:border-customGold ml-4 bg-[#001F2B] px-[17px]  py-[9px] rounded-lg cursor-pointer">Contact Us</button>
+                                    <span className="text-[#001F2B8F]  hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Contact Us</span>
+                                </Link>
+                            </li>
+                            <li className='my-auto'>
+                                <Link href="/Accomodation#hh">
+                                    <button className="text-white   hover:border-b-2 hover:border-customGold ml-4 bg-[#001F2B] px-[17px]  py-[9px] rounded-lg cursor-pointer">Book Now</button>
                                 </Link>
                             </li>
 
@@ -187,33 +188,33 @@ export default function AboutUs() {
                     <div className="mt-10 max-w-[100rem] mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="grid gap-8 lg:grid-cols-4 md:grid-cols-2 justify-center sm:grid-cols-1">
 
-                            <div className="text-justify px-5 2xl:px-20 mx-auto ">
+                            <div className="text-justify px-5 2xl:px-20 mx-auto bg-[#bbb2a0] bg-opacity-50 py-5 rounded-lg ">
                                 <div className="relative mx-auto flex justify-center mt-10 rounded-lg ">
                                     <Image width={500} height={500} className='rounded-lg' src="/Expert/3.png" alt="" />
                                 </div>
                                 <h3 className="mt-4 text-xl font-semibold text-gray-900">Dr.Nalaka Samadhi</h3>
-                                <p className="mt-2 text-base text-justify ">Pulse diagnosis specialist, Panchakarma, yoga, and Ayurvedic expert.</p>
+                                <p className="mt-2 text-base text-start ">Pulse diagnosis specialist, Panchakarma, yoga, and Ayurvedic expert.</p>
                             </div>
-                            <div className="text-justify px-5 2xl:px-20 mx-auto ">
+                            <div className="text-justify px-5 2xl:px-20 bg-[#c4e255] bg-opacity-50 py-5 rounded-lg  mx-auto ">
                                 <div className="relative flex justify-center  mx-auto rounded-lg ">
                                     <Image width={500} height={500} className='rounded-lg' src="/Expert/7.png" alt="" />
                                 </div>
                                 <h3 className="mt-4 text-xl font-semibold text-gray-900">Dr.Miss Kumudinee Liyanaarachchi</h3>
-                                <p className="mt-2  text-base ">Ayurvedic counselor with postgraduate diplomas and MA in Buddhist Ayurvedic counseling.</p>
+                                <p className="mt-2  text-base text-start ">Ayurvedic counselor with postgraduate diplomas and MA in Buddhist Ayurvedic counseling.</p>
                             </div>
-                            <div className="text-justify px-5 2xl:px-20 mx-auto ">
+                            <div className="text-justify px-5 2xl:px-20 mx-auto bg-[#d8af5e] bg-opacity-50 py-5 rounded-lg  ">
                                 <div className="relative flex justify-center  mx-auto mt-10 rounded-lg ">
                                     <Image width={500} height={500} className='rounded-lg' src="/Expert/4.png" alt="" />
                                 </div>
                                 <h3 className="mt-4 text-xl font-semibold text-gray-900">A D Dilki Shanika</h3>
-                                <p className="mt-2 text-base ">Expert in Ayurveda, massage therapy, spa, and aromatherapy with 10 years experience.</p>
+                                <p className="mt-2 text-base text-start ">Expert in Ayurveda, massage therapy, spa, and aromatherapy with 10 years experience.</p>
                             </div>
-                            <div className="text-justify px-5 2xl:px-20 mx-auto ">
+                            <div className="text-justify px-5 2xl:px-20 mx-auto bg-[#b3e2e6] bg-opacity-50 py-5  rounded-lg ">
                                 <div className="relative flex justify-center rounded-lg  mx-auto  ">
                                     <Image width={500} height={500} className='rounded-lg' src="/Expert/6.png" alt="" />
                                 </div>
                                 <h3 className="mt-4 text-xl font-semibold text-gray-900">N D Malith Dhilshan</h3>
-                                <p className="mt-2 text-base ">Specialist in Panchakarma, massage therapy, spa, and aromatherapy with 10 years experience.</p>
+                                <p className="mt-2 text-base text-start ">Specialist in Panchakarma, massage therapy, spa, and aromatherapy with 10 years experience.</p>
                             </div>
 
                         </div>
