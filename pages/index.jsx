@@ -200,11 +200,11 @@ export default function Home() {
                 className="flex items-center xl:gap-16 xl:mt-5 gap-8"
                 style={{ fontFamily: 'Gentium Basic' }}
               >
-                <Link href="/">
+                {/* <Link href="/">
                   <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
                     Homepage
                   </span>
-                </Link>
+                </Link> */}
                 <Link href="/AboutUs">
                   <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
                     About Us
@@ -234,6 +234,11 @@ export default function Home() {
                   <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
                     Contact Us
                   </span>
+                </Link>
+                <Link href="/ContactUs">
+                  <button className=" text-white bg-customGold py-2 px-4 rounded-lg hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
+                   Book Now
+                  </button>
                 </Link>
               </div>
             </div>
@@ -315,7 +320,7 @@ export default function Home() {
         <div style={{ fontFamily: 'Gentium Basic' }} className=" grid grid-cols-2 md:flex justify-center mx-10 md:mx-5 mt-[-2rem] md:mt-[-4rem] lg:mt-[-3rem]">
 
           <Link href="/Accomodation#hh">
-            <button className="bg-white lg:text-xl text-black shadow-xl col-span-1 box-border border-2 w-full font-bold py-4 md:py-8 md:px-24 rounded">
+            <button className="bg-white lg:text-xl text-black shadow-xl col-span-1  box-border border-2 w-full font-bold py-4 md:py-8 md:px-24 rounded">
               Book Now
             </button>
           </Link>
@@ -634,7 +639,7 @@ export default function Home() {
                 {/* Modal content */}
                 <div className="relative">
                   {/* Modal header */}
-                  <div className="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                  <div className="flex items-start justify-between p-4  border-b rounded-t dark:border-gray-600">
                     <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
                     Explore Riverview
                     </h3>
@@ -664,7 +669,7 @@ export default function Home() {
                   {/* Modal body */}
                   <div className="p-6 space-y-6">
 
-                    <video class="w-full max-h-96 max-w-full" controls>
+                    <video class="w-full max-h-96 max-w-full " controls>
                       <source src="/vtour.MOV" type="video/mp4" />
                       Your browser does not support the video tag.
                     </video>
