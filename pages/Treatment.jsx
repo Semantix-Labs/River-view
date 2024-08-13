@@ -60,15 +60,15 @@ export default function Treatment() {
     };
     return (
         <div>
-            <nav className="bg-white fixed z-50 min-w-full border-gray-200 dark:bg-gray-900 lg:px-20">
+             <nav className="bg-white fixed z-50 min-w-full border-gray-200 dark:bg-gray-900 lg:px-20">
                 <div className="max-w-screen flex flex-wrap items-center justify-between mx-auto p-4">
+                    <Link href="/">
+                        <img
+                            src="/Rlogo.png"
+                            className="h-16 w-16 xl:w-28 xl:h-28"
 
-
-                    <img
-                        src="/Rlogo.png"
-                        className="h-16 w-16 xl:w-28 xl:h-28"
-
-                    />
+                        />
+                    </Link>
 
 
                     <button
@@ -97,14 +97,14 @@ export default function Treatment() {
                     </button>
                     <div className={`${isOpen ? "block" : "hidden"} w-full lg:block lg:w-auto`} id="navbar-default">
                         <ul className="font-medium flex flex-col p-auto md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:flex-row xl:space-x-8 rtl:space-x-reverse lg:mt-0 lg:border-0 lg:bg-white dark:bg-gray-800 lg:dark:bg-gray-900 dark:border-gray-700">
-                            <li className='my-auto'>
+                            {/* <li className='my-auto'>
                                 <Link href="/">
                                     <span className=" text-[#001F2B8F]  hover:border-b-2  hover:border-customGold ml-4 cursor-pointer">Homepage</span>
                                 </Link>
-                            </li>
+                            </li> */}
                             <li className='my-auto'>
                                 <Link href="/AboutUs">
-                                    <span className="text-[#001F2B8F]   hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">About Us</span>
+                                    <span className="text-[#001F2B8F]    hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">About Us</span>
                                 </Link>
                             </li>
                             <li className='my-auto'>
@@ -122,14 +122,14 @@ export default function Treatment() {
                                     <span className="text-[#001F2B8F]  hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Gallery</span>
                                 </Link>
                             </li>
-                            {/* <li className='my-auto'>
-                                <Link href="/ContactUs">
-                                    <span className="text-[#001F2B8F]  hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Blog</span>
-                                </Link>
-                            </li> */}
                             <li className='my-auto'>
                                 <Link href="/ContactUs">
-                                    <button className="text-white   hover:border-b-2 hover:border-customGold ml-4 bg-[#001F2B] px-[17px]  py-[9px] rounded-lg cursor-pointer">Contact Us</button>
+                                    <span className="text-[#001F2B8F]  hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Contact Us</span>
+                                </Link>
+                            </li>
+                            <li className='my-auto'>
+                                <Link href="/Accomodation#hh">
+                                    <button className="text-white   hover:border-b-2 hover:border-customGold ml-4 bg-[#001F2B] px-[17px]  py-[9px] rounded-lg cursor-pointer">Book Now</button>
                                 </Link>
                             </li>
 
@@ -137,6 +137,7 @@ export default function Treatment() {
                     </div>
                 </div>
             </nav>
+
 
             {/* image Section */}
             <section className='pt-20'>

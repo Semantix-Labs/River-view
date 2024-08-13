@@ -106,15 +106,15 @@ export default function Gallery() {
 
     return (
         <div className='min-h-screen '>
-            <nav className="bg-white fixed z-50 min-w-full border-gray-200 dark:bg-gray-900 lg:px-20">
+             <nav className="bg-white fixed z-50 min-w-full border-gray-200 dark:bg-gray-900 lg:px-20">
                 <div className="max-w-screen flex flex-wrap items-center justify-between mx-auto p-4">
+                    <Link href="/">
+                        <img
+                            src="/Rlogo.png"
+                            className="h-16 w-16 xl:w-28 xl:h-28"
 
-
-                    <img
-                        src="/Rlogo.png"
-                        className="h-16 w-16 xl:w-28 xl:h-28"
-
-                    />
+                        />
+                    </Link>
 
 
                     <button
@@ -143,19 +143,19 @@ export default function Gallery() {
                     </button>
                     <div className={`${isOpen ? "block" : "hidden"} w-full lg:block lg:w-auto`} id="navbar-default">
                         <ul className="font-medium flex flex-col p-auto md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:flex-row xl:space-x-8 rtl:space-x-reverse lg:mt-0 lg:border-0 lg:bg-white dark:bg-gray-800 lg:dark:bg-gray-900 dark:border-gray-700">
-                            <li className='my-auto'>
+                            {/* <li className='my-auto'>
                                 <Link href="/">
                                     <span className=" text-[#001F2B8F]  hover:border-b-2  hover:border-customGold ml-4 cursor-pointer">Homepage</span>
                                 </Link>
-                            </li>
+                            </li> */}
                             <li className='my-auto'>
                                 <Link href="/AboutUs">
-                                    <span className="text-[#001F2B8F]   hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">About Us</span>
+                                    <span className="text-[#001F2B8F]    hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">About Us</span>
                                 </Link>
                             </li>
                             <li className='my-auto'>
                                 <Link href="/Accomodation">
-                                    <span className="text-[#001F2B8F]    hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Accommodation</span>
+                                    <span className="text-[#001F2B8F]   hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Accommodation</span>
                                 </Link>
                             </li>
                             <li className='my-auto'>
@@ -165,17 +165,17 @@ export default function Gallery() {
                             </li>
                             <li className='my-auto'>
                                 <Link href="/Gallery">
-                                    <span className="text-[#001F2B8F] border-b-2 border-[#001F2B8F]   hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Gallery</span>
+                                    <span className="text-[#001F2B8F] border-b-2 border-[#001F2B8F]  hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Gallery</span>
                                 </Link>
                             </li>
-                            {/* <li className='my-auto'>
-                                <Link href="/ContactUs">
-                                    <span className="text-[#001F2B8F]  hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Blog</span>
-                                </Link>
-                            </li> */}
                             <li className='my-auto'>
                                 <Link href="/ContactUs">
-                                    <button className="text-white  hover:border-b-2 hover:border-customGold ml-4 bg-[#001F2B] px-[17px]  py-[9px] rounded-lg cursor-pointer">Contact Us</button>
+                                    <span className="text-[#001F2B8F]  hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Contact Us</span>
+                                </Link>
+                            </li>
+                            <li className='my-auto'>
+                                <Link href="/Accomodation#hh">
+                                    <button className="text-white   hover:border-b-2 hover:border-customGold ml-4 bg-[#001F2B] px-[17px]  py-[9px] rounded-lg cursor-pointer">Book Now</button>
                                 </Link>
                             </li>
 
@@ -386,6 +386,7 @@ export default function Gallery() {
             <div className='bg-[#FFFFFF]'>
                 <section className='mx-5 py-20 lg:px-20'>
                     <h2 className="text-3xl font-bold mb-8">Ayurvedic treatments</h2>
+                    
                     <div className='grid gap-4 space-y-2 grid-cols-1 md:grid-cols-12 overflow-hidden'>
                         <div className='md:grid-rows-12 grid-cols-1 mt-2 space-y-8 xl:space-y-10 rounded-lg  col-span-3'>
                             <div className='row-span-4 h- w-full overflow-hidden object-cover '>
@@ -442,6 +443,7 @@ export default function Gallery() {
                             </div>
                         </div>
                     </div>
+                   
                 </section>
             </div>
 

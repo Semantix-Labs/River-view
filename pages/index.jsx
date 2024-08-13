@@ -20,7 +20,7 @@ const CustomPrevArrow = ({ onClick }) => (
   <button
     type="button"
     onClick={onClick}
-    className={`absolute top-1/2 transform -translate-y-1/2 left-0 z-10 ${styles.customArrow}`}
+    className={`absolute top-1/2 transform hover:bg-white -translate-y-1/2 left-0 z-10 ${styles.customArrow}`}
   >
     <SlArrowLeft className='w-10 hidden md:inline  h-10 text-gray-600' />
   </button>
@@ -30,7 +30,7 @@ const CustomNextArrow = ({ onClick }) => (
   <button
     type="button"
     onClick={onClick}
-    className={`absolute top-1/2 transform -translate-y-1/2 right-0 z-10 ${styles.customArrow}`}
+    className={`absolute top-1/2 transform hover:bg-white -translate-y-1/2 right-0 z-10 ${styles.customArrow}`}
   >
     <SlArrowRight className='w-10 hidden md:inline   h-10 text-gray-600' />
   </button>
@@ -573,7 +573,7 @@ export default function Home() {
             interval={5000}
             className={`relative ${styles.customCarousel}`}
             renderArrowPrev={(onClickHandler, hasPrev, label) =>
-              hasPrev && <CustomPrevArrow onClick={onClickHandler} />
+              hasPrev && <CustomPrevArrow className="hover:bg-white" onClick={onClickHandler} />
             }
             renderArrowNext={(onClickHandler, hasNext, label) =>
               hasNext && <CustomNextArrow onClick={onClickHandler} />
