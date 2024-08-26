@@ -223,7 +223,7 @@ export default function Gallery() {
                             </div>
                             <div className="text-center">
                                 <div className="relative  mx-auto md:h-[150px] lg:h-[190px] xl:h-[300px] 2xl:h-[390px]  overflow-hidden rounded-lg ">
-                                <Image  className='w-full h-full object-cover' src="/Activity/2.png" alt="" layout="fill" objectFit="cover" />
+                                <Image  className='w-full h-full object-cover' src="/Activity/co.jpg" alt="" layout="fill" objectFit="cover" />
                                 </div>
                                 <h3 className="mt-4 text-xl text-start pr-5 font-semibold ">Cooking demonstrations</h3>
                             </div>
@@ -235,7 +235,7 @@ export default function Gallery() {
                             </div>
                             <div className="text-center">
                                 <div className="relative  mx-auto md:h-[150px] lg:h-[190px] xl:h-[300px] 2xl:h-[390px]  overflow-hidden rounded-lg ">
-                                <Image  className='w-full h-full object-cover' src="/Activity/4.png" alt="" layout="fill" objectFit="cover" />
+                                <Image  className='w-full h-full object-cover' src="/Activity/veg.jpg" alt="" layout="fill" objectFit="cover" />
                                 </div>
                                 <h3 className="mt-4 text-xl text-start pr-5 font-semibold ">Vegetables from our own plantation</h3>
                             </div>
@@ -489,7 +489,7 @@ export default function Gallery() {
                                     width={258}
                                     height={206}
                                     alt={`Slide ${index + 1}`}
-                                    className="w-[258px] h-[206px] overflow-hidden flex-shrink-0"
+                                    className="w-auto h-[206px] overflow-hidden flex-shrink-0"
                                 />
                             ))}
                         </div>
