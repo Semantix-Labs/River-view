@@ -482,19 +482,19 @@ export default function Home() {
 
       {/* services section */}
       <section className="bg-[#F9F9F9]">
-        <div className="mt-5 lg:mt-20 mx-5 bg-[#F9F9F9] lg:mx-20 px-4 py-16">
+        <div className="mt-5 lg:mt-20 mx-5 bg-[#F9F9F9] max-w-7xl lg:mx-auto px-4 py-16">
           <h2 className="text-5xl font-bold text-center mb-8">
             Major Ayurvedic Services
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="mb-4">
+          <div className="text-center">
+          <div className="mb-4 relative rounded-t-full h-64 xl:h-80 2xl:h-[400px] overflow-hidden">
                 <Image
-                  src="/images/3.png"
+                  src="/mssage.jpg"
                   alt="Massage Therapy"
-                  width={500}
-                  height={500}
-                  className="w-full h-full"
+                  objectFit="cover"
+                  layout="fill"
+                  className="w-full "
                 />
               </div>
               <h3 className="text-xl font-semibold">Massage Therapy</h3>
@@ -503,12 +503,12 @@ export default function Home() {
               </p>
             </div>
             <div className="text-center">
-              <div className="mb-4">
+              <div className="mb-4 relative rounded-t-full h-64 xl:h-80 2xl:h-[400px] overflow-hidden">
                 <Image
-                  src="/images/4.png"
+                  src="/GalleryTreat/g11.jpg"
                   alt="Herbal Treatments"
-                  width={500}
-                  height={500}
+                  objectFit="cover"
+                  layout="fill"
                   className="w-full h-full"
                 />
               </div>
@@ -518,12 +518,12 @@ export default function Home() {
               </p>
             </div>
             <div className="text-center">
-              <div className="mb-4">
+            <div className="mb-4 relative rounded-t-full h-64 xl:h-80 2xl:h-[400px] overflow-hidden">
                 <Image
-                  src="/images/5.png"
+                  src="/yoga.jpg"
                   alt="Yoga"
-                  width={500}
-                  height={500}
+                   objectFit="cover"
+                  layout="fill"
                   className="w-full"
                 />
               </div>
@@ -533,12 +533,12 @@ export default function Home() {
               </p>
             </div>
             <div className="text-center">
-              <div className="mb-4">
+            <div className="mb-4 relative rounded-t-full h-64 xl:h-80 2xl:h-[400px] overflow-hidden">
                 <Image
-                  src="/images/6.png"
+                  src="/medi.jpg"
                   alt="Meditation"
-                  width={500}
-                  height={500}
+                  objectFit="cover"
+                  layout="fill"
                   className="w-full"
                 />
               </div>
