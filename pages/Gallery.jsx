@@ -106,15 +106,15 @@ export default function Gallery() {
 
     return (
         <div className='min-h-screen '>
-            <nav className="bg-white fixed z-50 min-w-full border-gray-200 dark:bg-gray-900 lg:px-20">
+             <nav className="bg-white fixed z-50 min-w-full border-gray-200 dark:bg-gray-900 lg:px-20">
                 <div className="max-w-screen flex flex-wrap items-center justify-between mx-auto p-4">
+                    <Link href="/">
+                        <img
+                            src="/Rlogo.png"
+                            className="h-16 w-16 xl:w-28 xl:h-28"
 
-
-                    <img
-                        src="/Rlogo.png"
-                        className="h-16 w-16 xl:w-28 xl:h-28"
-
-                    />
+                        />
+                    </Link>
 
 
                     <button
@@ -143,19 +143,19 @@ export default function Gallery() {
                     </button>
                     <div className={`${isOpen ? "block" : "hidden"} w-full lg:block lg:w-auto`} id="navbar-default">
                         <ul className="font-medium flex flex-col p-auto md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:flex-row xl:space-x-8 rtl:space-x-reverse lg:mt-0 lg:border-0 lg:bg-white dark:bg-gray-800 lg:dark:bg-gray-900 dark:border-gray-700">
-                            <li className='my-auto'>
+                            {/* <li className='my-auto'>
                                 <Link href="/">
                                     <span className=" text-[#001F2B8F]  hover:border-b-2  hover:border-customGold ml-4 cursor-pointer">Homepage</span>
                                 </Link>
-                            </li>
+                            </li> */}
                             <li className='my-auto'>
                                 <Link href="/AboutUs">
-                                    <span className="text-[#001F2B8F]   hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">About Us</span>
+                                    <span className="text-[#001F2B8F]    hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">About Us</span>
                                 </Link>
                             </li>
                             <li className='my-auto'>
                                 <Link href="/Accomodation">
-                                    <span className="text-[#001F2B8F]    hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Accommodation</span>
+                                    <span className="text-[#001F2B8F]   hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Accommodation</span>
                                 </Link>
                             </li>
                             <li className='my-auto'>
@@ -165,17 +165,17 @@ export default function Gallery() {
                             </li>
                             <li className='my-auto'>
                                 <Link href="/Gallery">
-                                    <span className="text-[#001F2B8F] border-b-2 border-[#001F2B8F]   hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Gallery</span>
+                                    <span className="text-[#001F2B8F] border-b-2 border-[#001F2B8F]  hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Gallery</span>
                                 </Link>
                             </li>
-                            {/* <li className='my-auto'>
-                                <Link href="/ContactUs">
-                                    <span className="text-[#001F2B8F]  hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Blog</span>
-                                </Link>
-                            </li> */}
                             <li className='my-auto'>
                                 <Link href="/ContactUs">
-                                    <button className="text-white  hover:border-b-2 hover:border-customGold ml-4 bg-[#001F2B] px-[17px]  py-[9px] rounded-lg cursor-pointer">Contact Us</button>
+                                    <span className="text-[#001F2B8F]  hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Contact Us</span>
+                                </Link>
+                            </li>
+                            <li className='my-auto'>
+                                <Link href="/Accomodation#hh">
+                                    <button className="text-white   hover:border-b-2 hover:border-customGold ml-4 bg-[#001F2B] px-[17px]  py-[9px] rounded-lg cursor-pointer">Book Now</button>
                                 </Link>
                             </li>
 
@@ -223,7 +223,7 @@ export default function Gallery() {
                             </div>
                             <div className="text-center">
                                 <div className="relative  mx-auto md:h-[150px] lg:h-[190px] xl:h-[300px] 2xl:h-[390px]  overflow-hidden rounded-lg ">
-                                <Image  className='w-full h-full object-cover' src="/Activity/2.png" alt="" layout="fill" objectFit="cover" />
+                                <Image  className='w-full h-full object-cover' src="/Activity/co.jpg" alt="" layout="fill" objectFit="cover" />
                                 </div>
                                 <h3 className="mt-4 text-xl text-start pr-5 font-semibold ">Cooking demonstrations</h3>
                             </div>
@@ -235,7 +235,7 @@ export default function Gallery() {
                             </div>
                             <div className="text-center">
                                 <div className="relative  mx-auto md:h-[150px] lg:h-[190px] xl:h-[300px] 2xl:h-[390px]  overflow-hidden rounded-lg ">
-                                <Image  className='w-full h-full object-cover' src="/Activity/4.png" alt="" layout="fill" objectFit="cover" />
+                                <Image  className='w-full h-full object-cover' src="/Activity/veg.jpg" alt="" layout="fill" objectFit="cover" />
                                 </div>
                                 <h3 className="mt-4 text-xl text-start pr-5 font-semibold ">Vegetables from our own plantation</h3>
                             </div>
@@ -247,7 +247,7 @@ export default function Gallery() {
 
 
             {/* Virtual Tour */}
-            <div className='bg-[#F9F9F9]'>
+            {/* <div className='bg-[#F9F9F9]'>
                 <section className="flex flex-col md:flex-row items-center lg:mx-20 justify-between p-6 ">
 
                     <div className="w-full p-6 flex justify-center">
@@ -263,75 +263,15 @@ export default function Gallery() {
                                     height={100}
                                     className="md:rounded-tr-[150px] lg:rounded-tr-[200px] lg:rounded-bl-[200px] md:rounded-bl-[150px] row-span-3 "
                                 />
-                                <div class="absolute inset-0  opacity-60 rounded-md"></div>
-                                <div class="absolute inset-0 flex items-center justify-center">
-                                    <img src="/play.png" alt="" />
-                                </div>
+                              
                             </div>
-                            <div className="absolute inset-0 flex items-center justify-center">
-                                <button data-modal-target="default-modal"
-                                    data-modal-toggle="default-modal"
-                                    type="button"
-                                    onClick={toggleModal} className="w-52 h-52 mt-10  p-2 rounded-full shadow-lg"> </button>
-                            </div>
+                            
                         </div>
                     </div>
-                    {/* Main modal */}
-                    {showModal && (
-                        <div
-                            id="default-modal"
-                            tabIndex="-1"
-                            aria-hidden="true"
-                            className="fixed top-0 left-0 right-0 z-50 w-full h-screen bg-black bg-opacity-50 flex justify-center items-center"
-                        >
-                            <div className="relative w-full max-w-xl lg:max-w-5xl bg-white rounded-lg shadow dark:bg-gray-700">
-                                {/* Modal content */}
-                                <div className="relative">
-                                    {/* Modal header */}
-                                    <div className="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
-                                        <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                                            Lets Go To Virtual Tour
-                                        </h3>
-                                        <button
-                                            type="button"
-                                            className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
-                                            onClick={toggleModal}
-                                        >
-                                            <svg
-                                                className="w-3 h-3"
-                                                aria-hidden="true"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                fill="none"
-                                                viewBox="0 0 14 14"
-                                            >
-                                                <path
-                                                    stroke="currentColor"
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                    strokeWidth="2"
-                                                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
-                                                />
-                                            </svg>
-                                            <span className="sr-only">Close modal</span>
-                                        </button>
-                                    </div>
-                                    {/* Modal body */}
-                                    <div className="p-6 space-y-6">
-
-                                        <video class="w-screen h-auto max-w-full" controls>
-                                            <source src="/docs/videos/flowbite.mp4" type="video/mp4" />
-                                            Your browser does not support the video tag.
-                                        </video>
-
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    )}
+                  
                 </section>
             </div>
-
+ */}
 
             <section id='rooms' className='bg-[#FFFFFF]'>
                 <div className="lg:px-32 px-5 py-20 ">
@@ -446,6 +386,7 @@ export default function Gallery() {
             <div className='bg-[#FFFFFF]'>
                 <section className='mx-5 py-20 lg:px-20'>
                     <h2 className="text-3xl font-bold mb-8">Ayurvedic treatments</h2>
+                    
                     <div className='grid gap-4 space-y-2 grid-cols-1 md:grid-cols-12 overflow-hidden'>
                         <div className='md:grid-rows-12 grid-cols-1 mt-2 space-y-8 xl:space-y-10 rounded-lg  col-span-3'>
                             <div className='row-span-4 h- w-full overflow-hidden object-cover '>
@@ -473,10 +414,7 @@ export default function Gallery() {
                             </div>
                             <div className='relative'>
                             <Image width={500} height={500} className=' w-screen rounded-xl object-cover' src="/GalleryTreat/g5.png" alt="" />
-                                <div class="absolute inset-0  opacity-60 rounded-lg"></div>
-                                <div class="absolute inset-0 flex items-center justify-center">
-                                <Image width={100} height={100} src="/play.png" alt="" />
-                                </div>
+                              
                             </div>
                             <div className=' grid grid-cols-3 lg:gap-4 relative 2xl:mt-10   justify-between'>
 
@@ -505,6 +443,7 @@ export default function Gallery() {
                             </div>
                         </div>
                     </div>
+                   
                 </section>
             </div>
 
@@ -525,10 +464,7 @@ export default function Gallery() {
                             </div>
                             <div className='relative col-span-1'>
                             <Image width={500} height={500} className=' w-full mt-4 xl:mt-8  rounded-lg object-cover' src="/GalleryNaturals/n5.jpg" alt="" />
-                                <div class="absolute inset-0  opacity-60 rounded-md"></div>
-                                <div class="absolute inset-0 flex items-center justify-center">
-                                <Image width={100} height={100} src="/play.png" alt="" />
-                                </div>
+                                
                             </div>
 
                         </div>
@@ -553,7 +489,7 @@ export default function Gallery() {
                                     width={258}
                                     height={206}
                                     alt={`Slide ${index + 1}`}
-                                    className="w-[258px] h-[206px] overflow-hidden flex-shrink-0"
+                                    className="w-auto h-[206px] overflow-hidden flex-shrink-0"
                                 />
                             ))}
                         </div>
