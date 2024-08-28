@@ -177,7 +177,7 @@ export default function Accomodation() {
                                 className="transition-transform duration-500 ease-in-out transform brightness-50 hover:scale-110"
                             />
                             <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
-                                <p className="text-lg text-[#FFFFFF] font-bold mt-4">$100 / Night</p>
+                                {/* <p className="text-lg text-[#FFFFFF] font-bold mt-4">$100 / Night</p> */}
                                 <h3 className="text-lg text-white font-semibold">Luxury Rooms</h3>
                                 <p className="text-sm text-white  mt-1">Elegantly designed with modern amenities and Ayurvedic principles.</p>
 
@@ -201,7 +201,7 @@ export default function Accomodation() {
                                 className="transition-transform duration-500 ease-in-out brightness-50  transform hover:scale-110"
                             />
                             <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
-                                <p className="text-lg text-[#FFFFFF] font-bold mt-4">$100 / Night</p>
+                                {/* <p className="text-lg text-[#FFFFFF] font-bold mt-4">$100 / Night</p> */}
                                 <h3 className="text-lg text-white font-semibold">Luxury Rooms</h3>
                                 <p className="text-sm text-white  mt-1">Elegantly designed with modern amenities and Ayurvedic principles.</p>
 
@@ -224,7 +224,7 @@ export default function Accomodation() {
                                 className="transition-transform w-full h-full brightness-50  object-cover  duration-500 ease-in-out transform hover:scale-110"
                             />
                             <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
-                                <p className="text-lg text-[#FFFFFF] font-bold mt-4">$100 / Night</p>
+                                {/* <p className="text-lg text-[#FFFFFF] font-bold mt-4">$100 / Night</p> */}
                                 <h3 className="text-lg text-white font-semibold">Luxury Rooms</h3>
                                 <p className="text-sm text-white  mt-1">Elegantly designed with modern amenities and Ayurvedic principles.</p>
 
@@ -247,7 +247,7 @@ export default function Accomodation() {
                                 className="transition-transform duration-500 brightness-50  ease-in-out transform hover:scale-110"
                             />
                             <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
-                                <p className="text-lg text-[#FFFFFF] font-bold mt-4">$100 / Night</p>
+                                {/* <p className="text-lg text-[#FFFFFF] font-bold mt-4">$100 / Night</p> */}
                                 <h3 className="text-lg text-white font-semibold">Luxury Rooms</h3>
                                 <p className="text-sm text-white  mt-1">Elegantly designed with modern amenities and Ayurvedic principles.</p>
 
