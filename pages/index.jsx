@@ -144,8 +144,8 @@ export default function Home() {
 
 
       <div
-        className="section w-full h-[200px] md:h-[300px] fixed md:bg-gradient-to-b from-black to-transparent z-50 scroll-smooth"
-        style={{ height: isScrolled ? 'auto' : '  h-[200px] md:h-[300px]' }}
+        className="section w-full h-[200px] md:h-[300px] fixed bg-gradient-to-b from-black to-transparent z-50 scroll-smooth"
+        style={{ height: isScrolled ? '' : '  h-[200px] md:h-[300px]' }}
       >
         <div
           className="navbar md:pt-10 flex bg-none lg:pb-20 md:pb-10 text-black scroll-my-28:text-black z-40 fixed w-full lg:px-20"
@@ -157,10 +157,10 @@ export default function Home() {
           <div className="md:navbar-center flex navbar-center justify-center md:justify-center w-full">
             <div
               style={{ marginLeft: '1rem' }}
-              className="justify-center flex md:justify-center h-[70px] w-[80px] md:h-[80px] md:w-[80px] xl:w-[150px] xl:h-auto"
+              className="justify-center pt-3 md:pt-0 flex md:justify-center h-[70px] w-[80px] md:h-[80px] md:w-[80px] xl:w-[150px] xl:h-auto"
             >
               <img
-                className="flex mx-auto  justify-center"
+                className="flex mx-auto   justify-center"
                 src="./home2.png"
                 alt="Home"
               />
@@ -197,7 +197,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 py-2 gap-4">
             <div className="flex items-center justify-between">
               <div
-                className="flex items-center xl:gap-16 xl:mt-5 gap-8"
+                className="flex  md:text-sm lg:text-[16px] xl:text-xl items-center xl:gap-16 xl:mt-5 gap-8"
                 style={{ fontFamily: 'Gentium Basic' }}
               >
                 {/* <Link href="/">
