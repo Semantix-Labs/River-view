@@ -535,7 +535,7 @@ export default function Home() {
             <div className="text-center">
             <div className="mb-4 relative rounded-t-full h-64 xl:h-80 2xl:h-[400px] overflow-hidden">
                 <Image
-                  src="/medi2.jpg"
+                  src="/medi1.jpg"
                   alt="Meditation"
                   objectFit="cover"
                   layout="fill"
