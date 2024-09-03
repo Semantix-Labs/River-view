@@ -144,11 +144,11 @@ export default function Home() {
 
 
       <div
-        className="section w-full h-[300px] fixed bg-gradient-to-b from-black to-transparent z-50 scroll-smooth"
-        style={{ height: isScrolled ? 'auto' : '300px' }}
+        className="section w-full h-[200px] md:h-[300px] fixed md:bg-gradient-to-b from-black to-transparent z-50 scroll-smooth"
+        style={{ height: isScrolled ? 'auto' : '  h-[200px] md:h-[300px]' }}
       >
         <div
-          className="navbar md:pt-10 flex bg-none lg:pb-20 md:pb-10 text-black scroll-my-28:text-black z-50 fixed w-full lg:px-20"
+          className="navbar md:pt-10 flex bg-none lg:pb-20 md:pb-10 text-black scroll-my-28:text-black z-40 fixed w-full lg:px-20"
           style={{
             backgroundColor: isScrolled ? 'white' : 'transparent',
             color: isScrolled ? 'black' : 'white',
@@ -192,7 +192,7 @@ export default function Home() {
         </div>
         <nav
           style={{ color: isScrolled ? 'black' : 'white' }}
-          className="bg-none fixed w-full z-50 mt-20 xl:mt-24 lg:mt-20 md:pt-10 md:mt-16 md:flex justify-center text-center lg:px-20"
+          className="bg-none fixed w-full z-40 mt-20 xl:mt-24 lg:mt-20 md:pt-10 md:mt-16 md:flex justify-center text-center lg:px-20"
         >
           <div className="max-w-7xl mx-auto px-4 py-2 gap-4">
             <div className="flex items-center justify-between">
@@ -317,7 +317,7 @@ export default function Home() {
 
       {/* booking section */}
       <section>
-        <div style={{ fontFamily: 'Gentium Basic' }} className=" grid grid-cols-2 md:flex justify-center mx-10 md:mx-5 mt-[-2rem] md:mt-[-4rem] lg:mt-[-3rem]">
+        <div style={{ fontFamily: 'Gentium Basic' }} className=" grid grid-cols-2 z-40 relative md:flex justify-center mx-10 md:mx-5 mt-[-2rem] md:mt-[-4rem] lg:mt-[-3rem]">
 
           <Link href="/Accomodation#hh">
             <button className="bg-white lg:text-xl text-black shadow-xl col-span-1  box-border border-2 w-full font-bold py-4 md:py-8 md:px-24 rounded">
@@ -505,7 +505,7 @@ export default function Home() {
             <div className="text-center">
               <div className="mb-4 relative rounded-t-full h-64 xl:h-80 2xl:h-[400px] overflow-hidden">
                 <Image
-                  src="/GalleryTreat/g11.jpg"
+                  src="/oil.jpg"
                   alt="Herbal Treatments"
                   objectFit="cover"
                   layout="fill"
