@@ -219,9 +219,9 @@ export default function Treatment() {
                                             style={{ borderTopLeftRadius: '200px', borderTopRightRadius: '200px' }}
                                         />
                                         <div className="absolute inset-0   transform scale-0 group-hover:scale-100   flex items-end  justify-center rounded-lg   duration-300">
-                                            <button onClick={() => handleShowMore(massage)} className="text-white w-[240px] pt-48 pb-5 bg-gradient-to-t from-black to-transparent ">
+                                            <span onClick={() => handleShowMore(massage)} className="text-white w-[240px] pt-48 pb-5 bg-gradient-to-t from-black to-transparent ">
                                                 <p className='text-[#FFFFFF]  mx-auto object-cover  underline text-center   '>Read more</p>
-                                            </button>
+                                            </span>
                                         </div>
                                     </div>
 

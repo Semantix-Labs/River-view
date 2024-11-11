@@ -144,11 +144,11 @@ export default function Home() {
 
 
       <div
-        className="section w-full h-[300px] fixed bg-gradient-to-b from-black to-transparent z-50 scroll-smooth"
-        style={{ height: isScrolled ? 'auto' : '300px' }}
+        className="section w-full h-[200px] md:h-[300px] fixed bg-gradient-to-b from-black to-transparent z-50 scroll-smooth"
+        style={{ height: isScrolled ? '' : '  h-[200px] md:h-[300px]' }}
       >
         <div
-          className="navbar md:pt-10 flex bg-none lg:pb-20 md:pb-10 text-black scroll-my-28:text-black z-50 fixed w-full lg:px-20"
+          className="navbar md:pt-10 flex bg-none lg:pb-20 md:pb-10 text-black scroll-my-28:text-black z-40 fixed w-full lg:px-20"
           style={{
             backgroundColor: isScrolled ? 'white' : 'transparent',
             color: isScrolled ? 'black' : 'white',
@@ -157,10 +157,10 @@ export default function Home() {
           <div className="md:navbar-center flex navbar-center justify-center md:justify-center w-full">
             <div
               style={{ marginLeft: '1rem' }}
-              className="justify-center flex md:justify-center h-[70px] w-[80px] md:h-[80px] md:w-[80px] xl:w-[150px] xl:h-auto"
+              className="justify-center pt-3 md:pt-0 flex md:justify-center h-[70px] w-[80px] md:h-[80px] md:w-[80px] xl:w-[150px] xl:h-auto"
             >
               <img
-                className="flex mx-auto  justify-center"
+                className="flex mx-auto   justify-center"
                 src="./home2.png"
                 alt="Home"
               />
@@ -192,12 +192,12 @@ export default function Home() {
         </div>
         <nav
           style={{ color: isScrolled ? 'black' : 'white' }}
-          className="bg-none fixed w-full z-50 mt-20 xl:mt-24 lg:mt-20 md:pt-10 md:mt-16 md:flex justify-center text-center lg:px-20"
+          className="bg-none fixed w-full z-40 mt-20 xl:mt-24 lg:mt-20 md:pt-10 md:mt-16 md:flex justify-center text-center lg:px-20"
         >
           <div className="max-w-7xl mx-auto px-4 py-2 gap-4">
             <div className="flex items-center justify-between">
               <div
-                className="flex items-center xl:gap-16 xl:mt-5 gap-8"
+                className="flex  md:text-sm lg:text-[16px] xl:text-xl items-center xl:gap-16 xl:mt-5 gap-8"
                 style={{ fontFamily: 'Gentium Basic' }}
               >
                 {/* <Link href="/">
@@ -237,7 +237,7 @@ export default function Home() {
                 </Link>
                 <Link href="/ContactUs">
                   <button className=" text-white bg-customGold py-2 px-4 rounded-lg hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
-                   Book Now
+                    Book Now
                   </button>
                 </Link>
               </div>
@@ -317,7 +317,7 @@ export default function Home() {
 
       {/* booking section */}
       <section>
-        <div style={{ fontFamily: 'Gentium Basic' }} className=" grid grid-cols-2 md:flex justify-center mx-10 md:mx-5 mt-[-2rem] md:mt-[-4rem] lg:mt-[-3rem]">
+        <div style={{ fontFamily: 'Gentium Basic' }} className=" grid grid-cols-2 z-40 relative md:flex justify-center mx-10 md:mx-5 mt-[-2rem] md:mt-[-4rem] lg:mt-[-3rem]">
 
           <Link href="/Accomodation#hh">
             <button className="bg-white lg:text-xl text-black shadow-xl col-span-1  box-border border-2 w-full font-bold py-4 md:py-8 md:px-24 rounded">
@@ -482,19 +482,19 @@ export default function Home() {
 
       {/* services section */}
       <section className="bg-[#F9F9F9]">
-        <div className="mt-5 lg:mt-20 mx-5 bg-[#F9F9F9] lg:mx-20 px-4 py-16">
+        <div className="mt-5 lg:mt-20 mx-5 bg-[#F9F9F9] max-w-7xl lg:mx-auto px-4 py-16">
           <h2 className="text-5xl font-bold text-center mb-8">
             Major Ayurvedic Services
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="mb-4">
+          <div className="text-center">
+          <div className="mb-4 relative rounded-t-full h-64 xl:h-80 2xl:h-[400px] overflow-hidden">
                 <Image
-                  src="/images/3.png"
+                  src="/mssage.jpg"
                   alt="Massage Therapy"
-                  width={500}
-                  height={500}
-                  className="w-full h-full"
+                  objectFit="cover"
+                  layout="fill"
+                  className="w-full "
                 />
               </div>
               <h3 className="text-xl font-semibold">Massage Therapy</h3>
@@ -503,12 +503,12 @@ export default function Home() {
               </p>
             </div>
             <div className="text-center">
-              <div className="mb-4">
+              <div className="mb-4 relative rounded-t-full h-64 xl:h-80 2xl:h-[400px] overflow-hidden">
                 <Image
-                  src="/images/4.png"
+                  src="/oil.jpg"
                   alt="Herbal Treatments"
-                  width={500}
-                  height={500}
+                  objectFit="cover"
+                  layout="fill"
                   className="w-full h-full"
                 />
               </div>
@@ -518,12 +518,12 @@ export default function Home() {
               </p>
             </div>
             <div className="text-center">
-              <div className="mb-4">
+            <div className="mb-4 relative rounded-t-full h-64 xl:h-80 2xl:h-[400px] overflow-hidden">
                 <Image
-                  src="/images/5.png"
+                  src="/yoga.jpg"
                   alt="Yoga"
-                  width={500}
-                  height={500}
+                   objectFit="cover"
+                  layout="fill"
                   className="w-full"
                 />
               </div>
@@ -533,12 +533,12 @@ export default function Home() {
               </p>
             </div>
             <div className="text-center">
-              <div className="mb-4">
+            <div className="mb-4 relative rounded-t-full h-64 xl:h-80 2xl:h-[400px] overflow-hidden">
                 <Image
-                  src="/images/6.png"
+                  src="/medi1.jpg"
                   alt="Meditation"
-                  width={500}
-                  height={500}
+                  objectFit="cover"
+                  layout="fill"
                   className="w-full"
                 />
               </div>
@@ -605,10 +605,10 @@ export default function Home() {
         <section className="flex flex-col md:flex-row items-center lg:mx-20 justify-between p-5 bg-[#F9F9F9]">
           <div className="md:w-1/2 p-6">
             <h2 className="text-3xl font-semibold text-gray-800 mb-4">
-            Explore Riverview Villas Video Tour
+              Explore Riverview Villas Video Tour
             </h2>
             <p className="text-gray-600 text-justify mb-6">
-            Experience the charm and tranquility of Riverview Villas. Click play to embark on a visual journey through our exquisite accommodations, stunning landscapes, and unparalleled amenities.
+              Experience the charm and tranquility of Riverview Villas. Click play to embark on a visual journey through our exquisite accommodations, stunning landscapes, and unparalleled amenities.
             </p>
             <Link href="Gallery">
               <button className="px-4 py-1 bg-white text-black border border-slate-700  rounded hover:bg-black hover:text-white">
@@ -618,68 +618,18 @@ export default function Home() {
           </div>
           <div className="md:w-1/2 p-6 flex justify-center">
             <div className="relative">
-              <Image width={1024} height={1024} src="/Frame2.png" alt="Virtual Tour" className="w-full h-full object-cover" />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <button data-modal-target="default-modal"
-                  data-modal-toggle="default-modal"
-                  type="button"
-                  onClick={toggleModal} className=" p-12 rounded-full shadow-lg"></button>
+              <div className="p-6 space-y-6 bg-black">
+
+                <video class="w-full max-h-64 max-w-full " controls>
+                  <source src="/vtour.MOV" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+
               </div>
+
             </div>
           </div>
-          {/* Main modal */}
-          {showModal && (
-            <div
-              id="default-modal"
-              tabIndex="-1"
-              aria-hidden="true"
-              className="fixed top-0 left-0 right-0 z-50 w-full h-screen bg-black bg-opacity-50 flex justify-center items-center"
-            >
-              <div className="relative w-full max-w-2xl bg-white rounded-lg shadow dark:bg-gray-700">
-                {/* Modal content */}
-                <div className="relative">
-                  {/* Modal header */}
-                  <div className="flex items-start justify-between p-4  border-b rounded-t dark:border-gray-600">
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                    Explore Riverview
-                    </h3>
-                    <button
-                      type="button"
-                      className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
-                      onClick={toggleModal}
-                    >
-                      <svg
-                        className="w-3 h-3"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 14 14"
-                      >
-                        <path
-                          stroke="currentColor"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
-                        />
-                      </svg>
-                      <span className="sr-only">Close modal</span>
-                    </button>
-                  </div>
-                  {/* Modal body */}
-                  <div className="p-6 space-y-6">
-
-                    <video class="w-full max-h-96 max-w-full " controls>
-                      <source src="/vtour.MOV" type="video/mp4" />
-                      Your browser does not support the video tag.
-                    </video>
-
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          )}
+       
         </section>
       </div>
 
@@ -737,50 +687,50 @@ export default function Home() {
 
 
 
-     {/* footer */}
+      {/* footer */}
 
-     <div className='bg-[#001F2B]'>
-                <footer className="bg-[#001F2B] mx-5 2xl:px-[15rem] lg:mx-20 text-gray-400 pt-20">
-                    <div className=" px-4">
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
+      <div className='bg-[#001F2B]'>
+        <footer className="bg-[#001F2B] mx-5 2xl:px-[15rem] lg:mx-20 text-gray-400 pt-20">
+          <div className=" px-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
 
-                            <div className="mb-6 lg:mb-0 lg:col-span-2">
-                                <div className='mb-4  lg:mx-0 w-24 h-24'>
-                                    <img className='text-center' src="./home2.png" alt="" />
-                                </div>
-                                <h2 className="text-white text-xl  font-bold mb-2">River View Villas</h2>
-                                <p className="text-gray-400 mb-4">A Short Description about the Villa lorem ipsum Lorem ipsum dolor sit amet, lit sed do consectetur adipicsing</p>
-                                <div className="flex  space-x-4">
-                                    <a href="https://web.facebook.com/riverviewvillas/?_rdc=1&_rdr " className="text-gray-400 hover:text-white"><FaFacebookF /></a>
-                                    <a href="https://www.instagram.com/river_view_villas/?hl=en " className="text-gray-400 hover:text-white"><FaInstagram /></a>
-                                    <a href="https://www.tiktok.com/@river.view.villas?_t=8n6DFJerj6X&_r=1" className="text-gray-400 hover:text-white"><FaTiktok /></a>
-                                </div>
-                            </div>
-                            <div className="mb-6 lg:mb-0 lg:col-span-1">
+              <div className="mb-6 lg:mb-0 lg:col-span-2">
+                <div className='mb-4  lg:mx-0 w-24 h-24'>
+                  <img className='text-center' src="./home2.png" alt="" />
+                </div>
+                <h2 className="text-white text-xl  font-bold mb-2">River View Villas</h2>
+                <p className="text-gray-400 mb-4">A Short Description about the Villa lorem ipsum Lorem ipsum dolor sit amet, lit sed do consectetur adipicsing</p>
+                <div className="flex  space-x-4">
+                  <a href="https://web.facebook.com/riverviewvillas/?_rdc=1&_rdr " className="text-gray-400 hover:text-white"><FaFacebookF /></a>
+                  <a href="https://www.instagram.com/river_view_villas/?hl=en " className="text-gray-400 hover:text-white"><FaInstagram /></a>
+                  <a href="https://www.tiktok.com/@river.view.villas?_t=8n6DFJerj6X&_r=1" className="text-gray-400 hover:text-white"><FaTiktok /></a>
+                </div>
+              </div>
+              <div className="mb-6 lg:mb-0 lg:col-span-1">
 
-                            </div>
+              </div>
 
-                            <div className="mb-6 lg:mb-0 lg:col-span-1">
-                                <h3 className="text-white text-lg font-bold mb-2">Page Links</h3>
-                                <ul className='grid grid-cols-2 lg:grid-cols-1'>
-                                    <li><a href="#" className="text-gray-400 hover:text-white">About us</a></li>
-                                    <li><a href="#" className="text-gray-400 hover:text-white">Accommodation</a></li>
-                                    <li><a href="#" className="text-gray-400 hover:text-white">Ayurvedic Treatments</a></li>
-                                    <li><a href="#" className="text-gray-400 hover:text-white">Gallery</a></li>
-                                    {/* <li><a href="#" className="text-gray-400 hover:text-white">News & Blogs</a></li> */}
-                                    <li><a href="#" className="text-gray-400 hover:text-white">Contact us</a></li>
-                                    <li> <div className="flex inline md:hidden space-x-4">
-                                        <a href="#" className="text-gray-400 hover:text-white">Terms of Use</a>
+              <div className="mb-6 lg:mb-0 lg:col-span-1">
+                <h3 className="text-white text-lg font-bold mb-2">Page Links</h3>
+                <ul className='grid grid-cols-2 lg:grid-cols-1'>
+                  <li><a href="#" className="text-gray-400 hover:text-white">About us</a></li>
+                  <li><a href="#" className="text-gray-400 hover:text-white">Accommodation</a></li>
+                  <li><a href="#" className="text-gray-400 hover:text-white">Ayurvedic Treatments</a></li>
+                  <li><a href="#" className="text-gray-400 hover:text-white">Gallery</a></li>
+                  {/* <li><a href="#" className="text-gray-400 hover:text-white">News & Blogs</a></li> */}
+                  <li><a href="#" className="text-gray-400 hover:text-white">Contact us</a></li>
+                  <li> <div className="flex inline md:hidden space-x-4">
+                    <a href="#" className="text-gray-400 hover:text-white">Terms of Use</a>
 
-                                    </div></li>
-                                    <li> <div className="flex inline md:hidden space-x-4">
-                                        <a href="#" className="text-gray-400 hover:text-white">Privacy Policy</a>
+                  </div></li>
+                  <li> <div className="flex inline md:hidden space-x-4">
+                    <a href="#" className="text-gray-400 hover:text-white">Privacy Policy</a>
 
-                                    </div></li>
-                                </ul>
-                            </div>
+                  </div></li>
+                </ul>
+              </div>
 
-                            {/* <div className="mb-6 lg:mb-0 lg:col-span-1">
+              {/* <div className="mb-6 lg:mb-0 lg:col-span-1">
                 <h3 className="text-white text-lg font-bold mb-2">Latest News</h3>
                 <ul className='grid grid-cols-2 lg:grid-cols-1'>
                   <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum</a></li>
@@ -791,24 +741,24 @@ export default function Home() {
                 </ul>
               </div> */}
 
-                            <div className="lg:col-span-2">
-                                <h3 className="text-white text-lg font-bold mb-2">Information</h3>
-                                <p className="text-gray-400 mb-2 flex"><span className='mr-2'><CiLocationOn color='#B6A176' /></span>No 102/7C, Mathugama Road, Dharga Town, Sri Lanka</p>
-                                <p className="text-gray-400 mb-2 flex"><span className='mr-2'><FiPhone color='#B6A176' /></span>+94777217829 / +94777417737</p>
-                                <p className="text-gray-400 mb-2 flex"><span className='mr-2'><MdOutlineEmail color='#B6A176' /></span>Riverviewvillas23@Gmail.Com</p>
-                            </div>
+              <div className="lg:col-span-2">
+                <h3 className="text-white text-lg font-bold mb-2">Information</h3>
+                <p className="text-gray-400 mb-2 flex"><span className='mr-2'><CiLocationOn color='#B6A176' /></span>No 102/7C, Mathugama Road, Dharga Town, Sri Lanka</p>
+                <p className="text-gray-400 mb-2 flex"><span className='mr-2'><FiPhone color='#B6A176' /></span>+94777217829 / +94777417737</p>
+                <p className="text-gray-400 mb-2 flex"><span className='mr-2'><MdOutlineEmail color='#B6A176' /></span>Riverviewvillas23@Gmail.Com</p>
+              </div>
 
-                        </div>
-                        <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between">
-                            <p className="text-gray-400 ">© 2024 Semantix labs - All Rights Reserved</p>
-                            <div className=" hidden md:inline-flex space-x-4">
-                                <a href="#" className="text-gray-400 hover:text-white">Terms of Use</a>
-                                <a href="#" className="text-gray-400 hover:text-white">Privacy Policy</a>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
             </div>
+            <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between">
+              <p className="text-gray-400 ">© 2024 Semantix labs - All Rights Reserved</p>
+              <div className=" hidden md:inline-flex space-x-4">
+                <a href="#" className="text-gray-400 hover:text-white">Terms of Use</a>
+                <a href="#" className="text-gray-400 hover:text-white">Privacy Policy</a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
 
     </main>
   );
