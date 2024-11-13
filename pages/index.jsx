@@ -41,6 +41,15 @@ export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const bookNow = () => {
+   
+
+    window.open(
+        `https://book-directonline.com/properties/RiverViewVillasdirect?locale=en&items[0][adults]=1&items[0][children]=0&items[0][infants]=0&currency=LKR&checkInDate=2024-11-14&checkOutDate=2024-11-15&trackPage=no`,
+        '_blank'
+    );
+};
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
@@ -225,21 +234,17 @@ export default function Home() {
                     Gallery
                   </span>
                 </Link>
-                {/* <Link href="/ContactUs">
-                <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
-                  Blog
-                </span>
-              </Link> */}
+             
                 <Link href="/ContactUs">
                   <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
                     Contact Us
                   </span>
                 </Link>
-                <Link href="/ContactUs">
+                <div onClick={bookNow} >
                   <button className=" text-white bg-customGold py-2 px-4 rounded-lg hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
                     Book Now
                   </button>
-                </Link>
+                </div>
               </div>
             </div>
             {/* Menu Details */}
@@ -291,16 +296,17 @@ export default function Home() {
                   Gallery
                 </span>
               </Link>
-              <Link href="/ContactUs">
-                <span className="text-customGold ml-4 hover:text-white  text-2xl cursor-pointer py-2">
-                  Blog
-                </span>
-              </Link>
+             
               <Link href="/ContactUs">
                 <span className="text-customGold ml-4 hover:text-white  text-2xl cursor-pointer py-2">
                   Contact Us
                 </span>
               </Link>
+              <div onClick={bookNow}>
+                <span className="text-customGold ml-4 hover:text-white  text-2xl cursor-pointer py-2">
+                  Book Now
+                </span>
+              </div>
             </div>
           </div>
         </nav>
