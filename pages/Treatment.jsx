@@ -322,8 +322,7 @@ export default function Treatment() {
                                     <img className='text-center' src="./home2.png" alt="" />
                                 </div>
                                 <h2 className="text-white text-xl  font-bold mb-2">River View Villas</h2>
-                                <p className="text-gray-400 mb-4">A Short Description about the Villa lorem ipsum Lorem ipsum dolor sit amet, lit sed do consectetur adipicsing</p>
-                                <div className="flex  space-x-4">
+                                <p className="text-gray-400 mb-4">A Short Description about the Villa</p>                                <div className="flex  space-x-4">
                                     <a href="https://web.facebook.com/riverviewvillas/?_rdc=1&_rdr " className="text-gray-400 hover:text-white"><FaFacebookF /></a>
                                     <a href="https://www.instagram.com/river_view_villas/?hl=en " className="text-gray-400 hover:text-white"><FaInstagram /></a>
                                     <a href="https://www.tiktok.com/@river.view.villas?_t=8n6DFJerj6X&_r=1" className="text-gray-400 hover:text-white"><FaTiktok /></a>
