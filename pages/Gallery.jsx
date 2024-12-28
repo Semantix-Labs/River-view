@@ -544,7 +544,7 @@ export default function Gallery() {
                                     <img className='text-center' src="./home2.png" alt="" />
                                 </div>
                                 <h2 className="text-white text-xl  font-bold mb-2">River View Villas</h2>
-                                <p className="text-gray-400 mb-4">A Short Description about the Villa</p>
+                                <p className="text-gray-400 mb-4">Experience holistic health at River View Villas, a luxury Ayurvedic health retreat in Sri Lanka.</p>
                                     <div className="flex  space-x-4">
                                     <a href="https://web.facebook.com/riverviewvillas/?_rdc=1&_rdr " className="text-gray-400 hover:text-white"><FaFacebookF /></a>
                                     <a href="https://www.instagram.com/river_view_villas/?hl=en " className="text-gray-400 hover:text-white"><FaInstagram /></a>
