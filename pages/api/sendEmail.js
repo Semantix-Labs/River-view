@@ -14,7 +14,7 @@ export default async function handler(req, res) {
     });
 
     const mailOptions = {
-      from: 'harshaudayanga401@gmail.com', // Your email address to send from
+      from: 'semantixlabs@gmail.com', // Your email address to send from
       to: 'riverviewvillas23@gmail.com', // Recipient email address
       subject: `New Contact Message from ${fullName}`,
       text: `
