@@ -1,6 +1,17 @@
 import nodemailer from 'nodemailer';
 
 export default async function handler(req, res) {
+  // Set CORS headers
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+
+  // Handle preflight request
+  if (req.method === 'OPTIONS') {
+    res.status(200).end();
+    return;
+  }
+
   if (req.method === 'POST') {
     const { fullName, phone, email, message } = req.body;
 
@@ -10,19 +21,19 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: 'Invalid email address' });
     }
 
-    // Configure the transporter
-    const transporter = nodemailer.createTransporter({
+  // Configure the transporter
+  const transporter = nodemailer.createTransport({
       service: 'Gmail',
       auth: {
-        user: 'semantixlabs@gmail.com', // Use semantixlabs email to send
-        pass: process.env.EMAIL_PASS, // semantixlabs gmail app password
+        user: 'semantixlabs@gmail.com',
+        pass: process.env.EMAIL_PASS,
       },
     });
 
     const mailOptions = {
-      from: 'semantixlabs@gmail.com', // Send from semantixlabs email
-      to: 'harshaudayanga401@gmail.com', // Send to riverviewvillas email
-      replyTo: email, // When riverviewvillas replies, it goes to the original sender (${email})
+      from: 'semantixlabs@gmail.com',
+      to: 'riverviewvillas23@gmail.com',
+      replyTo: email,
       subject: `New Contact Message from ${fullName}`,
       html: `
         <h3>New Contact Form Submission</h3>
@@ -32,7 +43,7 @@ export default async function handler(req, res) {
         <p><strong>Message:</strong></p>
         <p style="background-color: #f5f5f5; padding: 10px; border-radius: 5px;">${message}</p>
         <hr>
-        <p><em>Reply to this email to respond directly to ${fullName} (${email})</em>
+        <p><em>Reply to this email to respond directly to ${fullName} (${email})</em></p>
       `,
       text: `
         New Contact Form Submission
@@ -46,9 +57,9 @@ export default async function handler(req, res) {
       `,
     };
 
-    // Optional: Send confirmation email to the person who submitted the form
+    // Confirmation email to sender
     const confirmationMailOptions = {
-      from: 'semantixlabs@gmail.com', // Send confirmation from semantixlabs
+      from: 'semantixlabs@gmail.com',
       to: email,
       subject: 'Thank you for contacting River View Villas',
       html: `
@@ -62,12 +73,10 @@ export default async function handler(req, res) {
     };
 
     try {
-      // Send the main notification email
+      // Send emails
       await transporter.sendMail(mailOptions);
-      
-      // Send confirmation email to the sender
       await transporter.sendMail(confirmationMailOptions);
-      
+
       res.status(200).json({ message: 'Email sent successfully!' });
     } catch (error) {
       console.error('Error sending email:', error);
