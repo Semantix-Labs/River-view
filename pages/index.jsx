@@ -13,6 +13,7 @@ import { SlArrowRight } from "react-icons/sl";
 import { SlArrowLeft } from "react-icons/sl";
 import { FaTiktok } from "react-icons/fa";
 import Image from "next/image";
+import Script from "next/script";
 
 
 
@@ -45,10 +46,11 @@ export default function Home() {
    
 
     window.open(
-        `https://book-directonline.com/properties/RiverViewVillasdirect?locale=en&items[0][adults]=1&items[0][children]=0&items[0][infants]=0&currency=LKR&checkInDate=2024-11-14&checkOutDate=2024-11-15&trackPage=no`,
+        `https://booking.profitroom.com/en/riverviewvillas/home?no-cache=&currency=USD`,
         '_blank'
     );
 };
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -316,16 +318,35 @@ export default function Home() {
 
 
       {/* image section */}
-      <section>
-        <Image width={2560} height={1080} src="/home.jpg" className="w-full" alt="hero" />
-      </section>
+       <section>
+      <Image
+        width={2560}
+        height={1080}
+        src="/home.jpg"
+        className="w-full"
+        alt="hero"
+      />
+      {/* Booking widget container */}
+      <div className="">
+        <div className="bg-white be-panel"></div>
+      </div>
+
+      {/* Script to load booking panel */}
+      <Script
+        src="https://wis.upperbooking.com/riverviewvillas/be-panel?locale=en"
+        strategy="afterInteractive"
+      />
+    </section>
+      
 
 
       {/* booking section */}
       <section>
+      
+
         <div style={{ fontFamily: 'Gentium Basic' }} className=" grid grid-cols-2 z-40 relative md:flex justify-center mx-10 md:mx-5 mt-[-2rem] md:mt-[-4rem] lg:mt-[-3rem]">
 
-          <Link href="/Accomodation#hh">
+          <Link href="https://wis.upperbooking.com/riverviewvillas/Offers.xml?locale=eng">
             <button className="bg-white lg:text-xl text-black shadow-xl col-span-1  box-border border-2 w-full font-bold py-4 md:py-8 md:px-24 rounded">
               Book Now
             </button>
