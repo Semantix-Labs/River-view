@@ -107,7 +107,7 @@ export default function AboutUs() {
                                 </Link>
                             </li>
                             <li className='my-auto'>
-                                <Link href="/Accomodation#hh">
+                                <Link href="https://booking.profitroom.com/en/riverviewvillas/home?no-cache=&currency=USD">
                                     <button className="text-white   hover:border-b-2 hover:border-customGold ml-4 bg-[#001F2B] px-[17px]  py-[9px] rounded-lg cursor-pointer">Book Now</button>
                                 </Link>
                             </li>

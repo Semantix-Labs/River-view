@@ -7,6 +7,9 @@ import { FiPhone } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaTiktok } from "react-icons/fa";
 import Image from 'next/image';
+import Script from "next/script";
+
+
 import Booking from '@/components/Booking';
 
 
@@ -136,7 +139,7 @@ export default function Accomodation() {
                                 </Link>
                             </li>
                             <li className='my-auto'>
-                                <Link href="/Accomodation#hh">
+                                <Link href="https://booking.profitroom.com/en/riverviewvillas/home?no-cache=&currency=USD">
                                     <button className="text-white   hover:border-b-2 hover:border-customGold ml-4 bg-[#001F2B] px-[17px]  py-[9px] rounded-lg cursor-pointer">Book Now</button>
                                 </Link>
                             </li>
@@ -313,7 +316,7 @@ export default function Accomodation() {
                             <div className="bg-white p-5  sm:p-10 shadow-lg rounded-lg max-w-screen-2xl w-full">
                                 <h2 className="text-2xl font-bold mb-6">Booking Information</h2>
                             
-                                <Booking />
+                                
                             </div>
                         </div>
                     </div>
