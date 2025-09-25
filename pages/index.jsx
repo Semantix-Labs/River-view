@@ -346,7 +346,7 @@ export default function Home() {
 
         <div style={{ fontFamily: 'Gentium Basic' }} className=" grid grid-cols-2 z-40 relative md:flex justify-center mx-10 md:mx-5 mt-[-2rem] md:mt-[-4rem] lg:mt-[-3rem]">
 
-          <Link href="https://wis.upperbooking.com/riverviewvillas/Offers.xml?locale=eng">
+          <Link href=" https://booking.profitroom.com/en/riverviewvillas/home?no-cache=&currency=USD">
             <button className="bg-white lg:text-xl text-black shadow-xl col-span-1  box-border border-2 w-full font-bold py-4 md:py-8 md:px-24 rounded">
               Book Now
             </button>
