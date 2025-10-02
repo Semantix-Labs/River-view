@@ -32,6 +32,19 @@ label {
   font-family: 'Montserrat', sans-serif;
 }
 
+.be-panel {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 9999 !important;
+}
+@media (max-width: 768px) {
+  .be-panel {
+    display: none !important; /* Hide booking panel on mobile */
+  }
+}
 
 /* .glass{
  

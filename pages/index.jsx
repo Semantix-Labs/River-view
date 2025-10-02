@@ -2,6 +2,7 @@ import Link from "next/link";
 
 
 import React, { useState, useEffect } from 'react';
+
 import { CiLocationOn } from "react-icons/ci";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import { FiPhone } from "react-icons/fi";
@@ -14,6 +15,7 @@ import { SlArrowLeft } from "react-icons/sl";
 import { FaTiktok } from "react-icons/fa";
 import Image from "next/image";
 import Script from "next/script";
+
 
 
 
@@ -150,6 +152,14 @@ export default function Home() {
     },
     // Add more testimonials as needed
   ];
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkSize = () => setIsMobile(window.innerWidth <= 768);
+    checkSize(); // run once
+    window.addEventListener("resize", checkSize);
+    return () => window.removeEventListener("resize", checkSize);
+  }, []);
   return (
     <main className="bg-white min-h-screen scroll-smooth">
 
@@ -327,15 +337,30 @@ export default function Home() {
         alt="hero"
       />
       {/* Booking widget container */}
-      <div className="">
-        <div className="bg-white be-panel"></div>
-      </div>
+{isMobile ? (
+  // ✅ Mobile view → sticky footer button
+  <div className="fixed bottom-0 left-0 w-full bg-white shadow-md p-3 flex justify-center z-50">
+    <a
+      href= "https://booking.profitroom.com/en/riverviewvillas/home?no-cache=&currency=USD"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-full max-w-sm text-center bg-[#8B6E3F] text-white font-semibold py-3 px-6 rounded-lg shadow hover:bg-[#6F5530] transition"
+    >
+      Check Availability
+    </a>
+  </div>
+) : (
+  // ✅ Desktop view → booking widget
+  <div>
+    <div className="be-panel"></div>
+    <Script
+      src="https://wis.upperbooking.com/riverviewvillas/be-panel?locale=en"
+      strategy="afterInteractive"
+    />
+  </div>
+)}
 
-      {/* Script to load booking panel */}
-      <Script
-        src="https://wis.upperbooking.com/riverviewvillas/be-panel?locale=en"
-        strategy="afterInteractive"
-      />
+
     </section>
       
 
