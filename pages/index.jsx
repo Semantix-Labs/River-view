@@ -252,11 +252,11 @@ export default function Home() {
                     Contact Us
                   </span>
                 </Link>
-                <div onClick={bookNow} >
+                {/*<div onClick={bookNow} >
                   <button className=" text-white bg-customGold py-2 px-4 rounded-lg hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
                     Book Now
                   </button>
-                </div>
+                </div>*/}
               </div>
             </div>
             {/* Menu Details */}

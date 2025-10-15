@@ -173,11 +173,11 @@ export default function Gallery() {
                                     <span className="text-[#001F2B8F]  hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Contact Us</span>
                                 </Link>
                             </li>
-                            <li className='my-auto'>
+                          {/*  <li className='my-auto'>
                                 <Link href="/Accomodation#hh">
                                     <button className="text-white   hover:border-b-2 hover:border-customGold ml-4 bg-[#001F2B] px-[17px]  py-[9px] rounded-lg cursor-pointer">Book Now</button>
                                 </Link>
-                            </li>
+                            </li> */}
 
                         </ul>
                     </div>
