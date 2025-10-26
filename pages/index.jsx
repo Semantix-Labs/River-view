@@ -52,6 +52,17 @@ export default function Home() {
         '_blank'
     );
 };
+// Popup modal state
+const [showPopup, setShowPopup] = useState(false);
+
+useEffect(() => {
+  // Show popup after 5 seconds
+  const timer = setTimeout(() => {
+    setShowPopup(true);
+  }, 5000);
+
+  return () => clearTimeout(timer);
+}, []);
 
 
   useEffect(() => {
@@ -226,9 +237,15 @@ export default function Home() {
                     Homepage
                   </span>
                 </Link> */}
+               
                 <Link href="/AboutUs">
                   <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
                     About Us
+                  </span>
+                </Link>
+                 <Link href="/Packages">
+                  <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
+                    Our Packages
                   </span>
                 </Link>
                 <Link href="/Accomodation">
@@ -811,7 +828,34 @@ export default function Home() {
           </div>
         </footer>
       </div>
+                {showPopup && (
+  <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-[9999]">
+    <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-sm mx-4 text-center relative">
+      <button
+        onClick={() => setShowPopup(false)}
+        className="absolute top-2 right-3 text-gray-500 hover:text-gray-800 text-xl"
+      >
+        ✕
+      </button>
+      <h2 className="text-2xl font-bold mb-3 text-[#001F2B]" style={{ fontFamily: "Gentium Basic" }}>
+        Explore Our Packages
+      </h2>
+      <p className="text-gray-600 mb-6">
+        Discover our exclusive Ayurvedic packages designed for your health and relaxation.
+      </p>
+      <Link href="/Packages">
+        <button
+          onClick={() => setShowPopup(false)}
+          className="bg-[#8B6E3F] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#6F5530] transition-all"
+        >
+          View Packages
+        </button>
+      </Link>
+    </div>
+  </div>
+)}
 
+   
     </main>
   );
 }

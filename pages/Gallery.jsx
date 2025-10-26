@@ -153,6 +153,13 @@ export default function Gallery() {
                                     <span className="text-[#001F2B8F]    hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">About Us</span>
                                 </Link>
                             </li>
+                            <li>
+                                 <Link href="/Packages">
+                  <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
+                    Our Packages
+                  </span>
+                </Link>
+                            </li>
                             <li className='my-auto'>
                                 <Link href="/Accomodation">
                                     <span className="text-[#001F2B8F]   hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Accommodation</span>

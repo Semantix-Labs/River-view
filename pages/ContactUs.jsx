@@ -134,6 +134,13 @@ function ContactUs() {
                                     <span className="text-[#001F2B8F]  hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Gallery</span>
                                 </Link>
                             </li>
+                            <li>
+                                 <Link href="/Packages">
+                  <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
+                    Our Packages
+                  </span>
+                </Link>
+                            </li>
                             <li className='my-auto'>
                                 <Link href="/ContactUs">
                                     <span className="text-[#001F2B8F] border-b-2 border-[#001F2B8F] hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Contact Us</span>
