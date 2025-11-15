@@ -38,7 +38,7 @@ export default function Packages() {
     subtitle: "Quick Body Detox & Mind Refresh",
     duration: 3,
     price: 124.80,
-    image: "/packages/hibiscus.jpg",
+    image: "/packages/hibiscus1.jpg",
     link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/854188",
   },
   {
@@ -47,7 +47,7 @@ export default function Packages() {
     subtitle: "Calming and Balancing Ayurvedic Experience",
     duration: 3,
     price: 124.80,
-    image: "/packages/araliya.jpg",
+    image: "/packages/araliya1.jpg",
     link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/854176",
   },
   {
@@ -56,7 +56,7 @@ export default function Packages() {
     subtitle: "Rejuvenating Detox & Full-Body Reset",
     duration: 3,
     price: 124.80,
-    image: "/packages/lotus.jpg",
+    image: "/packages/lotus1.jpg",
     link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/854158",
   },
 
@@ -67,7 +67,7 @@ export default function Packages() {
     subtitle: "Ayurvedic Weight Management & Detox",
     duration: 5,
     price: 120.74,
-    image: "/packages/lotus.jpg",
+    image: "/packages/lotus2weight.jpg",
     link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/854674",
   },
   {
@@ -76,7 +76,7 @@ export default function Packages() {
     subtitle: "Relieve Pain Naturally with Ayurveda",
     duration: 5,
     price: 120.74,
-    image: "/packages/hibiscus.jpg",
+    image: "/packages/hibiscus2pain.jpg",
     link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/854678",
   },
   {
@@ -85,7 +85,7 @@ export default function Packages() {
     subtitle: "Restore Emotional & Mental Balance",
     duration: 5,
     price: 120.74,
-    image: "/packages/araliya.jpg",
+    image: "/packages/araliya2stress.jpg",
     link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/854680",
   },
 
@@ -96,7 +96,7 @@ export default function Packages() {
     subtitle: "Chronic Pain Relief Through Panchakarma",
     duration: 7,
     price: 125.78,
-    image: "/packages/hibiscus.jpg",
+    image: "/packages/hibiscus7pain.jpg",
     link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/854682",
   },
   {
@@ -105,7 +105,7 @@ export default function Packages() {
     subtitle: "Restful Mind and Restored Sleep Naturally",
     duration: 7,
     price: 127.45,
-    image: "/packages/araliya.jpg",
+    image: "/packages/araliya7stress.jpg",
     link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/854684",
   },
   {
@@ -114,7 +114,7 @@ export default function Packages() {
     subtitle: "Rebalance Metabolism with Ayurvedic Detox",
     duration: 7,
     price: 124.52,
-    image: "/packages/lotus.jpg",
+    image: "/packages/lotus7weight.jpg",
     link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/854686",
   },
   {
@@ -123,7 +123,7 @@ export default function Packages() {
     subtitle: "Deep Ayurvedic Detox & Healing",
     duration: 14,
     price: 123.69,
-    image: "/packages/panchakarma.jpg",
+    image: "/packages/panchakarma14.jpg",
     link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/876646",
   },
 
@@ -134,7 +134,7 @@ export default function Packages() {
     subtitle: "Balance Sugar Levels with Natural Therapy",
     duration: 14,
     price: 123.69,
-    image: "/packages/diabetes.jpg",
+    image: "/packages/diabetes14.jpg",
     link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860456",
   },
   {
@@ -143,7 +143,7 @@ export default function Packages() {
     subtitle: "Ayurvedic Healing for Ear & Nerve Health",
     duration: 14,
     price: 123.69,
-    image: "/packages/tinnitus.jpg",
+    image: "/packages/tinnitus14.jpg",
     link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860454",
   },
   {
@@ -152,7 +152,7 @@ export default function Packages() {
     subtitle: "Natural Cardiac Health Restoration",
     duration: 14,
     price: 123.69,
-    image: "/packages/bloodpressure.jpg",
+    image: "/packages/bp14.jpg",
     link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860452",
   },
   {
@@ -161,7 +161,7 @@ export default function Packages() {
     subtitle: "Herbal Therapy to Cleanse Arteries",
     duration: 14,
     price: 123.69,
-    image: "/packages/cholesterol.jpg",
+    image: "/packages/cholesterol14.jpg",
     link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860450",
   },
   {
@@ -170,7 +170,7 @@ export default function Packages() {
     subtitle: "Comprehensive Ayurvedic Fat-Burning Regimen",
     duration: 14,
     price: 123.69,
-    image: "/packages/weightloss.jpg",
+    image: "/packages/weight14.jpg",
     link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860448",
   },
   {
@@ -179,7 +179,7 @@ export default function Packages() {
     subtitle: "Neural & Muscular Rehabilitation Program",
     duration: 14,
     price: 123.69,
-    image: "/packages/paralysis.jpg",
+    image: "/packages/paralysis14.jpg",
     link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860446",
   },
   {
@@ -188,7 +188,7 @@ export default function Packages() {
     subtitle: "Joint Pain Relief and Mobility Restoration",
     duration: 14,
     price: 123.69,
-    image: "/packages/arthritis.jpg",
+    image: "/packages/arthritis14.jpg",
     link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860444",
   },
   {
@@ -197,7 +197,7 @@ export default function Packages() {
     subtitle: "Herbal & Detox-Based Skin Healing",
     duration: 14,
     price: 123.69,
-    image: "/packages/skin.jpg",
+    image: "/packages/skinhealing14.jpg",
     link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860458",
   },
   {
@@ -206,7 +206,7 @@ export default function Packages() {
     subtitle: "Root Cause Healing for Chronic Migraines",
     duration: 14,
     price: 123.69,
-    image: "/packages/migraine.jpg",
+    image: "/packages/migraine14.jpg",
     link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860442",
   },
   {
@@ -215,7 +215,7 @@ export default function Packages() {
     subtitle: "Emotional Balance Through Ayurveda",
     duration: 14,
     price: 123.69,
-    image: "/packages/depression.jpg",
+    image: "/packages/depression14.jpg",
     link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860530",
   },
 
@@ -226,7 +226,7 @@ export default function Packages() {
     subtitle: "Full-Body Detox & Spiritual Renewal",
     duration: 21,
     price: 124.25,
-    image: "/packages/panchakarma.jpg",
+    image: "/packages/panchakarma21.jpg",
     link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/876648",
   },
   {
@@ -235,7 +235,7 @@ export default function Packages() {
     subtitle: "Long-Term Natural Blood Sugar Control",
     duration: 21,
     price: 124.25,
-    image: "/packages/diabetes.jpg",
+    image: "/packages/diabetes21.jpg",
     link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860992",
   },
   {
@@ -244,7 +244,7 @@ export default function Packages() {
     subtitle: "Intensive Healing for Chronic Skin Issues",
     duration: 21,
     price: 144.17,
-    image: "/packages/skin.jpg",
+    image: "/packages/skin21.jpg",
     link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860458",
   },
   {
@@ -253,7 +253,7 @@ export default function Packages() {
     subtitle: "Herbal Detox for Heart & Circulation Health",
     duration: 21,
     price: 124.25,
-    image: "/packages/bloodpressure.jpg",
+    image: "/packages/bp21.jpg",
     link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860988",
   },
   {
@@ -262,7 +262,7 @@ export default function Packages() {
     subtitle: "Restorative Therapy for Ear Health",
     duration: 21,
     price: 124.25,
-    image: "/packages/tinnitus.jpg",
+    image: "/packages/tinnitus21.jpg",
     link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860990",
   },
   {
@@ -271,7 +271,7 @@ export default function Packages() {
     subtitle: "Cleanse & Strengthen the Cardiovascular System",
     duration: 21,
     price: 124.25,
-    image: "/packages/cholesterol.jpg",
+    image: "/packages/cholesterol21.jpg",
     link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860603",
   },
   {
@@ -280,7 +280,7 @@ export default function Packages() {
     subtitle: "Comprehensive Slimming with Ayurveda",
     duration: 21,
     price: 124.25,
-    image: "/packages/weightloss.jpg",
+    image: "/packages/weightloss21.jpg",
     link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860601",
   },
   {
@@ -289,7 +289,7 @@ export default function Packages() {
     subtitle: "Long-Term Nerve Strengthening & Healing",
     duration: 21,
     price: 124.25,
-    image: "/packages/paralysis.jpg",
+    image: "/packages/paralysis21.jpg",
     link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860599",
   },
   {
@@ -298,7 +298,7 @@ export default function Packages() {
     subtitle: "Joint Rejuvenation & Flexibility Restoration",
     duration: 21,
     price: 124.25,
-    image: "/packages/arthritis.jpg",
+    image: "/packages/arthritis21.jpg",
     link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860597",
   },
   {
@@ -307,7 +307,7 @@ export default function Packages() {
     subtitle: "Comprehensive Healing for Chronic Migraines",
     duration: 21,
     price: 124.25,
-    image: "/packages/migraine.jpg",
+    image: "/packages/migraine21.jpg",
     link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860596",
   },
   {
@@ -316,7 +316,7 @@ export default function Packages() {
     subtitle: "Emotional & Mental Balance Transformation",
     duration: 21,
     price: 124.25,
-    image: "/packages/depression.jpg",
+    image: "/packages/depression21.jpg",
     link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860530",
     
   },
