@@ -437,7 +437,7 @@ export default function Accomodation() {
                         </div>
                         <div className='cols-span-1 flex justify-center lg:justify-end'>
                             <div className='md:flex w-[406px] h-[368px] overflow-hidden '>
-                                <img className='w-[300px] h-[300px]' src="/CarpeDiem/vill1.png" alt="" />
+                                <img className='w-[300px] h-[300px]' src="/CarpeDiem/pic1.jpeg" alt="" />
                                 <img className='w-[314px] h-[279px] mt-[150px] ml-[-150px]' src="/CarpeDiem/vill2.png" alt="" />
                             </div>
                         </div>
@@ -453,7 +453,7 @@ export default function Accomodation() {
 
                     <div className='lg:col-span-1 md:col-span-2  md:col-start-1 lg:mt-72   '>
                         <div className='my-auto  w-[232px] h-[278px]'>
-                            <img className='w-[232px] h-[278px] object-cover relative ml-3' src="/VillaAraliya/vill1.jpg" alt="" />
+                           {/*  <img className='w-[232px] h-[278px] object-cover relative ml-3' src="/VillaAraliya/pic1.jpeg" alt="" /> */}
                         </div>
                     </div>
 
@@ -546,7 +546,7 @@ export default function Accomodation() {
 
                     <div className='col-span-1 hidden lg:inline  justify-end '>
                         <div className='my-auto'>
-                            <img className='w-[232px] h-[278px] overflow-hidden object-cover relative ml-3' src="/VillaAraliya/vill2.png" alt="" />
+                            <img className='w-[232px] h-[278px] overflow-hidden object-cover relative ml-3' src="/VillaAraliya/pic1.jpeg" alt="" />
                         </div>
                     </div>
                 </div>
@@ -646,7 +646,7 @@ export default function Accomodation() {
                         </div>
                         <div className='cols-span-1 flex justify-end'>
                             <div className='md:flex w-[406px] h-[368px] overflow-hidden '>
-                                <img className='w-[300px] h-[300px]' src="/VillaOrchid/vill1.png" alt="" />
+                                <img className='w-[300px] h-[300px]' src="/VillaOrchid/pic1.jpeg" alt="" />
                                 <img className='w-[314px] h-[279px] mt-[150px] ml-[-150px]' src="/VillaOrchid/vill2.png" alt="" />
                             </div>
                         </div>
@@ -663,7 +663,7 @@ export default function Accomodation() {
 
                     <div className='lg:col-span-1 md:col-span-2 col-start-1 lg:mt-40   '>
                         <div className=''>
-                            <img className='w-[232px] h-[278px] object-cover relative ml-3' src="/VillaLilly/vill1.png" alt="" />
+                            <img className='w-[232px] h-[278px] object-cover relative ml-3' src="/VillaLilly/villa1.jpeg" alt="" />
                         </div>
                     </div>
 
@@ -855,8 +855,8 @@ export default function Accomodation() {
                         </div>
                         <div className='cols-span-1 flex justify-end'>
                             <div className='relative md:flex w-[406px] h-[368px] overflow-hidden '>
-                                <img className='w-[300px] h-[300px]' src="/Lotus/vill1.png" alt="" />
-                                <img className='w-[314px] h-[279px] mt-[150px] ml-[-150px]' src="/Lotus/vill2.png" alt="" />
+                                <img className='w-[300px] h-[300px]' src="/Lotus/villa1.jpeg" alt="" />
+                                <img className='w-[314px] h-[279px] mt-[150px] ml-[-150px]' src="/Lotus/vill1.png" alt="" />
                             </div>
                         </div>
                     </div>
