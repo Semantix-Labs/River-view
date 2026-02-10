@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Image from 'next/image';
 
 const massageTypes = [
     { id: 1, title: 'Face Massage', image: '/TreatmentMenu/1.png', description: 'Facial massage is a very popular Western beauty treatment to slow down the aging process and achieve younger looking and healthier skin. It is also used to relieve stress, migraine headache, premenstrual syndrome (PMS) and sinus congestion. Simple massage can also be done at home.', tretModel: '/tretModel/1.png' },
@@ -87,14 +88,16 @@ export default function Home() {
                     {filteredMassages.map((massage) => (
                         <div key={massage.id} className="relative  hover:brightness-50 group">
 
-                            <img
+                            <Image
                                 src={massage.image}
                                 alt={massage.title}
                                 className=" mx-auto object-cover rounded-lg"
+                                width={400}
+                                height={300}
                             />
                             <div className="absolute inset-0 translate-y-12  transform scale-0 group-hover:scale-100   bg-opacity-75 flex items-center justify-center rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300">
                                 <button onClick={() => handleShowMore(massage)} className="text-white ">
-                                    <span style={{color:'white !important'}} className='underline text-white mt-10'>  Read more</span>
+                                    <span style={{ color: 'white !important' }} className='underline text-white mt-10'>  Read more</span>
                                 </button>
                             </div>
                             <div className="mt-2 text-center">
@@ -113,7 +116,7 @@ export default function Home() {
                             onClick={handleClose}
                             className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
                         >
-                            <svg  width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_362_1088)">
                                     <path d="M10.5005 19.25C15.333 19.25 19.2505 15.3325 19.2505 10.5C19.2505 5.66748 15.333 1.74997 10.5005 1.74997C5.668 1.74997 1.75049 5.66748 1.75049 10.5C1.75049 15.3325 5.668 19.25 10.5005 19.25Z" stroke="#909090" stroke-opacity="0.58" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                     <path d="M13.125 7.875L7.875 13.125" stroke="#909090" stroke-opacity="0.58" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -131,21 +134,25 @@ export default function Home() {
 
                             <div className=' my-auto'>
                                 <div className="mb-2">
-                                    <img src="/home3.png" alt="" />
+                                    <Image src="/home3.png" alt="" width={100} height={100} />
                                 </div>
                                 <h2 className="text-2xl font-semibold mb-2">{selectedMassage.title}</h2>
                                 <p className="text-gray-700">{selectedMassage.description}</p>
                             </div>
                             <div className='md:flex '>
-                                <img
+                                <Image
                                     src={selectedMassage.image}
                                     alt={selectedMassage.title}
                                     className=" rounded-lg mr-4"
+                                    width={400}
+                                    height={300}
                                 />
-                                <img
+                                <Image
                                     src={selectedMassage.tretModel}
                                     alt={selectedMassage.title}
                                     className="w-48 h-48 rounded-lg mt-28 hidden md:inline mr-4"
+                                    width={200}
+                                    height={200}
                                 />
                             </div>
                         </div>

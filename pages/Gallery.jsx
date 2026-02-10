@@ -106,13 +106,15 @@ export default function Gallery() {
 
     return (
         <div className='min-h-screen '>
-             <nav className="bg-white fixed z-50 min-w-full border-gray-200 dark:bg-gray-900 lg:px-20">
+            <nav className="bg-white fixed z-50 min-w-full border-gray-200 dark:bg-gray-900 lg:px-20">
                 <div className="max-w-screen flex flex-wrap items-center justify-between mx-auto p-4">
                     <Link href="/">
-                        <img
+                        <Image
                             src="/Rlogo.png"
                             className="h-16 w-16 xl:w-28 xl:h-28"
-
+                            alt="River View Villas Logo"
+                            width={112}
+                            height={112}
                         />
                     </Link>
 
@@ -154,11 +156,11 @@ export default function Gallery() {
                                 </Link>
                             </li>
                             <li>
-                                 <Link href="/Packages">
-                  <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
-                    Our Packages
-                  </span>
-                </Link>
+                                <Link href="/Packages">
+                                    <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
+                                        Our Packages
+                                    </span>
+                                </Link>
                             </li>
                             <li className='my-auto'>
                                 <Link href="/Accomodation">
@@ -180,7 +182,7 @@ export default function Gallery() {
                                     <span className="text-[#001F2B8F]  hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Contact Us</span>
                                 </Link>
                             </li>
-                          {/*  <li className='my-auto'>
+                            {/*  <li className='my-auto'>
                                 <Link href="/Accomodation#hh">
                                     <button className="text-white   hover:border-b-2 hover:border-customGold ml-4 bg-[#001F2B] px-[17px]  py-[9px] rounded-lg cursor-pointer">Book Now</button>
                                 </Link>
@@ -195,7 +197,7 @@ export default function Gallery() {
             {/* image Section */}
             <section className='pt-20'>
                 <div className='relative w-full pb-5 2xl:h-[700px] xl:h-[400px] lg:h-96 md:h-64 h-52 overflow-hidden '>
-                    <img className='w-screen' src="/GalleryHead.png" alt="" />
+                    <Image className='w-screen' src="/GalleryHead.png" alt="Gallery Header" width={1920} height={1080} />
                     <div class="absolute inset-0  opacity-60 rounded-md"></div>
                     <div class="absolute inset-0 flex items-center justify-center">
                         <h2 className='text-3xl md:text-7xl px-5 lg:text-8xl font-bold justify-center text-center text-white'>Experiences And Gallery
@@ -212,7 +214,7 @@ export default function Gallery() {
                     <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                         <div className="mt-10 bg-white lg:px-20   flex flex-col items-center justify-center ">
                             <div className="mb-2">
-                            <Image width={100} height={100} src="/home3.png" alt="" />
+                                <Image width={100} height={100} src="/home3.png" alt="" />
                             </div>
                         </div>
                         <h2 className=" text-3xl md:text-5xl  font-semibold  py-5 tracking-wide uppercase">Explore our Activities</h2>
@@ -224,25 +226,25 @@ export default function Gallery() {
 
                             <div className="text-center ">
                                 <div className="relative mx-auto mt-10 md:h-[150px] lg:h-[190px] xl:h-[300px] 2xl:h-[390px]  overflow-hidden rounded-lg ">
-                                <Image className='w-full h-full object-cover' src="/Activity/5.jpg" alt="" layout="fill" objectFit="cover" />
+                                    <Image className='w-full h-full object-cover' src="/Activity/5.jpg" alt="" layout="fill" objectFit="cover" />
                                 </div>
                                 <h3 className="mt-4 text-xl text-start pr-5 font-semibold ">Once-a-week boat safari dinner</h3>
                             </div>
                             <div className="text-center">
                                 <div className="relative  mx-auto md:h-[150px] lg:h-[190px] xl:h-[300px] 2xl:h-[390px]  overflow-hidden rounded-lg ">
-                                <Image  className='w-full h-full object-cover' src="/Activity/co.jpg" alt="" layout="fill" objectFit="cover" />
+                                    <Image className='w-full h-full object-cover' src="/Activity/co.jpg" alt="" layout="fill" objectFit="cover" />
                                 </div>
                                 <h3 className="mt-4 text-xl text-start pr-5 font-semibold ">Cooking demonstrations</h3>
                             </div>
                             <div className="text-center">
                                 <div className="relative  mx-auto mt-10 md:h-[150px] lg:h-[190px] xl:h-[300px] 2xl:h-[390px]  overflow-hidden rounded-lg ">
-                                <Image className='w-full h-full object-cover' src="/Activity/3.png" alt="" layout="fill" objectFit="cover" />
+                                    <Image className='w-full h-full object-cover' src="/Activity/3.png" alt="" layout="fill" objectFit="cover" />
                                 </div>
                                 <h3 className="mt-4 text-xl text-start pr-5 font-semibold ">Manicure & Pedicure (additional charges apply)</h3>
                             </div>
                             <div className="text-center">
                                 <div className="relative  mx-auto md:h-[150px] lg:h-[190px] xl:h-[300px] 2xl:h-[390px]  overflow-hidden rounded-lg ">
-                                <Image  className='w-full h-full object-cover' src="/Activity/veg.jpg" alt="" layout="fill" objectFit="cover" />
+                                    <Image className='w-full h-full object-cover' src="/Activity/veg.jpg" alt="" layout="fill" objectFit="cover" />
                                 </div>
                                 <h3 className="mt-4 text-xl text-start pr-5 font-semibold ">Vegetables from our own plantation</h3>
                             </div>
@@ -295,8 +297,8 @@ export default function Gallery() {
                                     height={408}
                                     className="rounded-lg  w-[612px] h-[412px] row-span-3 "
                                 />
-                               
-                             
+
+
                             </div>
                             <div className="grid grid-cols-2 row-span-1 gap-6">
                                 <Image
@@ -349,7 +351,7 @@ export default function Gallery() {
                 <section className='grid gap-4 py-20 px-5'>
                     <div className="grid grid-cols-2 md:grid-cols-5 xl:h-[178px] 2xl:h-auto overflow-hidden gap-4">
                         <div>
-                        <Image width={500} height={500}
+                            <Image width={500} height={500}
                                 className="xl:h-[178px] 2xl:h-auto max-w-full rounded-lg"
                                 src="/Room/img/r1.jpg"
                                 alt=""
@@ -357,28 +359,28 @@ export default function Gallery() {
 
                         </div>
                         <div>
-                        <Image width={500} height={500}
+                            <Image width={500} height={500}
                                 className="xl:h-[178px] 2xl:h-auto max-w-full rounded-lg"
                                 src="/Room/img/r2.jpg"
                                 alt=""
                             />
                         </div>
                         <div>
-                        <Image width={500} height={500}
+                            <Image width={500} height={500}
                                 className="xl:h-[178px] 2xl:h-auto max-w-full rounded-lg"
                                 src="/Room/img/r3.jpg"
                                 alt=""
                             />
                         </div>
                         <div>
-                        <Image width={500} height={500}
+                            <Image width={500} height={500}
                                 className="xl:h-[178px] 2xl:h-auto max-w-full rounded-lg"
                                 src="/Room/img/r4.jpg"
                                 alt=""
                             />
                         </div>
                         <div className="col-span-1 ">
-                        <Image width={500} height={500}
+                            <Image width={500} height={500}
                                 className="xl:h-[178px] 2xl:h-auto max-w-full rounded-lg"
                                 src="/Room/img/r7.jpg"
                                 alt=""
@@ -393,46 +395,46 @@ export default function Gallery() {
             <div className='bg-[#FFFFFF]'>
                 <section className='mx-5 py-20 lg:px-20'>
                     <h2 className="text-3xl font-bold mb-8">Ayurvedic treatments</h2>
-                    
+
                     <div className='grid gap-4 space-y-2 grid-cols-1 md:grid-cols-12 overflow-hidden'>
                         <div className='md:grid-rows-12 grid-cols-1 mt-2 space-y-8 xl:space-y-10 rounded-lg  col-span-3'>
                             <div className='row-span-4 h- w-full overflow-hidden object-cover '>
                                 <Image width={500} height={500} className='w-full h-full object-cover rounded-lg' src="/GalleryTreat/g4.png" alt="" />
                             </div>
                             <div className='row-span-4'>
-                            <Image width={500} height={500} className=' w-full h-full object-cover rounded-lg' src="/GalleryTreat/g8.jpg" alt="" />
+                                <Image width={500} height={500} className=' w-full h-full object-cover rounded-lg' src="/GalleryTreat/g8.jpg" alt="" />
                             </div>
                             <div className='row-span-4'>
-                            <Image width={500} height={500}className=' w-full h-full object-cover rounded-lg' src="/GalleryTreat/g7.png" alt="" />
+                                <Image width={500} height={500} className=' w-full h-full object-cover rounded-lg' src="/GalleryTreat/g7.png" alt="" />
                             </div>
                         </div>
                         <div className='grid grid-cols-1 hidden space-y-2 md:block  rounded-lg  col-span-6'>
                             <div className=' grid grid-cols-3 lg:gap-4 relative  2xl-mb-10  justify-between'>
                                 <div className='md:h-[66px] lg:h-[70px] xl:h-[110px] 2xl:h-[154px] overflow-hidden  md:gap-1 rounded-lg'>
-                                <Image width={500} height={500} className=' col-span-1 object-cover rounded-lg' src="/GalleryTreat/g11.jpg" alt="" />
+                                    <Image width={500} height={500} className=' col-span-1 object-cover rounded-lg' src="/GalleryTreat/g11.jpg" alt="" />
                                 </div>
                                 <div className='md:h-[66px] overflow-hidden lg:h-[70px] xl:h-[110px] 2xl:h-[154px]   md:gap-1 rounded-lg'>
-                                <Image width={500} height={500} className=' col-span-1 object-cover rounded-lg' src="/GalleryTreat/g5.png" alt="" />
+                                    <Image width={500} height={500} className=' col-span-1 object-cover rounded-lg' src="/GalleryTreat/g5.png" alt="" />
                                 </div>
                                 <div className='md:h-[66px] overflow-hidden lg:h-[70px] xl:h-[110px] 2xl:h-[154px]   md:gap-1 rounded-lg'>
-                                <Image width={500} height={500} className=' object-cover   rounded-lg' src="/GalleryTreat/g3.png" alt="" />
+                                    <Image width={500} height={500} className=' object-cover   rounded-lg' src="/GalleryTreat/g3.png" alt="" />
                                 </div>
 
                             </div>
                             <div className='relative'>
-                            <Image width={500} height={500} className=' w-screen rounded-xl object-cover' src="/GalleryTreat/g5.png" alt="" />
-                              
+                                <Image width={500} height={500} className=' w-screen rounded-xl object-cover' src="/GalleryTreat/g5.png" alt="" />
+
                             </div>
                             <div className=' grid grid-cols-3 lg:gap-4 relative 2xl:mt-10   justify-between'>
 
                                 <div className='md:h-[66px] lg:h-[70px] xl:h-[110px] 2xl:h-[154px] overflow-hidden  md:gap-1 rounded-lg'>
-                                <Image width={500} height={500} className=' col-span-1 object-cover rounded-lg' src="/GalleryTreat/g1.png" alt="" />
+                                    <Image width={500} height={500} className=' col-span-1 object-cover rounded-lg' src="/GalleryTreat/g1.png" alt="" />
                                 </div>
                                 <div className='md:h-[66px] overflow-hidden lg:h-[70px] xl:h-[110px] 2xl:h-[154px]   md:gap-1 rounded-lg'>
-                                <Image width={500} height={500} className=' col-span-1 object-cover rounded-lg' src="/GalleryTreat/g4.png" alt="" />
+                                    <Image width={500} height={500} className=' col-span-1 object-cover rounded-lg' src="/GalleryTreat/g4.png" alt="" />
                                 </div>
                                 <div className='md:h-[66px] overflow-hidden lg:h-[70px] xl:h-[110px] 2xl:h-[154px]   md:gap-1 rounded-lg'>
-                                <Image width={500} height={500} className=' object-cover   rounded-lg' src="/GalleryTreat/g3.png" alt="" />
+                                    <Image width={500} height={500} className=' object-cover   rounded-lg' src="/GalleryTreat/g3.png" alt="" />
                                 </div>
 
 
@@ -440,17 +442,17 @@ export default function Gallery() {
                         </div>
                         <div className='md:grid-rows-12 grid-cols-1 mt-2 space-y-8 xl:space-y-10 rounded-lg  col-span-3'>
                             <div className='row-span-4 object-cover overflow-hidden'>
-                            <Image width={500} height={500} className='w-full h-full object-cover rounded-lg' src="/GalleryTreat/g9.jpg" alt="" />
+                                <Image width={500} height={500} className='w-full h-full object-cover rounded-lg' src="/GalleryTreat/g9.jpg" alt="" />
                             </div>
                             <div className='row-span-4'>
-                            <Image width={500} height={500} className=' w-full h--full object-cover overflow-hidden rounded-lg' src="/GalleryTreat/g8.jpg" alt="" />
+                                <Image width={500} height={500} className=' w-full h--full object-cover overflow-hidden rounded-lg' src="/GalleryTreat/g8.jpg" alt="" />
                             </div>
                             <div className='row-span-4'>
-                            <Image width={500} height={500} className=' w-full h-full object-cover overflow-hidden rounded-lg' src="/GalleryTreat/g7.png" alt="" />
+                                <Image width={500} height={500} className=' w-full h-full object-cover overflow-hidden rounded-lg' src="/GalleryTreat/g7.png" alt="" />
                             </div>
                         </div>
                     </div>
-                   
+
                 </section>
             </div>
 
@@ -466,12 +468,12 @@ export default function Gallery() {
                         </div>
                         <div className=' grid-cols-1 hidden md:inline  overflow-hidden col-span-7'>
                             <div className='gap-4  grid grid-cols-2  md:h-[135px]   xl:h-[198px] 2xl:h-[457px] overflow-hidden rounded-lg  justify-between'>
-                            <Image width={500} height={500} className='rounded-lg  w-full  object-cover ' src="/GalleryNaturals/n3.jpg" alt="" />
-                            <Image width={500} height={500} className='rounded-lg w-full object-cover  ' src="/GalleryNaturals/n4.jpg" alt="" />
+                                <Image width={500} height={500} className='rounded-lg  w-full  object-cover ' src="/GalleryNaturals/n3.jpg" alt="" />
+                                <Image width={500} height={500} className='rounded-lg w-full object-cover  ' src="/GalleryNaturals/n4.jpg" alt="" />
                             </div>
                             <div className='relative col-span-1'>
-                            <Image width={500} height={500} className=' w-full mt-4 xl:mt-8  rounded-lg object-cover' src="/GalleryNaturals/n5.jpg" alt="" />
-                                
+                                <Image width={500} height={500} className=' w-full mt-4 xl:mt-8  rounded-lg object-cover' src="/GalleryNaturals/n5.jpg" alt="" />
+
                             </div>
 
                         </div>
@@ -548,11 +550,11 @@ export default function Gallery() {
 
                             <div className="mb-6 lg:mb-0 lg:col-span-2">
                                 <div className='mb-4  lg:mx-0 w-24 h-24'>
-                                    <img className='text-center' src="./home2.png" alt="" />
+                                    <Image className='text-center' src="/home2.png" alt="River View Villas Logo" width={96} height={96} />
                                 </div>
                                 <h2 className="text-white text-xl  font-bold mb-2">River View Villas</h2>
                                 <p className="text-gray-400 mb-4">Experience holistic health at River View Villas, a luxury Ayurvedic health retreat in Sri Lanka.</p>
-                                    <div className="flex  space-x-4">
+                                <div className="flex  space-x-4">
                                     <a href="https://web.facebook.com/riverviewvillas/?_rdc=1&_rdr " className="text-gray-400 hover:text-white"><FaFacebookF /></a>
                                     <a href="https://www.instagram.com/river_view_villas/?hl=en " className="text-gray-400 hover:text-white"><FaInstagram /></a>
                                     <a href="https://www.tiktok.com/@river.view.villas?_t=8n6DFJerj6X&_r=1" className="text-gray-400 hover:text-white"><FaTiktok /></a>

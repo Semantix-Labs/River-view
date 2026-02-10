@@ -18,7 +18,7 @@ const RoomGallery = () => {
                         />
                         <div class="absolute inset-0  opacity-60 rounded-md"></div>
                         <div class="absolute inset-0 flex items-center justify-center">
-                            <img src="/play.png" alt="" />
+                            <Image src="/play.png" alt="Play Button" width={64} height={64} />
                         </div>
                     </div>
                     <div className="grid grid-cols-2 row-span-1 gap-6">

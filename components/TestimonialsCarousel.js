@@ -1,4 +1,5 @@
 import { Carousel } from 'react-responsive-carousel';
+import Image from 'next/image';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import styles from './TestimonialsCarousel.module.css'; // Import CSS module
 import { SlArrowRight } from "react-icons/sl";
@@ -53,9 +54,11 @@ const TestimonialsCarousel = () => {
                         <span className="text-center font-semibold">Name of the Client</span>
                     </div>
                     <div className="flex justify-center mb-10 items-center">
-                        <img
-                            src="./Frame.png"
+                        <Image
+                            src="/Frame.png"
                             alt="Client 1"
+                            width={20}
+                            height={20}
                             className={`w-5 h-5 rounded-full mx-2 ${styles.customIndicator}`} // Use CSS module class
                         />
                     </div>
@@ -68,9 +71,11 @@ const TestimonialsCarousel = () => {
                         <span className="text-center font-semibold">Name of the Client</span>
                     </div>
                     <div className="flex justify-center mb-10 items-center">
-                        <img
-                            src="./Frame.png"
+                        <Image
+                            src="/Frame.png"
                             alt="Client 1"
+                            width={64}
+                            height={64}
                             className={`w-16 h-16 rounded-full mx-2 ${styles.customIndicator}`} // Use CSS module class
                         />
                     </div>

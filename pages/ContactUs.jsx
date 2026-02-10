@@ -2,6 +2,7 @@
 
 
 import Link from 'next/link';
+import Image from 'next/image';
 import React, { useState } from 'react';
 import { CiLocationOn } from "react-icons/ci";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
@@ -80,10 +81,12 @@ function ContactUs() {
             <nav className="bg-white fixed z-50 min-w-full border-gray-200 dark:bg-gray-900 lg:px-20">
                 <div className="max-w-screen flex flex-wrap items-center justify-between mx-auto p-4">
                     <Link href="/">
-                        <img
+                        <Image
                             src="/Rlogo.png"
                             className="h-16 w-16 xl:w-28 xl:h-28"
-
+                            alt="River View Villas Logo"
+                            width={112}
+                            height={112}
                         />
                     </Link>
 
@@ -165,7 +168,7 @@ function ContactUs() {
 
             <section className="pt-20">
                 <div className="relative w-full">
-                    <img className="pb-5 w-screen" src="/ContactUs.png" alt="" />
+                    <Image className="pb-5 w-screen" src="/ContactUs.png" alt="Contact Us Banner" width={1920} height={1080} />
                     <div className="absolute inset-0 opacity-60 rounded-md"></div>
                     <div className="absolute inset-0 flex items-center justify-center">
                         <h2 className="text-3xl md:text-7xl lg:text-8xl font-bold justify-center text-center text-white">Contact Us</h2>
@@ -329,7 +332,7 @@ function ContactUs() {
 
                             <div className="mb-6 lg:mb-0 lg:col-span-2">
                                 <div className='mb-4  lg:mx-0 w-24 h-24'>
-                                    <img className='text-center' src="./home2.png" alt="" />
+                                    <Image className='text-center' src="/home2.png" alt="River View Villas Logo" width={96} height={96} />
                                 </div>
                                 <h2 className="text-white text-xl  font-bold mb-2">River View Villas</h2>
                                 <p className="text-gray-400 mb-4">Experience holistic health at River View Villas, a luxury Ayurvedic health retreat in Sri Lanka.</p>

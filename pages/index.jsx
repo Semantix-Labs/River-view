@@ -200,10 +200,12 @@ export default function Home() {
               style={{ marginLeft: '1rem' }}
               className="justify-center pt-3 md:pt-0 flex md:justify-center h-[70px] w-[80px] md:h-[80px] md:w-[80px] xl:w-[150px] xl:h-auto"
             >
-              <img
-                className="flex mx-auto   justify-center"
-                src="./home2.png"
+              <Image
+                className="flex mx-auto justify-center"
+                src="/home2.png"
                 alt="Home"
+                width={80}
+                height={80}
               />
             </div>
           </div>
@@ -509,10 +511,12 @@ export default function Home() {
           >
             <div className="flex flex-col items-center">
               <div className="w-16 h-16 xs:w-24 xs:h-24 xxm:w-28 xxm:h-28 mb-4">
-                <img
+                <Image
                   src="/icons/image5.png"
                   alt="Health-conscious living options"
                   className=""
+                  width={100}
+                  height={100}
                 />
               </div>
               <p className="text-lg font-medium pb-10 text-gray-700">
@@ -521,10 +525,12 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center">
               <div className="w-16 h-16 xs:w-24 xs:h-24 xxm:w-28 xxm:h-28 mb-4">
-                <img
+                <Image
                   src="/icons/image6.png"
                   alt="Personalized diets"
                   className=""
+                  width={100}
+                  height={100}
                 />
               </div>
               <p className="text-lg font-medium text-gray-700">
@@ -533,10 +539,12 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center">
               <div className="w-16 h-16 xs:w-24 xs:h-24 xxm:w-28 xxm:h-28 mb-4">
-                <img
+                <Image
                   src="/icons/image3.png"
                   alt="Detox programs"
                   className=""
+                  width={100}
+                  height={100}
                 />
               </div>
               <p className="text-lg font-medium text-gray-700">
@@ -545,10 +553,12 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center">
               <div className="w-16 h-16 xs:w-24 xs:h-24 xxm:w-28 xxm:h-28 mb-4">
-                <img
+                <Image
                   src="/icons/image4.png"
                   alt="Yoga and meditation"
                   className=""
+                  width={100}
+                  height={100}
                 />
               </div>
               <p className="text-lg font-medium text-gray-700">
@@ -775,7 +785,7 @@ export default function Home() {
 
               <div className="mb-6 lg:mb-0 lg:col-span-2">
                 <div className='mb-4  lg:mx-0 w-24 h-24'>
-                  <img className='text-center' src="./home2.png" alt="" />
+                  <Image className='text-center' src="/home2.png" alt="River View Villas Logo" width={96} height={96} />
                 </div>
                 <h2 className="text-white text-xl  font-bold mb-2">River View Villas</h2>
                 <p className="text-gray-400 mb-4">Experience holistic health at River View Villas, a luxury Ayurvedic health retreat in Sri Lanka.</p>

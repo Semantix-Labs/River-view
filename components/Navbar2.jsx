@@ -1,6 +1,7 @@
 "use client";
 import { Button } from 'flowbite-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from "react";
 
 export default function Navbar2() {
@@ -14,10 +15,12 @@ export default function Navbar2() {
         <nav className="bg-white fixed z-50 min-w-full border-gray-200 dark:bg-gray-900 lg:px-20">
             <div className="max-w-screen flex flex-wrap items-center justify-between mx-auto p-4">
 
-                <img
+                <Image
                     src="/home2.png"
                     className="h-16 w-16 xl:w-28 xl:h-28"
                     alt="Flowbite Logo"
+                    width={112}
+                    height={112}
                 />
 
 

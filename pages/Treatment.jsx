@@ -60,13 +60,15 @@ export default function Treatment() {
     };
     return (
         <div>
-             <nav className="bg-white fixed z-50 min-w-full border-gray-200 dark:bg-gray-900 lg:px-20">
+            <nav className="bg-white fixed z-50 min-w-full border-gray-200 dark:bg-gray-900 lg:px-20">
                 <div className="max-w-screen flex flex-wrap items-center justify-between mx-auto p-4">
                     <Link href="/">
-                        <img
+                        <Image
                             src="/Rlogo.png"
                             className="h-16 w-16 xl:w-28 xl:h-28"
-
+                            alt="River View Villas Logo"
+                            width={112}
+                            height={112}
                         />
                     </Link>
 
@@ -155,7 +157,7 @@ export default function Treatment() {
 
             <section className='bg-[#FFFFFF]'>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <img className="mx-auto justify-center" src="/home3.png" alt="" />
+                    <Image width={100} height={100} className="mx-auto justify-center" src="/home3.png" alt="Treatment Icon" />
                     <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900">Treatment Menu</h2>
                     <p className="mt-4 max-w-xl mx-auto text-center leading-6  text-gray-500">
                         Explore our extensive range of Ayurvedic treatments designed to rejuvenate your body and mind. Our treatments are categorized for your convenience. Choose from body therapies, herbal treatments, yoga and meditation classes, detox programs, and more. All treatments use organically sourced ingredients      </p>
@@ -212,11 +214,13 @@ export default function Treatment() {
                             {filteredMassages.map((massage) => (
                                 <div key={massage.id} className="relative gap-12  group">
                                     <div className='relative '>
-                                        <img
+                                        <Image
                                             src={massage.image}
                                             alt={massage.title}
                                             className='w-[240px] flex justify-center mx-auto h-[304px] object-cover '
                                             style={{ borderTopLeftRadius: '200px', borderTopRightRadius: '200px' }}
+                                            width={240}
+                                            height={304}
                                         />
                                         <div className="absolute inset-0   transform scale-0 group-hover:scale-100   flex items-end  justify-center rounded-lg   duration-300">
                                             <span onClick={() => handleShowMore(massage)} className="text-white w-[240px] pt-48 pb-5 bg-gradient-to-t from-black to-transparent ">
@@ -259,7 +263,9 @@ export default function Treatment() {
 
                                     <div className=' my-auto'>
                                         <div className="mb-2">
-                                            <img src="/home3.png" alt="" />
+                                            <div className="mb-2">
+                                                <Image width={50} height={50} src="/home3.png" alt="Icon" />
+                                            </div>
                                         </div>
                                         <h2 className="text-2xl font-semibold mb-2">{selectedMassage.title}</h2>
                                         <p className="text-[8px] md:text-[15px] lg:text-[18px] text-gray-700">{selectedMassage.description}</p>
@@ -310,16 +316,16 @@ export default function Treatment() {
             </div>
 
 
-           {/* footer */}
+            {/* footer */}
 
-           <div className='bg-[#001F2B]'>
+            <div className='bg-[#001F2B]'>
                 <footer className="bg-[#001F2B] mx-5 2xl:px-[15rem] lg:mx-20 text-gray-400 pt-20">
                     <div className=" px-4">
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
 
                             <div className="mb-6 lg:mb-0 lg:col-span-2">
                                 <div className='mb-4  lg:mx-0 w-24 h-24'>
-                                    <img className='text-center' src="./home2.png" alt="" />
+                                    <Image className='text-center' src="/home2.png" alt="River View Villas Logo" width={96} height={96} />
                                 </div>
                                 <h2 className="text-white text-xl  font-bold mb-2">River View Villas</h2>
                                 <p className="text-gray-400 mb-4">Experience holistic health at River View Villas, a luxury Ayurvedic health retreat in Sri Lanka.</p>                                <div className="flex  space-x-4">

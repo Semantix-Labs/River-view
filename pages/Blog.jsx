@@ -1,6 +1,7 @@
 "use client";
 import { Button } from 'flowbite-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from "react";
 
 
@@ -25,10 +26,12 @@ function Blog() {
                 <nav className="bg-white fixed z-50 min-w-full border-gray-200 dark:bg-gray-900 lg:px-20">
                     <div className="max-w-screen flex flex-wrap items-center justify-between mx-auto p-4">
 
-                        <img
+                        <Image
                             src="/home2.png"
                             className="h-16 w-16 xl:w-28 xl:h-28"
                             alt="Flowbite Logo"
+                            width={112}
+                            height={112}
                         />
 
 
@@ -104,7 +107,7 @@ function Blog() {
 
             <section className='pt-20'>
                 <div className='relative w-full'>
-                    <img className='pb-5 w-screen' src="/Blog.png" alt="" />
+                    <Image className='pb-5 w-screen' src="/Blog.png" alt="Blog Header" width={1920} height={600} />
                     <div class="absolute inset-0  opacity-60 rounded-md"></div>
                     <div class="absolute inset-0 flex items-center justify-center">
                         <h2 className='text-3xl md:text-7xl lg:text-8xl font-bold justify-center text-center text-white'>News & Blogs
@@ -121,7 +124,7 @@ function Blog() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                         {events.map(event => (
                             <div key={event.id} className="p-4 border rounded shadow">
-                                <img src={`/images/event-${event.id}.jpg`} alt={event.title} className="w-full h-40 object-cover mb-4" />
+                                <Image src={`/images/event-${event.id}.jpg`} alt={event.title} className="w-full h-40 object-cover mb-4" width={400} height={300} />
                                 <h3 className="text-xl font-bold mb-2">{event.title}</h3>
                                 <p className="text-gray-600 mb-4">{event.date}</p>
                                 <p className="text-gray-800 mb-4">{event.description}</p>

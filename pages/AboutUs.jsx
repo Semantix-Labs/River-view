@@ -42,10 +42,12 @@ export default function AboutUs() {
             <nav className="bg-white fixed z-50 min-w-full border-gray-200 dark:bg-gray-900 lg:px-20">
                 <div className="max-w-screen flex flex-wrap items-center justify-between mx-auto p-4">
                     <Link href="/">
-                        <img
+                        <Image
                             src="/Rlogo.png"
                             className="h-16 w-16 xl:w-28 xl:h-28"
-
+                            alt="River View Villas Logo"
+                            width={112}
+                            height={112}
                         />
                     </Link>
 
@@ -87,11 +89,11 @@ export default function AboutUs() {
                                 </Link>
                             </li>
                             <li>
-                                 <Link href="/Packages">
-                  <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
-                    Our Packages
-                  </span>
-                </Link>
+                                <Link href="/Packages">
+                                    <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
+                                        Our Packages
+                                    </span>
+                                </Link>
                             </li>
                             <li className='my-auto'>
                                 <Link href="/Accomodation">
@@ -113,7 +115,7 @@ export default function AboutUs() {
                                     <span className="text-[#001F2B8F]  hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Contact Us</span>
                                 </Link>
                             </li>
-                           {/*<li className='my-auto'>
+                            {/*<li className='my-auto'>
                                 <Link href="https://booking.profitroom.com/en/riverviewvillas/home?no-cache=&currency=USD">
                                     <button className="text-white   hover:border-b-2 hover:border-customGold ml-4 bg-[#001F2B] px-[17px]  py-[9px] rounded-lg cursor-pointer">Book Now</button>
                                 </Link>
@@ -174,7 +176,7 @@ export default function AboutUs() {
                     </div>
                     <div className='cols-span-1 mx-auto my-auto'>
                         <div className='mb-4 md:justify-start  flex justify-center'>
-                            <img src="/home3.png" alt="" />
+                            <Image width={100} height={100} src="/home3.png" alt="Icon" />
                         </div>
                         <h2 className="text-3xl md:text-5xl  text-center md:text-start  font-extrabold text-gray-800 mb-6">The Wisdom of Ayurveda</h2>
                         <p className="text-lg text-gray-600 text-justify md:text-start max-w-xl ">At River View Villas, we embrace the ancient teachings of Ayurveda, focusing on a balanced approach to mental, physical, and spiritual health. Our therapies include Panchakarma, herbal treatments, yoga, and meditation, designed to enhance overall wellness.</p>
@@ -276,11 +278,11 @@ export default function AboutUs() {
 
                             <div className="mb-6 lg:mb-0 lg:col-span-2">
                                 <div className='mb-4  lg:mx-0 w-24 h-24'>
-                                    <img className='text-center' src="./home2.png" alt="" />
+                                    <Image className='text-center' src="/home2.png" alt="River View Villas Logo" width={96} height={96} />
                                 </div>
                                 <h2 className="text-white text-xl  font-bold mb-2">River View Villas</h2>
                                 <p className="text-gray-400 mb-4">Experience holistic health at River View Villas, a luxury Ayurvedic health retreat in Sri Lanka.</p>
-                                    <div className="flex  space-x-4">
+                                <div className="flex  space-x-4">
                                     <a href="https://web.facebook.com/riverviewvillas/?_rdc=1&_rdr " className="text-gray-400 hover:text-white"><FaFacebookF /></a>
                                     <a href="https://www.instagram.com/river_view_villas/?hl=en " className="text-gray-400 hover:text-white"><FaInstagram /></a>
                                     <a href="https://www.tiktok.com/@river.view.villas?_t=8n6DFJerj6X&_r=1" className="text-gray-400 hover:text-white"><FaTiktok /></a>

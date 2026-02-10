@@ -348,13 +348,13 @@ export default function Packages() {
       {/* ================= Header ================= */}
       <header
         className={`fixed w-full top-0 z-50 transition-all duration-500 ${isScrolled
-            ? "bg-white shadow-md text-[#8B6E3F]"
-            : "bg-[#8B6E3F] text-white"
+          ? "bg-white shadow-md text-[#8B6E3F]"
+          : "bg-[#8B6E3F] text-white"
           }`}
       >
         <nav className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
           <Link href="/" className="font-bold text-lg tracking-wide">
-            <img src="/Rlogo.png" className="h-16 w-16 xl:w-28 xl:h-28" />
+            <Image src="/Rlogo.png" className="h-16 w-16 xl:w-28 xl:h-28" alt="River View Villas Logo" width={112} height={112} />
           </Link>
 
           {/* Desktop Nav */}
@@ -393,8 +393,8 @@ export default function Packages() {
             <Link
               href="/Packages"
               className={`border-b-2 ${isScrolled
-                  ? "text-[#8B6E3F] border-[#8B6E3F]"
-                  : "text-white border-white"
+                ? "text-[#8B6E3F] border-[#8B6E3F]"
+                : "text-white border-white"
                 }`}
             >
               Packages
@@ -463,8 +463,8 @@ export default function Packages() {
               key={filter}
               onClick={() => setSelectedFilter(filter)}
               className={`px-6 py-2 rounded-full border font-medium transition-all ${selectedFilter === filter
-                  ? "bg-[#8B6E3F] text-white border-[#8B6E3F]"
-                  : "bg-white text-[#001F2B] border-gray-300 hover:border-[#8B6E3F] hover:text-[#8B6E3F]"
+                ? "bg-[#8B6E3F] text-white border-[#8B6E3F]"
+                : "bg-white text-[#001F2B] border-gray-300 hover:border-[#8B6E3F] hover:text-[#8B6E3F]"
                 }`}
             >
               {filter === "All" ? "All" : `${filter}-Day`}
@@ -533,7 +533,7 @@ export default function Packages() {
 
               <div className="mb-6 lg:mb-0 lg:col-span-2">
                 <div className='mb-4  lg:mx-0 w-24 h-24'>
-                  <img className='text-center' src="./home2.png" alt="" />
+                  <Image className='text-center' src="/home2.png" alt="River View Villas" width={96} height={96} />
                 </div>
                 <h2 className="text-white text-xl  font-bold mb-2">River View Villas</h2>
                 <p className="text-gray-400 mb-4">Experience holistic health at River View Villas, a luxury Ayurvedic health retreat in Sri Lanka.</p>

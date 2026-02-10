@@ -91,10 +91,12 @@ export default function Accomodation() {
             <nav className="bg-white fixed z-50 min-w-full border-gray-200 dark:bg-gray-900 lg:px-20">
                 <div className="max-w-screen flex flex-wrap items-center justify-between mx-auto p-4">
                     <Link href="/">
-                        <img
+                        <Image
                             src="/Rlogo.png"
                             className="h-16 w-16 xl:w-28 xl:h-28"
-
+                            alt="River View Villas Logo"
+                            width={112}
+                            height={112}
                         />
                     </Link>
 
@@ -300,14 +302,14 @@ export default function Accomodation() {
                         <div className='cols-span-1 col-start-1 my-auto'>
 
                             <h2 className="text-3xl md:text-5xl font-extrabold text-gray-800 mb-6">Ayurvedic Amenities</h2>
-                            <p className="text-lg  max-w-xl flex "><span className='mr-2'><img src="/home4.png" alt="" /></span>Organic, chemical-free toiletries</p>
-                            <p className="text-lg  max-w-xl flex "><span className='mr-2'><img src="/home4.png" alt="" /></span>Herbal teas and Ayurvedic beverages</p>
-                            <p className="text-lg  max-w-xl flex "><span className='mr-2'><img src="/home4.png" alt="" /></span>Yoga mats and meditation spaces</p>
-                            <p className="text-lg  max-w-xl flex "><span className='mr-2 '><img src="/home4.png" alt="" /></span>Rooms designed with natural light and color harmony based on Ayurvedic principles</p>
+                            <p className="text-lg  max-w-xl flex "><span className='mr-2'><Image src="/home4.png" alt="icon" width={20} height={20} /></span>Organic, chemical-free toiletries</p>
+                            <p className="text-lg  max-w-xl flex "><span className='mr-2'><Image src="/home4.png" alt="icon" width={20} height={20} /></span>Herbal teas and Ayurvedic beverages</p>
+                            <p className="text-lg  max-w-xl flex "><span className='mr-2'><Image src="/home4.png" alt="icon" width={20} height={20} /></span>Yoga mats and meditation spaces</p>
+                            <p className="text-lg  max-w-xl flex "><span className='mr-2 '><Image src="/home4.png" alt="icon" width={20} height={20} /></span>Rooms designed with natural light and color harmony based on Ayurvedic principles</p>
 
                         </div>
                         <div className='cols-span-1 flex justify-end '>
-                            <img src="/acom2.png" alt="" />
+                            <Image src="/acom2.png" alt="Accommodation" width={500} height={400} />
                         </div>
                     </div>
                 </div>
@@ -454,8 +456,8 @@ export default function Accomodation() {
                         </div>
                         <div className='cols-span-1 flex justify-center lg:justify-end'>
                             <div className='md:flex w-[406px] h-[368px] overflow-hidden '>
-                                <img className='w-[300px] h-[300px]' src="/CarpeDiem/pic1.jpeg" alt="" />
-                                <img className='w-[314px] h-[279px] mt-[150px] ml-[-150px]' src="/CarpeDiem/vill2.png" alt="" />
+                                <Image className='w-[300px] h-[300px]' src="/CarpeDiem/pic1.jpeg" alt="Carpe Diem Detail" width={300} height={300} />
+                                <Image className='w-[314px] h-[279px] mt-[150px] ml-[-150px]' src="/CarpeDiem/vill2.png" alt="Carpe Diem Villa" width={314} height={279} />
                             </div>
                         </div>
                     </div>
@@ -563,7 +565,7 @@ export default function Accomodation() {
 
                     <div className='col-span-1 hidden lg:inline  justify-end '>
                         <div className='my-auto'>
-                            <img className='w-[232px] h-[278px] overflow-hidden object-cover relative ml-3' src="/VillaAraliya/pic1.jpeg" alt="" />
+                            <Image className='w-[232px] h-[278px] overflow-hidden object-cover relative ml-3' src="/VillaAraliya/pic1.jpeg" alt="Villa Araliya" width={232} height={278} />
                         </div>
                     </div>
                 </div>
@@ -663,8 +665,8 @@ export default function Accomodation() {
                         </div>
                         <div className='cols-span-1 flex justify-end'>
                             <div className='md:flex w-[406px] h-[368px] overflow-hidden '>
-                                <img className='w-[300px] h-[300px]' src="/VillaOrchid/pic1.jpeg" alt="" />
-                                <img className='w-[314px] h-[279px] mt-[150px] ml-[-150px]' src="/VillaOrchid/vill2.png" alt="" />
+                                <Image className='w-[300px] h-[300px]' src="/VillaOrchid/pic1.jpeg" alt="Villa Orchid Detail" width={300} height={300} />
+                                <Image className='w-[314px] h-[279px] mt-[150px] ml-[-150px]' src="/VillaOrchid/vill2.png" alt="Villa Orchid" width={314} height={279} />
                             </div>
                         </div>
                     </div>
@@ -680,7 +682,7 @@ export default function Accomodation() {
 
                     <div className='lg:col-span-1 md:col-span-2 col-start-1 lg:mt-40   '>
                         <div className=''>
-                            <img className='w-[232px] h-[278px] object-cover relative ml-3' src="/VillaLilly/villa1.jpeg" alt="" />
+                            <Image className='w-[232px] h-[278px] object-cover relative ml-3' src="/VillaLilly/villa1.jpeg" alt="Villa Lilly" width={232} height={278} />
                         </div>
                     </div>
 
@@ -773,7 +775,7 @@ export default function Accomodation() {
 
                     <div className='col-span-1  hidden lg:inline justify-end'>
                         <div className=''>
-                            <img className='w-[232px] h-[278px] object-cover relative ml-3' src="/VillaLilly/vill2.png" alt="" />
+                            <Image className='w-[232px] h-[278px] object-cover relative ml-3' src="/VillaLilly/vill2.png" alt="Villa Lilly Detail" width={232} height={278} />
                         </div>
                     </div>
                 </div>
@@ -872,8 +874,8 @@ export default function Accomodation() {
                         </div>
                         <div className='cols-span-1 flex justify-end'>
                             <div className='relative md:flex w-[406px] h-[368px] overflow-hidden '>
-                                <img className='w-[300px] h-[300px]' src="/Lotus/villa1.jpeg" alt="" />
-                                <img className='w-[314px] h-[279px] mt-[150px] ml-[-150px]' src="/Lotus/vill1.png" alt="" />
+                                <Image className='w-[300px] h-[300px]' src="/Lotus/villa1.jpeg" alt="Lotus Villa" width={300} height={300} />
+                                <Image className='w-[314px] h-[279px] mt-[150px] ml-[-150px]' src="/Lotus/vill1.png" alt="Lotus Villa Detail" width={314} height={279} />
                             </div>
                         </div>
                     </div>
@@ -913,7 +915,7 @@ export default function Accomodation() {
 
                             <div className="mb-6 lg:mb-0 lg:col-span-2">
                                 <div className='mb-4  lg:mx-0 w-24 h-24'>
-                                    <img className='text-center' src="./home2.png" alt="" />
+                                    <Image className='text-center' src="/home2.png" alt="River View Villas Logo" width={96} height={96} />
                                 </div>
                                 <h2 className="text-white text-xl  font-bold mb-2">River View Villas</h2>
                                 <p className="text-gray-400 mb-4">Experience holistic health at River View Villas, a luxury Ayurvedic health retreat in Sri Lanka.</p>

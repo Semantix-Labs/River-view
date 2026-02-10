@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 
 export default function Navbar() {
@@ -52,7 +53,7 @@ export default function Navbar() {
         >
           <div className="md:navbar-center  md:flex navbar-start justify-start md:justify-center w-full">
             <div className="justify-start flex md:justify-center h-[70px] w-[80px] md:h-[80px] md:w-[80px] xl:w-[150px] xl:h-auto">
-              <img className="flex justify-center max-h-[50px]" src="./home2.png" alt="Home" />
+              <Image className="flex justify-center max-h-[50px] w-auto h-auto" src="/home2.png" alt="Home" width={80} height={80} />
             </div>
           </div>
           {/* Responsive Menu */}
