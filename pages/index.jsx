@@ -45,24 +45,33 @@ export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const bookNow = () => {
-   
+    if (typeof window !== "undefined" && window.fbq) {
+      window.fbq('track', 'InitiateCheckout');
+    }
 
     window.open(
-        `https://booking.profitroom.com/en/riverviewvillas/home?no-cache=&currency=USD`,
-        '_blank'
+      `https://booking.profitroom.com/en/riverviewvillas/home?no-cache=&currency=USD`,
+      '_blank'
     );
-};
-// Popup modal state
-const [showPopup, setShowPopup] = useState(false);
+  };
 
-useEffect(() => {
-  // Show popup after 5 seconds
-  const timer = setTimeout(() => {
-    setShowPopup(true);
-  }, 5000);
+  // Helper for other links
+  const handleCheckout = () => {
+    if (typeof window !== "undefined" && window.fbq) {
+      window.fbq('track', 'InitiateCheckout');
+    }
+  };
+  // Popup modal state
+  const [showPopup, setShowPopup] = useState(false);
 
-  return () => clearTimeout(timer);
-}, []);
+  useEffect(() => {
+    // Show popup after 5 seconds
+    const timer = setTimeout(() => {
+      setShowPopup(true);
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
 
   useEffect(() => {
@@ -237,13 +246,13 @@ useEffect(() => {
                     Homepage
                   </span>
                 </Link> */}
-               
+
                 <Link href="/AboutUs">
                   <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
                     About Us
                   </span>
                 </Link>
-                 <Link href="/Packages">
+                <Link href="/Packages">
                   <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
                     Our Packages
                   </span>
@@ -263,7 +272,7 @@ useEffect(() => {
                     Gallery
                   </span>
                 </Link>
-             
+
                 <Link href="/ContactUs">
                   <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
                     Contact Us
@@ -325,7 +334,7 @@ useEffect(() => {
                   Gallery
                 </span>
               </Link>
-             
+
               <Link href="/ContactUs">
                 <span className="text-customGold ml-4 hover:text-white  text-2xl cursor-pointer py-2">
                   Contact Us
@@ -345,51 +354,52 @@ useEffect(() => {
 
 
       {/* image section */}
-       <section>
-      <Image
-        width={2560}
-        height={1080}
-        src="/home.jpg"
-        className="w-full"
-        alt="hero"
-      />
-      {/* Booking widget container */}
-{isMobile ? (
-  // ✅ Mobile view → sticky footer button
-  <div className="fixed bottom-0 left-0 w-full bg-white shadow-md p-3 flex justify-center z-50">
-    <a
-      href= "https://booking.profitroom.com/en/riverviewvillas/home?no-cache=&currency=USD"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="w-full max-w-sm text-center bg-[#8B6E3F] text-white font-semibold py-3 px-6 rounded-lg shadow hover:bg-[#6F5530] transition"
-    >
-      Check Availability
-    </a>
-  </div>
-) : (
-  // ✅ Desktop view → booking widget
-  <div>
-    <div className="be-panel"></div>
-    <Script
-      src="https://wis.upperbooking.com/riverviewvillas/be-panel?locale=en"
-      strategy="afterInteractive"
-    />
-  </div>
-)}
+      <section>
+        <Image
+          width={2560}
+          height={1080}
+          src="/home.jpg"
+          className="w-full"
+          alt="hero"
+        />
+        {/* Booking widget container */}
+        {isMobile ? (
+          // ✅ Mobile view → sticky footer button
+          <div className="fixed bottom-0 left-0 w-full bg-white shadow-md p-3 flex justify-center z-50">
+            <a
+              onClick={handleCheckout}
+              href="https://booking.profitroom.com/en/riverviewvillas/home?no-cache=&currency=USD"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full max-w-sm text-center bg-[#8B6E3F] text-white font-semibold py-3 px-6 rounded-lg shadow hover:bg-[#6F5530] transition"
+            >
+              Check Availability
+            </a>
+          </div>
+        ) : (
+          // ✅ Desktop view → booking widget
+          <div>
+            <div className="be-panel"></div>
+            <Script
+              src="https://wis.upperbooking.com/riverviewvillas/be-panel?locale=en"
+              strategy="afterInteractive"
+            />
+          </div>
+        )}
 
 
-    </section>
-      
+      </section>
+
 
 
       {/* booking section */}
       <section>
-      
+
 
         <div style={{ fontFamily: 'Gentium Basic' }} className=" grid grid-cols-2 z-40 relative md:flex justify-center mx-10 md:mx-5 mt-[-2rem] md:mt-[-4rem] lg:mt-[-3rem]">
 
           <Link href=" https://booking.profitroom.com/en/riverviewvillas/home?no-cache=&currency=USD">
-            <button className="bg-white lg:text-xl text-black shadow-xl col-span-1  box-border border-2 w-full font-bold py-4 md:py-8 md:px-24 rounded">
+            <button onClick={handleCheckout} className="bg-white lg:text-xl text-black shadow-xl col-span-1  box-border border-2 w-full font-bold py-4 md:py-8 md:px-24 rounded">
               Book Now
             </button>
           </Link>
@@ -556,8 +566,8 @@ useEffect(() => {
             Major Ayurvedic Services
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="text-center">
-          <div className="mb-4 relative rounded-t-full h-64 xl:h-80 2xl:h-[400px] overflow-hidden">
+            <div className="text-center">
+              <div className="mb-4 relative rounded-t-full h-64 xl:h-80 2xl:h-[400px] overflow-hidden">
                 <Image
                   src="/mssage.jpg"
                   alt="Massage Therapy"
@@ -587,11 +597,11 @@ useEffect(() => {
               </p>
             </div>
             <div className="text-center">
-            <div className="mb-4 relative rounded-t-full h-64 xl:h-80 2xl:h-[400px] overflow-hidden">
+              <div className="mb-4 relative rounded-t-full h-64 xl:h-80 2xl:h-[400px] overflow-hidden">
                 <Image
                   src="/yoga.jpg"
                   alt="Yoga"
-                   objectFit="cover"
+                  objectFit="cover"
                   layout="fill"
                   className="w-full"
                 />
@@ -602,7 +612,7 @@ useEffect(() => {
               </p>
             </div>
             <div className="text-center">
-            <div className="mb-4 relative rounded-t-full h-64 xl:h-80 2xl:h-[400px] overflow-hidden">
+              <div className="mb-4 relative rounded-t-full h-64 xl:h-80 2xl:h-[400px] overflow-hidden">
                 <Image
                   src="/medi1.jpg"
                   alt="Meditation"
@@ -698,7 +708,7 @@ useEffect(() => {
 
             </div>
           </div>
-       
+
         </section>
       </div>
 
@@ -828,34 +838,34 @@ useEffect(() => {
           </div>
         </footer>
       </div>
-                {showPopup && (
-  <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-[9999]">
-    <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-sm mx-4 text-center relative">
-      <button
-        onClick={() => setShowPopup(false)}
-        className="absolute top-2 right-3 text-gray-500 hover:text-gray-800 text-xl"
-      >
-        ✕
-      </button>
-      <h2 className="text-2xl font-bold mb-3 text-[#001F2B]" style={{ fontFamily: "Gentium Basic" }}>
-        Explore Our Packages
-      </h2>
-      <p className="text-gray-600 mb-6">
-        Discover our exclusive Ayurvedic packages designed for your health and relaxation.
-      </p>
-      <Link href="/Packages">
-        <button
-          onClick={() => setShowPopup(false)}
-          className="bg-[#8B6E3F] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#6F5530] transition-all"
-        >
-          View Packages
-        </button>
-      </Link>
-    </div>
-  </div>
-)}
+      {showPopup && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-[9999]">
+          <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-sm mx-4 text-center relative">
+            <button
+              onClick={() => setShowPopup(false)}
+              className="absolute top-2 right-3 text-gray-500 hover:text-gray-800 text-xl"
+            >
+              ✕
+            </button>
+            <h2 className="text-2xl font-bold mb-3 text-[#001F2B]" style={{ fontFamily: "Gentium Basic" }}>
+              Explore Our Packages
+            </h2>
+            <p className="text-gray-600 mb-6">
+              Discover our exclusive Ayurvedic packages designed for your health and relaxation.
+            </p>
+            <Link href="/Packages">
+              <button
+                onClick={() => setShowPopup(false)}
+                className="bg-[#8B6E3F] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#6F5530] transition-all"
+              >
+                View Packages
+              </button>
+            </Link>
+          </div>
+        </div>
+      )}
 
-   
+
     </main>
   );
 }

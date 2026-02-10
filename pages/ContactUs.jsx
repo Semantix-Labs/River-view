@@ -52,6 +52,11 @@ function ContactUs() {
         });
 
         if (res.ok) {
+            // Meta Pixel: Lead
+            if (typeof window !== "undefined" && window.fbq) {
+                window.fbq('track', 'Lead');
+            }
+
             setStatus('Message sent successfully!');
             setFormData({
                 fullName: '',
@@ -72,7 +77,7 @@ function ContactUs() {
 
     return (
         <div className="min-h-screen ">
-          <nav className="bg-white fixed z-50 min-w-full border-gray-200 dark:bg-gray-900 lg:px-20">
+            <nav className="bg-white fixed z-50 min-w-full border-gray-200 dark:bg-gray-900 lg:px-20">
                 <div className="max-w-screen flex flex-wrap items-center justify-between mx-auto p-4">
                     <Link href="/">
                         <img
@@ -135,18 +140,18 @@ function ContactUs() {
                                 </Link>
                             </li>
                             <li>
-                                 <Link href="/Packages">
-                  <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
-                    Our Packages
-                  </span>
-                </Link>
+                                <Link href="/Packages">
+                                    <span className="text-customGold hover:border-b-2 hover:border-customGold ml-4 cursor-pointer hidden md:inline-block">
+                                        Our Packages
+                                    </span>
+                                </Link>
                             </li>
                             <li className='my-auto'>
                                 <Link href="/ContactUs">
                                     <span className="text-[#001F2B8F] border-b-2 border-[#001F2B8F] hover:border-b-2 hover:border-customGold ml-4 cursor-pointer">Contact Us</span>
                                 </Link>
                             </li>
-                           {/* <li className='my-auto'>
+                            {/* <li className='my-auto'>
                                 <Link href="/Accomodation#hh">
                                     <button className="text-white   hover:border-b-2 hover:border-customGold ml-4 bg-[#001F2B] px-[17px]  py-[9px] rounded-lg cursor-pointer">Book Now</button>
                                 </Link>
@@ -328,7 +333,7 @@ function ContactUs() {
                                 </div>
                                 <h2 className="text-white text-xl  font-bold mb-2">River View Villas</h2>
                                 <p className="text-gray-400 mb-4">Experience holistic health at River View Villas, a luxury Ayurvedic health retreat in Sri Lanka.</p>
-                                    <div className="flex  space-x-4">
+                                <div className="flex  space-x-4">
                                     <a href="https://web.facebook.com/riverviewvillas/?_rdc=1&_rdr " className="text-gray-400 hover:text-white"><FaFacebookF /></a>
                                     <a href="https://www.instagram.com/river_view_villas/?hl=en " className="text-gray-400 hover:text-white"><FaInstagram /></a>
                                     <a href="https://www.tiktok.com/@river.view.villas?_t=8n6DFJerj6X&_r=1" className="text-gray-400 hover:text-white"><FaTiktok /></a>

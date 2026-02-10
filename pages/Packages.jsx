@@ -20,8 +20,23 @@ export default function Packages() {
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
+
+    // Meta Pixel: ViewContent
+    if (typeof window !== "undefined" && window.fbq) {
+      window.fbq('track', 'ViewContent', {
+        content_name: 'Ayurveda Packages',
+        content_type: 'product'
+      });
+    }
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const handleCheckout = () => {
+    if (typeof window !== "undefined" && window.fbq) {
+      window.fbq('track', 'InitiateCheckout');
+    }
+  };
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const bookNow = () =>
@@ -30,297 +45,297 @@ export default function Packages() {
       "_blank"
     );
 
- const packages = [
-  // 3-Night Packages
-  {
-    id: 1,
-    title: "3-Nights Hibiscus Vitality Package",
-    subtitle: "Quick Body Detox & Mind Refresh",
-    duration: 3,
-    price: 124.80,
-    image: "/packages/hibiscus1.jpg",
-    link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/854188",
-  },
-  {
-    id: 2,
-    title: "3-Nights Araliya Healing Package",
-    subtitle: "Calming and Balancing Ayurvedic Experience",
-    duration: 3,
-    price: 124.80,
-    image: "/packages/araliya1.jpg",
-    link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/854176",
-  },
-  {
-    id: 3,
-    title: "3-Nights Lotus Wellness Package",
-    subtitle: "Rejuvenating Detox & Full-Body Reset",
-    duration: 3,
-    price: 124.80,
-    image: "/packages/lotus1.jpg",
-    link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/854158",
-  },
+  const packages = [
+    // 3-Night Packages
+    {
+      id: 1,
+      title: "3-Nights Hibiscus Vitality Package",
+      subtitle: "Quick Body Detox & Mind Refresh",
+      duration: 3,
+      price: 124.80,
+      image: "/packages/hibiscus1.jpg",
+      link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/854188",
+    },
+    {
+      id: 2,
+      title: "3-Nights Araliya Healing Package",
+      subtitle: "Calming and Balancing Ayurvedic Experience",
+      duration: 3,
+      price: 124.80,
+      image: "/packages/araliya1.jpg",
+      link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/854176",
+    },
+    {
+      id: 3,
+      title: "3-Nights Lotus Wellness Package",
+      subtitle: "Rejuvenating Detox & Full-Body Reset",
+      duration: 3,
+      price: 124.80,
+      image: "/packages/lotus1.jpg",
+      link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/854158",
+    },
 
-  // 5-Night Packages
-  {
-    id: 4,
-    title: "5-Nights Lotus Weight Loss Package",
-    subtitle: "Ayurvedic Weight Management & Detox",
-    duration: 5,
-    price: 120.74,
-    image: "/packages/lotus2weight.jpg",
-    link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/854674",
-  },
-  {
-    id: 5,
-    title: "5-Nights Hibiscus Pain Relief Package",
-    subtitle: "Relieve Pain Naturally with Ayurveda",
-    duration: 5,
-    price: 120.74,
-    image: "/packages/hibiscus2pain.jpg",
-    link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/854678",
-  },
-  {
-    id: 6,
-    title: "5-Nights Araliya Anti-Stress & Depression Relief Package",
-    subtitle: "Restore Emotional & Mental Balance",
-    duration: 5,
-    price: 120.74,
-    image: "/packages/araliya2stress.jpg",
-    link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/854680",
-  },
+    // 5-Night Packages
+    {
+      id: 4,
+      title: "5-Nights Lotus Weight Loss Package",
+      subtitle: "Ayurvedic Weight Management & Detox",
+      duration: 5,
+      price: 120.74,
+      image: "/packages/lotus2weight.jpg",
+      link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/854674",
+    },
+    {
+      id: 5,
+      title: "5-Nights Hibiscus Pain Relief Package",
+      subtitle: "Relieve Pain Naturally with Ayurveda",
+      duration: 5,
+      price: 120.74,
+      image: "/packages/hibiscus2pain.jpg",
+      link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/854678",
+    },
+    {
+      id: 6,
+      title: "5-Nights Araliya Anti-Stress & Depression Relief Package",
+      subtitle: "Restore Emotional & Mental Balance",
+      duration: 5,
+      price: 120.74,
+      image: "/packages/araliya2stress.jpg",
+      link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/854680",
+    },
 
-  // 7-Night Packages
-  {
-    id: 7,
-    title: "7-Nights Hibiscus Pain Relief Package",
-    subtitle: "Chronic Pain Relief Through Panchakarma",
-    duration: 7,
-    price: 125.78,
-    image: "/packages/hibiscus7pain.jpg",
-    link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/854682",
-  },
-  {
-    id: 8,
-    title: "7-Nights Araliya Anti-Stress, Insomnia & Depression Relief Package",
-    subtitle: "Restful Mind and Restored Sleep Naturally",
-    duration: 7,
-    price: 127.45,
-    image: "/packages/araliya7stress.jpg",
-    link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/854684",
-  },
-  {
-    id: 9,
-    title: "7-Nights Lotus Weight Loss Package",
-    subtitle: "Rebalance Metabolism with Ayurvedic Detox",
-    duration: 7,
-    price: 124.52,
-    image: "/packages/lotus7weight.jpg",
-    link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/854686",
-  },
-  {
-    id: 10,
-    title: "14-Day Panchakarma Detox & Rejuvenation Package",
-    subtitle: "Deep Ayurvedic Detox & Healing",
-    duration: 14,
-    price: 123.69,
-    image: "/packages/panchakarma14.jpg",
-    link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/876646",
-  },
+    // 7-Night Packages
+    {
+      id: 7,
+      title: "7-Nights Hibiscus Pain Relief Package",
+      subtitle: "Chronic Pain Relief Through Panchakarma",
+      duration: 7,
+      price: 125.78,
+      image: "/packages/hibiscus7pain.jpg",
+      link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/854682",
+    },
+    {
+      id: 8,
+      title: "7-Nights Araliya Anti-Stress, Insomnia & Depression Relief Package",
+      subtitle: "Restful Mind and Restored Sleep Naturally",
+      duration: 7,
+      price: 127.45,
+      image: "/packages/araliya7stress.jpg",
+      link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/854684",
+    },
+    {
+      id: 9,
+      title: "7-Nights Lotus Weight Loss Package",
+      subtitle: "Rebalance Metabolism with Ayurvedic Detox",
+      duration: 7,
+      price: 124.52,
+      image: "/packages/lotus7weight.jpg",
+      link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/854686",
+    },
+    {
+      id: 10,
+      title: "14-Day Panchakarma Detox & Rejuvenation Package",
+      subtitle: "Deep Ayurvedic Detox & Healing",
+      duration: 14,
+      price: 123.69,
+      image: "/packages/panchakarma14.jpg",
+      link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/876646",
+    },
 
-  // 14-Night Packages
-  {
-    id: 11,
-    title: "14-Night Ayurvedic Diabetes Management Package",
-    subtitle: "Balance Sugar Levels with Natural Therapy",
-    duration: 14,
-    price: 123.69,
-    image: "/packages/diabetes14.jpg",
-    link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860456",
-  },
-  {
-    id: 12,
-    title: "14-Night Ayurvedic Treatment for Tinnitus",
-    subtitle: "Ayurvedic Healing for Ear & Nerve Health",
-    duration: 14,
-    price: 123.69,
-    image: "/packages/tinnitus14.jpg",
-    link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860454",
-  },
-  {
-    id: 13,
-    title: "14-Night High Blood Pressure Management Package",
-    subtitle: "Natural Cardiac Health Restoration",
-    duration: 14,
-    price: 123.69,
-    image: "/packages/bp14.jpg",
-    link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860452",
-  },
-  {
-    id: 14,
-    title: "14-Night Cholesterol Management Package",
-    subtitle: "Herbal Therapy to Cleanse Arteries",
-    duration: 14,
-    price: 123.69,
-    image: "/packages/cholesterol14.jpg",
-    link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860450",
-  },
-  {
-    id: 15,
-    title: "14-Night Weight Loss Program",
-    subtitle: "Comprehensive Ayurvedic Fat-Burning Regimen",
-    duration: 14,
-    price: 123.69,
-    image: "/packages/weight14.jpg",
-    link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860448",
-  },
-  {
-    id: 16,
-    title: "14-Night Paralysis / Parkinson’s Recovery Package",
-    subtitle: "Neural & Muscular Rehabilitation Program",
-    duration: 14,
-    price: 123.69,
-    image: "/packages/paralysis14.jpg",
-    link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860446",
-  },
-  {
-    id: 17,
-    title: "14-Night Arthritis Treatment Package",
-    subtitle: "Joint Pain Relief and Mobility Restoration",
-    duration: 14,
-    price: 123.69,
-    image: "/packages/arthritis14.jpg",
-    link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860444",
-  },
-  {
-    id: 18,
-    title: "14-Night Skin Healing Program: Psoriasis & Neurodermatitis",
-    subtitle: "Herbal & Detox-Based Skin Healing",
-    duration: 14,
-    price: 123.69,
-    image: "/packages/skinhealing14.jpg",
-    link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860458",
-  },
-  {
-    id: 19,
-    title: "14-Night Migraine Relief Package",
-    subtitle: "Root Cause Healing for Chronic Migraines",
-    duration: 14,
-    price: 123.69,
-    image: "/packages/migraine14.jpg",
-    link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860442",
-  },
-  {
-    id: 20,
-    title: "14-Night Depression Relief Package",
-    subtitle: "Emotional Balance Through Ayurveda",
-    duration: 14,
-    price: 123.69,
-    image: "/packages/depression14.jpg",
-    link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860530",
-  },
+    // 14-Night Packages
+    {
+      id: 11,
+      title: "14-Night Ayurvedic Diabetes Management Package",
+      subtitle: "Balance Sugar Levels with Natural Therapy",
+      duration: 14,
+      price: 123.69,
+      image: "/packages/diabetes14.jpg",
+      link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860456",
+    },
+    {
+      id: 12,
+      title: "14-Night Ayurvedic Treatment for Tinnitus",
+      subtitle: "Ayurvedic Healing for Ear & Nerve Health",
+      duration: 14,
+      price: 123.69,
+      image: "/packages/tinnitus14.jpg",
+      link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860454",
+    },
+    {
+      id: 13,
+      title: "14-Night High Blood Pressure Management Package",
+      subtitle: "Natural Cardiac Health Restoration",
+      duration: 14,
+      price: 123.69,
+      image: "/packages/bp14.jpg",
+      link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860452",
+    },
+    {
+      id: 14,
+      title: "14-Night Cholesterol Management Package",
+      subtitle: "Herbal Therapy to Cleanse Arteries",
+      duration: 14,
+      price: 123.69,
+      image: "/packages/cholesterol14.jpg",
+      link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860450",
+    },
+    {
+      id: 15,
+      title: "14-Night Weight Loss Program",
+      subtitle: "Comprehensive Ayurvedic Fat-Burning Regimen",
+      duration: 14,
+      price: 123.69,
+      image: "/packages/weight14.jpg",
+      link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860448",
+    },
+    {
+      id: 16,
+      title: "14-Night Paralysis / Parkinson’s Recovery Package",
+      subtitle: "Neural & Muscular Rehabilitation Program",
+      duration: 14,
+      price: 123.69,
+      image: "/packages/paralysis14.jpg",
+      link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860446",
+    },
+    {
+      id: 17,
+      title: "14-Night Arthritis Treatment Package",
+      subtitle: "Joint Pain Relief and Mobility Restoration",
+      duration: 14,
+      price: 123.69,
+      image: "/packages/arthritis14.jpg",
+      link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860444",
+    },
+    {
+      id: 18,
+      title: "14-Night Skin Healing Program: Psoriasis & Neurodermatitis",
+      subtitle: "Herbal & Detox-Based Skin Healing",
+      duration: 14,
+      price: 123.69,
+      image: "/packages/skinhealing14.jpg",
+      link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860458",
+    },
+    {
+      id: 19,
+      title: "14-Night Migraine Relief Package",
+      subtitle: "Root Cause Healing for Chronic Migraines",
+      duration: 14,
+      price: 123.69,
+      image: "/packages/migraine14.jpg",
+      link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860442",
+    },
+    {
+      id: 20,
+      title: "14-Night Depression Relief Package",
+      subtitle: "Emotional Balance Through Ayurveda",
+      duration: 14,
+      price: 123.69,
+      image: "/packages/depression14.jpg",
+      link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860530",
+    },
 
-  // 21-Night Packages
-  {
-    id: 21,
-    title: "21-Day Panchakarma Deep Healing & Transformation Package",
-    subtitle: "Full-Body Detox & Spiritual Renewal",
-    duration: 21,
-    price: 124.25,
-    image: "/packages/panchakarma21.jpg",
-    link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/876648",
-  },
-  {
-    id: 22,
-    title: "21-Night Ayurvedic Diabetes Management Package",
-    subtitle: "Long-Term Natural Blood Sugar Control",
-    duration: 21,
-    price: 124.25,
-    image: "/packages/diabetes21.jpg",
-    link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860992",
-  },
-  {
-    id: 23,
-    title: "21-Night Skin Healing Program: Psoriasis & Neurodermatitis",
-    subtitle: "Intensive Healing for Chronic Skin Issues",
-    duration: 21,
-    price: 144.17,
-    image: "/packages/skin21.jpg",
-    link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860458",
-  },
-  {
-    id: 24,
-    title: "21-Night High Blood Pressure Management Package",
-    subtitle: "Herbal Detox for Heart & Circulation Health",
-    duration: 21,
-    price: 124.25,
-    image: "/packages/bp21.jpg",
-    link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860988",
-  },
-  {
-    id: 25,
-    title: "21-Night Ayurvedic Treatment for Tinnitus",
-    subtitle: "Restorative Therapy for Ear Health",
-    duration: 21,
-    price: 124.25,
-    image: "/packages/tinnitus21.jpg",
-    link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860990",
-  },
-  {
-    id: 26,
-    title: "21-Night Cholesterol Management Package",
-    subtitle: "Cleanse & Strengthen the Cardiovascular System",
-    duration: 21,
-    price: 124.25,
-    image: "/packages/cholesterol21.jpg",
-    link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860603",
-  },
-  {
-    id: 27,
-    title: "21-Night Weight Loss Program",
-    subtitle: "Comprehensive Slimming with Ayurveda",
-    duration: 21,
-    price: 124.25,
-    image: "/packages/weightloss21.jpg",
-    link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860601",
-  },
-  {
-    id: 28,
-    title: "21-Night Paralysis / Parkinson’s Recovery Package",
-    subtitle: "Long-Term Nerve Strengthening & Healing",
-    duration: 21,
-    price: 124.25,
-    image: "/packages/paralysis21.jpg",
-    link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860599",
-  },
-  {
-    id: 29,
-    title: "21-Night Arthritis Treatment Package",
-    subtitle: "Joint Rejuvenation & Flexibility Restoration",
-    duration: 21,
-    price: 124.25,
-    image: "/packages/arthritis21.jpg",
-    link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860597",
-  },
-  {
-    id: 30,
-    title: "21-Night Migraine Relief Package",
-    subtitle: "Comprehensive Healing for Chronic Migraines",
-    duration: 21,
-    price: 124.25,
-    image: "/packages/migraine21.jpg",
-    link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860596",
-  },
-  {
-    id: 31,
-    title: "21-Night Depression Relief Package",
-    subtitle: "Emotional & Mental Balance Transformation",
-    duration: 21,
-    price: 124.25,
-    image: "/packages/depression21.jpg",
-    link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860530",
-    
-  },
-];
+    // 21-Night Packages
+    {
+      id: 21,
+      title: "21-Day Panchakarma Deep Healing & Transformation Package",
+      subtitle: "Full-Body Detox & Spiritual Renewal",
+      duration: 21,
+      price: 124.25,
+      image: "/packages/panchakarma21.jpg",
+      link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/876648",
+    },
+    {
+      id: 22,
+      title: "21-Night Ayurvedic Diabetes Management Package",
+      subtitle: "Long-Term Natural Blood Sugar Control",
+      duration: 21,
+      price: 124.25,
+      image: "/packages/diabetes21.jpg",
+      link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860992",
+    },
+    {
+      id: 23,
+      title: "21-Night Skin Healing Program: Psoriasis & Neurodermatitis",
+      subtitle: "Intensive Healing for Chronic Skin Issues",
+      duration: 21,
+      price: 144.17,
+      image: "/packages/skin21.jpg",
+      link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860458",
+    },
+    {
+      id: 24,
+      title: "21-Night High Blood Pressure Management Package",
+      subtitle: "Herbal Detox for Heart & Circulation Health",
+      duration: 21,
+      price: 124.25,
+      image: "/packages/bp21.jpg",
+      link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860988",
+    },
+    {
+      id: 25,
+      title: "21-Night Ayurvedic Treatment for Tinnitus",
+      subtitle: "Restorative Therapy for Ear Health",
+      duration: 21,
+      price: 124.25,
+      image: "/packages/tinnitus21.jpg",
+      link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860990",
+    },
+    {
+      id: 26,
+      title: "21-Night Cholesterol Management Package",
+      subtitle: "Cleanse & Strengthen the Cardiovascular System",
+      duration: 21,
+      price: 124.25,
+      image: "/packages/cholesterol21.jpg",
+      link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860603",
+    },
+    {
+      id: 27,
+      title: "21-Night Weight Loss Program",
+      subtitle: "Comprehensive Slimming with Ayurveda",
+      duration: 21,
+      price: 124.25,
+      image: "/packages/weightloss21.jpg",
+      link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860601",
+    },
+    {
+      id: 28,
+      title: "21-Night Paralysis / Parkinson’s Recovery Package",
+      subtitle: "Long-Term Nerve Strengthening & Healing",
+      duration: 21,
+      price: 124.25,
+      image: "/packages/paralysis21.jpg",
+      link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860599",
+    },
+    {
+      id: 29,
+      title: "21-Night Arthritis Treatment Package",
+      subtitle: "Joint Rejuvenation & Flexibility Restoration",
+      duration: 21,
+      price: 124.25,
+      image: "/packages/arthritis21.jpg",
+      link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860597",
+    },
+    {
+      id: 30,
+      title: "21-Night Migraine Relief Package",
+      subtitle: "Comprehensive Healing for Chronic Migraines",
+      duration: 21,
+      price: 124.25,
+      image: "/packages/migraine21.jpg",
+      link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860596",
+    },
+    {
+      id: 31,
+      title: "21-Night Depression Relief Package",
+      subtitle: "Emotional & Mental Balance Transformation",
+      duration: 21,
+      price: 124.25,
+      image: "/packages/depression21.jpg",
+      link: "https://booking.profitroom.com/en/riverviewvillas/details/offer/860530",
+
+    },
+  ];
 
   const filteredPackages =
     selectedFilter === "All"
@@ -331,116 +346,108 @@ export default function Packages() {
     <div className=" text-white min-h-screen">
       {/* ================= Header ================= */}
       {/* ================= Header ================= */}
-<header
-  className={`fixed w-full top-0 z-50 transition-all duration-500 ${
-    isScrolled
-      ? "bg-white shadow-md text-[#8B6E3F]"
-      : "bg-[#8B6E3F] text-white"
-  }`}
->
-  <nav className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
-    <Link href="/" className="font-bold text-lg tracking-wide">
-      <img src="/Rlogo.png" className="h-16 w-16 xl:w-28 xl:h-28" />
-    </Link>
+      <header
+        className={`fixed w-full top-0 z-50 transition-all duration-500 ${isScrolled
+            ? "bg-white shadow-md text-[#8B6E3F]"
+            : "bg-[#8B6E3F] text-white"
+          }`}
+      >
+        <nav className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+          <Link href="/" className="font-bold text-lg tracking-wide">
+            <img src="/Rlogo.png" className="h-16 w-16 xl:w-28 xl:h-28" />
+          </Link>
 
-    {/* Desktop Nav */}
-    <div
-      className="hidden md:flex gap-10 text-[16px]"
-      style={{ fontFamily: "Gentium Basic" }}
-    >
-      <Link
-        href="/AboutUs"
-        className={`${
-          isScrolled ? "text-[#8B6E3F]" : "text-white"
-        } hover:border-b-2 hover:border-[#8B6E3F]`}
-      >
-        About Us
-      </Link>
-      <Link
-        href="/Accomodation"
-        className={`${
-          isScrolled ? "text-[#8B6E3F]" : "text-white"
-        } hover:border-b-2 hover:border-[#8B6E3F]`}
-      >
-        Accommodation
-      </Link>
-      <Link
-        href="/Treatment"
-        className={`${
-          isScrolled ? "text-[#8B6E3F]" : "text-white"
-        } hover:border-b-2 hover:border-[#8B6E3F]`}
-      >
-        Ayurvedic Treatments
-      </Link>
-      <Link
-        href="/Gallery"
-        className={`${
-          isScrolled ? "text-[#8B6E3F]" : "text-white"
-        } hover:border-b-2 hover:border-[#8B6E3F]`}
-      >
-        Gallery
-      </Link>
-      <Link
-        href="/Packages"
-        className={`border-b-2 ${
-          isScrolled
-            ? "text-[#8B6E3F] border-[#8B6E3F]"
-            : "text-white border-white"
-        }`}
-      >
-        Packages
-      </Link>
-      <Link
-        href="/ContactUs"
-        className={`${
-          isScrolled ? "text-[#8B6E3F]" : "text-white"
-        } hover:border-b-2 hover:border-[#8B6E3F]`}
-      >
-        Contact Us
-      </Link>
-    </div>
+          {/* Desktop Nav */}
+          <div
+            className="hidden md:flex gap-10 text-[16px]"
+            style={{ fontFamily: "Gentium Basic" }}
+          >
+            <Link
+              href="/AboutUs"
+              className={`${isScrolled ? "text-[#8B6E3F]" : "text-white"
+                } hover:border-b-2 hover:border-[#8B6E3F]`}
+            >
+              About Us
+            </Link>
+            <Link
+              href="/Accomodation"
+              className={`${isScrolled ? "text-[#8B6E3F]" : "text-white"
+                } hover:border-b-2 hover:border-[#8B6E3F]`}
+            >
+              Accommodation
+            </Link>
+            <Link
+              href="/Treatment"
+              className={`${isScrolled ? "text-[#8B6E3F]" : "text-white"
+                } hover:border-b-2 hover:border-[#8B6E3F]`}
+            >
+              Ayurvedic Treatments
+            </Link>
+            <Link
+              href="/Gallery"
+              className={`${isScrolled ? "text-[#8B6E3F]" : "text-white"
+                } hover:border-b-2 hover:border-[#8B6E3F]`}
+            >
+              Gallery
+            </Link>
+            <Link
+              href="/Packages"
+              className={`border-b-2 ${isScrolled
+                  ? "text-[#8B6E3F] border-[#8B6E3F]"
+                  : "text-white border-white"
+                }`}
+            >
+              Packages
+            </Link>
+            <Link
+              href="/ContactUs"
+              className={`${isScrolled ? "text-[#8B6E3F]" : "text-white"
+                } hover:border-b-2 hover:border-[#8B6E3F]`}
+            >
+              Contact Us
+            </Link>
+          </div>
 
-    {/* Mobile Hamburger */}
-    <button
-      className={`md:hidden focus:outline-none ${
-        isScrolled ? "text-[#8B6E3F]" : "text-white"
-      }`}
-      onClick={toggleMenu}
-    >
-      {isMenuOpen ? <FiX size={28} /> : <FiMenu size={28} />}
-    </button>
-  </nav>
+          {/* Mobile Hamburger */}
+          <button
+            className={`md:hidden focus:outline-none ${isScrolled ? "text-[#8B6E3F]" : "text-white"
+              }`}
+            onClick={toggleMenu}
+          >
+            {isMenuOpen ? <FiX size={28} /> : <FiMenu size={28} />}
+          </button>
+        </nav>
 
-  {/* Mobile Menu */}
-  {isMenuOpen && (
-    <div className="md:hidden bg-[#001F2B] text-white flex flex-col items-center space-y-4 py-6">
-      <Link href="/AboutUs" onClick={toggleMenu}>
-        About Us
-      </Link>
-      <Link href="/Accomodation" onClick={toggleMenu}>
-        Accommodation
-      </Link>
-      <Link href="/Treatment" onClick={toggleMenu}>
-        Ayurvedic Treatments
-      </Link>
-      <Link href="/Gallery" onClick={toggleMenu}>
-        Gallery
-      </Link>
-      <Link href="/Packages" onClick={toggleMenu}>
-        Packages
-      </Link>
-      <Link href="/ContactUs" onClick={toggleMenu}>
-        Contact Us
-      </Link>
-      <button
-        onClick={bookNow}
-        className="bg-customGold text-white px-4 py-2 rounded-lg hover:opacity-90"
-      >
-        Book Now
-      </button>
-    </div>
-  )}
-</header>
+        {/* Mobile Menu */}
+        {isMenuOpen && (
+          <div className="md:hidden bg-[#001F2B] text-white flex flex-col items-center space-y-4 py-6">
+            <Link href="/AboutUs" onClick={toggleMenu}>
+              About Us
+            </Link>
+            <Link href="/Accomodation" onClick={toggleMenu}>
+              Accommodation
+            </Link>
+            <Link href="/Treatment" onClick={toggleMenu}>
+              Ayurvedic Treatments
+            </Link>
+            <Link href="/Gallery" onClick={toggleMenu}>
+              Gallery
+            </Link>
+            <Link href="/Packages" onClick={toggleMenu}>
+              Packages
+            </Link>
+            <Link href="/ContactUs" onClick={toggleMenu}>
+              Contact Us
+            </Link>
+            <button
+              onClick={bookNow}
+              className="bg-customGold text-white px-4 py-2 rounded-lg hover:opacity-90"
+            >
+              Book Now
+            </button>
+          </div>
+        )}
+      </header>
 
 
       {/* ================= Main Content ================= */}
@@ -451,15 +458,14 @@ export default function Packages() {
 
         {/* 🔹 Filter Bar */}
         <div className="flex flex-wrap justify-center gap-4 mb-12">
-          {["All", "3","5" ,"7", "14", "21"].map((filter) => (
+          {["All", "3", "5", "7", "14", "21"].map((filter) => (
             <button
               key={filter}
               onClick={() => setSelectedFilter(filter)}
-              className={`px-6 py-2 rounded-full border font-medium transition-all ${
-                selectedFilter === filter
+              className={`px-6 py-2 rounded-full border font-medium transition-all ${selectedFilter === filter
                   ? "bg-[#8B6E3F] text-white border-[#8B6E3F]"
                   : "bg-white text-[#001F2B] border-gray-300 hover:border-[#8B6E3F] hover:text-[#8B6E3F]"
-              }`}
+                }`}
             >
               {filter === "All" ? "All" : `${filter}-Day`}
             </button>
@@ -502,13 +508,13 @@ export default function Packages() {
                 </div>
 
                 <div className="flex justify-between items-center">
-                  
+
                   <Link
                     href={pkg.link}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <button className="bg-[#8B6E3F] text-white px-5 py-2 rounded-md hover:bg-[#6F5530] transition">
+                    <button onClick={handleCheckout} className="bg-[#8B6E3F] text-white px-5 py-2 rounded-md hover:bg-[#6F5530] transition">
                       Explore
                     </button>
                   </Link>
@@ -520,48 +526,48 @@ export default function Packages() {
       </main>
 
       {/* ================= Footer ================= */}
-       <div className='bg-[#001F2B]'>
-                      <footer className="bg-[#001F2B] mx-5 2xl:px-[15rem] lg:mx-20 text-gray-400 pt-20">
-                          <div className=" px-4">
-                              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
-      
-                                  <div className="mb-6 lg:mb-0 lg:col-span-2">
-                                      <div className='mb-4  lg:mx-0 w-24 h-24'>
-                                          <img className='text-center' src="./home2.png" alt="" />
-                                      </div>
-                                      <h2 className="text-white text-xl  font-bold mb-2">River View Villas</h2>
-                                      <p className="text-gray-400 mb-4">Experience holistic health at River View Villas, a luxury Ayurvedic health retreat in Sri Lanka.</p>
-                                          <div className="flex  space-x-4">
-                                          <a href="https://web.facebook.com/riverviewvillas/?_rdc=1&_rdr " className="text-gray-400 hover:text-white"><FaFacebookF /></a>
-                                          <a href="https://www.instagram.com/river_view_villas/?hl=en " className="text-gray-400 hover:text-white"><FaInstagram /></a>
-                                          <a href="https://www.tiktok.com/@river.view.villas?_t=8n6DFJerj6X&_r=1" className="text-gray-400 hover:text-white"><FaTiktok /></a>
-                                      </div>
-                                  </div>
-                                  <div className="mb-6 lg:mb-0 lg:col-span-1">
-      
-                                  </div>
-      
-                                  <div className="mb-6 lg:mb-0 lg:col-span-1">
-                                      <h3 className="text-white text-lg font-bold mb-2">Page Links</h3>
-                                      <ul className='grid grid-cols-2 lg:grid-cols-1'>
-                                          <li><a href="#" className="text-gray-400 hover:text-white">About us</a></li>
-                                          <li><a href="#" className="text-gray-400 hover:text-white">Accommodation</a></li>
-                                          <li><a href="#" className="text-gray-400 hover:text-white">Ayurvedic Treatments</a></li>
-                                          <li><a href="#" className="text-gray-400 hover:text-white">Gallery</a></li>
-                                          {/* <li><a href="#" className="text-gray-400 hover:text-white">News & Blogs</a></li> */}
-                                          <li><a href="#" className="text-gray-400 hover:text-white">Contact us</a></li>
-                                          <li> <div className="flex inline md:hidden space-x-4">
-                                              <a href="#" className="text-gray-400 hover:text-white">Terms of Use</a>
-      
-                                          </div></li>
-                                          <li> <div className="flex inline md:hidden space-x-4">
-                                              <a href="#" className="text-gray-400 hover:text-white">Privacy Policy</a>
-      
-                                          </div></li>
-                                      </ul>
-                                  </div>
-      
-                                  {/* <div className="mb-6 lg:mb-0 lg:col-span-1">
+      <div className='bg-[#001F2B]'>
+        <footer className="bg-[#001F2B] mx-5 2xl:px-[15rem] lg:mx-20 text-gray-400 pt-20">
+          <div className=" px-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
+
+              <div className="mb-6 lg:mb-0 lg:col-span-2">
+                <div className='mb-4  lg:mx-0 w-24 h-24'>
+                  <img className='text-center' src="./home2.png" alt="" />
+                </div>
+                <h2 className="text-white text-xl  font-bold mb-2">River View Villas</h2>
+                <p className="text-gray-400 mb-4">Experience holistic health at River View Villas, a luxury Ayurvedic health retreat in Sri Lanka.</p>
+                <div className="flex  space-x-4">
+                  <a href="https://web.facebook.com/riverviewvillas/?_rdc=1&_rdr " className="text-gray-400 hover:text-white"><FaFacebookF /></a>
+                  <a href="https://www.instagram.com/river_view_villas/?hl=en " className="text-gray-400 hover:text-white"><FaInstagram /></a>
+                  <a href="https://www.tiktok.com/@river.view.villas?_t=8n6DFJerj6X&_r=1" className="text-gray-400 hover:text-white"><FaTiktok /></a>
+                </div>
+              </div>
+              <div className="mb-6 lg:mb-0 lg:col-span-1">
+
+              </div>
+
+              <div className="mb-6 lg:mb-0 lg:col-span-1">
+                <h3 className="text-white text-lg font-bold mb-2">Page Links</h3>
+                <ul className='grid grid-cols-2 lg:grid-cols-1'>
+                  <li><a href="#" className="text-gray-400 hover:text-white">About us</a></li>
+                  <li><a href="#" className="text-gray-400 hover:text-white">Accommodation</a></li>
+                  <li><a href="#" className="text-gray-400 hover:text-white">Ayurvedic Treatments</a></li>
+                  <li><a href="#" className="text-gray-400 hover:text-white">Gallery</a></li>
+                  {/* <li><a href="#" className="text-gray-400 hover:text-white">News & Blogs</a></li> */}
+                  <li><a href="#" className="text-gray-400 hover:text-white">Contact us</a></li>
+                  <li> <div className="flex inline md:hidden space-x-4">
+                    <a href="#" className="text-gray-400 hover:text-white">Terms of Use</a>
+
+                  </div></li>
+                  <li> <div className="flex inline md:hidden space-x-4">
+                    <a href="#" className="text-gray-400 hover:text-white">Privacy Policy</a>
+
+                  </div></li>
+                </ul>
+              </div>
+
+              {/* <div className="mb-6 lg:mb-0 lg:col-span-1">
                       <h3 className="text-white text-lg font-bold mb-2">Latest News</h3>
                       <ul className='grid grid-cols-2 lg:grid-cols-1'>
                         <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum</a></li>
@@ -571,26 +577,26 @@ export default function Packages() {
                         <li><a href="#" className="text-gray-400 hover:text-white">Lorem ipsum dolor</a></li>
                       </ul>
                     </div> */}
-      
-                                  <div className="lg:col-span-2">
-                                      <h3 className="text-white text-lg font-bold mb-2">Information</h3>
-                                      <p className="text-gray-400 mb-2 flex"><span className='mr-2'><CiLocationOn color='#B6A176' /></span>No 102/7C, Mathugama Road, Dharga Town, Sri Lanka</p>
-                                      <p className="text-gray-400 mb-2 flex"><span className='mr-2'><FiPhone color='#B6A176' /></span>+94777217829 / +94777417737</p>
-                                      <p className="text-gray-400 mb-2 flex"><span className='mr-2'><MdOutlineEmail color='#B6A176' /></span>Riverviewvillas23@Gmail.Com</p>
-                                  </div>
-      
-                              </div>
-                              <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between">
-                                  <p className="text-gray-400 ">© 2024 Semantix labs - All Rights Reserved</p>
-                                  <div className=" hidden md:inline-flex space-x-4">
-                                      <a href="#" className="text-gray-400 hover:text-white">Terms of Use</a>
-                                      <a href="#" className="text-gray-400 hover:text-white">Privacy Policy</a>
-                                  </div>
-                              </div>
-                          </div>
-                      </footer>
-                  </div>
-      
+
+              <div className="lg:col-span-2">
+                <h3 className="text-white text-lg font-bold mb-2">Information</h3>
+                <p className="text-gray-400 mb-2 flex"><span className='mr-2'><CiLocationOn color='#B6A176' /></span>No 102/7C, Mathugama Road, Dharga Town, Sri Lanka</p>
+                <p className="text-gray-400 mb-2 flex"><span className='mr-2'><FiPhone color='#B6A176' /></span>+94777217829 / +94777417737</p>
+                <p className="text-gray-400 mb-2 flex"><span className='mr-2'><MdOutlineEmail color='#B6A176' /></span>Riverviewvillas23@Gmail.Com</p>
+              </div>
+
+            </div>
+            <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between">
+              <p className="text-gray-400 ">© 2024 Semantix labs - All Rights Reserved</p>
+              <div className=" hidden md:inline-flex space-x-4">
+                <a href="#" className="text-gray-400 hover:text-white">Terms of Use</a>
+                <a href="#" className="text-gray-400 hover:text-white">Privacy Policy</a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+
     </div>
   );
 }
