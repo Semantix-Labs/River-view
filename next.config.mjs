@@ -7,9 +7,7 @@ const execAsync = promisify(exec);
 export default {
   webpack: (config, { isServer }) => {
     if (isServer) {
-      execAsync('node ./generate-sitemap.js')
-        .then(() => console.log('Sitemap generated successfully'))
-        .catch((err) => console.error('Failed to generate sitemap', err));
+      // transform config if needed
     }
 
     return config;

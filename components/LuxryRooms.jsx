@@ -43,6 +43,7 @@ const LuxuryRooms = () => {
                     src='/Rooms/1.png'
                     layout="fill"
                     objectFit="cover"
+                    alt="Luxury Room"
                     className="transition-transform duration-500 ease-in-out transform hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
@@ -60,13 +61,14 @@ const LuxuryRooms = () => {
                     </a>
                 </div>
             </div>
-            
+
             <div className="relative xl:w-72 xl:h-96 lg:w-56 lg:h-72 md:w-40 md:h-56 w-80 h-96   overflow-hidden rounded-lg  shadow-lg">
                 <Image
 
                     src='/Rooms/2.png'
                     layout="fill"
                     objectFit="cover"
+                    alt="Luxury Room"
                     className="transition-transform duration-500 ease-in-out transform hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
@@ -84,12 +86,13 @@ const LuxuryRooms = () => {
                     </a>
                 </div>
             </div>
-            <div  className="relative xl:w-72 xl:h-96 lg:w-56 lg:h-72 md:w-40 md:h-56 w-80 h-96  imgemg overflow-hidden  rounded-lg shadow-lg">
+            <div className="relative xl:w-72 xl:h-96 lg:w-56 lg:h-72 md:w-40 md:h-56 w-80 h-96  imgemg overflow-hidden  rounded-lg shadow-lg">
                 <Image
 
                     src='/Rooms/3.png'
                     layout="fill"
                     objectFit="cover"
+                    alt="Luxury Room"
                     className="transition-transform  duration-500 ease-in-out transform hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
@@ -113,6 +116,7 @@ const LuxuryRooms = () => {
                     src='/Rooms/1.png'
                     layout="fill"
                     objectFit="cover"
+                    alt="Luxury Room"
                     className="transition-transform duration-500 ease-in-out transform hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">

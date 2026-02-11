@@ -31,7 +31,7 @@ const Carousel = () => {
 
   const nextSlide = useCallback(() => {
     setCurrentIndex((prevIndex) => (prevIndex >= images.length - imagesPerSlide ? 0 : prevIndex + scrollAmount));
-  }, [images.length, imagesPerSlide, scrollAmount]);
+  }, [imagesPerSlide, scrollAmount]);
 
   const animate = useCallback((time) => {
     if (previousTimeRef.current != undefined) {

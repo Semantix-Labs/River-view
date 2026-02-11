@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'next/link';
-import Link from 'next/link';
 import { useState, useEffect } from "react";
 import { CiLocationOn } from "react-icons/ci";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
@@ -202,6 +201,7 @@ export default function Accomodation() {
                                 src='/Room/img/2.jpg'
                                 layout="fill"
                                 objectFit="cover"
+                                alt="Luxury Room"
                                 className="transition-transform duration-500 ease-in-out transform brightness-50 hover:scale-110"
                             />
                             <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
@@ -226,6 +226,7 @@ export default function Accomodation() {
                                 src='/Room/img/1.jpg'
                                 layout="fill"
                                 objectFit="cover"
+                                alt="Luxury Room"
                                 className="transition-transform duration-500 ease-in-out brightness-50  transform hover:scale-110"
                             />
                             <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
@@ -249,6 +250,7 @@ export default function Accomodation() {
                                 src='/Room/img/3.jpg'
                                 layout="fill"
                                 objectFit="cover"
+                                alt="Luxury Room"
                                 className="transition-transform w-full h-full brightness-50  object-cover  duration-500 ease-in-out transform hover:scale-110"
                             />
                             <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
@@ -272,6 +274,7 @@ export default function Accomodation() {
                                 src='/Room/img/r2.jpg'
                                 layout="fill"
                                 objectFit="cover"
+                                alt="Luxury Room"
                                 className="transition-transform duration-500 brightness-50  ease-in-out transform hover:scale-110"
                             />
                             <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">

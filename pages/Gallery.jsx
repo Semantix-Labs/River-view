@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Link from 'next/link';
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import { CiLocationOn } from "react-icons/ci";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import { FiPhone } from "react-icons/fi";
@@ -48,7 +48,7 @@ export default function Gallery() {
         setCurrentIndex((prevIndex) => (prevIndex >= images.length - imagesPerSlide ? 0 : prevIndex + scrollAmount));
     };
 
-    const animate = (time) => {
+    const animate = useCallback((time) => {
         if (previousTimeRef.current != undefined) {
             const deltaTime = time - previousTimeRef.current;
             if (deltaTime >= autoScrollDelay) {
@@ -59,12 +59,12 @@ export default function Gallery() {
             previousTimeRef.current = time;
         }
         requestRef.current = requestAnimationFrame(animate);
-    };
+    }, [autoScrollDelay]);
 
     useEffect(() => {
         requestRef.current = requestAnimationFrame(animate);
         return () => cancelAnimationFrame(requestRef.current);
-    }, []);
+    }, [animate]);
 
     const prevSlide = () => {
         setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - imagesPerSlide : prevIndex - scrollAmount));
